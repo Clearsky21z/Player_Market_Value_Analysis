@@ -78,4 +78,3 @@ os.makedirs(os.path.dirname(output_path), exist_ok=True)  # Create directories i
 df.to_csv(output_path, index=False)
 
 print(f"Scraping complete. Data saved to {output_path}")
-
