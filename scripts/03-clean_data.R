@@ -124,24 +124,7 @@ country_mapping <- list(
 # Replace three-letter codes with full country names
 cleaned_data <- cleaned_data %>%
   mutate(Nation = recode(Nation, !!!country_mapping))
-# List unique nations
-unique_nations <- cleaned_data %>%
-  select(Nation) %>%
-  distinct()
 
-# Print the unique nations
-print("Unique Nations:")
-print(unique_nations)
-
-# Count occurrences of each nation
-nation_counts <- cleaned_data %>%
-  group_by(Nation) %>%
-  summarise(Count = n()) %>%
-  arrange(desc(Count))
-
-# Print the counts
-print("Nation Counts:")
-print(nation_counts, n = 100)
 
 #### Save data ####
 # Save the cleaned dataset to a CSV file
