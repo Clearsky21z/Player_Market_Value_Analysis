@@ -1,14 +1,25 @@
 #### Preamble ####
-# Purpose: Downloads and saves the player name and market value data from Transfermarkt club squad pages.
+# Purpose:
+#   - This script scrapes player names and market values from Transfermarkt club squad pages.
+#   - It processes multiple club squad URLs, consolidates the scraped data into a structured format, 
+#     and saves it as CSV files for further analysis.
 # Author: John Zhang
-# Date: 21 November 2024
+# Date: 25 November 2024
 # Contact: junhan.zhang@mail.utoronto.ca
-# License: MIT
-# Pre-requisites:
+# License: MIT License
+# Prerequisites:
 #   - Python installed on your system.
-#   - Required libraries installed: requests, BeautifulSoup4, pandas.
-#   - Internet connection to access the Transfermarkt website.
-# Any other information needed? Ensure compliance with Transfermarkt's terms of service when scraping data.
+#   - Required Python libraries installed: requests, BeautifulSoup4, pandas.
+#     Install them using: pip install requests beautifulsoup4 pandas
+#   - Stable internet connection to access the Transfermarkt website.
+#   - Ensure compliance with Transfermarkt's terms of service when scraping data.
+# Output:
+#   - The script saves the scraped data into CSV files in the specified folder structure: 
+#       data/01-raw_data/raw_market_value_data/raw_<country>_market_value_data.csv
+#   - Example file: raw_england_market_value_data.csv
+# Note:
+#   - Transfermarkt data scraping is subject to its terms of service. Be respectful and avoid overwhelming their servers.
+#   - If you encounter CAPTCHA challenges, consider adding delays between requests or utilizing an appropriate scraping proxy.
 
 #### Workspace Setup ####
 import requests
@@ -166,11 +177,11 @@ france_urls = [
 ]
 
 # Define file paths
-england_path = "data/01-raw_data/raw_england_market_value_data.csv"
-germany_path = "data/01-raw_data/raw_germany_market_value_data.csv"
-italy_path = "data/01-raw_data/raw_italy_market_value_data.csv"
-spain_path = "data/01-raw_data/raw_spain_market_value_data.csv"
-france_path = "data/01-raw_data/raw_france_market_value_data.csv"
+england_path = "data/01-raw_data/raw_market_value_data/raw_england_market_value_data.csv"
+germany_path = "data/01-raw_data/raw_market_value_data/raw_germany_market_value_data.csv"
+italy_path = "data/01-raw_data/raw_market_value_data/raw_italy_market_value_data.csv"
+spain_path = "data/01-raw_data/raw_market_value_data/raw_spain_market_value_data.csv"
+france_path = "data/01-raw_data/raw_market_value_data/raw_france_market_value_data.csv"
 
 # Scrape and save data for each group
 scrape_and_save(england_urls, england_path)

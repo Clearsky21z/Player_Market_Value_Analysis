@@ -1,23 +1,38 @@
 #### Preamble ####
-# Purpose: Cleans the raw player data recorded by two observers, merges, and removes rows with missing values.
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 6 April 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: 
-# - Files `raw_player_market_value_data.csv` and `raw_player_performance_data.csv` should be in the specified directory.
-# - Necessary libraries installed: tidyverse, dplyr.
-# Any other information needed? Ensure the data columns are correctly formatted.
+# Purpose:
+#   - This script cleans raw player data from two sources (market value and performance data),
+#     merges them, removes rows with missing values, and saves the cleaned dataset in Parquet format.
+#   - Ensures consistency and structure in data to support downstream analysis.
+# Author: John Zhang
+# Date: 25 November 2024
+# Contact: junhan.zhang@mail.utoronto.ca
+# License: MIT License
+# Pre-requisites:
+#   - Raw data files should be placed in the following structure:
+#       data/01-raw_data/raw_market_value_data/raw_<country>_market_value_data.csv
+#       data/01-raw_data/raw_performance_data/raw_<country>_performance_data.csv
+#   - Necessary libraries installed: tidyverse, dplyr, arrow.
+#     Install them using: install.packages(c("tidyverse", "dplyr", "arrow"))
+#   - Ensure column names and formats are consistent across raw data files.
+# Output:
+#   - Cleaned datasets are saved in Parquet format in:
+#       data/02-analysis_data/cleaned_<country>_data.parquet
+# Notes:
+#   - The script assumes that player names are consistent across market value and performance datasets.
+#   - Duplicate rows based on player names are removed entirely (rows where the same name appears multiple times).
+#   - Ensure the Parquet format is supported by your analysis tools for compatibility.
 
 #### Workspace setup ####
 library(tidyverse)
 library(dplyr)
+library(arrow)
 
-#### Clean and Transform Data ####
+#### Function to Clean and Transform Data ####
 # Read and process datasets
-cleaned_data <- read.csv("data/01-raw_data/raw_england_market_value_data.csv", stringsAsFactors = FALSE) %>%
+clean_data <- function(market_value_file, performance_file, output_file) {
+  cleaned_data <- read.csv(market_value_file, stringsAsFactors = FALSE) %>%
   inner_join(
-    read.csv("data/01-raw_data/raw_england_performance_data.csv", stringsAsFactors = FALSE) %>%
+    read.csv(performance_file, stringsAsFactors = FALSE) %>%
       rename(Name = Player) %>%
       select(-Season, -Comp),
     by = "Name"
@@ -199,23 +214,64 @@ cleaned_data <- read.csv("data/01-raw_data/raw_england_market_value_data.csv", s
       TRUE ~ as.numeric(Market.Value)  # Handles already numeric values
     )
   )
-renamed_data <- cleaned_data %>% rename(
-  market_value = Market.Value,
-  age = Age,
-  national_team_ranking = Nation,
-  club_ranking = Team,
-  minutes_played = Min,
-  goals = Gls,
-  assists = Ast,
-  position = Pos) %>% mutate(
-    national_team_ranking = as.numeric(national_team_ranking),
-    age = as.numeric(age),
-    club_ranking = as.numeric(club_ranking),
-    minutes_played = as.numeric(minutes_played),
-    goals = as.numeric(goals),
-    assists = as.numeric(assists)
-  )
+  renamed_data <- cleaned_data %>%
+    rename(
+      market_value = Market.Value,
+      age = Age,
+      national_team_ranking = Nation,
+      club_ranking = Team,
+      minutes_played = Min,
+      goals = Gls,
+      assists = Ast,
+      position = Pos
+    ) %>%
+    mutate(
+      national_team_ranking = as.numeric(national_team_ranking),
+      age = as.numeric(age),
+      club_ranking = as.numeric(club_ranking),
+      minutes_played = as.numeric(minutes_played),
+      goals = as.numeric(goals),
+      assists = as.numeric(assists),
+      position = case_when(
+        position == "DFMF" ~ "MFDF",
+        position == "DFFW" ~ "FWDF",
+        position == "MFFW" ~ "FWMF",
+        TRUE ~ position  # Keep other positions unchanged
+      )
+    ) %>%
+    drop_na() %>%  # Remove rows with NA values
+    group_by(Name) %>%
+    filter(n() == 1) %>%  # Keep only rows where Name appears exactly once
+    ungroup()
+  
 
 #### Save data ####
-# Save the cleaned dataset to a CSV file
-write.csv(renamed_data, "data/02-analysis_data/cleaned_england_data.csv", row.names = FALSE)
+  # Save the cleaned dataset as a Parquet file
+  write_parquet(renamed_data, output_file)
+}
+
+#### Clean and Save Datasets for Each Country ####
+# England
+clean_data("data/01-raw_data/raw_market_value_data/raw_england_market_value_data.csv", 
+           "data/01-raw_data/raw_performance_data/raw_england_performance_data.csv",
+           "data/02-analysis_data/cleaned_england_data.parquet")
+
+# Germany
+clean_data("data/01-raw_data/raw_market_value_data/raw_germany_market_value_data.csv", 
+           "data/01-raw_data/raw_performance_data/raw_germany_performance_data.csv",
+           "data/02-analysis_data/cleaned_germany_data.parquet")
+
+# Italy
+clean_data("data/01-raw_data/raw_market_value_data/raw_italy_market_value_data.csv", 
+           "data/01-raw_data/raw_performance_data/raw_italy_performance_data.csv",
+           "data/02-analysis_data/cleaned_italy_data.parquet")
+
+# Spain
+clean_data("data/01-raw_data/raw_market_value_data/raw_spain_market_value_data.csv", 
+           "data/01-raw_data/raw_performance_data/raw_spain_performance_data.csv",
+           "data/02-analysis_data/cleaned_spain_data.parquet")
+
+# France
+clean_data("data/01-raw_data/raw_market_value_data/raw_france_market_value_data.csv", 
+           "data/01-raw_data/raw_performance_data/raw_france_performance_data.csv",
+           "data/02-analysis_data/cleaned_france_data.parquet")
