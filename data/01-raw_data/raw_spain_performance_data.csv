@@ -1,0 +1,725 @@
+Rk,Player,Season,Age,Nation,Team,Comp,MP,Min,90s,Starts,Subs,unSub,Gls,Ast,G+A,G-PK,PK,PKatt,PKm,Pos,-9999
+1,Nabil Aberdin,2023-2024,20,fr FRA,Getafe,es La Liga,2,180,2.0,2,0,3,0,0,0,0,0,0,0,DF,cadfa7d1
+2,Abner,2023-2024,23,br BRA,Betis,es La Liga,23,1400,15.6,15,8,10,0,1,1,0,0,0,0,DF,7f9c5d2d
+3,Abdel Abqar,2023-2024,24,ma MAR,Alavés,es La Liga,27,2312,25.7,27,0,4,0,0,0,0,0,0,0,DF,2bc7f211
+4,Vicent Abril Sanz,2023-2024,18,es ESP,Valencia,es La Liga,0,,,0,0,5,,,,,,,,GK,7221db10
+5,Marcos Acuña,2023-2024,31,ar ARG,Sevilla,es La Liga,21,1292,14.4,18,3,2,1,2,3,1,0,0,0,DF,81442ecb
+6,Julen Agirrezabala,2023-2024,22,es ESP,Athletic Club,es La Liga,4,238,2.6,2,2,34,0,0,0,0,0,0,0,GK,a2c1a8d3
+7,Lucien Agoume,2023-2024,21,fr FRA,Sevilla,es La Liga,12,777,8.6,9,3,1,0,0,0,0,0,0,0,MF,8bc8829a
+8,Joseph Aidoo,2023-2024,27,gh GHA,Celta Vigo,es La Liga,6,407,4.5,4,2,3,0,0,0,0,0,0,0,DF,18abe173
+9,Ilias Akhomach,2023-2024,19,ma MAR,Villarreal,es La Liga,31,1511,16.8,17,14,6,2,2,4,2,0,0,0,MFFW,b8bd60fe
+10,Sergio Akieme,2023-2024,25,es ESP,Almería,es La Liga,19,1675,18.6,19,0,1,2,0,2,2,0,0,0,DF,06efa9dc
+11,Paul Akouokou,2023-2024,25,ci CIV,Betis,es La Liga,2,27,0.3,0,2,1,0,0,0,0,0,0,0,MF,31f5b89b
+12,David Alaba,2023-2024,31,at AUT,Real Madrid,es La Liga,14,1154,12.8,14,0,1,0,1,1,0,0,0,0,DF,05439de2
+13,Raúl Albiol,2023-2024,37,es ESP,Villarreal,es La Liga,26,2031,22.6,24,2,4,0,1,1,0,0,0,0,DF,4bd414c1
+14,Rubén Alcaraz,2023-2024,32,es ESP,Cádiz,es La Liga,36,3134,34.8,36,0,0,3,1,4,1,2,2,0,MF,036bba5f
+15,Omar Alderete,2023-2024,26,py PAR,Getafe,es La Liga,31,2195,24.4,24,7,3,0,1,1,0,0,0,0,DF,bb08bce9
+16,Iván Alejo,2023-2024,28,es ESP,Cádiz,es La Liga,30,1692,18.8,21,9,5,0,2,2,0,0,0,0,MF,3d7e48ce
+17,Carles Aleñá,2023-2024,25,es ESP,Getafe,es La Liga,29,1020,11.3,10,19,5,1,1,2,1,0,0,0,MF,6c811eb7
+18,Mohamed Ali Cho,2023-2024,19,fr FRA,Real Sociedad,es La Liga,11,249,2.8,1,10,6,0,0,0,0,0,0,0,FWMF,f8405304
+19,Tadeo Allende,2023-2024,24,ar ARG,Celta Vigo,es La Liga,10,336,3.7,2,8,5,1,0,1,1,0,0,0,MFFW,75a66bed
+20,Domingos André Ribeiro Almeida,2023-2024,23,pt POR,Valencia,es La Liga,18,965,10.7,12,6,3,2,1,3,2,0,0,0,FWMF,e6697917
+21,Iker Almena,2023-2024,19,es ESP,Girona,es La Liga,0,,,0,0,5,,,,,,,,FW,0b32f721
+22,Nando Almodóvar,2023-2024,19,es ESP,Cádiz,es La Liga,0,,,0,0,1,,,,,,,,GK,de3b5d82
+23,Marcos Alonso,2023-2024,32,es ESP,Barcelona,es La Liga,5,252,2.8,3,2,16,0,0,0,0,0,0,0,DF,f4290206
+24,Adrià Altimira,2023-2024,22,es ESP,Villarreal,es La Liga,11,775,8.6,10,1,7,0,0,0,0,0,0,0,DFMF,757a3431
+25,Sergi Altimira,2023-2024,21,es ESP,Betis,es La Liga,14,568,6.3,6,8,21,1,0,1,1,0,0,0,MF,94acdd4e
+26,Gastón Álvarez,2023-2024,23,uy URU,Getafe,es La Liga,34,2537,28.2,29,5,2,2,0,2,2,0,0,0,DF,852ddfb8
+27,Hugo Álvarez,2023-2024,20,es ESP,Celta Vigo,es La Liga,12,762,8.5,8,4,3,1,1,2,1,0,0,0,MFDF,6f392eb8
+28,Iker Álvarez,2023-2024,22,ad AND,Villarreal,es La Liga,0,,,0,0,7,,,,,,,,GK,13619663
+29,Yeray Álvarez,2023-2024,28,es ESP,Athletic Club,es La Liga,19,1152,12.8,14,5,3,0,0,0,0,0,0,0,DF,3ecc11d8
+30,Selim Amallah,2023-2024,26,ma MAR,Valencia,es La Liga,20,604,6.7,7,13,7,0,1,1,0,0,0,0,FWMF,00eba9c9
+31,Amath,2023-2024,27,sn SEN,Mallorca,es La Liga,15,394,4.4,3,12,7,0,0,0,0,0,0,0,FWMF,f3b1d9a2
+32,Miguel Ángel Rubio,2023-2024,25,es ESP,Granada,es La Liga,19,1560,17.3,17,2,11,1,0,1,1,0,0,0,DF,56cafd0a
+33,Fabrizio Angileri,2023-2024,29,ar ARG,Getafe,es La Liga,11,164,1.8,2,9,22,0,0,0,0,0,0,0,DFMF,fdd26d71
+34,José Antonio,2023-2024,19,es ESP,Cádiz,es La Liga,0,,,0,0,2,,,,,,,,FW,62a583ee
+35,Arvin Appiah,2023-2024,22,eng ENG,Almería,es La Liga,0,,,0,0,1,,,,,,,,FWMF,eafa6953
+36,Mauro Arambarri,2023-2024,27,uy URU,Getafe,es La Liga,7,339,3.8,3,4,0,0,0,0,0,0,0,0,MF,58afe001
+37,Jon Aramburu,2023-2024,21,ve VEN,Real Sociedad,es La Liga,11,543,6.0,5,6,7,0,0,0,0,0,0,0,DF,dc7a172e
+38,Julian Araujo,2023-2024,21,mx MEX,Las Palmas,es La Liga,25,1462,16.2,15,10,1,1,0,1,1,0,0,0,DF,8f4541c2
+39,Ronald Araújo,2023-2024,24,uy URU,Barcelona,es La Liga,25,1997,22.2,21,4,7,1,2,3,1,0,0,0,DF,2bef2bca
+40,Fran Árbol,2023-2024,17,es ESP,Granada,es La Liga,0,,,0,0,2,,,,,,,,GK,2cecac6f
+41,Matías Árbol,2023-2024,20,es ESP,Sevilla,es La Liga,0,,,0,0,14,,,,,,,,GK,6ae4bd6f
+42,Adu Ares,2023-2024,21,es ESP,Athletic Club,es La Liga,12,265,2.9,2,10,24,0,0,0,0,0,0,0,FW,a461f098
+43,Jesús Areso,2023-2024,24,es ESP,Osasuna,es La Liga,37,2660,29.6,29,8,1,1,6,7,1,0,0,0,DF,94e01ec6
+44,Matias Arezo,2023-2024,20,uy URU,Granada,es La Liga,14,369,4.1,3,11,6,0,0,0,0,0,0,0,FW,484ebdb0
+45,Iñigo Arguibide,2023-2024,18,es ESP,Osasuna,es La Liga,1,17,0.2,0,1,3,0,0,0,0,0,0,0,DF,d80d7f17
+46,José Arnaiz,2023-2024,28,es ESP,Osasuna,es La Liga,26,929,10.3,9,17,8,2,1,3,2,0,0,0,FWMF,46e07328
+47,Sergio Arribas,2023-2024,21,es ESP,Almería,es La Liga,34,2047,22.7,22,12,4,9,4,13,9,0,0,0,MFFW,1e465e70
+48,Kepa Arrizabalaga,2023-2024,28,es ESP,Real Madrid,es La Liga,14,1198,13.3,13,1,21,0,0,0,0,0,0,0,GK,28d596a0
+49,Ricard Artero,2023-2024,20,es ESP,Girona,es La Liga,0,,,0,0,5,,,,,,,,MF,5d133e96
+50,Iago Aspas,2023-2024,35,es ESP,Celta Vigo,es La Liga,35,2707,30.1,31,4,1,9,10,19,6,3,5,2,FW,7dcf86f6
+51,Ander Astralaga,2023-2024,19,es ESP,Barcelona,es La Liga,0,,,0,0,23,,,,,,,,GK,031e0283
+52,Ezequiel Ávila,2023-2024,29,ar ARG,2 Teams,es La Liga,23,1162,12.9,14,9,0,2,3,5,2,0,0,0,FWMF,253a06b9
+53,Gaizka Ayesa,2023-2024,22,es ESP,Real Sociedad,es La Liga,0,,,0,0,8,,,,,,,,GK,e495b4d5
+54,César Azpilicueta,2023-2024,33,es ESP,Atlético Madrid,es La Liga,25,1423,15.8,14,11,4,0,2,2,0,0,0,0,DF,53cad200
+55,Iddrisu Baba,2023-2024,27,gh GHA,Almería,es La Liga,25,1430,15.9,14,11,7,0,0,0,0,0,0,0,MF,bfd381b3
+56,Srđan Babić,2023-2024,27,rs SRB,Almería,es La Liga,1,90,1.0,1,0,0,0,0,0,0,0,0,0,DF,075fe5a3
+57,Loïc Bade,2023-2024,23,fr FRA,Sevilla,es La Liga,28,2277,25.3,27,1,2,0,1,1,0,0,0,0,DF,114bbdee
+58,Alex Baena,2023-2024,22,es ESP,Villarreal,es La Liga,34,2579,28.7,33,1,0,2,14,16,2,0,1,1,MFFW,518f2234
+59,Eric Bailly,2023-2024,29,ci CIV,Villarreal,es La Liga,10,839,9.3,9,1,3,0,0,0,0,0,0,0,DF,a1232f4e
+60,Cédric Bakambu,2023-2024,32,cd COD,Betis,es La Liga,4,194,2.2,2,2,0,0,0,0,0,0,0,0,FW,0af4dcf0
+61,Alejandro Balde,2023-2024,19,es ESP,Barcelona,es La Liga,18,1378,15.3,15,3,2,0,1,1,0,0,0,0,DF,5ccc9672
+62,Iván Balliu,2023-2024,31,al ALB,Rayo Vallecano,es La Liga,33,2873,31.9,32,1,4,0,1,1,0,0,0,0,DF,cee88597
+63,Jonathan Bamba,2023-2024,27,ci CIV,Celta Vigo,es La Liga,27,1981,22.0,24,3,3,3,2,5,3,0,0,0,MFFW,b2bd0f6c
+64,Léo Baptistão,2023-2024,30,br BRA,Almería,es La Liga,32,1837,20.4,22,10,1,6,0,6,6,0,0,0,FW,35f6db55
+65,Kike Barja,2023-2024,26,es ESP,Osasuna,es La Liga,16,303,3.4,3,13,5,0,0,0,0,0,0,0,FWMF,aad53e64
+66,Ander Barrenetxea,2023-2024,21,es ESP,Real Sociedad,es La Liga,29,1427,15.9,20,9,1,4,1,5,4,0,0,0,FWMF,200e89e1
+67,Pablo Barrios,2023-2024,20,es ESP,Atlético Madrid,es La Liga,24,1555,17.3,17,7,0,0,1,1,0,0,0,0,MF,45736cec
+68,Marc Bartra,2023-2024,32,es ESP,Betis,es La Liga,3,225,2.5,3,0,2,0,0,0,0,0,0,0,DF,b742cc0d
+69,Álvaro Bastida,2023-2024,19,es ESP,Cádiz,es La Liga,0,,,0,0,2,,,,,,,,MF,42a028c5
+70,Augusto Batalla,2023-2024,27,ar ARG,Granada,es La Liga,17,1530,17.0,17,0,3,0,0,0,0,0,0,0,GK,fc627681
+71,Bebé,2023-2024,33,cv CPV,Rayo Vallecano,es La Liga,19,212,2.4,0,19,15,2,0,2,1,1,1,0,MFFW,d8712bf9
+72,Sheraldo Becker,2023-2024,28,sr SUR,Real Sociedad,es La Liga,15,771,8.6,8,7,1,2,2,4,2,0,0,0,FWMF,8eb55dbb
+73,Rayane Belaid,2023-2024,18,es ESP,Atlético Madrid,es La Liga,0,,,0,0,1,,,,,,,,DF,b8be4b5f
+74,Héctor Bellerín,2023-2024,28,es ESP,Betis,es La Liga,23,1711,19.0,20,3,5,0,1,1,0,0,0,0,DF,f874dd44
+75,Jude Bellingham,2023-2024,20,eng ENG,Real Madrid,es La Liga,28,2315,25.7,27,1,4,19,6,25,18,1,1,0,MF,57d88cf9
+76,Eghosa Bello,2023-2024,19,ng NGA,Granada,es La Liga,0,,,0,0,1,,,,,,,,FW,9ffff676
+77,Fran Beltrán,2023-2024,24,es ESP,Celta Vigo,es La Liga,33,2428,27.0,28,5,5,0,0,0,0,0,0,0,MF,ed5c5fa3
+78,Carlos Benavídez,2023-2024,25,uy URU,Alavés,es La Liga,29,1136,12.6,10,19,4,3,1,4,3,0,0,0,MF,9fb45456
+79,Jorge Benito,2023-2024,17,es ESP,Getafe,es La Liga,0,,,0,0,15,,,,,,,,GK,0d7be8b0
+80,Yuri Berchiche,2023-2024,33,es ESP,Athletic Club,es La Liga,27,1930,21.4,22,5,0,3,1,4,3,0,0,0,DF,b6e50615
+81,Álex Berenguer,2023-2024,28,es ESP,Athletic Club,es La Liga,35,1592,17.7,15,20,1,7,3,10,6,1,1,0,FW,dc1c2fce
+82,Antonio Blanco,2023-2024,23,es ESP,Alavés,es La Liga,33,2426,27.0,29,4,2,0,1,1,0,0,0,0,MF,506daeac
+83,Daley Blind,2023-2024,33,nl NED,Girona,es La Liga,34,2972,33.0,33,1,1,1,2,3,1,0,0,0,DF,691bef82
+84,Adri Bosch,2023-2024,22,es ESP,Granada,es La Liga,1,26,0.3,0,1,12,0,0,0,0,0,0,0,DF,cb1e5807
+85,Yassine Bounou,2023-2024,32,ma MAR,Sevilla,es La Liga,1,90,1.0,1,0,0,0,0,0,0,0,0,0,GK,f6798fc3
+86,Lucas Boyé,2023-2024,27,ar ARG,Granada,es La Liga,31,2541,28.2,30,1,0,6,3,9,6,0,0,0,FW,d49f3e6b
+87,Darko Brašanac,2023-2024,31,rs SRB,Osasuna,es La Liga,2,48,0.5,0,2,10,0,0,0,0,0,0,0,MF,4accb7e0
+88,Brau,2023-2024,21,es ESP,Granada,es La Liga,1,31,0.3,0,1,0,0,0,0,0,0,0,0,DF,3e707ad4
+89,Claudio Bravo,2023-2024,40,cl CHI,Betis,es La Liga,7,630,7.0,7,0,13,0,0,0,0,0,0,0,GK,10072610
+90,Ben Brereton,2023-2024,24,cl CHI,Villarreal,es La Liga,14,270,3.0,2,12,5,0,0,0,0,0,0,0,FWMF,57827369
+91,Daniel Budesca,2023-2024,17,es ESP,Villarreal,es La Liga,0,,,0,0,1,,,,,,,,DF,55e3ea9f
+92,Ante Budimir,2023-2024,32,hr CRO,Osasuna,es La Liga,33,2435,27.1,29,4,1,17,2,19,14,3,4,1,FW,8f3565b3
+93,Manu Bueno,2023-2024,19,es ESP,Sevilla,es La Liga,4,117,1.3,1,3,10,0,0,0,0,0,0,0,MF,c5642098
+94,Santiago Bueno,2023-2024,24,uy URU,Girona,es La Liga,0,,,0,0,1,,,,,,,,DF,edc98fac
+95,Pablo Busto,2023-2024,17,es ESP,Betis,es La Liga,2,44,0.5,0,2,5,0,0,0,0,0,0,0,DF,da82ccb1
+96,José Callejón,2023-2024,36,es ESP,Granada,es La Liga,25,803,8.9,7,18,13,0,1,1,0,0,0,0,MFFW,78841da9
+97,Eduardo Camavinga,2023-2024,20,fr FRA,Real Madrid,es La Liga,31,1817,20.2,21,10,0,0,2,2,0,0,0,0,MFDF,7b9c2d84
+98,Sergio Camello,2023-2024,22,es ESP,Rayo Vallecano,es La Liga,31,1661,18.5,20,11,6,3,1,4,3,0,0,0,FW,873619c6
+99,José Campaña,2023-2024,30,es ESP,Las Palmas,es La Liga,8,171,1.9,1,7,4,0,0,0,0,0,0,0,MF,61220da2
+100,Marco Camús,2023-2024,21,es ESP,Valencia,es La Liga,0,,,0,0,1,,,,,,,,MF,77922fef
+101,João Cancelo,2023-2024,29,pt POR,Barcelona,es La Liga,32,2503,27.8,29,3,0,2,4,6,2,0,0,0,DF,bd6351cd
+102,Lucas Cañizares,2023-2024,21,es ESP,Real Madrid,es La Liga,0,,,0,0,4,,,,,,,,GK,7e84906e
+103,Sergi Canós,2023-2024,26,es ESP,Valencia,es La Liga,27,1229,13.7,15,12,1,1,2,3,1,0,0,0,MFFW,1137759d
+104,Miguel Capitas,2023-2024,22,es ESP,Sevilla,es La Liga,0,,,0,0,1,,,,,,,,MF,739e4bbd
+105,Étienne Capoue,2023-2024,35,fr FRA,Villarreal,es La Liga,32,1455,16.2,15,17,5,1,1,2,1,0,0,0,MF,5acc4a10
+106,Isaac Carcelen,2023-2024,30,es ESP,Cádiz,es La Liga,35,2611,29.0,29,6,3,0,0,0,0,0,0,0,DF,c4b888df
+107,Cárdenas,2023-2024,26,es ESP,Rayo Vallecano,es La Liga,1,90,1.0,1,0,36,0,0,0,0,0,0,0,GK,e1846dde
+108,Marc Cardona,2023-2024,28,es ESP,Las Palmas,es La Liga,26,737,8.2,6,20,10,4,1,5,3,1,1,0,FW,b92b456a
+109,Sergi Cardona,2023-2024,24,es ESP,Las Palmas,es La Liga,35,2814,31.3,30,5,0,1,2,3,1,0,0,0,DF,74e90475
+110,Johnny Cardoso,2023-2024,21,us USA,Betis,es La Liga,17,1328,14.8,15,2,2,1,2,3,1,0,0,0,MF,7426f085
+111,Juan Carlos,2023-2024,35,es ESP,Girona,es La Liga,0,,0.0,0,0,30,0,0,0,0,0,0,0,GK,688b96e3
+112,Carmona,2023-2024,21,es ESP,Getafe,es La Liga,30,1313,14.6,15,15,1,1,1,2,1,0,0,0,DFMF,2dce876a
+113,Yannick Carrasco,2023-2024,29,be BEL,Atlético Madrid,es La Liga,3,221,2.5,3,0,0,0,1,1,0,0,0,0,DF,de39485a
+114,Álvaro Carreras,2023-2024,20,es ESP,Granada,es La Liga,13,475,5.3,5,8,2,0,0,0,0,0,0,0,MFFW,33a68b9b
+115,Álvaro Carrillo,2023-2024,21,es ESP,Real Madrid,es La Liga,0,,,0,0,3,,,,,,,,DF,cf27a443
+116,Coke Carrillo,2023-2024,21,es ESP,Celta Vigo,es La Liga,0,,,0,0,13,,,,,,,,GK,4e9bcf57
+117,Dani Carvajal,2023-2024,31,es ESP,Real Madrid,es La Liga,28,2171,24.1,25,3,5,4,3,7,4,0,0,0,DF,4958bfb2
+118,William Carvalho,2023-2024,31,pt POR,Betis,es La Liga,22,680,7.6,4,18,3,1,3,4,1,0,0,0,MF,dee86451
+119,Marc Casado,2023-2024,19,es ESP,Barcelona,es La Liga,2,15,0.2,0,2,19,0,0,0,0,0,0,0,MF,2ef08833
+120,Catena,2023-2024,28,es ESP,Osasuna,es La Liga,30,2534,28.2,28,2,6,1,3,4,1,0,0,0,DF,274ab13c
+121,Dani Ceballos,2023-2024,26,es ESP,Real Madrid,es La Liga,20,598,6.6,5,15,9,0,2,2,0,0,0,0,MFFW,c0617e2b
+122,Álex Centelles,2023-2024,25,es ESP,Almería,es La Liga,14,980,10.9,11,3,22,0,1,1,0,0,0,0,DF,ae852b7d
+123,Franco Cervi,2023-2024,29,ar ARG,Celta Vigo,es La Liga,17,546,6.1,5,12,12,0,1,1,0,0,0,0,MFDF,5e1028e5
+124,Pep Chavarría,2023-2024,25,es ESP,Rayo Vallecano,es La Liga,22,1167,13.0,12,10,13,1,1,2,1,0,0,0,DFMF,63c5e56b
+125,Andreas Christensen,2023-2024,27,dk DEN,Barcelona,es La Liga,30,1979,22.0,27,3,6,2,2,4,2,0,0,0,DFMF,1cb49278
+126,Chumi,2023-2024,24,es ESP,Almería,es La Liga,31,2434,27.0,26,5,6,0,1,1,0,0,0,0,DF,2475cf9b
+127,Víctor Chust,2023-2024,23,es ESP,Cádiz,es La Liga,22,1864,20.7,22,0,6,0,1,1,0,0,0,0,DF,ec1a731e
+128,Pathé Ciss,2023-2024,29,sn SEN,Rayo Vallecano,es La Liga,31,1664,18.5,16,15,3,1,0,1,1,0,0,0,MF,9a0408b6
+129,Silvi Clúa,2023-2024,18,es ESP,Girona,es La Liga,1,1,0.0,0,1,3,0,0,0,0,0,0,0,MF,b793dea2
+130,Saúl Coco,2023-2024,24,gq EQG,Las Palmas,es La Liga,30,2295,25.5,26,4,3,1,0,1,1,0,0,0,DF,d0ee1652
+131,Santi Comesaña,2023-2024,26,es ESP,Villarreal,es La Liga,27,1653,18.4,20,7,6,2,0,2,2,0,0,0,MF,5ae499d0
+132,Copete,2023-2024,23,es ESP,Mallorca,es La Liga,19,1333,14.8,17,2,16,1,1,2,1,0,0,0,DF,0f26ffd7
+133,Francis Coquelin,2023-2024,32,fr FRA,Villarreal,es La Liga,17,910,10.1,10,7,2,0,0,0,0,0,0,0,MF,a6951bf8
+134,Theo Corbeanu,2023-2024,21,ca CAN,Granada,es La Liga,9,182,2.0,2,7,7,1,0,1,1,0,0,0,MFFW,25b82f9a
+135,Jesús Corona,2023-2024,30,mx MEX,Sevilla,es La Liga,2,17,0.2,0,2,1,0,0,0,0,0,0,0,MFDF,fb938d24
+136,Ángel Correa,2023-2024,28,ar ARG,Atlético Madrid,es La Liga,32,1528,17.0,14,18,3,9,2,11,8,1,1,0,FWMF,01eb744d
+137,Thierry Correia,2023-2024,24,pt POR,Valencia,es La Liga,31,2154,23.9,25,6,1,0,2,2,0,0,0,0,DF,c78b352d
+138,Jaume Costa,2023-2024,35,es ESP,Mallorca,es La Liga,30,1682,18.7,19,11,6,0,1,1,0,0,0,0,DF,808d48f3
+139,Samu Costa,2023-2024,22,pt POR,Mallorca,es La Liga,34,2303,25.6,26,8,3,1,1,2,1,0,0,0,MF,76c2a023
+140,Thibaut Courtois,2023-2024,31,be BEL,Real Madrid,es La Liga,4,332,3.7,4,0,1,0,0,0,0,0,0,0,GK,1840e36d
+141,Yan Couto,2023-2024,21,br BRA,Girona,es La Liga,34,2245,24.9,24,10,1,1,8,9,1,0,0,0,DFFW,1944818c
+142,Crespo,2023-2024,26,pt POR,Rayo Vallecano,es La Liga,15,527,5.9,4,11,2,0,0,0,0,0,0,0,MF,922dfade
+143,Cristian,2023-2024,25,es ESP,Valencia,es La Liga,1,57,0.6,0,1,37,0,0,0,0,0,0,0,GK,9ad74b4d
+144,Juan Cruz Armada,2023-2024,31,es ESP,Osasuna,es La Liga,26,1667,18.5,18,8,9,0,1,1,0,0,0,0,DF,a56da3ba
+145,Juan Cruz,2023-2024,23,es ESP,Betis,es La Liga,5,76,0.8,0,5,14,0,0,0,0,0,0,0,FW,cc2dd8a5
+146,Pau Cubarsí,2023-2024,16,es ESP,Barcelona,es La Liga,19,1558,17.3,18,1,7,0,0,0,0,0,0,0,DF,cc7888f3
+147,Iván Cuéllar,2023-2024,39,es ESP,Mallorca,es La Liga,1,90,1.0,1,0,30,0,0,0,0,0,0,0,GK,75751c99
+148,Jorge Cuenca,2023-2024,23,es ESP,Villarreal,es La Liga,29,1963,21.8,21,8,6,3,1,4,3,0,0,0,DF,0abc51f2
+149,Eric Curbelo,2023-2024,29,es ESP,Las Palmas,es La Liga,2,102,1.1,1,1,20,0,0,0,0,0,0,0,DFMF,34e39a18
+150,Alberto Dadie,2023-2024,21,es ESP,Real Sociedad,es La Liga,1,28,0.3,0,1,0,0,0,0,0,0,0,0,MF,cc851506
+151,Sergi Darder,2023-2024,29,es ESP,Mallorca,es La Liga,36,2157,24.0,21,15,0,2,5,7,2,0,0,0,MF,070a3904
+152,Lulo Dasilva,2023-2024,20,es ESP,Sevilla,es La Liga,0,,,0,0,4,,,,,,,,MF,7fc46615
+153,Rodrigo De Paul,2023-2024,29,ar ARG,Atlético Madrid,es La Liga,34,2075,23.1,25,9,0,3,5,8,3,0,0,0,MF,162efffd
+154,Mouctar Diakhaby,2023-2024,26,gn GUI,Valencia,es La Liga,14,1073,11.9,12,2,2,1,0,1,1,0,0,0,DFMF,d2110326
+155,Moussa Diakité,2023-2024,19,ml MLI,Cádiz,es La Liga,1,1,0.0,0,1,1,0,0,0,0,0,0,0,MF,d925b04e
+156,Selu Diallo,2023-2024,19,es ESP,Alavés,es La Liga,0,,,0,0,9,,,,,,,,MF,61636341
+157,Assane Diao,2023-2024,17,es ESP,Betis,es La Liga,18,1048,11.6,13,5,11,2,0,2,2,0,0,0,FW,8ae7d0ec
+158,Brahim Díaz,2023-2024,23,ma MAR,Real Madrid,es La Liga,31,1545,17.2,18,13,7,8,6,14,8,0,0,0,FWMF,407feb71
+159,Víctor Díaz,2023-2024,35,es ESP,Granada,es La Liga,4,162,1.8,2,2,14,0,0,0,0,0,0,0,DFMF,3624ce4c
+160,Famara Diedhiou,2023-2024,30,sn SEN,Granada,es La Liga,8,89,1.0,0,8,8,0,1,1,0,0,0,0,FWMF,e447352c
+161,Stole Dimitrievski,2023-2024,29,mk MKD,Rayo Vallecano,es La Liga,37,3330,37.0,37,0,1,0,0,0,0,0,0,0,GK,fc70e345
+162,Djené,2023-2024,31,tg TOG,Getafe,es La Liga,33,2484,27.6,30,3,0,0,0,0,0,0,0,0,DFMF,a4971d84
+163,Marko Dmitrović,2023-2024,31,rs SRB,Sevilla,es La Liga,13,1170,13.0,13,0,23,0,0,0,0,0,0,0,GK,ac295d9e
+164,Jaume Doménech,2023-2024,32,es ESP,Valencia,es La Liga,2,79,0.9,1,1,32,0,0,0,0,0,0,0,GK,c9cb972b
+165,Carlos Dominguez,2023-2024,22,es ESP,Celta Vigo,es La Liga,22,1584,17.6,18,4,15,0,0,0,0,0,0,0,DF,3521abfe
+166,Javier Dominguez,2023-2024,22,es ESP,Celta Vigo,es La Liga,0,,,0,0,3,,,,,,,,DF,d54f823c
+167,Mario Dominguez,2023-2024,19,es ESP,Valencia,es La Liga,3,25,0.3,0,3,4,0,0,0,0,0,0,0,FW,d709cd5c
+168,Carlos Dotor,2023-2024,22,es ESP,Celta Vigo,es La Liga,17,708,7.9,7,10,7,0,0,0,0,0,0,0,MF,daa2eab3
+169,Anastasios Douvikas,2023-2024,23,gr GRE,Celta Vigo,es La Liga,32,905,10.1,7,25,3,7,1,8,7,0,0,0,FW,853ca71c
+170,Artem Dovbyk,2023-2024,26,ua UKR,Girona,es La Liga,36,2587,28.7,32,4,0,24,8,32,17,7,8,1,FW,5b847bb0
+171,Domingos Duarte,2023-2024,28,pt POR,Getafe,es La Liga,15,907,10.1,11,4,12,0,0,0,0,0,0,0,DF,93090f69
+172,Rubén Duarte,2023-2024,27,es ESP,Alavés,es La Liga,28,1878,20.9,21,7,6,2,1,3,2,0,0,0,DF,1fe0492d
+173,Hugo Duro,2023-2024,23,es ESP,Valencia,es La Liga,37,2976,33.1,35,2,0,13,2,15,13,0,0,0,FW,37e103f8
+174,Unai Eguíluz,2023-2024,21,es ESP,Athletic Club,es La Liga,0,,,0,0,9,,,,,,,,DF,bb33af5c
+175,Aritz Elustondo,2023-2024,29,es ESP,Real Sociedad,es La Liga,15,812,9.0,7,8,10,0,1,1,0,0,0,0,DF,f7dc2ae5
+176,Adri Embarba,2023-2024,31,es ESP,Almería,es La Liga,36,2476,27.5,29,7,2,3,2,5,2,1,1,0,FWMF,db8f0eba
+177,Youssef En-Nesyri,2023-2024,26,ma MAR,Sevilla,es La Liga,33,2570,28.6,28,5,0,16,2,18,15,1,1,0,FW,04e17fd5
+178,Enrique,2023-2024,19,es ESP,Betis,es La Liga,0,,,0,0,2,,,,,,,,MF,c75f04f4
+179,Gonzalo Escalante,2023-2024,30,ar ARG,Cádiz,es La Liga,25,1697,18.9,18,7,5,1,2,3,1,0,0,0,MF,3f79a1c8
+180,Aarón Escandell,2023-2024,27,es ESP,Las Palmas,es La Liga,2,153,1.7,1,1,33,0,0,0,0,0,0,0,GK,67669ce7
+181,Facundo Esnáider,2023-2024,,es ESP,Getafe,es La Liga,0,,,0,0,2,,,,,,,,MF,89835e94
+182,Alfonso Espino,2023-2024,31,uy URU,Rayo Vallecano,es La Liga,31,2507,27.9,29,2,6,0,1,1,0,0,0,0,DF,db001fa9
+183,Bernardo Espinosa,2023-2024,34,co COL,Girona,es La Liga,2,2,0.0,0,2,11,0,0,0,0,0,0,0,DF,4242011c
+184,Karl Etta,2023-2024,19,cm CMR,Cádiz,es La Liga,1,21,0.2,0,1,0,0,0,0,0,0,0,0,FW,f0f499ea
+185,Abde Ezzalzouli,2023-2024,21,ma MAR,2 Teams,es La Liga,28,933,10.4,6,22,5,1,0,1,1,0,1,1,FWMF,bed68338
+186,Radamel Falcao,2023-2024,37,co COL,Rayo Vallecano,es La Liga,22,407,4.5,2,20,12,1,0,1,0,1,1,0,FWDF,66116290
+187,Fali,2023-2024,29,es ESP,Cádiz,es La Liga,30,2547,28.3,30,0,4,0,0,0,0,0,0,0,DF,72a84002
+188,Ansu Fati,2023-2024,20,es ESP,Barcelona,es La Liga,3,50,0.6,0,3,0,0,0,0,0,0,0,0,MFFW,0ba976e4
+189,Peter Federico,2023-2024,21,do DOM,Valencia,es La Liga,15,649,7.2,5,10,1,0,0,0,0,0,0,0,MFFW,1ccd3dae
+190,Nabil Fekir,2023-2024,30,fr FRA,Betis,es La Liga,19,1049,11.7,10,9,2,1,2,3,1,0,0,0,MFFW,bece776f
+191,Luiz Felipe,2023-2024,26,it ITA,Betis,es La Liga,4,360,4.0,4,0,0,0,0,0,0,0,0,0,DF,15d0c248
+192,João Félix,2023-2024,23,pt POR,2 Teams,es La Liga,30,1540,17.1,18,12,3,7,3,10,7,0,0,0,FW,8aafd64f
+193,Kiko Femenía,2023-2024,32,es ESP,Villarreal,es La Liga,23,1583,17.6,16,7,13,0,0,0,0,0,0,0,DF,e5d01ecf
+194,Guilherme Fernandes,2023-2024,22,pt POR,Betis,es La Liga,0,,,0,0,8,,,,,,,,GK,1a31db3a
+195,Aitor Fernández,2023-2024,32,es ESP,Osasuna,es La Liga,7,551,6.1,6,1,30,0,0,0,0,0,0,0,GK,a01c3d54
+196,Álex Fernández,2023-2024,30,es ESP,Cádiz,es La Liga,26,1285,14.3,14,12,11,0,1,1,0,0,0,0,MF,aa677a35
+197,Carlos Fernández,2023-2024,27,es ESP,Real Sociedad,es La Liga,10,408,4.5,5,5,6,2,1,3,1,1,1,0,FW,e08647d6
+198,César Fernández,2023-2024,19,es ESP,Celta Vigo,es La Liga,0,,,0,0,1,,,,,,,,GK,4e9548a4
+199,Marcos Fernández Cózar,2023-2024,20,es ESP,Mallorca,es La Liga,0,,,0,0,4,,,,,,,,DF,f774dce2
+200,Raúl Fernández,2023-2024,35,es ESP,Granada,es La Liga,4,280,3.1,4,0,10,0,0,0,0,0,0,0,GK,6fb59070
+201,Valery Fernández,2023-2024,23,es ESP,Girona,es La Liga,27,506,5.6,2,25,10,2,0,2,2,0,0,0,MFFW,4acd733a
+202,Fernando,2023-2024,36,br BRA,Sevilla,es La Liga,8,459,5.1,5,3,3,0,0,0,0,0,0,0,MF,41f32541
+203,Fernando,2023-2024,33,es ESP,Almería,es La Liga,4,360,4.0,4,0,34,0,0,0,0,0,0,0,GK,dabb2827
+204,André Ferreira,2023-2024,27,pt POR,Granada,es La Liga,15,1340,14.9,14,1,6,0,0,0,0,0,0,0,GK,12c6cbef
+205,Pau Ferrer,2023-2024,19,es ESP,Las Palmas,es La Liga,0,,,0,0,1,,,,,,,,FW,c1c71573
+206,Rachad Fettal,2023-2024,18,ma MAR,Almería,es La Liga,1,17,0.2,0,1,6,0,0,0,0,0,0,0,FW,ae9a9b2d
+207,Bryan Fiabema,2023-2024,20,no NOR,Real Sociedad,es La Liga,0,,,0,0,2,,,,,,,,FW,78d458eb
+208,Pablo Fornals,2023-2024,27,es ESP,Betis,es La Liga,15,1148,12.8,14,1,0,3,2,5,3,0,0,0,FWMF,82927de4
+209,Héctor Fort,2023-2024,16,es ESP,Barcelona,es La Liga,7,318,3.5,4,3,17,0,2,2,0,0,0,0,DF,2e31f3a6
+210,Dimitri Foulquier,2023-2024,30,fr FRA,Valencia,es La Liga,33,1842,20.5,19,14,0,0,0,0,0,0,0,0,DFMF,45e17712
+211,Juan Foyth,2023-2024,25,ar ARG,Villarreal,es La Liga,12,1062,11.8,12,0,0,1,1,2,1,0,0,0,DF,6c7762c3
+212,Aitor Fraga,2023-2024,20,es ESP,Real Sociedad,es La Liga,0,,,0,0,11,,,,,,,,GK,7645a52a
+213,Fran,2023-2024,18,es ESP,Real Madrid,es La Liga,0,,,0,0,10,,,,,,,,GK,5e550a91
+214,Jorge de Frutos,2023-2024,26,es ESP,Rayo Vallecano,es La Liga,36,1549,17.2,14,22,1,2,0,2,2,0,0,0,FWMF,38ce1150
+215,Darío Fuentes,2023-2024,20,es ESP,Sevilla,es La Liga,0,,,0,0,11,,,,,,,,DF,893268ab
+216,Toni Fuidias,2023-2024,22,es ESP,Girona,es La Liga,0,,,0,0,38,,,,,,,,GK,33d2c795
+217,Daniel Fuzato,2023-2024,26,br BRA,Getafe,es La Liga,1,7,0.1,0,1,37,0,0,0,0,0,0,0,GK,82328faf
+218,Matteo Gabbia,2023-2024,23,it ITA,Villarreal,es La Liga,7,477,5.3,6,1,8,0,0,0,0,0,0,0,DF,c235e803
+219,George Gagua,2023-2024,21,ge GEO,Alavés,es La Liga,0,,,0,0,1,,,,,,,,FW,e66bd684
+220,Javi Galán,2023-2024,28,es ESP,2 Teams,es La Liga,19,1163,12.9,13,6,15,0,1,1,0,0,0,0,DF,a4b00319
+221,Iñigo Ruiz de Galarreta,2023-2024,29,es ESP,Athletic Club,es La Liga,29,2091,23.2,25,4,0,1,1,2,1,0,0,0,MF,91f7631f
+222,Aleix García,2023-2024,26,es ESP,Girona,es La Liga,37,3199,35.5,36,1,0,3,6,9,3,0,0,0,MF,a10361d2
+223,Álvaro García,2023-2024,30,es ESP,Rayo Vallecano,es La Liga,32,2475,27.5,30,2,0,6,1,7,6,0,0,0,FWMF,90bbd822
+224,Álvaro García,2023-2024,18,es ESP,Alavés,es La Liga,0,,,0,0,1,,,,,,,,DF,a3827bd8
+225,Borja García,2023-2024,32,es ESP,Girona,es La Liga,0,,,0,0,10,,,,,,,,FWMF,e7f4603c
+226,Dani García,2023-2024,33,es ESP,Athletic Club,es La Liga,17,745,8.3,7,10,11,1,0,1,1,0,0,0,MF,240d3a0b
+227,David García,2023-2024,29,es ESP,Osasuna,es La Liga,27,2334,25.9,27,0,2,0,1,1,0,0,0,0,DF,3e42f707
+228,Eric García,2023-2024,22,es ESP,2 Teams,es La Liga,32,2694,29.9,30,2,2,5,0,5,5,0,0,0,DF,2bed3eab
+229,Fran Garcia,2023-2024,23,es ESP,Real Madrid,es La Liga,25,1398,15.5,15,10,13,1,5,6,1,0,0,0,DF,7226539b
+230,Gaizka García,2023-2024,18,es ESP,Alavés,es La Liga,0,,,0,0,2,,,,,,,,GK,b424f8a5
+231,Gonzalo García,2023-2024,19,es ESP,Real Madrid,es La Liga,2,19,0.2,0,2,4,0,0,0,0,0,0,0,FWMF,74c2d562
+232,Jastin García,2023-2024,19,es ESP,Girona,es La Liga,3,32,0.4,0,3,10,0,0,0,0,0,0,0,FW,0302f7b4
+233,Raúl García,2023-2024,37,es ESP,Athletic Club,es La Liga,20,420,4.7,1,19,17,1,0,1,1,0,0,0,FWMF,b418dbd4
+234,Rubén García,2023-2024,30,es ESP,Osasuna,es La Liga,30,1547,17.2,19,11,6,3,2,5,3,0,0,0,FWMF,5c96b017
+235,Santiago García,2023-2024,21,es ESP,Getafe,es La Liga,1,25,0.3,0,1,1,0,0,0,0,0,0,0,FW,b4b4d0a6
+236,Unai García,2023-2024,31,es ESP,Osasuna,es La Liga,9,560,6.2,6,3,17,1,0,1,1,0,0,0,DF,4a633cfe
+237,Aleix Garrido,2023-2024,19,es ESP,Barcelona,es La Liga,0,,,0,0,1,,,,,,,,MF,5757adc3
+238,Carles Garrido,2023-2024,18,es ESP,Girona,es La Liga,0,,,0,0,1,,,,,,,,FW,ce56aac7
+239,Yarek Gasiorowski,2023-2024,18,es ESP,Valencia,es La Liga,14,735,8.2,7,7,16,0,0,0,0,0,0,0,DF,20a65cdf
+240,Federico Gattoni,2023-2024,24,ar ARG,Sevilla,es La Liga,2,10,0.1,0,2,15,0,0,0,0,0,0,0,DFFW,86087757
+241,Gavi,2023-2024,18,es ESP,Barcelona,es La Liga,12,944,10.5,10,2,0,1,1,2,1,0,0,0,MFFW,19cae58d
+242,Paulo Gazzaniga,2023-2024,31,ar ARG,Girona,es La Liga,38,3420,38.0,38,0,0,0,0,0,0,0,0,0,GK,63d17038
+243,David Gil,2023-2024,29,es ESP,Cádiz,es La Liga,5,372,4.1,4,1,32,0,0,0,0,0,0,0,GK,fea23125
+244,Sergio Gimeno,2023-2024,22,es ESP,Getafe,es La Liga,0,,,0,0,2,,,,,,,,DF,9849f322
+245,Aitor Gismera,2023-2024,19,es ESP,Atlético Madrid,es La Liga,0,,,0,0,3,,,,,,,,MF,73df4173
+246,Maxi Gómez,2023-2024,26,uy URU,Cádiz,es La Liga,31,1163,12.9,12,19,3,0,0,0,0,0,0,0,FW,4c2e9442
+247,Moi Gómez,2023-2024,29,es ESP,Osasuna,es La Liga,28,2006,22.3,23,5,5,3,0,3,3,0,0,0,MFFW,5a626448
+248,Papu Gómez,2023-2024,35,ar ARG,Sevilla,es La Liga,0,,,0,0,3,,,,,,,,FWMF,6e4df551
+249,Unai Gómez,2023-2024,20,es ESP,Athletic Club,es La Liga,25,875,9.7,9,16,12,2,0,2,2,0,0,0,MF,37db6cae
+250,Antonio Gomis,2023-2024,20,es ESP,Atlético Madrid,es La Liga,0,,,0,0,38,,,,,,,,GK,f0f4671c
+251,Édgar González,2023-2024,26,es ESP,Almería,es La Liga,31,2522,28.0,30,1,1,2,0,2,2,0,0,0,DFMF,49d028db
+252,Fabio González,2023-2024,26,es ESP,Las Palmas,es La Liga,6,123,1.4,1,5,11,0,0,0,0,0,0,0,MF,5418d47c
+253,Fran González,2023-2024,24,es ESP,Real Madrid,es La Liga,0,,,0,0,5,,,,,,,,DF,ea04fa41
+254,Giovanni González,2023-2024,28,uy URU,Mallorca,es La Liga,34,2464,27.4,27,7,3,1,1,2,1,0,0,0,DF,1fc474ae
+255,Hugo González,2023-2024,20,es ESP,Valencia,es La Liga,9,87,1.0,0,9,16,0,1,1,0,0,0,0,MFFW,2cfb6e88
+256,Iñaki González,2023-2024,19,es ESP,Las Palmas,es La Liga,1,5,0.1,0,1,7,0,0,0,0,0,0,0,MF,63787ec5
+257,Mario González,2023-2024,19,es ESP,Granada,es La Liga,0,,,0,0,1,,,,,,,,MF,3412255d
+258,Urko González,2023-2024,22,es ESP,Real Sociedad,es La Liga,5,156,1.7,2,3,32,0,0,0,0,0,0,0,MF,c4f5eb61
+259,Andoni Gorosabel,2023-2024,26,es ESP,Alavés,es La Liga,36,2854,31.7,33,3,1,1,0,1,1,0,0,0,DF,6f5f82c0
+260,Ale Gorrin,2023-2024,20,es ESP,Las Palmas,es La Liga,0,,,0,0,20,,,,,,,,GK,e7c1cb91
+261,Pablo Gozalbez,2023-2024,22,es ESP,Valencia,es La Liga,5,103,1.1,1,4,26,0,0,0,0,0,0,0,MFFW,f33b6ee6
+262,Ivo Grbić,2023-2024,27,hr CRO,Atlético Madrid,es La Liga,0,,,0,0,18,,,,,,,,GK,3f034750
+263,Mason Greenwood,2023-2024,21,eng ENG,Getafe,es La Liga,33,2662,29.6,30,3,0,8,6,14,6,2,3,1,MFFW,58eee997
+264,Dominik Greif,2023-2024,26,sk SVK,Mallorca,es La Liga,1,90,1.0,1,0,37,0,0,0,0,0,0,0,GK,30061f53
+265,Antoine Griezmann,2023-2024,32,fr FRA,Atlético Madrid,es La Liga,33,2644,29.4,31,2,1,16,6,22,12,4,4,0,FWMF,df69b544
+266,Vicente Guaita,2023-2024,36,es ESP,Celta Vigo,es La Liga,27,2403,26.7,26,1,6,0,0,0,0,0,0,0,GK,ab13a5aa
+267,Andrés Guardado,2023-2024,36,mx MEX,Betis,es La Liga,12,447,5.0,4,8,6,0,0,0,0,0,0,0,MF,ef322658
+268,Sergi Guardiola,2023-2024,32,es ESP,Cádiz,es La Liga,22,495,5.5,1,21,11,1,1,2,1,0,0,0,FWMF,32974271
+269,Nemanja Gudelj,2023-2024,31,rs SRB,Sevilla,es La Liga,22,1742,19.4,20,2,2,1,1,2,1,0,0,0,DFMF,0076ab7f
+270,Gonçalo Guedes,2023-2024,26,pt POR,Villarreal,es La Liga,17,951,10.6,9,8,1,3,2,5,3,0,0,0,FWMF,e6bc67d7
+271,Gui Guedes,2023-2024,21,pt POR,Almería,es La Liga,0,,,0,0,3,,,,,,,,MF,022c1bf7
+272,Javier Guerra,2023-2024,20,es ESP,Valencia,es La Liga,36,2498,27.8,28,8,0,4,1,5,4,0,0,0,MF,3828f130
+273,Daniel Guerrero,2023-2024,18,es ESP,Betis,es La Liga,0,,,0,0,1,,,,,,,,MF,1707d9c6
+274,Ander Guevara,2023-2024,26,es ESP,Alavés,es La Liga,37,2932,32.6,33,4,0,1,0,1,1,0,0,0,MF,8e48dc61
+275,Hugo Guillamón,2023-2024,23,es ESP,Valencia,es La Liga,26,1315,14.6,12,14,11,1,0,1,1,0,0,0,MF,f7c12fbf
+276,Marc Guiu,2023-2024,17,es ESP,Barcelona,es La Liga,3,74,0.8,1,2,13,1,0,1,1,0,0,0,FWMF,d3d774cc
+277,Arda Güler,2023-2024,18,tr TUR,Real Madrid,es La Liga,10,377,4.2,4,6,11,6,0,6,6,0,0,0,FWMF,3741ca58
+278,Gerard Gumbau,2023-2024,28,es ESP,Granada,es La Liga,35,2674,29.7,31,4,0,0,3,3,0,0,0,0,MF,ac454a4f
+279,İlkay Gündoğan,2023-2024,32,de GER,Barcelona,es La Liga,36,2994,33.3,33,3,1,5,9,14,4,1,2,1,MF,819b3158
+280,Jon Guridi,2023-2024,28,es ESP,Alavés,es La Liga,36,2678,29.8,34,2,1,3,4,7,3,0,0,0,MF,4c0a6a48
+281,Gorka Guruzeta,2023-2024,26,es ESP,Athletic Club,es La Liga,32,2217,24.6,30,2,1,14,5,19,14,0,1,1,FW,6b5ea2f4
+282,Miguel Gutiérrez,2023-2024,22,es ESP,Girona,es La Liga,35,3032,33.7,35,0,1,2,7,9,2,0,0,0,DF,7e98cff1
+283,Munir El Haddadi,2023-2024,27,ma MAR,Las Palmas,es La Liga,38,2449,27.2,32,6,0,3,2,5,3,0,1,1,FW,8696bc90
+284,Ianis Hagi,2023-2024,24,ro ROU,Alavés,es La Liga,22,804,8.9,8,14,13,0,2,2,0,0,1,1,MFFW,0127419a
+285,Luiz Henrique,2023-2024,22,br BRA,Betis,es La Liga,14,616,6.8,6,8,2,0,3,3,0,0,0,0,FW,8059806f
+286,Mario Hermoso,2023-2024,28,es ESP,Atlético Madrid,es La Liga,31,2557,28.4,29,2,4,0,1,1,0,0,0,0,DF,555f3a0b
+287,Javi Hernández,2023-2024,25,es ESP,Cádiz,es La Liga,30,2514,27.9,28,2,2,1,2,3,1,0,0,0,DF,9a76c2e9
+288,Aridane Hernández,2023-2024,34,es ESP,Rayo Vallecano,es La Liga,19,1690,18.8,19,0,12,0,0,0,0,0,0,0,DF,132ac341
+289,Luis Hernández,2023-2024,34,es ESP,Cádiz,es La Liga,9,723,8.0,8,1,0,1,0,1,1,0,0,0,DF,02d2c436
+290,Unai Hernandez,2023-2024,18,es ESP,Barcelona,es La Liga,0,,,0,0,7,,,,,,,,MF,5e39ce2c
+291,Jorge Herrando,2023-2024,22,es ESP,Osasuna,es La Liga,19,1644,18.3,18,1,19,0,1,1,0,0,0,0,DF,e19c989c
+292,Alejandro Herranz,2023-2024,18,es ESP,Getafe,es La Liga,0,,,0,0,2,,,,,,,,DF,71850b4a
+293,Ander Herrera,2023-2024,33,es ESP,Athletic Club,es La Liga,23,1030,11.4,10,13,6,0,3,3,0,0,0,0,MF,436a9dd0
+294,Cristian Herrera,2023-2024,32,es ESP,Las Palmas,es La Liga,8,166,1.8,1,7,23,1,0,1,1,0,0,0,FWMF,f814e5d3
+295,Sergio Herrera,2023-2024,30,es ESP,Osasuna,es La Liga,32,2869,31.9,32,0,6,0,0,0,0,0,0,0,GK,a4995f48
+296,Yangel Herrera,2023-2024,25,ve VEN,Girona,es La Liga,29,2107,23.4,27,2,1,5,0,5,5,0,0,0,MF,5083a734
+297,Juan Herzog,2023-2024,20,es ESP,Las Palmas,es La Liga,4,292,3.2,3,1,17,2,0,2,2,0,0,0,DF,3a18abe2
+298,Martin Hongla,2023-2024,25,cm CMR,Granada,es La Liga,13,562,6.2,6,7,3,0,0,0,0,0,0,0,MFDF,b85bf253
+299,Xabier Huarte Armendáriz,2023-2024,22,es ESP,Osasuna,es La Liga,1,9,0.1,0,1,1,0,0,0,0,0,0,0,MF,e83e8928
+300,Pablo Ibáñez,2023-2024,24,es ESP,Osasuna,es La Liga,33,1152,12.8,12,21,4,1,2,3,1,0,0,0,MF,3701906c
+301,Stanis Idumbo,2023-2024,18,be BEL,Sevilla,es La Liga,0,,,0,0,6,,,,,,,,MF,53551b98
+302,Iglesias,2023-2024,25,es ESP,Getafe,es La Liga,23,1412,15.7,16,7,7,0,2,2,0,0,0,0,DFFW,974322dc
+303,Borja Iglesias,2023-2024,30,es ESP,Betis,es La Liga,11,408,4.5,4,7,9,0,1,1,0,0,0,0,FW,75645f0e
+304,Imanol,2023-2024,23,es ESP,Athletic Club,es La Liga,9,525,5.8,5,4,26,0,0,0,0,0,0,0,DF,9e095d72
+305,Bruno Iribarne,2023-2024,18,es ESP,Almería,es La Liga,0,,,0,0,1,,,,,,,,GK,7427291c
+306,Isco,2023-2024,31,es ESP,Betis,es La Liga,29,2326,25.8,28,1,0,8,5,13,6,2,2,0,MF,a0b4bb3e
+307,Diego Iturralde,2023-2024,20,es ESP,Sevilla,es La Liga,1,37,0.4,0,1,3,0,0,0,0,0,0,0,DF,9d33c71a
+308,Adnan Januzaj,2023-2024,28,be BEL,Sevilla,es La Liga,8,193,2.1,0,8,11,0,0,0,0,0,0,0,FWMF,4737cebe
+309,Mikel Jauregizar,2023-2024,19,es ESP,Athletic Club,es La Liga,7,151,1.7,1,6,8,0,0,0,0,0,0,0,MF,2f5c78ca
+310,Luis Javier Suárez,2023-2024,25,co COL,Almería,es La Liga,15,917,10.2,10,5,0,6,0,6,5,1,1,0,FW,eeba07f8
+311,Salim El Jebari,2023-2024,19,ma MAR,Atlético Madrid,es La Liga,1,13,0.1,0,1,7,0,0,0,0,0,0,0,MF,d068118b
+312,Pere Joan,2023-2024,21,es ESP,Mallorca,es La Liga,0,,,0,0,3,,,,,,,,GK,a2b1bca6
+313,John Joe,2023-2024,19,ie IRL,Getafe,es La Liga,0,,,0,0,6,,,,,,,,MF,fd01216a
+314,Frenkie de Jong,2023-2024,26,nl NED,Barcelona,es La Liga,20,1634,18.2,20,0,1,2,0,2,2,0,0,0,MF,1bacc518
+315,Joan Jordán,2023-2024,29,es ESP,Sevilla,es La Liga,8,380,4.2,4,4,22,0,0,0,0,0,0,0,MF,2a0c8ba4
+316,Jordi,2023-2024,22,es ESP,Getafe,es La Liga,13,573,6.4,5,8,11,0,0,0,0,0,0,0,MFDF,5556d20b
+317,Jeremy Jorge,2023-2024,20,es ESP,Getafe,es La Liga,1,2,0.0,0,1,1,0,0,0,0,0,0,0,FW,454d07c9
+318,Willian José,2023-2024,31,br BRA,Betis,es La Liga,33,1971,21.9,25,8,2,10,5,15,10,0,0,0,FW,d87e2cae
+319,Joseda,2023-2024,22,es ESP,Alavés,es La Liga,0,,,0,0,4,,,,,,,,DF,d989154a
+320,Joselu,2023-2024,33,es ESP,Real Madrid,es La Liga,34,1687,18.7,15,19,2,10,2,12,10,0,2,2,FW,6265208f
+321,Kamil Jóźwiak,2023-2024,25,pl POL,Granada,es La Liga,11,571,6.3,7,4,1,0,1,1,0,0,0,0,MF,bd4e3824
+322,Filip Jørgensen,2023-2024,21,dk DEN,Villarreal,es La Liga,36,3240,36.0,36,0,2,0,0,0,0,0,0,0,GK,0107757e
+323,Juanmi,2023-2024,30,es ESP,Cádiz,es La Liga,16,873,9.7,9,7,0,3,1,4,3,0,0,0,FW,84399660
+324,Juanpe,2023-2024,32,es ESP,Girona,es La Liga,17,746,8.3,6,11,19,0,0,0,0,0,0,0,DF,1633fc8a
+325,Vinicius Júnior,2023-2024,23,br BRA,Real Madrid,es La Liga,26,1864,20.7,22,4,3,15,5,20,14,1,1,0,FW,7111d552
+326,Sory Kaba,2023-2024,28,gn GUI,Las Palmas,es La Liga,17,720,8.0,9,8,19,1,1,2,1,0,0,0,FW,d29202c2
+327,Kaiky,2023-2024,19,br BRA,Almería,es La Liga,8,523,5.8,5,3,14,1,0,1,1,0,0,0,DF,55634fb8
+328,Jon Karrikaburu,2023-2024,20,es ESP,2 Teams,es La Liga,2,16,0.2,0,2,15,0,0,0,0,0,0,0,MFFW,211589b8
+329,Ibrahima Kebe,2023-2024,22,ml MLI,Girona,es La Liga,2,9,0.1,0,2,15,0,0,0,0,0,0,0,MF,047759a0
+330,Kiké,2023-2024,33,es ESP,Alavés,es La Liga,33,1423,15.8,15,18,4,3,2,5,3,0,1,1,FWMF,e897d8ba
+331,Álvaro Killane,2023-2024,18,es ESP,Las Palmas,es La Liga,0,,,0,0,1,,,,,,,,GK,8194b09d
+332,Diego Kochen,2023-2024,17,us USA,Barcelona,es La Liga,0,,,0,0,26,,,,,,,,GK,497144d6
+333,Koke,2023-2024,31,es ESP,Atlético Madrid,es La Liga,35,2493,27.7,32,3,0,0,4,4,0,0,0,0,MF,55126f3b
+334,Ibrahima Koné,2023-2024,24,ml MLI,Almería,es La Liga,9,277,3.1,2,7,6,0,0,0,0,0,0,0,FW,04bb2b06
+335,Ilias Kostis,2023-2024,20,gr GRE,Atlético Madrid,es La Liga,0,,,0,0,7,,,,,,,,DF,9b94c838
+336,Rominigue Kouamé,2023-2024,26,ml MLI,Cádiz,es La Liga,16,821,9.1,9,7,5,0,0,0,0,0,0,0,MF,86a2ba20
+337,Jules Koundé,2023-2024,24,fr FRA,Barcelona,es La Liga,35,2899,32.2,32,3,2,1,2,3,1,0,0,0,DF,4d1666ff
+338,Toni Kroos,2023-2024,33,de GER,Real Madrid,es La Liga,33,2124,23.6,24,9,5,1,8,9,1,0,0,0,MF,6ce1f46f
+339,Takefusa Kubo,2023-2024,22,jp JPN,Real Sociedad,es La Liga,30,2150,23.9,24,6,4,7,4,11,7,0,0,0,FWMF,16aa3654
+340,Luca de la Torre,2023-2024,25,us USA,Celta Vigo,es La Liga,31,1956,21.7,22,9,2,1,4,5,1,0,0,0,MF,e9241b40
+341,Yoel Lago,2023-2024,19,es ESP,Celta Vigo,es La Liga,1,90,1.0,1,0,0,0,0,0,0,0,0,0,DF,edd4e7a5
+342,Érik Lamela,2023-2024,31,ar ARG,Sevilla,es La Liga,13,463,5.1,5,8,7,2,0,2,2,0,0,0,FWMF,abe66106
+343,Bruno Langa,2023-2024,25,mz MOZ,Almería,es La Liga,11,820,9.1,9,2,4,1,0,1,1,0,0,0,DF,72947847
+344,Cyle Larin,2023-2024,28,ca CAN,Mallorca,es La Liga,35,1823,20.3,20,15,2,3,2,5,3,0,0,0,FW,e7af9060
+345,Juanmi Latasa,2023-2024,22,es ESP,Getafe,es La Liga,32,1555,17.3,15,17,4,2,0,2,2,0,0,0,FW,2bea832e
+346,Toni Lato,2023-2024,25,es ESP,Mallorca,es La Liga,28,1544,17.2,16,12,7,0,1,1,0,0,0,0,DF,8e088e04
+347,Lázaro,2023-2024,21,br BRA,Almería,es La Liga,14,285,3.2,2,12,9,0,0,0,0,0,0,0,FWMF,86ff856b
+348,Robin Le Normand,2023-2024,26,es ESP,Real Sociedad,es La Liga,29,2469,27.4,28,1,6,2,0,2,2,0,0,0,DF,9a64e67e
+349,Jeremías Ledesma,2023-2024,30,ar ARG,Cádiz,es La Liga,34,3048,33.9,34,0,1,0,0,0,0,0,0,0,GK,6c4776b1
+350,Florian Lejeune,2023-2024,32,fr FRA,Rayo Vallecano,es La Liga,37,3327,37.0,37,0,0,3,1,4,3,0,0,0,DF,6eaed4eb
+351,Stefan Lekovic,2023-2024,19,rs SRB,Villarreal,es La Liga,1,29,0.3,0,1,3,0,0,0,0,0,0,0,DF,d633fd46
+352,Iñigo Lekue,2023-2024,30,es ESP,Athletic Club,es La Liga,27,2002,22.2,22,5,9,0,2,2,0,0,0,0,DF,59b7d823
+353,Thomas Lemar,2023-2024,27,fr FRA,Atlético Madrid,es La Liga,3,164,1.8,3,0,2,0,0,0,0,0,0,0,MF,4dbd0916
+354,Álvaro Lemos,2023-2024,30,es ESP,Las Palmas,es La Liga,4,251,2.8,3,1,18,0,0,0,0,0,0,0,DF,31d45cc8
+355,Ruben Lendinez,2023-2024,20,es ESP,Valencia,es La Liga,1,11,0.1,0,1,17,0,0,0,0,0,0,0,DF,755da865
+356,Robert Lewandowski,2023-2024,34,pl POL,Barcelona,es La Liga,35,2750,30.6,32,3,0,19,8,27,15,4,4,0,FW,8d78e732
+357,Yuzún Ley,2023-2024,19,es ESP,Mallorca,es La Liga,0,,,0,0,7,,,,,,,,DF,8d522be6
+358,Samuel Lino,2023-2024,23,br BRA,Atlético Madrid,es La Liga,34,2080,23.1,25,9,2,4,5,9,4,0,0,0,DFMF,2a295d33
+359,Javier Llabrés,2023-2024,20,es ESP,Mallorca,es La Liga,16,247,2.7,1,15,22,1,0,1,1,0,0,0,MFFW,38b0cf42
+360,Marcos Llorente,2023-2024,28,es ESP,Atlético Madrid,es La Liga,37,2565,28.5,29,8,0,6,4,10,6,0,0,0,MFDF,02c15616
+361,Enzo Loiodice,2023-2024,22,fr FRA,Las Palmas,es La Liga,34,1790,19.9,19,15,4,0,1,1,0,0,0,0,MF,6bca20fe
+362,Adrián López,2023-2024,24,es ESP,Granada,es La Liga,0,,,0,0,25,,,,,,,,GK,c58ebf64
+363,Alberto López,2023-2024,19,es ESP,Sevilla,es La Liga,0,,,0,0,21,,,,,,,,GK,c25f14a7
+364,David López,2023-2024,20,es ESP,Mallorca,es La Liga,0,,,0,0,12,,,,,,,,DF,0924357d
+365,David López,2023-2024,33,es ESP,Girona,es La Liga,25,1965,21.8,25,0,2,3,0,3,3,0,0,0,DF,f03f284b
+366,Diego López,2023-2024,21,es ESP,Valencia,es La Liga,36,2656,29.5,30,6,0,3,6,9,3,0,0,0,MFFW,c487901c
+367,Diego López,2023-2024,21,es ESP,Getafe,es La Liga,0,,,0,0,3,,,,,,,,MF,d88b5ba7
+368,Fermin López,2023-2024,20,es ESP,Barcelona,es La Liga,31,1446,16.1,14,17,6,8,0,8,8,0,0,0,MFFW,c1fe5f0b
+369,Javi López,2023-2024,21,es ESP,Alavés,es La Liga,32,2386,26.5,25,7,5,1,3,4,1,0,0,0,DF,e9ada8cf
+370,Unai López,2023-2024,27,es ESP,Rayo Vallecano,es La Liga,35,2108,23.4,28,7,2,1,2,3,1,0,0,0,MF,88050721
+371,Dion Lopy,2023-2024,21,sn SEN,Almería,es La Liga,30,1916,21.3,23,7,5,0,0,0,0,0,0,0,MF,64c14d49
+372,Anthony Lozano,2023-2024,30,hn HON,2 Teams,es La Liga,19,864,9.6,10,9,15,3,0,3,3,0,0,0,MFFW,38699c72
+373,Lucas,2023-2024,22,br BRA,Cádiz,es La Liga,28,1539,17.1,15,13,9,1,0,1,1,0,0,0,DF,5d68f5b2
+374,José Luis Gayà,2023-2024,28,es ESP,Valencia,es La Liga,24,1791,19.9,22,2,1,1,2,3,1,0,0,0,DF,b05e2dbd
+375,Mario de Luis,2023-2024,21,es ESP,Real Madrid,es La Liga,0,,,0,0,3,,,,,,,,GK,3813d6d4
+376,José Luis Morales,2023-2024,36,es ESP,Villarreal,es La Liga,29,1048,11.6,8,21,9,7,0,7,7,0,0,0,FWMF,4a478107
+377,Dodi Lukebakio,2023-2024,25,be BEL,Sevilla,es La Liga,23,1125,12.5,12,11,1,5,1,6,5,0,0,0,FWMF,0c61c77c
+378,Daniel Luna,2023-2024,20,co COL,Mallorca,es La Liga,0,,,0,0,13,,,,,,,,MF,410b16e3
+379,Andriy Lunin,2023-2024,24,ua UKR,Real Madrid,es La Liga,21,1890,21.0,21,0,17,0,0,0,0,0,0,0,GK,3061e1ec
+380,Darwin Machís,2023-2024,30,ve VEN,Cádiz,es La Liga,21,785,8.7,10,11,12,4,0,4,3,1,1,0,MF,ed6ea4d9
+381,Pablo Maffeo,2023-2024,26,es ESP,Mallorca,es La Liga,22,1454,16.2,17,5,5,1,2,3,1,0,0,0,DF,5db04597
+382,Jon Magunacelaya,2023-2024,23,es ESP,Real Sociedad,es La Liga,5,121,1.3,1,4,14,0,0,0,0,0,0,0,FWMF,d4808594
+383,Nemanja Maksimović,2023-2024,28,rs SRB,Getafe,es La Liga,37,3265,36.3,37,0,0,4,0,4,4,0,0,0,MF,00b28772
+384,Giorgi Mamardashvili,2023-2024,22,ge GEO,Valencia,es La Liga,37,3284,36.5,37,0,0,0,0,0,0,0,0,0,GK,d4b73232
+385,Wilson Manafá,2023-2024,29,pt POR,Granada,es La Liga,4,240,2.7,3,1,14,0,0,0,0,0,0,0,DFMF,e27fdbca
+386,Reinildo Mandava,2023-2024,29,mz MOZ,Atlético Madrid,es La Liga,16,731,8.1,7,9,8,2,1,3,2,0,0,0,DF,c20bdcd7
+387,Aïssa Mandi,2023-2024,31,dz ALG,Villarreal,es La Liga,16,1113,12.4,12,4,16,1,0,1,1,0,0,0,DF,fbd6378b
+388,Javier Manquillo,2023-2024,29,es ESP,Celta Vigo,es La Liga,12,744,8.3,10,2,3,0,1,1,0,0,0,0,DFMF,758dd7f0
+389,Faitout Maouassa,2023-2024,25,fr FRA,Granada,es La Liga,6,229,2.5,2,4,11,0,1,1,0,0,0,0,DFMF,e54a9890
+390,Nikola Maraš,2023-2024,27,rs SRB,Alavés,es La Liga,0,,,0,0,20,,,,,,,,DF,b9d0446f
+391,Marcão,2023-2024,27,br BRA,Sevilla,es La Liga,7,355,3.9,3,4,13,0,0,0,0,0,0,0,DF,133faa84
+392,Agustín Marchesín,2023-2024,35,ar ARG,Celta Vigo,es La Liga,0,,,0,0,18,,,,,,,,GK,853b7c48
+393,Óscar de Marcos,2023-2024,34,es ESP,Athletic Club,es La Liga,28,2258,25.1,26,2,4,1,5,6,1,0,0,0,DF,9f323c71
+394,Alberto Marí,2023-2024,22,es ESP,Valencia,es La Liga,16,276,3.1,2,14,6,1,1,2,0,1,1,0,FW,44330c36
+395,José Mari,2023-2024,35,es ESP,Cádiz,es La Liga,3,14,0.2,0,3,14,0,0,0,0,0,0,0,MFFW,6f4c734d
+396,José María Giménez,2023-2024,28,uy URU,Atlético Madrid,es La Liga,22,1326,14.7,14,8,2,0,0,0,0,0,0,0,DF,f0da930c
+397,Mariano,2023-2024,29,do DOM,Sevilla,es La Liga,9,244,2.7,2,7,5,0,0,0,0,0,0,0,FWMF,5c4dc0ff
+398,Rafa Marín,2023-2024,21,es ESP,Alavés,es La Liga,33,2443,27.1,27,6,3,0,0,0,0,0,0,0,DF,3239a8ed
+399,Pablo Marín,2023-2024,20,es ESP,Real Sociedad,es La Liga,0,,,0,0,12,,,,,,,,MF,a83c19cf
+400,Diego Mariño,2023-2024,33,es ESP,Almería,es La Liga,1,90,1.0,1,0,37,0,0,0,0,0,0,0,GK,d9235a45
+401,Mika Màrmol,2023-2024,21,es ESP,Las Palmas,es La Liga,36,3178,35.3,36,0,1,0,1,1,0,0,0,0,DF,e7630876
+402,Unai Marrero,2023-2024,21,es ESP,Real Sociedad,es La Liga,2,142,1.6,1,1,36,0,0,0,0,0,0,0,GK,f0fe87dc
+403,Roger Martí,2023-2024,32,es ESP,Cádiz,es La Liga,23,1359,15.1,18,5,2,2,3,5,2,0,0,0,FW,0ae4e09a
+404,Iván Martín,2023-2024,24,es ESP,Girona,es La Liga,36,2729,30.3,33,3,1,5,4,9,5,0,0,0,MF,ae48c5cb
+405,Jon Martin,2023-2024,17,es ESP,Real Sociedad,es La Liga,1,24,0.3,0,1,8,0,0,0,0,0,0,0,DF,df33ecb5
+406,Mario Martín,2023-2024,19,es ESP,Real Madrid,es La Liga,2,18,0.2,0,2,3,0,0,0,0,0,0,0,MF,a9aff11a
+407,Arnau Martinez,2023-2024,20,es ESP,Girona,es La Liga,21,1241,13.8,14,7,15,0,2,2,0,0,0,0,DF,c3e66ffe
+408,Iñigo Martínez,2023-2024,32,es ESP,Barcelona,es La Liga,20,1296,14.4,13,7,7,0,0,0,0,0,0,0,DF,3fc45c73
+409,Javi Martínez,2023-2024,23,es ESP,Osasuna,es La Liga,0,,,0,0,2,,,,,,,,MF,3672b352
+410,Marc Martínez,2023-2024,33,es ESP,Granada,es La Liga,3,270,3.0,3,0,14,0,0,0,0,0,0,0,GK,3496ff67
+411,Javi Martón,2023-2024,24,es ESP,Athletic Club,es La Liga,0,,,0,0,3,,,,,,,,FW,2381eead
+412,Marvin,2023-2024,23,es ESP,Las Palmas,es La Liga,31,1855,20.6,17,14,1,0,2,2,0,0,0,0,FWDF,efaefda0
+413,Omar Mascarell,2023-2024,30,gq EQG,Mallorca,es La Liga,29,1571,17.5,18,11,5,0,0,0,0,0,0,0,MF,11fd2b75
+414,Pau Mascaró,2023-2024,18,es ESP,Mallorca,es La Liga,0,,,0,0,3,,,,,,,,FW,7c2d3600
+415,Jaime Mata,2023-2024,34,es ESP,Getafe,es La Liga,35,1787,19.9,22,13,1,5,1,6,5,0,0,0,FWMF,02319ad7
+416,Luís Maximiano,2023-2024,24,pt POR,Almería,es La Liga,33,2970,33.0,33,0,4,0,0,0,0,0,0,0,GK,3318286e
+417,Borja Mayoral,2023-2024,26,es ESP,Getafe,es La Liga,27,2153,23.9,25,2,0,15,1,16,11,4,4,0,FW,64e8ed6d
+418,Mamadou Mbaye,2023-2024,25,sn SEN,Cádiz,es La Liga,4,288,3.2,2,2,27,0,0,0,0,0,0,0,DF,8aae94b9
+419,Djordjije Medenica,2023-2024,16,es ESP,Getafe,es La Liga,0,,,0,0,7,,,,,,,,GK,23500c0a
+420,Hannibal Mejbri,2023-2024,20,tn TUN,Sevilla,es La Liga,6,104,1.2,1,5,11,0,0,0,0,0,0,0,MF,ca22ccb0
+421,Óscar Melendo,2023-2024,25,es ESP,Granada,es La Liga,26,1122,12.5,15,11,10,0,0,0,0,0,0,0,MFFW,379652be
+422,Gonzalo Melero,2023-2024,29,es ESP,Almería,es La Liga,28,1103,12.3,10,18,3,1,1,2,1,0,0,0,MFFW,3902e91b
+423,Memphis,2023-2024,29,nl NED,Atlético Madrid,es La Liga,23,893,9.9,9,14,3,5,1,6,5,0,0,0,FW,8f696594
+424,Houboulang Mendes,2023-2024,25,gw GNB,Almería,es La Liga,7,396,4.4,4,3,6,0,0,0,0,0,0,0,DF,1545cf15
+425,Tomás Mendes,2023-2024,18,es ESP,Alavés,es La Liga,1,6,0.1,0,1,8,0,0,0,0,0,0,0,MF,45f771db
+426,Brais Méndez,2023-2024,26,es ESP,Real Sociedad,es La Liga,32,2413,26.8,27,5,1,5,6,11,5,0,0,0,MFFW,c9e39d91
+427,Bruno Méndez,2023-2024,23,uy URU,Granada,es La Liga,17,1333,14.8,15,2,1,2,0,2,2,0,0,0,DF,66017b9d
+428,Diego Méndez,2023-2024,19,es ESP,Rayo Vallecano,es La Liga,1,5,0.1,0,1,13,0,0,0,0,0,0,0,MF,b151a3f2
+429,Ferland Mendy,2023-2024,28,fr FRA,Real Madrid,es La Liga,23,1720,19.1,21,2,5,0,0,0,0,0,0,0,DF,3cefcaef
+430,Nobel Mendy,2023-2024,18,fr FRA,Betis,es La Liga,0,,,0,0,4,,,,,,,,DF,7e64e657
+431,Jorge Meré,2023-2024,26,es ESP,Cádiz,es La Liga,10,673,7.5,8,2,16,0,0,0,0,0,0,0,DF,9f979eb2
+432,Mikel Merino,2023-2024,27,es ESP,Real Sociedad,es La Liga,32,2482,27.6,27,5,3,5,3,8,5,0,0,0,MF,d080ed5e
+433,Sergio Mestre,2023-2024,18,es ESP,Atlético Madrid,es La Liga,0,,,0,0,1,,,,,,,,GK,b2cd9dff
+434,Omenuke Mfulu,2023-2024,29,cd COD,Las Palmas,es La Liga,5,82,0.9,1,4,17,0,0,0,0,0,0,0,MFFW,bdc14559
+435,Miguel,2023-2024,23,es ESP,Alavés,es La Liga,3,65,0.7,1,2,0,0,0,0,0,0,0,0,FWMF,6763373d
+436,Miguelito,2023-2024,22,es ESP,Mallorca,es La Liga,0,,,0,0,2,,,,,,,,DF,ebb24144
+437,Éder Militão,2023-2024,25,br BRA,Real Madrid,es La Liga,10,496,5.5,6,4,0,0,0,0,0,0,0,0,DF,2784f898
+438,Luis Milla,2023-2024,28,es ESP,Getafe,es La Liga,27,2115,23.5,25,2,0,0,1,1,0,0,0,0,MF,19c36442
+439,Marko Milovanović,2023-2024,19,rs SRB,Almería,es La Liga,11,308,3.4,2,9,14,1,0,1,1,0,0,0,FWMF,1fda2b14
+440,Óscar Mingueza,2023-2024,24,es ESP,Celta Vigo,es La Liga,38,2998,33.3,33,5,0,2,2,4,2,0,0,0,DFMF,056269d7
+441,Ignasi Miquel,2023-2024,30,es ESP,Granada,es La Liga,34,2992,33.2,33,1,1,1,1,2,1,0,0,0,DF,174f09a6
+442,Rafa Mir,2023-2024,26,es ESP,Sevilla,es La Liga,15,391,4.3,3,12,8,2,0,2,2,0,0,0,FWMF,bbf5c11b
+443,Juan Miranda,2023-2024,23,es ESP,Betis,es La Liga,25,1858,20.6,21,4,10,1,1,2,1,0,0,0,DF,ead61f73
+444,Stefan Mitrović,2023-2024,33,rs SRB,Getafe,es La Liga,11,699,7.8,9,2,10,1,0,1,1,0,0,0,DF,e6777e6b
+445,Luka Modrić,2023-2024,37,hr CRO,Real Madrid,es La Liga,32,1688,18.8,18,14,5,2,6,8,2,0,0,0,MF,6025fab1
+446,Johan Mojica,2023-2024,30,co COL,Osasuna,es La Liga,30,2041,22.7,22,8,3,0,3,3,0,0,0,0,DF,608f2092
+447,Horaţiu Moldovan,2023-2024,25,ro ROU,Atlético Madrid,es La Liga,0,,,0,0,18,,,,,,,,GK,771ded26
+448,Alberto Moleiro,2023-2024,19,es ESP,Las Palmas,es La Liga,28,1803,20.0,21,7,0,3,3,6,3,0,0,0,FWMF,c2c8897d
+449,Nahuel Molina,2023-2024,25,ar ARG,Atlético Madrid,es La Liga,30,1852,20.6,19,11,2,2,3,5,2,0,0,0,DF,23610943
+450,Jon Moncayola,2023-2024,25,es ESP,Osasuna,es La Liga,33,1800,20.0,21,12,2,1,3,4,1,0,0,0,MF,9939e168
+451,Eric Monjonell,2023-2024,21,es ESP,Girona,es La Liga,0,,,0,0,2,,,,,,,,DF,42593c71
+452,Rubén Montero,2023-2024,17,es ESP,Alavés,es La Liga,0,,,0,0,5,,,,,,,,GK,e4bf75c5
+453,César Montes,2023-2024,26,mx MEX,Almería,es La Liga,21,1788,19.9,21,0,7,0,0,0,0,0,0,0,DF,28e957d7
+454,Gonzalo Montiel,2023-2024,26,ar ARG,Sevilla,es La Liga,0,,,0,0,1,,,,,,,,DF,374d5158
+455,Alejandro Morata,2023-2024,17,es ESP,Cádiz,es La Liga,0,,,0,0,2,,,,,,,,DF,25333763
+456,Álvaro Morata,2023-2024,30,es ESP,Atlético Madrid,es La Liga,32,1904,21.2,21,11,2,15,3,18,15,0,1,1,FW,129af0db
+457,Alberto Moreno,2023-2024,31,es ESP,Villarreal,es La Liga,27,1484,16.5,17,10,3,2,2,4,2,0,0,0,DF,11b9265b
+458,Gerard Moreno,2023-2024,31,es ESP,Villarreal,es La Liga,30,2215,24.6,28,2,2,10,6,16,8,2,3,1,FW,81f0781e
+459,Jorge Moreno,2023-2024,22,es ESP,2 Teams,es La Liga,1,15,0.2,0,1,2,0,0,0,0,0,0,0,DF,1f875ef8
+460,Marco Moreno,2023-2024,22,es ESP,Atlético Madrid,es La Liga,0,,,0,0,6,,,,,,,,DF,9602ef3b
+461,Ilaix Moriba,2023-2024,20,gn GUI,Getafe,es La Liga,14,605,6.7,8,6,0,0,2,2,0,0,0,0,MFFW,f4c69aa6
+462,Manu Morlanes,2023-2024,24,es ESP,Mallorca,es La Liga,35,1615,17.9,16,19,2,0,2,2,0,0,0,0,MF,a0255c67
+463,Morro,2023-2024,22,es ESP,Rayo Vallecano,es La Liga,0,,,0,0,1,,,,,,,,GK,117cd0a8
+464,Cristhian Mosquera,2023-2024,19,es ESP,Valencia,es La Liga,36,3075,34.2,33,3,1,0,0,0,0,0,0,0,DF,dc1ce4f5
+465,Yerson Mosquera,2023-2024,22,co COL,Villarreal,es La Liga,16,1229,13.7,14,2,1,2,1,3,2,0,0,0,DF,1e159d70
+466,Abdul Mumin,2023-2024,25,gh GHA,Rayo Vallecano,es La Liga,20,1694,18.8,19,1,15,1,0,1,1,0,0,0,DF,5487adcd
+467,Iker Muniain,2023-2024,30,es ESP,Athletic Club,es La Liga,20,594,6.6,5,15,15,2,0,2,2,0,0,0,MFFW,c05dfb74
+468,Aihen Muñoz,2023-2024,25,es ESP,Real Sociedad,es La Liga,21,1127,12.5,11,10,0,0,2,2,0,0,0,0,DF,228b0d9d
+469,Egoitz Muñoz,2023-2024,18,es ESP,Alavés,es La Liga,0,,,0,0,5,,,,,,,,DF,48e96631
+470,Iker Muñoz,2023-2024,20,es ESP,Osasuna,es La Liga,28,1854,20.6,20,8,10,4,0,4,4,0,0,0,MF,175ece4c
+471,Javier Muñoz,2023-2024,28,es ESP,Las Palmas,es La Liga,37,2640,29.3,30,7,0,2,3,5,2,0,0,0,MF,ec7c84c2
+472,Pablo Muñoz,2023-2024,19,es ESP,Rayo Vallecano,es La Liga,0,,,0,0,1,,,,,,,,MF,44e8521b
+473,Vedat Muriqi,2023-2024,29,xk KVX,Mallorca,es La Liga,29,2327,25.9,25,4,0,7,2,9,6,1,3,2,FW,0cadc46d
+474,Nacho,2023-2024,33,es ESP,Real Madrid,es La Liga,29,1746,19.4,18,11,5,0,1,1,0,0,0,0,DF,2946f9a1
+475,Matija Nastasić,2023-2024,30,rs SRB,Mallorca,es La Liga,26,2258,25.1,25,1,7,2,0,2,2,0,0,0,DF,f35430a4
+476,Roberto Navarro,2023-2024,21,es ESP,2 Teams,es La Liga,28,1888,21.0,24,4,7,1,1,2,1,0,0,0,MF,c997b942
+477,Jesús Navas,2023-2024,37,es ESP,Sevilla,es La Liga,29,2003,22.3,25,4,1,0,2,2,0,0,0,0,DF,3f10bd22
+478,Álvaro Negredo,2023-2024,37,es ESP,Cádiz,es La Liga,7,54,0.6,0,7,15,0,0,0,0,0,0,0,FWMF,63b0ca6b
+479,Carlos Neva,2023-2024,27,es ESP,Granada,es La Liga,36,3146,35.0,36,0,2,0,2,2,0,0,0,0,DF,8d47bb39
+480,Mikayil Ngor Faye,2023-2024,19,sn SEN,Barcelona,es La Liga,0,,,0,0,3,,,,,,,,MF,b37ae816
+481,Tanguy Nianzou,2023-2024,21,fr FRA,Sevilla,es La Liga,8,318,3.5,3,5,15,0,0,0,0,0,0,0,DF,5853ac44
+482,Saúl Ñíguez,2023-2024,28,es ESP,Atlético Madrid,es La Liga,34,1374,15.3,14,20,3,1,4,5,1,0,0,0,MF,c14bc029
+483,Adrian Niño,2023-2024,19,es ESP,Atlético Madrid,es La Liga,0,,,0,0,2,,,,,,,,FW,5b9067c9
+484,Aristide Njalla,2023-2024,20,cm CMR,Cádiz,es La Liga,0,,,0,0,1,,,,,,,,MF,1bc63a4e
+485,Peru Nolaskoain,2023-2024,24,es ESP,Athletic Club,es La Liga,2,10,0.1,0,2,12,0,0,0,0,0,0,0,DFMF,857cb4f3
+486,Randy Nteka,2023-2024,25,ao ANG,Rayo Vallecano,es La Liga,16,572,6.4,3,13,12,1,1,2,0,1,1,0,FWMF,a6103274
+487,Unai Núñez,2023-2024,26,es ESP,Celta Vigo,es La Liga,34,2801,31.1,31,3,4,1,0,1,1,0,0,0,DF,be170419
+488,Ørjan Nyland,2023-2024,32,no NOR,Sevilla,es La Liga,24,2160,24.0,24,0,4,0,0,0,0,0,0,0,GK,bdedffac
+489,Jan Oblak,2023-2024,30,si SVN,Atlético Madrid,es La Liga,38,3420,38.0,38,0,0,0,0,0,0,0,0,0,GK,ee8508c0
+490,Brian Ocampo,2023-2024,24,uy URU,Cádiz,es La Liga,13,248,2.8,1,12,9,1,0,1,1,0,0,0,MFFW,2e3995cd
+491,Lucas Ocampos,2023-2024,29,ar ARG,Sevilla,es La Liga,35,2871,31.9,34,1,1,4,3,7,3,1,1,0,FWMF,a08b974a
+492,Álvaro Odriozola,2023-2024,27,es ESP,2 Teams,es La Liga,9,393,4.4,6,3,16,0,0,0,0,0,0,0,DF,1d1691ad
+493,Aingeru Olabarrieta,2023-2024,17,es ESP,Athletic Club,es La Liga,1,9,0.1,0,1,3,0,0,0,0,0,0,0,FW,b7e92b0e
+494,Olasagasti,2023-2024,22,es ESP,Real Sociedad,es La Liga,14,360,4.0,2,12,23,0,0,0,0,0,0,0,MF,3d99999d
+495,Samu Omorodion,2023-2024,19,es ESP,2 Teams,es La Liga,35,1998,22.2,22,13,1,9,1,10,9,0,0,0,FW,dc44b03c
+496,Aimar Oroz,2023-2024,21,es ESP,Osasuna,es La Liga,33,2339,26.0,26,7,0,2,1,3,1,1,1,0,MF,7c363088
+497,Eneko Ortiz,2023-2024,20,es ESP,Alavés,es La Liga,1,14,0.2,0,1,8,0,0,0,0,0,0,0,DF,dc5ea86b
+498,Asier Osambela,2023-2024,19,es ESP,Osasuna,es La Liga,1,9,0.1,0,1,2,0,0,0,0,0,0,0,MF,e87c44a9
+499,Milutin Osmajić,2023-2024,24,me MNE,Cádiz,es La Liga,1,5,0.1,0,1,2,0,0,0,0,0,0,0,MF,375ed9d7
+500,David Otorbi,2023-2024,15,es ESP,Valencia,es La Liga,0,,,0,0,5,,,,,,,,FW,c83e3553
+501,Aiham Ousou,2023-2024,23,sy SYR,Cádiz,es La Liga,6,430,4.8,5,1,5,0,0,0,0,0,0,0,DF,2973a975
+502,Jesús Owono,2023-2024,22,gq EQG,Alavés,es La Liga,4,360,4.0,4,0,31,0,0,0,0,0,0,0,GK,d6e3d7fb
+503,Mikel Oyarzabal,2023-2024,26,es ESP,Real Sociedad,es La Liga,33,2156,24.0,23,10,1,9,3,12,7,2,2,0,FWMF,8c3c640c
+504,Cenk Özkacar,2023-2024,22,tr TUR,Valencia,es La Liga,23,1598,17.8,18,5,13,0,0,0,0,0,0,0,DF,9a93efc9
+505,Jon Pacheco,2023-2024,22,es ESP,Real Sociedad,es La Liga,23,1526,17.0,16,7,13,1,1,2,1,0,0,0,DF,44150beb
+506,Gonçalo Paciência,2023-2024,28,pt POR,Celta Vigo,es La Liga,0,,,0,0,1,,,,,,,,FW,962e54cb
+507,Alex Padilla,2023-2024,19,es ESP,Athletic Club,es La Liga,0,,,0,0,2,,,,,,,,GK,a275838a
+508,Isaac Palazón Camacho,2023-2024,28,es ESP,Rayo Vallecano,es La Liga,37,2791,31.0,34,3,0,4,1,5,2,2,2,0,MFFW,49dbab27
+509,Joaquín Panichelli,2023-2024,20,ar ARG,Alavés,es La Liga,8,226,2.5,2,6,8,0,0,0,0,0,0,0,FWMF,ae14af56
+510,Sokratis Papastathopoulos,2023-2024,35,gr GRE,Betis,es La Liga,15,1136,12.6,12,3,9,0,0,0,0,0,0,0,DF,b682dcf6
+511,Victor Parada,2023-2024,21,es ESP,Alavés,es La Liga,2,3,0.0,0,2,8,0,0,0,0,0,0,0,FWMF,8ca358c5
+512,Aitor Paredes,2023-2024,23,es ESP,Athletic Club,es La Liga,34,2704,30.0,31,3,2,1,0,1,1,0,0,0,DF,b906757a
+513,Daniel Parejo,2023-2024,34,es ESP,Villarreal,es La Liga,33,2580,28.7,29,4,1,3,5,8,0,3,3,0,MF,7460ca0d
+514,Pascu,2023-2024,20,es ESP,Villarreal,es La Liga,1,14,0.2,0,1,2,0,0,0,0,0,0,0,FW,a2d9cf74
+515,Martín Pascual,2023-2024,23,es ESP,Rayo Vallecano,es La Liga,0,,,0,0,25,,,,,,,,DF,12efd7f9
+516,Gabriel Paulista,2023-2024,32,br BRA,2 Teams,es La Liga,23,1803,20.0,21,2,9,0,0,0,0,0,0,0,DF,b7ca5c51
+517,Nicolás Paz,2023-2024,18,ar ARG,Real Madrid,es La Liga,4,23,0.3,0,4,8,0,0,0,0,0,0,0,MFFW,01bb93d5
+518,Alfonso Pedraza,2023-2024,27,es ESP,Villarreal,es La Liga,19,1116,12.4,14,5,0,1,3,4,1,0,0,0,DF,63f04c6c
+519,Pedri,2023-2024,20,es ESP,Barcelona,es La Liga,24,1476,16.4,16,8,0,4,2,6,4,0,0,0,MFFW,0d9b2d31
+520,Adrià Pedrosa,2023-2024,25,es ESP,Sevilla,es La Liga,31,1753,19.5,15,16,4,1,4,5,1,0,0,0,DF,112521d1
+521,Pejiño,2023-2024,27,es ESP,Las Palmas,es La Liga,17,504,5.6,6,11,15,2,0,2,2,0,0,0,FW,8c4e56cb
+522,Facundo Pellistri,2023-2024,21,uy URU,Granada,es La Liga,15,1232,13.7,14,1,0,2,1,3,2,0,0,0,MFFW,ac7e7b1c
+523,Iñaki Peña,2023-2024,24,es ESP,Barcelona,es La Liga,10,900,10.0,10,0,25,0,0,0,0,0,0,0,GK,cc1c5035
+524,Marcos Peña,2023-2024,18,es ESP,Almería,es La Liga,7,441,4.9,4,3,5,0,0,0,0,0,0,0,MF,736c14ec
+525,Rubén Peña,2023-2024,32,es ESP,Osasuna,es La Liga,29,2088,23.2,26,3,2,0,2,2,0,0,0,0,DFFW,1f079188
+526,Alberto Perea,2023-2024,32,es ESP,Granada,es La Liga,2,2,0.0,0,2,12,0,0,0,0,0,0,0,MFFW,5496cc91
+527,Ayoze Pérez,2023-2024,30,es ESP,Betis,es La Liga,31,2294,25.5,29,2,1,9,1,10,9,0,0,0,FW,819aa8e7
+528,Carles Pérez,2023-2024,25,es ESP,Celta Vigo,es La Liga,16,772,8.6,7,9,13,1,1,2,1,0,0,0,MFDF,a8f21b9f
+529,Francisco Perez,2023-2024,20,es ESP,Valencia,es La Liga,32,2049,22.8,27,5,0,1,4,5,1,0,0,0,MFFW,3d79a68c
+530,Kike Pérez,2023-2024,26,es ESP,Rayo Vallecano,es La Liga,24,835,9.3,9,15,8,1,0,1,1,0,0,0,MFFW,237a3851
+531,Máximo Perrone,2023-2024,20,ar ARG,Las Palmas,es La Liga,29,1623,18.0,20,9,4,0,0,0,0,0,0,0,MF,53552942
+532,Njegoš Petrović,2023-2024,24,rs SRB,Granada,es La Liga,10,157,1.7,0,10,10,0,0,0,0,0,0,0,MFFW,0cb29e91
+533,Germán Pezzella,2023-2024,32,ar ARG,Betis,es La Liga,32,2767,30.7,32,0,1,1,0,1,1,0,0,0,DF,8c725b43
+534,Kamil Piątkowski,2023-2024,23,pl POL,Granada,es La Liga,9,505,5.6,6,3,8,0,0,0,0,0,0,0,DF,2cf496fb
+535,Diego Piñeiro,2023-2024,19,es ESP,Real Madrid,es La Liga,0,,,0,0,14,,,,,,,,GK,ef6a4afe
+536,Yeremi Pino,2023-2024,20,es ESP,Villarreal,es La Liga,7,475,5.3,7,0,1,0,0,0,0,0,0,0,MFFW,540ec57b
+537,Xavi Pleguezuelo,2023-2024,20,es ESP,Betis,es La Liga,0,,,0,0,7,,,,,,,,DF,b3d15741
+538,Portu,2023-2024,31,es ESP,2 Teams,es La Liga,36,1285,14.3,11,25,2,7,5,12,7,0,0,0,FW,1bda5842
+539,José Pozo,2023-2024,27,es ESP,Rayo Vallecano,es La Liga,2,19,0.2,0,2,29,0,0,0,0,0,0,0,MF,fc8b614b
+540,Alejandro Pozo Pozo,2023-2024,24,es ESP,Almería,es La Liga,21,976,10.8,9,12,15,0,0,0,0,0,0,0,DFMF,3c16d927
+541,Beñat Prados,2023-2024,22,es ESP,Athletic Club,es La Liga,26,1449,16.1,16,10,12,0,0,0,0,0,0,0,MFDF,1f60244a
+542,Abdón Prats,2023-2024,30,es ESP,Mallorca,es La Liga,34,1270,14.1,11,23,4,6,1,7,6,0,0,0,FWMF,d1b060e2
+543,Pau Prim,2023-2024,17,es ESP,Barcelona,es La Liga,0,,,0,0,1,,,,,,,,MF,9597e6d4
+544,Marc Pubill,2023-2024,20,es ESP,Almería,es La Liga,23,1883,20.9,22,1,1,1,3,4,1,0,0,0,DF,365113c0
+545,Antonio Puertas,2023-2024,31,es ESP,Granada,es La Liga,27,730,8.1,6,21,5,0,2,2,0,0,2,2,MFFW,c77a8043
+546,Arnau Puigmal,2023-2024,22,es ESP,Almería,es La Liga,11,255,2.8,3,8,8,0,0,0,0,0,0,0,FWDF,39352da2
+547,Edgar Pujol,2023-2024,18,es ESP,Real Madrid,es La Liga,0,,,0,0,1,,,,,,,,DF,ff36ea10
+548,Alex Quevedo,2023-2024,19,es ESP,Mallorca,es La Liga,0,,,0,0,1,,,,,,,,GK,e9dded8a
+549,Rubén Quintanilla,2023-2024,21,es ESP,Mallorca,es La Liga,0,,,0,0,8,,,,,,,,MF,2f456b86
+550,Nemanja Radonjić,2023-2024,27,rs SRB,Mallorca,es La Liga,11,353,3.9,4,7,4,0,0,0,0,0,0,0,MFDF,0630eb63
+551,Aleksandar Radovanović,2023-2024,29,rs SRB,Almería,es La Liga,9,569,6.3,8,1,3,0,0,0,0,0,0,0,DF,09507ffa
+552,Rafa,2023-2024,19,es ESP,Sevilla,es La Liga,0,,,0,0,4,,,,,,,,GK,7bf09d25
+553,Abdellah Raihani,2023-2024,19,ma MAR,Atlético Madrid,es La Liga,1,10,0.1,0,1,0,0,0,0,0,0,0,0,FW,16ec501b
+554,Antonio Raillo,2023-2024,31,es ESP,Mallorca,es La Liga,26,2195,24.4,25,1,3,3,2,5,3,0,0,0,DF,b857bd29
+555,Predrag Rajković,2023-2024,27,rs SRB,Mallorca,es La Liga,36,3240,36.0,36,0,2,0,0,0,0,0,0,0,GK,58ad9383
+556,Ivan Rakitić,2023-2024,35,hr CRO,Sevilla,es La Liga,18,1425,15.8,16,2,2,2,1,3,2,0,0,0,MF,89f951b5
+557,Largie Ramazani,2023-2024,22,be BEL,Almería,es La Liga,29,1555,17.3,16,13,2,3,5,8,3,0,0,0,FWMF,cc9256ef
+558,Benito Ramírez,2023-2024,28,es ESP,Las Palmas,es La Liga,20,384,4.3,2,18,10,1,1,2,1,0,0,0,FWMF,db714daf
+559,Sandro Ramírez,2023-2024,28,es ESP,Las Palmas,es La Liga,27,1808,20.1,21,6,3,1,3,4,1,0,1,1,FW,833fb62e
+560,Jacobo Ramón,2023-2024,18,es ESP,Real Madrid,es La Liga,0,,,0,0,3,,,,,,,,DF,4772b1d1
+561,Chris Ramos,2023-2024,26,es ESP,Cádiz,es La Liga,37,2612,29.0,30,7,0,5,1,6,5,0,0,0,FWMF,44e07fac
+562,Sergio Ramos,2023-2024,37,es ESP,Sevilla,es La Liga,28,2517,28.0,28,0,3,3,0,3,3,0,0,0,DF,08511d65
+563,Abraham Rando,2023-2024,22,es ESP,Villarreal,es La Liga,0,,,0,0,1,,,,,,,,DF,68c28f7e
+564,Raphinha,2023-2024,26,br BRA,Barcelona,es La Liga,28,1368,15.2,17,11,2,6,9,15,5,1,1,0,FWMF,3423f250
+565,Andrei Ratiu,2023-2024,25,ro ROU,Rayo Vallecano,es La Liga,12,630,7.0,6,6,22,0,0,0,0,0,0,0,DFMF,b1b99435
+566,Raúl,2023-2024,22,es ESP,Osasuna,es La Liga,35,1355,15.1,13,22,2,6,1,7,6,0,0,0,FW,18f0a9f0
+567,Abderrahman Rebbach,2023-2024,24,dz ALG,Alavés,es La Liga,23,722,8.0,6,17,15,1,0,1,1,0,0,0,FWMF,9a796115
+568,Pepe Reina,2023-2024,40,es ESP,Villarreal,es La Liga,2,180,2.0,2,0,29,0,0,0,0,0,0,0,GK,e358587b
+569,Álex Remiro,2023-2024,28,es ESP,Real Sociedad,es La Liga,37,3275,36.4,37,0,0,0,0,0,0,0,0,0,GK,374ee424
+570,Chadi Riad,2023-2024,20,ma MAR,Betis,es La Liga,26,2164,24.0,24,2,7,0,0,0,0,0,0,0,DF,b3b9b8b8
+571,Diego Rico,2023-2024,30,es ESP,2 Teams,es La Liga,32,2535,28.2,28,4,3,0,7,7,0,0,0,0,DF,d9ba39fc
+572,Hugo Rincón,2023-2024,20,es ESP,Athletic Club,es La Liga,0,,,0,0,11,,,,,,,,DF,99d98362
+573,Luis Rioja,2023-2024,29,es ESP,Alavés,es La Liga,37,2498,27.8,31,6,1,5,4,9,2,3,4,1,FWMF,eb3dd471
+574,Rodrigo Riquelme,2023-2024,23,es ESP,Atlético Madrid,es La Liga,34,1528,17.0,17,17,4,3,5,8,3,0,0,0,DFMF,65154df0
+575,Alberto Risco,2023-2024,17,es ESP,Getafe,es La Liga,4,137,1.5,1,3,4,0,0,0,0,0,0,0,MF,36286814
+576,Mihailo Ristić,2023-2024,27,rs SRB,Celta Vigo,es La Liga,12,808,9.0,9,3,7,0,0,0,0,0,0,0,DFMF,ea0aa7e0
+577,Gorka Rivera Alonso,2023-2024,18,es ESP,Getafe,es La Liga,1,3,0.0,0,1,3,0,0,0,0,0,0,0,DF,f1124008
+578,Sergi Roberto,2023-2024,31,es ESP,Barcelona,es La Liga,14,860,9.6,10,4,14,3,2,5,3,0,0,0,MFDF,335fa267
+579,Lucas Robertone,2023-2024,26,ar ARG,Almería,es La Liga,33,2381,26.5,29,4,0,0,5,5,0,0,0,0,MF,a8981944
+580,Marc Roca,2023-2024,26,es ESP,Betis,es La Liga,26,1980,22.0,24,2,6,2,2,4,2,0,0,0,MF,da27e268
+581,Sergio Rodelas,2023-2024,18,es ESP,Granada,es La Liga,3,122,1.4,2,1,0,0,1,1,0,0,0,0,FWDF,2c9e6bc3
+582,Rodri,2023-2024,23,es ESP,Betis,es La Liga,29,1051,11.7,9,20,8,0,0,0,0,0,0,0,FWMF,85bed4ee
+583,Adrian Rodriguez,2023-2024,22,es ESP,Alavés,es La Liga,0,,,0,0,16,,,,,,,,GK,bf17fb4a
+584,Álvaro Rodríguez,2023-2024,19,uy URU,Real Madrid,es La Liga,1,1,0.0,0,1,0,0,0,0,0,0,0,0,FW,49a6ecbb
+585,Óscar Rodríguez Arnaiz,2023-2024,25,es ESP,Getafe,es La Liga,24,967,10.7,9,15,9,2,1,3,2,0,0,0,MFFW,19709006
+586,Damián Rodríguez,2023-2024,20,es ESP,Celta Vigo,es La Liga,5,258,2.9,3,2,4,0,2,2,0,0,0,0,MF,22371dee
+587,Dani Rodríguez,2023-2024,35,es ESP,Mallorca,es La Liga,36,2615,29.1,31,5,1,2,4,6,2,0,0,0,MF,70f8e0bd
+588,Guido Rodríguez,2023-2024,29,ar ARG,Betis,es La Liga,24,1846,20.5,22,2,0,2,0,2,2,0,0,0,MF,34e393f2
+589,Javi Rodríguez,2023-2024,20,es ESP,Celta Vigo,es La Liga,0,,,0,0,6,,,,,,,,DF,08ec5e71
+590,Kirian Rodríguez,2023-2024,27,es ESP,Las Palmas,es La Liga,37,3211,35.7,36,1,0,6,2,8,6,0,0,0,MF,9b130479
+591,Miguel Rodríguez,2023-2024,20,es ESP,Celta Vigo,es La Liga,15,300,3.3,2,13,20,0,0,0,0,0,0,0,MF,958d67bb
+592,Rodrygo,2023-2024,22,br BRA,Real Madrid,es La Liga,34,2380,26.4,28,6,3,10,5,15,10,0,1,1,FW,8f5e92a6
+593,Carlos Romero,2023-2024,21,es ESP,Villarreal,es La Liga,7,262,2.9,2,5,7,0,0,0,0,0,0,0,DF,23cbf863
+594,Isaac Romero,2023-2024,23,es ESP,Sevilla,es La Liga,14,1039,11.5,14,0,0,4,4,8,4,0,0,0,FW,be719093
+595,Luka Romero,2023-2024,18,ar ARG,Almería,es La Liga,13,438,4.9,5,8,4,3,0,3,3,0,0,0,FW,ca6edaa0
+596,Oriol Romeu,2023-2024,31,es ESP,Barcelona,es La Liga,28,936,10.4,11,17,9,0,1,1,0,0,0,0,MF,4b511457
+597,Unai Ropero,2023-2024,21,es ESP,Alavés,es La Liga,1,5,0.1,0,1,1,0,0,0,0,0,0,0,MF,7868c973
+598,Vitor Roque,2023-2024,18,br BRA,Barcelona,es La Liga,14,328,3.6,2,12,5,2,0,2,2,0,0,0,FW,cb00f1e6
+599,Antonio Rüdiger,2023-2024,30,de GER,Real Madrid,es La Liga,33,2709,30.1,30,3,1,1,0,1,1,0,0,0,DF,18b896d6
+600,Javier Rueda Garcia,2023-2024,21,es ESP,Celta Vigo,es La Liga,1,20,0.2,0,1,0,0,0,0,0,0,0,0,MFDF,9ace87ba
+601,Aitor Ruibal,2023-2024,27,es ESP,Betis,es La Liga,18,1017,11.3,11,7,13,2,1,3,2,0,0,0,DFFW,a55d8df5
+602,Sergio Ruiz,2023-2024,28,es ESP,Granada,es La Liga,35,2494,27.7,30,5,1,0,4,4,0,0,0,0,MF,1f423a54
+603,Ruly,2023-2024,23,es ESP,Celta Vigo,es La Liga,0,,,0,0,4,,,,,,,,GK,0b6dcd11
+604,Iñaki Rupérez,2023-2024,20,es ESP,Real Sociedad,es La Liga,0,,,0,0,8,,,,,,,,DF,0607a092
+605,Youssouf Sabaly,2023-2024,30,sn SEN,Betis,es La Liga,12,1046,11.6,12,0,5,0,1,1,0,0,0,0,DF,fbbb9269
+606,Umar Sadiq,2023-2024,26,ng NGA,Real Sociedad,es La Liga,26,1077,12.0,12,14,10,3,1,4,3,0,0,0,FW,686cbe7d
+607,Pablo Saenz,2023-2024,22,es ESP,Granada,es La Liga,1,19,0.2,0,1,1,0,0,0,0,0,0,0,MF,2f9ef1a8
+608,Kike Salas,2023-2024,21,es ESP,Sevilla,es La Liga,23,1605,17.8,19,4,6,3,0,3,3,0,0,0,DF,0a69de7b
+609,Salvi,2023-2024,32,es ESP,Rayo Vallecano,es La Liga,1,28,0.3,0,1,0,0,0,0,0,0,0,0,MF,405f267a
+610,Diadie Samassékou,2023-2024,27,ml MLI,Cádiz,es La Liga,4,92,1.0,0,4,10,0,0,0,0,0,0,0,MF,08593525
+611,Fede San Emeterio,2023-2024,26,es ESP,Cádiz,es La Liga,4,152,1.7,3,1,5,1,0,1,1,0,0,0,MF,efecd633
+612,Oihan Sancet,2023-2024,23,es ESP,Athletic Club,es La Liga,30,1975,21.9,25,5,1,4,5,9,4,0,1,1,MF,bdb624a3
+613,Ricard Sánchez,2023-2024,23,es ESP,Granada,es La Liga,33,2295,25.5,25,8,4,3,0,3,3,0,0,0,DF,fce521d7
+614,Ander Sánchez,2023-2024,19,es ESP,Alavés,es La Liga,0,,,0,0,3,,,,,,,,MF,364cab45
+615,Antonio Sánchez,2023-2024,26,es ESP,Mallorca,es La Liga,29,1452,16.1,21,8,9,3,1,4,3,0,0,0,MF,a254bbe0
+616,Juanlu Sánchez,2023-2024,19,es ESP,Sevilla,es La Liga,26,1181,13.1,11,15,11,0,2,2,0,0,0,0,DF,cc6de655
+617,Manu Sánchez,2023-2024,22,es ESP,Celta Vigo,es La Liga,26,1775,19.7,20,6,11,0,5,5,0,0,0,0,DFMF,ffacd3d5
+618,Lassina Sangare,2023-2024,21,ci CIV,Granada,es La Liga,0,,,0,0,2,,,,,,,,MF,4428c0fc
+619,Jesús Santiago,2023-2024,19,es ESP,Getafe,es La Liga,14,656,7.3,8,6,5,1,0,1,1,0,0,0,MF,bc49fd34
+620,Paco Sanz,2023-2024,18,es ESP,Almería,es La Liga,1,24,0.3,0,1,7,0,0,0,0,0,0,0,DF,b7aa8fd8
+621,Stefan Savić,2023-2024,32,me MNE,Atlético Madrid,es La Liga,23,1630,18.1,19,4,9,0,0,0,0,0,0,0,DF,f6ac68c1
+622,Sávio,2023-2024,19,br BRA,Girona,es La Liga,37,2976,33.1,35,2,0,9,10,19,9,0,0,0,FWMF,fe6e7156
+623,Aleksandar Sedlar,2023-2024,31,rs SRB,Alavés,es La Liga,11,946,10.5,11,0,1,1,0,1,1,0,0,0,DF,a35134ae
+624,André Silva,2023-2024,27,pt POR,Real Sociedad,es La Liga,19,729,8.1,9,10,9,3,0,3,2,1,1,0,FW,3effaa34
+625,Rui Silva,2023-2024,29,pt POR,Betis,es La Liga,28,2475,27.5,28,0,6,0,0,0,0,0,0,0,GK,ea83bfa6
+626,Giuliano Simeone,2023-2024,20,ar ARG,Alavés,es La Liga,14,630,7.0,6,8,6,1,2,3,1,0,1,1,FW,a6536561
+627,Unai Simón,2023-2024,26,es ESP,Athletic Club,es La Liga,36,3182,35.4,36,0,1,0,0,0,0,0,0,0,GK,5dcf3e90
+628,Daley Sinkgraven,2023-2024,28,nl NED,Las Palmas,es La Liga,10,374,4.2,6,4,18,0,0,0,0,0,0,0,DF,73000a79
+629,Xavi Sintes,2023-2024,21,es ESP,Sevilla,es La Liga,0,,,0,0,3,,,,,,,,MF,47d9e72a
+630,Jailson Siqueira,2023-2024,27,br BRA,Celta Vigo,es La Liga,14,897,10.0,9,5,5,0,1,1,0,0,0,0,DFMF,b4819112
+631,Antonio Sivera,2023-2024,26,es ESP,Alavés,es La Liga,34,3060,34.0,34,0,4,0,0,0,0,0,0,0,GK,9970da54
+632,Rubén Sobrino,2023-2024,31,es ESP,Cádiz,es La Liga,32,1646,18.3,18,14,3,0,1,1,0,0,0,0,MFFW,19b776e9
+633,Alex Sola,2023-2024,24,es ESP,2 Teams,es La Liga,31,1292,14.4,14,17,7,0,3,3,0,0,0,0,FWMF,5fa714d5
+634,Jhon Solis,2023-2024,18,co COL,Girona,es La Liga,18,384,4.3,2,16,11,0,0,0,0,0,0,0,MF,1282939a
+635,David Soria,2023-2024,30,es ESP,Getafe,es La Liga,38,3413,37.9,38,0,0,0,0,0,0,0,0,0,GK,8f8c6934
+636,Alberto Soro,2023-2024,24,es ESP,Granada,es La Liga,1,8,0.1,0,1,1,0,0,0,0,0,0,0,MF,452c3055
+637,Hugo Sotelo,2023-2024,19,es ESP,Celta Vigo,es La Liga,17,721,8.0,8,9,20,0,1,1,0,0,0,0,MF,3aa74860
+638,Boubakary Soumaré,2023-2024,24,fr FRA,Sevilla,es La Liga,28,2286,25.4,26,2,3,0,1,1,0,0,0,0,MF,ae59b359
+639,Djibril Sow,2023-2024,26,ch SUI,Sevilla,es La Liga,24,1460,16.2,18,6,3,1,1,2,1,0,0,0,MF,4c6facae
+640,Ibrahima Sow,2023-2024,16,sn SEN,Sevilla,es La Liga,0,,,0,0,3,,,,,,,,FW,c6d0310e
+641,Çağlar Söyüncü,2023-2024,27,tr TUR,Atlético Madrid,es La Liga,6,114,1.3,1,5,8,0,0,0,0,0,0,0,DF,21166ff4
+642,Alexander Sørloth,2023-2024,27,no NOR,Villarreal,es La Liga,34,2489,27.7,30,4,1,23,6,29,23,0,0,0,FW,e92cd3f7
+643,Dimitrios Stamatakis,2023-2024,20,gr GRE,Osasuna,es La Liga,0,,,0,0,9,,,,,,,,GK,21eb5ec9
+644,Carl Starfelt,2023-2024,28,se SWE,Celta Vigo,es La Liga,27,2216,24.6,26,1,7,1,0,1,1,0,0,0,DF,5cfec13d
+645,Jørgen Strand Larsen,2023-2024,23,no NOR,Celta Vigo,es La Liga,37,2863,31.8,36,1,0,13,3,16,13,0,0,0,FW,f553b2b3
+646,Cristhian Stuani,2023-2024,36,uy URU,Girona,es La Liga,31,804,8.9,5,26,1,9,3,12,9,0,0,0,FW,220c11f1
+647,Álex Suárez,2023-2024,30,es ESP,Las Palmas,es La Liga,32,2562,28.5,30,2,5,2,0,2,2,0,0,0,DF,9c137b36
+648,Damián Suárez,2023-2024,35,uy URU,Getafe,es La Liga,16,1299,14.4,15,1,1,0,2,2,0,0,0,0,DF,ba5004e1
+649,Denis Suárez,2023-2024,29,es ESP,Villarreal,es La Liga,4,133,1.5,1,3,1,0,0,0,0,0,0,0,MFFW,12c50af5
+650,Suso,2023-2024,29,es ESP,Sevilla,es La Liga,29,1517,16.9,15,14,1,1,4,5,1,0,0,0,MFFW,4e219ad2
+651,Max Svensson,2023-2024,,es ESP,Osasuna,es La Liga,1,3,0.0,0,1,4,0,0,0,0,0,0,0,FW,cf603737
+652,Martin Šviderský,2023-2024,20,sk SVK,Almería,es La Liga,0,,,0,0,4,,,,,,,,MF,7f6080fe
+653,Williot Swedberg,2023-2024,19,se SWE,Celta Vigo,es La Liga,15,439,4.9,4,11,16,5,0,5,5,0,0,0,FWMF,184fe4b2
+654,Mamadou Sylla,2023-2024,29,sn SEN,Alavés,es La Liga,2,18,0.2,0,2,0,0,0,0,0,0,0,0,FWMF,e5ec95f8
+655,Yassin Tallal,2023-2024,18,es ESP,Getafe,es La Liga,1,3,0.0,0,1,2,0,0,0,0,0,0,0,FW,8388ba65
+656,Renato Tapia,2023-2024,28,pe PER,Celta Vigo,es La Liga,21,1337,14.9,15,6,9,0,0,0,0,0,0,0,MFDF,34269bdf
+657,César Tárrega,2023-2024,21,es ESP,Valencia,es La Liga,1,8,0.1,0,1,10,0,0,0,0,0,0,0,DF,59c29820
+658,Marciano Tchami,2023-2024,19,gw GNB,Almería,es La Liga,6,43,0.5,0,6,6,0,0,0,0,0,0,0,FWMF,19a5c0b6
+659,Aurélien Tchouaméni,2023-2024,23,fr FRA,Real Madrid,es La Liga,27,1987,22.1,22,5,1,3,1,4,3,0,0,0,MFDF,4f255115
+660,Martín Tejón,2023-2024,19,es ESP,Valencia,es La Liga,0,,,0,0,2,,,,,,,,MF,f99cc198
+661,Nahuel Tenaglia,2023-2024,27,ar ARG,Alavés,es La Liga,25,1141,12.7,11,14,9,1,0,1,1,0,0,0,DF,66654daa
+662,Marc-André ter Stegen,2023-2024,31,de GER,Barcelona,es La Liga,28,2520,28.0,28,0,0,0,0,0,0,0,0,0,GK,6f51e382
+663,Ramón Terrats,2023-2024,22,es ESP,Villarreal,es La Liga,19,785,8.7,6,13,7,0,2,2,0,0,0,0,MFDF,f36016a5
+664,Kieran Tierney,2023-2024,26,sct SCO,Real Sociedad,es La Liga,20,1238,13.8,14,6,4,0,2,2,0,0,0,0,DF,fce2302c
+665,Vinicius Tobias,2023-2024,19,br BRA,Real Madrid,es La Liga,0,,,0,0,2,,,,,,,,DF,880d7ee5
+666,Raúl de Tomás,2023-2024,28,es ESP,Rayo Vallecano,es La Liga,25,1272,14.1,15,10,11,1,2,3,0,1,1,0,FW,02ef8778
+667,Pablo Torre,2023-2024,20,es ESP,Girona,es La Liga,26,701,7.8,4,22,10,0,2,2,0,0,0,0,MFFW,04e531b6
+668,Raúl Torrente,2023-2024,21,es ESP,Granada,es La Liga,17,1250,13.9,14,3,13,0,0,0,0,0,0,0,DF,4d753a3f
+669,Ferrán Torres,2023-2024,23,es ESP,Barcelona,es La Liga,29,1211,13.5,12,17,2,7,2,9,7,0,0,0,FW,9e1035f8
+670,Óliver Torres,2023-2024,28,es ESP,Sevilla,es La Liga,27,1616,18.0,18,9,3,0,1,1,0,0,0,0,MF,58a9a4d9
+671,Lucas Torró,2023-2024,29,es ESP,Osasuna,es La Liga,28,1788,19.9,21,7,9,1,0,1,1,0,0,0,MF,0e4fef6e
+672,Bertrand Traoré,2023-2024,27,bf BFA,Villarreal,es La Liga,11,568,6.3,6,5,2,1,0,1,1,0,0,0,MF,c47541e0
+673,Hamari Traoré,2023-2024,31,ml MLI,Real Sociedad,es La Liga,31,2292,25.5,27,4,1,0,2,2,0,0,0,0,DF,a4b1028a
+674,Óscar Trejo,2023-2024,35,ar ARG,Rayo Vallecano,es La Liga,31,1380,15.3,19,12,2,0,0,0,0,0,0,0,FWMF,fc647b34
+675,Manu Trigueros,2023-2024,31,es ESP,Villarreal,es La Liga,14,309,3.4,2,12,24,0,0,0,0,0,0,0,MF,963829d0
+676,Pol Tristán,2023-2024,21,es ESP,Granada,es La Liga,0,,,0,0,1,,,,,,,,GK,77b64c06
+677,Viktor Tsyhankov,2023-2024,25,ua UKR,Girona,es La Liga,30,2052,22.8,26,4,0,8,7,15,8,0,0,0,MFFW,f7e87032
+678,Beñat Turrientes,2023-2024,21,es ESP,Real Sociedad,es La Liga,29,1687,18.7,19,10,8,0,1,1,0,0,0,0,MF,068f4dec
+679,Enes Ünal,2023-2024,26,tr TUR,Getafe,es La Liga,3,140,1.6,1,2,1,0,1,1,0,0,0,0,FWMF,f8eca1b6
+680,Myrto Uzuni,2023-2024,28,al ALB,Granada,es La Liga,34,2448,27.2,28,6,1,11,1,12,7,4,5,1,FW,01da7812
+681,Pablo Valencia,2023-2024,22,es ESP,Osasuna,es La Liga,0,,,0,0,19,,,,,,,,GK,96f2f88f
+682,Óscar Valentín,2023-2024,28,es ESP,Rayo Vallecano,es La Liga,34,2692,29.9,32,2,2,1,0,1,1,0,0,0,MF,592f3158
+683,Martin Valjent,2023-2024,27,sk SVK,Mallorca,es La Liga,28,2349,26.1,28,0,1,0,1,1,0,0,0,0,DF,f2c6ac01
+684,Jesús Vallejo,2023-2024,26,es ESP,Granada,es La Liga,3,108,1.2,1,2,1,0,0,0,0,0,0,0,DF,c2111b45
+685,Manu Vallejo,2023-2024,26,es ESP,Girona,es La Liga,0,,,0,0,2,,,,,,,,FWMF,0bc4e720
+686,Álvaro Vallés,2023-2024,26,es ESP,Las Palmas,es La Liga,37,3263,36.3,37,0,0,0,0,0,0,0,0,0,GK,0166a73e
+687,Federico Valverde,2023-2024,25,uy URU,Real Madrid,es La Liga,37,2904,32.3,33,4,1,2,7,9,2,0,0,0,MF,0959c2a2
+688,Siebe Van Der Heyden,2023-2024,25,be BEL,Mallorca,es La Liga,6,286,3.2,4,2,25,0,0,0,0,0,0,0,DF,cf9bdd43
+689,José Luis García Vayá,2023-2024,24,es ESP,Valencia,es La Liga,37,3302,36.7,37,0,0,7,1,8,0,7,8,1,MF,27dc1378
+690,Borja Vázquez,2023-2024,18,es ESP,Cádiz,es La Liga,1,4,0.0,0,1,0,0,0,0,0,0,0,0,FW,8c6d0e32
+691,Jesus Vazquez,2023-2024,20,es ESP,Valencia,es La Liga,20,716,8.0,6,14,7,1,0,1,1,0,0,0,DFMF,106c142c
+692,Kevin Vázquez,2023-2024,30,es ESP,Celta Vigo,es La Liga,12,700,7.8,10,2,24,0,0,0,0,0,0,0,DF,ee923664
+693,Lucas Vázquez,2023-2024,32,es ESP,Real Madrid,es La Liga,29,1419,15.8,14,15,9,3,6,9,3,0,0,0,DF,fd51b456
+694,Gabriel Veiga,2023-2024,21,es ESP,Celta Vigo,es La Liga,1,18,0.2,0,1,1,0,0,0,0,0,0,0,FW,35a6e5c7
+695,Alejo Véliz,2023-2024,19,ar ARG,Sevilla,es La Liga,6,35,0.4,0,6,6,0,0,0,0,0,0,0,FW,3f7bafbe
+696,Arthur Vermeeren,2023-2024,18,be BEL,Atlético Madrid,es La Liga,5,162,1.8,2,3,13,0,0,0,0,0,0,0,MF,722494dc
+697,Mikel Vesga,2023-2024,30,es ESP,Athletic Club,es La Liga,27,1534,17.0,18,9,6,3,1,4,1,2,2,0,MF,b0fce72c
+698,Carlos Vicente,2023-2024,24,es ESP,Alavés,es La Liga,18,1114,12.4,12,6,1,2,4,6,2,0,0,0,FW,90df343e
+699,Pau Victor Delgado,2023-2024,21,es ESP,Barcelona,es La Liga,0,,,0,0,3,,,,,,,,FW,e6e7c819
+700,Nacho Vidal,2023-2024,28,es ESP,2 Teams,es La Liga,15,512,5.7,5,10,22,1,0,1,1,0,0,0,DFFW,3a9c4b7b
+701,Fran Vieites,2023-2024,24,es ESP,Betis,es La Liga,4,315,3.5,3,1,28,0,0,0,0,0,0,0,GK,2ae958ab
+702,Jonathan Viera,2023-2024,33,es ESP,2 Teams,es La Liga,21,1529,17.0,19,2,2,2,4,6,0,2,2,0,MFFW,efa708aa
+703,Toni Villa,2023-2024,28,es ESP,Girona,es La Liga,2,13,0.1,0,2,6,0,0,0,0,0,0,0,FW,636eae97
+704,Asier Villalibre,2023-2024,25,es ESP,Athletic Club,es La Liga,18,513,5.7,4,14,20,2,1,3,2,0,0,0,FW,57be54ec
+705,Gonzalo Villar,2023-2024,25,es ESP,Granada,es La Liga,35,1803,20.0,21,14,0,1,3,4,1,0,0,0,MF,bdc74a8f
+706,Iván Villar,2023-2024,26,es ESP,Celta Vigo,es La Liga,12,1014,11.3,12,0,22,0,0,0,0,0,0,0,GK,cde52ef5
+707,Ricardo Visus,2023-2024,22,es ESP,Betis,es La Liga,3,166,1.8,1,2,9,0,0,0,0,0,0,0,DF,7016332f
+708,Daniel Vivian,2023-2024,24,es ESP,Athletic Club,es La Liga,33,2878,32.0,31,2,2,0,0,0,0,0,0,0,DF,ab7bf91d
+709,Victor Wehbi,2023-2024,20,br BRA,Cádiz,es La Liga,0,,,0,0,5,,,,,,,,GK,7378ea1b
+710,Shon Weissman,2023-2024,27,il ISR,Granada,es La Liga,5,82,0.9,0,5,6,0,0,0,0,0,0,0,FW,379dc075
+711,Iñaki Williams,2023-2024,29,gh GHA,Athletic Club,es La Liga,34,2844,31.6,32,2,0,12,3,15,12,0,0,0,FW,6a99e0b1
+712,Nico Williams,2023-2024,21,es ESP,Athletic Club,es La Liga,31,2263,25.1,29,2,0,5,11,16,5,0,0,0,FW,afdc14d7
+713,Axel Witsel,2023-2024,34,be BEL,Atlético Madrid,es La Liga,35,2783,30.9,30,5,1,2,0,2,2,0,0,0,DF,5dfc6ad5
+714,Xeber,2023-2024,26,es ESP,Alavés,es La Liga,10,302,3.4,3,7,28,0,0,0,0,0,0,0,FWMF,d2c8aacc
+715,Antal Yaakobishvili,2023-2024,19,hu HUN,Girona,es La Liga,1,61,0.7,0,1,6,0,0,0,0,0,0,0,DF,cd59a7e6
+716,Áron Yaakobishvili,2023-2024,17,hu HUN,Barcelona,es La Liga,0,,,0,0,1,,,,,,,,GK,0b8c9180
+717,Lamine Yamal,2023-2024,16,es ESP,Barcelona,es La Liga,37,2201,24.5,22,15,1,5,5,10,5,0,0,0,FW,82ec26c1
+718,Roman Yaremchuk,2023-2024,27,ua UKR,Valencia,es La Liga,25,928,10.3,11,14,4,3,0,3,3,0,0,0,FW,cb641b9d
+719,Arsen Zakharyan,2023-2024,20,ru RUS,Real Sociedad,es La Liga,29,1228,13.6,15,14,2,1,2,3,1,0,0,0,MFFW,7f14ec2a
+720,Joseba Zaldúa,2023-2024,31,es ESP,Cádiz,es La Liga,13,704,7.8,9,4,22,0,0,0,0,0,0,0,DF,5ca20b7a
+721,Bryan Zaragoza,2023-2024,22,es ESP,Granada,es La Liga,21,1638,18.2,18,3,0,6,2,8,5,1,1,0,MFFW,a96103b2
+722,Theo Zidane,2023-2024,21,fr FRA,Real Madrid,es La Liga,0,,,0,0,1,,,,,,,,MF,c9e65bc5
+723,Igor Zubeldia,2023-2024,26,es ESP,Real Sociedad,es La Liga,30,2518,28.0,29,1,1,0,2,2,0,0,0,0,DF,5c7845f6
+724,Martín Zubimendi,2023-2024,24,es ESP,Real Sociedad,es La Liga,31,2654,29.5,29,2,0,4,1,5,4,0,0,0,MF,3ee0dd59

@@ -1,0 +1,753 @@
+Rk,Player,Season,Age,Nation,Team,Comp,MP,Min,90s,Starts,Subs,unSub,Gls,Ast,G+A,G-PK,PK,PKatt,PKm,Pos,-9999
+1,James Abankwah,2023-2024,19,ie IRL,Udinese,it Serie A,0,,,0,0,6,,,,,,,,DF,4b7a9fcc
+2,Tammy Abraham,2023-2024,25,eng ENG,Roma,it Serie A,8,242,2.7,2,6,1,1,0,1,1,0,0,0,FW,f586779e
+3,Salim Abubakar,2023-2024,20,ne NIG,Sassuolo,it Serie A,0,,,0,0,1,,,,,,,,MF,686ee768
+4,Francesco Acerbi,2023-2024,35,it ITA,Inter,it Serie A,29,2388,26.5,26,3,2,3,1,4,3,0,0,0,DF,b96b595c
+5,Marius Adamonis,2023-2024,26,lt LTU,Lazio,it Serie A,0,,,0,0,2,,,,,,,,GK,1226f0de
+6,Yacine Adli,2023-2024,23,fr FRA,Milan,it Serie A,24,1407,15.6,17,7,14,1,2,3,1,0,0,0,MF,26777636
+7,Michel Aebischer,2023-2024,26,ch SUI,Bologna,it Serie A,36,2230,24.8,26,10,1,0,1,1,0,0,0,0,MF,f9c927de
+8,Lucien Agoume,2023-2024,21,fr FRA,Inter,it Serie A,1,5,0.1,0,1,16,0,0,0,0,0,0,0,MF,8bc8829a
+9,Junior Ajayi,2023-2024,18,ci CIV,Hellas Verona,it Serie A,0,,,0,0,2,,,,,,,,FW,cab600a8
+10,Marley Aké,2023-2024,22,fr FRA,Udinese,it Serie A,1,10,0.1,0,1,14,0,0,0,0,0,0,0,FW,414e1f69
+11,Ebenezer Akinsanmiro,2023-2024,18,ng NGA,Inter,it Serie A,1,15,0.2,0,1,4,0,0,0,0,0,0,0,MF,3ad34015
+12,Jean-Daniel Akpa-Akpro,2023-2024,30,ci CIV,Monza,it Serie A,19,705,7.8,8,11,15,0,0,0,0,0,0,0,MF,fdf4b948
+13,David Akpan Ankeye,2023-2024,21,ng NGA,Genoa,it Serie A,6,57,0.6,0,6,6,0,0,0,0,0,0,0,FW,8c4b95af
+14,Luis Alberto,2023-2024,30,es ESP,Lazio,it Serie A,33,2311,25.7,29,4,1,5,7,12,5,0,0,0,MF,5294a83f
+15,Carlos Alcaraz,2023-2024,20,ar ARG,Juventus,it Serie A,10,380,4.2,3,7,3,0,1,1,0,0,0,0,MF,4abac767
+16,Filippo Alessio,2023-2024,18,it ITA,Roma,it Serie A,0,,,0,0,1,,,,,,,,FW,21c9da64
+17,Pasquale Allocca,2023-2024,18,it ITA,Salernitana,it Serie A,0,,,0,0,12,,,,,,,,GK,6e9cd7ed
+18,Pontus Almqvist,2023-2024,24,se SWE,Lecce,it Serie A,30,2107,23.4,25,5,1,2,1,3,2,0,0,0,FWMF,0917188a
+19,Agustín Álvarez Martínez,2023-2024,22,uy URU,Sassuolo,it Serie A,0,,,0,0,3,,,,,,,,FW,ab472696
+20,Lorenzo Amatucci,2023-2024,19,it ITA,Fiorentina,it Serie A,2,22,0.2,0,2,15,0,0,0,0,0,0,0,MF,13b9e2fb
+21,Bruno Amione,2023-2024,21,ar ARG,Hellas Verona,it Serie A,10,579,6.4,7,3,12,0,0,0,0,0,0,0,DF,2df7cc43
+22,Sofyan Amrabat,2023-2024,26,ma MAR,Fiorentina,it Serie A,0,,,0,0,1,,,,,,,,MF,5a2cb25d
+23,Felipe Anderson,2023-2024,30,br BRA,Lazio,it Serie A,38,2770,30.8,33,5,0,5,6,11,5,0,0,0,FWMF,9f1893b9
+24,Angeliño,2023-2024,26,es ESP,Roma,it Serie A,16,1141,12.7,14,2,0,0,1,1,0,0,0,0,DF,30941e96
+25,Jacopo Antolini,2023-2024,19,it ITA,Torino,it Serie A,0,,,0,0,7,,,,,,,,MF,6c86da83
+26,Houssem Aouar,2023-2024,25,dz ALG,Roma,it Serie A,16,756,8.4,9,7,14,4,0,4,4,0,0,0,MFFW,a5db0bec
+27,Mattia Aramu,2023-2024,28,it ITA,Genoa,it Serie A,0,,,0,0,2,,,,,,,,FWMF,0847b5a5
+28,Riccardo Arboscello,2023-2024,17,it ITA,Genoa,it Serie A,0,,,0,0,1,,,,,,,,MF,96966bc2
+29,Simone Aresti,2023-2024,37,it ITA,Cagliari,it Serie A,1,1,0.0,0,1,33,0,0,0,0,0,0,0,GK,a9eaccda
+30,Marko Arnautović,2023-2024,34,at AUT,Inter,it Serie A,27,801,8.9,5,22,3,5,3,8,5,0,0,0,FW,00459419
+31,Kristjan Asllani,2023-2024,21,al ALB,Inter,it Serie A,23,787,8.7,6,17,14,1,2,3,1,0,0,0,MF,0fdcef0e
+32,Emil Audero,2023-2024,26,it ITA,Inter,it Serie A,4,337,3.7,4,0,34,0,0,0,0,0,0,0,GK,649b01d8
+33,Tommaso Augello,2023-2024,28,it ITA,Cagliari,it Serie A,32,2418,26.9,28,4,4,1,1,2,1,0,0,0,DF,3cd3b384
+34,Carlos Augusto,2023-2024,24,br BRA,Inter,it Serie A,37,1725,19.2,14,23,0,0,3,3,0,0,0,0,DF,8d3cd59d
+35,Yann Aurel Bisseck,2023-2024,22,de GER,Inter,it Serie A,16,904,10.0,9,7,22,2,0,2,2,0,0,0,DF,3963c25b
+36,Sardar Azmoun,2023-2024,28,ir IRN,Roma,it Serie A,23,585,6.5,3,20,6,3,0,3,3,0,0,0,FWMF,10549b49
+37,Paulo Azzi,2023-2024,29,br BRA,Cagliari,it Serie A,25,950,10.6,9,16,13,0,0,0,0,0,0,0,DFMF,967ac202
+38,Oussama El Azzouzi,2023-2024,22,ma MAR,Bologna,it Serie A,18,547,6.1,5,13,11,2,2,4,2,0,0,0,MF,85f476cc
+39,Milan Badelj,2023-2024,34,hr CRO,Genoa,it Serie A,33,2535,28.2,32,1,2,1,3,4,1,0,0,0,MF,e8c930bb
+40,Jaime Báez,2023-2024,28,uy URU,Frosinone,it Serie A,11,500,5.6,6,5,21,1,0,1,1,0,0,0,FWMF,dfd24c07
+41,Nicola Bagnolini,2023-2024,19,it ITA,Bologna,it Serie A,1,5,0.1,0,1,29,0,0,0,0,0,0,0,GK,ad263695
+42,Nedim Bajrami,2023-2024,24,al ALB,Sassuolo,it Serie A,28,1310,14.6,15,13,8,2,2,4,2,0,0,0,MFFW,f42d6c13
+43,Mitchel Bakker,2023-2024,23,nl NED,Atalanta,it Serie A,14,382,4.2,3,11,22,1,0,1,1,0,0,0,DF,a8567629
+44,Tommaso Baldanzi,2023-2024,20,it ITA,2 Teams,it Serie A,27,1263,14.0,14,13,5,2,0,2,2,0,0,0,MFFW,102e2599
+45,Lameck Banda,2023-2024,22,zm ZAM,Lecce,it Serie A,21,1350,15.0,17,4,1,2,4,6,2,0,0,0,FW,8a6de8c7
+46,Daniel Bandeira,2023-2024,23,pt POR,Hellas Verona,it Serie A,14,446,5.0,3,11,3,0,0,0,0,0,0,0,MF,56fca564
+47,Mattia Bani,2023-2024,29,it ITA,Genoa,it Serie A,27,2306,25.6,27,0,3,2,0,2,2,0,0,0,DF,0821331c
+48,Antonín Barák,2023-2024,28,cz CZE,Fiorentina,it Serie A,21,808,9.0,8,13,14,2,3,5,2,0,0,0,MFFW,01efac19
+49,Nicolò Barella,2023-2024,26,it ITA,Inter,it Serie A,37,2846,31.6,34,3,0,2,3,5,2,0,0,0,MF,6928979a
+50,Enzo Barrenechea,2023-2024,22,ar ARG,Frosinone,it Serie A,36,2811,31.2,32,4,0,0,1,1,0,0,0,0,MF,6caffe81
+51,Davide Bartesaghi,2023-2024,17,it ITA,Milan,it Serie A,6,79,0.9,0,6,18,0,0,0,0,0,0,0,DFMF,7e0b6c50
+52,Andrea Bartoccioni,2023-2024,19,it ITA,Milan,it Serie A,0,,,0,0,1,,,,,,,,GK,aaf357cc
+53,Federico Baschirotto,2023-2024,26,it ITA,Lecce,it Serie A,37,3294,36.6,37,0,0,0,1,1,0,0,0,0,DF,5a08ee41
+54,Toma Bašić,2023-2024,26,hr CRO,2 Teams,it Serie A,15,1162,12.9,14,1,16,0,0,0,0,0,0,0,MF,80556f08
+55,Alessandro Bastoni,2023-2024,24,it ITA,Inter,it Serie A,28,2268,25.2,28,0,6,1,3,4,1,0,0,0,DF,75b86fb3
+56,Simone Bastoni,2023-2024,26,it ITA,Empoli,it Serie A,16,745,8.3,9,7,15,1,0,1,1,0,0,0,MFDF,1ac232b8
+57,Brian Bayeye,2023-2024,23,cd COD,Torino,it Serie A,0,,,0,0,2,,,,,,,,DF,78e6bf2c
+58,Reda Belahyane,2023-2024,19,ma MAR,Hellas Verona,it Serie A,2,90,1.0,1,1,14,0,0,0,0,0,0,0,MF,705a1642
+59,Raoul Bellanova,2023-2024,23,it ITA,Torino,it Serie A,37,3046,33.8,36,1,0,1,7,8,1,0,0,0,DF,e3756e72
+60,Andrea Belotti,2023-2024,29,it ITA,2 Teams,it Serie A,29,1628,18.1,17,12,8,6,2,8,6,0,0,0,FW,d705ba44
+61,Lucas Beltrán,2023-2024,22,ar ARG,Fiorentina,it Serie A,32,1692,18.8,21,11,3,6,2,8,5,1,1,0,FWMF,482d2bc3
+62,Ismaël Bennacer,2023-2024,25,dz ALG,Milan,it Serie A,20,1151,12.8,13,7,1,2,2,4,1,1,1,0,MF,db092d3b
+63,Alessandro Berardi,2023-2024,32,it ITA,Hellas Verona,it Serie A,0,,,0,0,20,,,,,,,,GK,ec1f737d
+64,Domenico Berardi,2023-2024,28,it ITA,Sassuolo,it Serie A,17,1431,15.9,17,0,1,9,3,12,4,5,5,0,FW,53a0e358
+65,Bartosz Bereszyński,2023-2024,31,pl POL,Empoli,it Serie A,24,1762,19.6,22,2,7,0,1,1,0,0,0,0,DF,61b3978f
+66,Etrit Berisha,2023-2024,34,al ALB,Empoli,it Serie A,14,1260,14.0,14,0,12,0,0,0,0,0,0,0,GK,ee833569
+67,Medon Berisha,2023-2024,19,al ALB,Lecce,it Serie A,6,205,2.3,2,4,32,0,0,0,0,0,0,0,FWMF,9d376bef
+68,Victor Bernth Kristiansen,2023-2024,20,dk DEN,Bologna,it Serie A,32,2307,25.6,26,6,3,0,3,3,0,0,0,0,DF,505486d6
+69,Alessandro Berretta,2023-2024,17,it ITA,Monza,it Serie A,0,,,0,0,2,,,,,,,,MF,476bf601
+70,Beto,2023-2024,25,gw GNB,Udinese,it Serie A,1,74,0.8,1,0,0,0,0,0,0,0,0,0,FW,ed5c0319
+71,Davide Bettella,2023-2024,23,it ITA,Monza,it Serie A,1,3,0.0,0,1,17,0,0,0,0,0,0,0,MF,2edcd048
+72,Sam Beukema,2023-2024,24,nl NED,Bologna,it Serie A,30,2547,28.3,29,1,5,1,1,2,1,0,0,0,DF,de13cee5
+73,Christian Biagetti,2023-2024,19,it ITA,Fiorentina,it Serie A,0,,,0,0,1,,,,,,,,DF,4cf7c393
+74,Côme Bianay Balcot,2023-2024,18,fr FRA,Torino,it Serie A,0,,,0,0,3,,,,,,,,DF,fd45fb38
+75,Soufiane Bidaoui,2023-2024,33,ma MAR,Frosinone,it Serie A,0,,,0,0,7,,,,,,,,FWMF,6d877dd6
+76,Jaka Bijol,2023-2024,24,si SVN,Udinese,it Serie A,24,2084,23.2,23,1,0,0,0,0,0,0,0,0,DF,6fdac234
+77,El Bilal Touré,2023-2024,21,ml MLI,Atalanta,it Serie A,11,394,4.4,3,8,8,2,0,2,2,0,0,0,FW,47c609d5
+78,Cristiano Biraghi,2023-2024,30,it ITA,Fiorentina,it Serie A,29,2356,26.2,27,2,7,2,5,7,2,0,1,1,DF,9e1577aa
+79,Davide Biraschi,2023-2024,29,it ITA,Genoa,it Serie A,1,90,1.0,1,0,2,1,0,1,1,0,0,0,DF,64cd167d
+80,Samuele Birindelli,2023-2024,24,it ITA,Monza,it Serie A,35,2013,22.4,22,13,2,0,2,2,0,0,0,0,DF,204ac005
+81,Alexis Blin,2023-2024,26,fr FRA,Lecce,it Serie A,31,1642,18.2,16,15,4,0,2,2,0,0,0,0,MF,c69ef855
+82,Jérôme Boateng,2023-2024,34,de GER,Salernitana,it Serie A,7,238,2.6,4,3,1,0,0,0,0,0,0,0,DF,2db2fd7b
+83,Pietro Boer,2023-2024,21,it ITA,Roma,it Serie A,0,,,0,0,36,,,,,,,,GK,b4a98bb4
+84,Emil Bohinen,2023-2024,24,no NOR,2 Teams,it Serie A,17,591,6.6,7,10,17,0,0,0,0,0,0,0,MF,c83c203f
+85,Daniel Boloca,2023-2024,24,ro ROU,Sassuolo,it Serie A,30,2022,22.5,23,7,4,1,0,1,1,0,0,0,MF,85f7ed25
+86,Giacomo Bonaventura,2023-2024,33,it ITA,Fiorentina,it Serie A,31,2277,25.3,27,4,4,8,3,11,8,0,1,1,MF,d995ed27
+87,Federico Bonazzoli,2023-2024,26,it ITA,Hellas Verona,it Serie A,24,1016,11.3,10,14,14,3,1,4,3,0,0,0,FWMF,bf57eaab
+88,Luca Boncori,2023-2024,17,it ITA,Salernitana,it Serie A,0,,,0,0,2,,,,,,,,FW,a15e6fb8
+89,Warren Bondo,2023-2024,19,fr FRA,Monza,it Serie A,25,1475,16.4,14,11,11,1,1,2,1,0,0,0,MF,0def2376
+90,Giovanni Bonfanti,2023-2024,20,it ITA,Atalanta,it Serie A,2,89,1.0,1,1,18,0,0,0,0,0,0,0,DF,938d8a55
+91,Kevin Bonifazi,2023-2024,27,it ITA,2 Teams,it Serie A,7,399,4.4,4,3,16,0,0,0,0,0,0,0,DF,fb77bfef
+92,Alexandru Borbei,2023-2024,20,ro ROU,Lecce,it Serie A,0,,,0,0,13,,,,,,,,GK,37b48a61
+93,Gennaro Borrelli,2023-2024,23,it ITA,Frosinone,it Serie A,1,24,0.3,0,1,1,0,0,0,0,0,0,0,FW,04c4edc1
+94,Erik Botheim,2023-2024,23,no NOR,Salernitana,it Serie A,7,316,3.5,4,3,14,0,0,0,0,0,0,0,FWMF,3d13d9e4
+95,Mehdi Bourabia,2023-2024,31,ma MAR,Frosinone,it Serie A,10,200,2.2,3,7,10,0,0,0,0,0,0,0,MF,0d077b88
+96,Edoardo Bove,2023-2024,21,it ITA,Roma,it Serie A,31,1780,19.8,18,13,7,0,2,2,0,0,0,0,MF,ae94a6c5
+97,Domagoj Bradarić,2023-2024,23,hr CRO,Salernitana,it Serie A,34,2749,30.5,30,4,0,0,3,3,0,0,0,0,DF,8bbe2df5
+98,Federico Brancolini,2023-2024,22,it ITA,Lecce,it Serie A,0,,,0,0,34,,,,,,,,GK,d4890c25
+99,Josip Brekalo,2023-2024,25,hr CRO,Fiorentina,it Serie A,11,652,7.2,8,3,9,1,0,1,1,0,0,0,FW,d4a2533d
+100,Gleison Bremer,2023-2024,26,br BRA,Juventus,it Serie A,36,3233,35.9,36,0,1,3,0,3,3,0,0,0,DF,5fd5ed86
+101,Brenner,2023-2024,23,br BRA,Udinese,it Serie A,8,189,2.1,2,6,9,0,0,0,0,0,0,0,MFFW,279508bf
+102,Marco Brescianini,2023-2024,23,it ITA,Frosinone,it Serie A,36,2321,25.8,24,12,1,4,2,6,4,0,0,0,MF,dfd56738
+103,Matteo Brezzo,2023-2024,18,it ITA,Torino,it Serie A,0,,,0,0,4,,,,,,,,GK,a4d6d52c
+104,Dylan Bronn,2023-2024,28,tn TUN,Salernitana,it Serie A,4,52,0.6,0,4,13,0,0,0,0,0,0,0,DFMF,edd81e2a
+105,Tajon Buchanan,2023-2024,24,ca CAN,Inter,it Serie A,10,161,1.8,0,10,9,1,0,1,1,0,0,0,DF,3aca6420
+106,Alessandro Buongiorno,2023-2024,24,it ITA,Torino,it Serie A,29,2527,28.1,29,0,1,3,0,3,3,0,0,0,DF,4ae67f27
+107,Rareș-Cătălin Burnete,2023-2024,19,ro ROU,Lecce,it Serie A,1,8,0.1,0,1,17,0,1,1,0,0,0,0,FW,7c4b4e36
+108,Jovane Cabral,2023-2024,25,cv CPV,Salernitana,it Serie A,12,678,7.5,8,4,3,1,0,1,1,0,0,0,MFFW,e34e086c
+109,Liberato Cacace,2023-2024,22,nz NZL,Empoli,it Serie A,31,1912,21.2,18,13,6,0,1,1,0,0,0,0,DF,dd86e8e4
+110,Jens Cajuste,2023-2024,23,se SWE,Napoli,it Serie A,26,1016,11.3,11,15,8,0,2,2,0,0,0,0,MF,928a4a61
+111,Nicolò Calabrese,2023-2024,18,it ITA,Hellas Verona,it Serie A,0,,,0,0,3,,,,,,,,MF,8544fe2c
+112,Davide Calabria,2023-2024,26,it ITA,Milan,it Serie A,29,2185,24.3,26,3,4,1,3,4,1,0,0,0,DF,2146785a
+113,Riccardo Calafiori,2023-2024,21,it ITA,Bologna,it Serie A,30,2349,26.1,26,4,6,2,5,7,2,0,0,0,DF,aded8e6f
+114,Mattia Caldara,2023-2024,29,it ITA,Milan,it Serie A,1,33,0.4,0,1,5,0,0,0,0,0,0,0,DF,ac7e640b
+115,Luca Caldirola,2023-2024,32,it ITA,Monza,it Serie A,29,2141,23.8,23,6,7,1,1,2,1,0,0,0,DF,226008f1
+116,Hakan Çalhanoğlu,2023-2024,29,tr TUR,Inter,it Serie A,32,2556,28.4,32,0,3,13,3,16,3,10,10,0,MF,cd0fa27b
+117,Alessandro Calligaris,2023-2024,18,it ITA,Inter,it Serie A,0,,,0,0,2,,,,,,,,GK,2bd46514
+118,Simone Calvani,2023-2024,18,it ITA,Genoa,it Serie A,0,,,0,0,2,,,,,,,,GK,9ce4c152
+119,Etienne Camara,2023-2024,20,fr FRA,Udinese,it Serie A,0,,,0,0,22,,,,,,,,MF,ba02a571
+120,Francesco Camarda,2023-2024,15,it ITA,Milan,it Serie A,2,14,0.2,0,2,0,0,0,0,0,0,0,0,FW,1956a64b
+121,Nicolò Cambiaghi,2023-2024,22,it ITA,Empoli,it Serie A,37,2553,28.4,29,8,0,1,1,2,1,0,0,0,FWMF,91ff775f
+122,Andrea Cambiaso,2023-2024,23,it ITA,Juventus,it Serie A,34,2372,26.4,28,6,1,2,3,5,2,0,0,0,DFFW,247ed022
+123,Matteo Cancellieri,2023-2024,21,it ITA,Empoli,it Serie A,36,1788,19.9,18,18,0,4,3,7,4,0,0,0,FWMF,b6a1cdf9
+124,Antonio Candreva,2023-2024,36,it ITA,Salernitana,it Serie A,34,2750,30.6,32,2,0,6,6,12,5,1,1,0,MFFW,356c9002
+125,Luigi Canotto,2023-2024,29,it ITA,Frosinone,it Serie A,1,16,0.2,0,1,1,0,0,0,0,0,0,0,FW,911080b1
+126,Elio Capradossi,2023-2024,27,ug UGA,Cagliari,it Serie A,0,,,0,0,2,,,,,,,,DF,174944a3
+127,Gianluca Caprari,2023-2024,30,it ITA,Monza,it Serie A,6,285,3.2,4,2,3,0,0,0,0,0,0,0,MFFW,54e53b7e
+128,Elia Caprile,2023-2024,21,it ITA,Empoli,it Serie A,23,2070,23.0,23,0,9,0,0,0,0,0,0,0,GK,97d7afbd
+129,Francesco Caputo,2023-2024,35,it ITA,Empoli,it Serie A,20,1268,14.1,15,5,6,3,0,3,2,1,1,0,FW,5bd72174
+130,Andrea Carboni,2023-2024,22,it ITA,Monza,it Serie A,21,1487,16.5,16,5,9,1,0,1,1,0,0,0,DF,f7e2af2c
+131,Franco Carboni,2023-2024,20,it ITA,Monza,it Serie A,0,,,0,0,18,,,,,,,,MF,b033f803
+132,Valentin Carboni,2023-2024,18,ar ARG,Monza,it Serie A,31,1169,13.0,10,21,6,2,3,5,2,0,0,0,MFFW,707b98f1
+133,Marco Carnesecchi,2023-2024,23,it ITA,Atalanta,it Serie A,27,2425,26.9,27,0,11,0,0,0,0,0,0,0,GK,8ec56e62
+134,Nicolò Casale,2023-2024,25,it ITA,Lazio,it Serie A,20,1559,17.3,16,4,13,0,0,0,0,0,0,0,DF,3f5f38fb
+135,Giuseppe Caso,2023-2024,24,it ITA,Frosinone,it Serie A,14,417,4.6,2,12,8,0,0,0,0,0,0,0,FWMF,099a2de5
+136,Valentín Castellanos,2023-2024,24,ar ARG,Lazio,it Serie A,35,1682,18.7,16,19,2,4,3,7,4,0,0,0,FW,da76bab4
+137,Samu Castillejo,2023-2024,28,es ESP,Sassuolo,it Serie A,17,536,6.0,6,11,8,0,0,0,0,0,0,0,FWMF,130a7a3f
+138,Santiago Castro,2023-2024,18,ar ARG,Bologna,it Serie A,8,242,2.7,2,6,4,1,1,2,1,0,0,0,FW,ee5565ae
+139,Gaetano Castrovilli,2023-2024,26,it ITA,Fiorentina,it Serie A,6,367,4.1,5,1,5,1,2,3,1,0,0,0,FWMF,0728bebe
+140,Danilo Cataldi,2023-2024,28,it ITA,Lazio,it Serie A,28,1361,15.1,15,13,9,1,0,1,1,0,0,0,MF,ba3d3bea
+141,Denis Cazzadori,2023-2024,19,it ITA,Hellas Verona,it Serie A,0,,,0,0,1,,,,,,,,FW,9c0d5c1c
+142,Emil Ceide,2023-2024,21,no NOR,Sassuolo,it Serie A,11,176,2.0,0,11,27,0,0,0,0,0,0,0,FWMF,98a84572
+143,Zeki Çelik,2023-2024,26,tr TUR,Roma,it Serie A,17,671,7.5,6,11,21,0,0,0,0,0,0,0,DF,31a62dc7
+144,Fabien Centonze,2023-2024,27,fr FRA,Hellas Verona,it Serie A,10,676,7.5,7,3,6,0,1,1,0,0,0,0,DF,3c6bbbab
+145,Michele Cerofolini,2023-2024,24,it ITA,Frosinone,it Serie A,8,675,7.5,7,1,30,0,0,0,0,0,0,0,GK,efdeaff3
+146,Alberto Cerri,2023-2024,27,it ITA,Empoli,it Serie A,12,545,6.1,10,2,3,1,0,1,1,0,0,0,FW,1079c685
+147,Leonardo Cerri,2023-2024,20,it ITA,Juventus,it Serie A,1,7,0.1,0,1,0,0,0,0,0,0,0,0,DF,58e08f40
+148,Charlys,2023-2024,19,br BRA,Hellas Verona,it Serie A,2,25,0.3,0,2,32,0,0,0,0,0,0,0,MF,eff9c9ea
+149,Walid Cheddira,2023-2024,25,ma MAR,Frosinone,it Serie A,36,2120,23.6,24,12,1,7,1,8,6,1,1,0,FW,0545a08e
+150,Luigi Cherubini,2023-2024,19,it ITA,Roma,it Serie A,0,,,0,0,3,,,,,,,,FW,5aa1a2a7
+151,Federico Chiesa,2023-2024,25,it ITA,Juventus,it Serie A,33,2197,24.4,25,8,0,9,2,11,8,1,1,0,FW,b0f7e36c
+152,Mattia Chiesa,2023-2024,23,it ITA,Hellas Verona,it Serie A,0,,,0,0,18,,,,,,,,GK,526f0d08
+153,Oliver Christensen,2023-2024,24,dk DEN,Fiorentina,it Serie A,4,360,4.0,4,0,24,0,0,0,0,0,0,0,GK,af104654
+154,Samuel Chukwueze,2023-2024,24,ng NGA,Milan,it Serie A,24,1017,11.3,12,12,3,1,3,4,1,0,0,0,FW,b8a642fc
+155,Aaron Ciammaglichella,2023-2024,18,it ITA,Torino,it Serie A,0,,,0,0,7,,,,,,,,MF,20525799
+156,Alphadjo Cissè,2023-2024,16,it ITA,Hellas Verona,it Serie A,1,8,0.1,0,1,8,0,0,0,0,0,0,0,FW,d079becb
+157,Faroukou Cissé,2023-2024,19,de GER,Genoa,it Serie A,0,,,0,0,2,,,,,,,,DF,6063d40c
+158,Moustapha Cissé,2023-2024,19,gn GUI,Atalanta,it Serie A,0,,,0,0,3,,,,,,,,FW,ee3c4b3f
+159,Giorgio Cittadini,2023-2024,21,it ITA,2 Teams,it Serie A,6,121,1.3,1,5,25,0,0,0,0,0,0,0,DF,e4ba67f2
+160,Patrick Ciurria,2023-2024,28,it ITA,Monza,it Serie A,22,1598,17.8,18,4,7,0,1,1,0,0,0,0,DFMF,5de3866c
+161,Massimo Coda,2023-2024,34,it ITA,Genoa,it Serie A,0,,,0,0,1,,,,,,,,FW,4c7940d6
+162,Leonardo Colombo,2023-2024,18,it ITA,Monza,it Serie A,0,,,0,0,1,,,,,,,,MF,e9f5f7c4
+163,Lorenzo Colombo,2023-2024,21,it ITA,2 Teams,it Serie A,25,1359,15.1,16,9,13,4,1,5,4,0,0,0,FW,04df29a5
+164,Matteo Colombo,2023-2024,19,it ITA,Atalanta,it Serie A,0,,,0,0,1,,,,,,,,MF,37980f04
+165,Andrea Colpani,2023-2024,24,it ITA,Monza,it Serie A,38,2657,29.5,36,2,0,8,4,12,8,0,0,0,MFFW,6499048c
+166,Pietro Comi,2023-2024,18,it ITA,Atalanta,it Serie A,0,,,0,0,5,,,,,,,,DF,4f74f779
+167,Pietro Comuzzo,2023-2024,18,it ITA,Fiorentina,it Serie A,4,43,0.5,0,4,28,0,0,0,0,0,0,0,DFFW,5e3ecc35
+168,Andrea Consigli,2023-2024,36,it ITA,Sassuolo,it Serie A,35,3150,35.0,35,0,0,0,0,0,0,0,0,0,GK,8cabdc1e
+169,Nikita Contini Baranovsky,2023-2024,27,it ITA,Napoli,it Serie A,1,17,0.2,0,1,34,0,0,0,0,0,0,0,GK,e95069bb
+170,Diego Coppola,2023-2024,19,it ITA,Hellas Verona,it Serie A,24,1634,18.2,18,6,13,2,0,2,2,0,0,0,DF,22ae86f9
+171,Tommaso Corazza,2023-2024,19,it ITA,Bologna,it Serie A,9,195,2.2,1,8,26,0,0,0,0,0,0,0,DF,c1b9b13c
+172,Jeppe Corfitzen,2023-2024,18,dk DEN,Lecce,it Serie A,1,9,0.1,0,1,8,0,0,0,0,0,0,0,FW,3f7e5a98
+173,Giacomo Corona,2023-2024,19,it ITA,Empoli,it Serie A,1,5,0.1,0,1,1,0,0,0,0,0,0,0,FW,d9f83409
+174,Christian Corradi,2023-2024,18,it ITA,Hellas Verona,it Serie A,0,,,0,0,5,,,,,,,,DF,6d09000e
+175,Joaquín Correa,2023-2024,28,ar ARG,Inter,it Serie A,0,,,0,0,1,,,,,,,,FWMF,45b9b619
+176,Alessandro Cortinovis,2023-2024,22,it ITA,Atalanta,it Serie A,0,,,0,0,1,,,,,,,,MF,bfc359ed
+177,João Costa,2023-2024,18,br BRA,Roma,it Serie A,3,14,0.2,0,3,17,0,0,0,0,0,0,0,MFFW,26952edc
+178,Benoît Costil,2023-2024,36,fr FRA,Salernitana,it Serie A,13,1170,13.0,13,0,25,0,0,0,0,0,0,0,GK,2434f24a
+179,Larsson Coulibaly,2023-2024,20,ci CIV,Lazio,it Serie A,0,,,0,0,2,,,,,,,,MF,73c0aef6
+180,Lassana Coulibaly,2023-2024,27,ml MLI,Salernitana,it Serie A,28,2082,23.1,25,3,0,0,1,1,0,0,0,0,MF,85a44ecc
+181,Mamadou Coulibaly,2023-2024,24,sn SEN,Salernitana,it Serie A,1,3,0.0,0,1,1,0,0,0,0,0,0,0,DF,c976160c
+182,Alessio Cragno,2023-2024,29,it ITA,Sassuolo,it Serie A,3,270,3.0,3,0,34,0,0,0,0,0,0,0,GK,f554e29b
+183,Gian Crespi,2023-2024,22,it ITA,Juventus,it Serie A,0,,,0,0,1,,,,,,,,GK,4dea2f2c
+184,Bryan Cristante,2023-2024,28,it ITA,Roma,it Serie A,37,3289,36.5,37,0,0,3,4,7,3,0,0,0,MFDF,16657b95
+185,Juan Cruz,2023-2024,24,ar ARG,Hellas Verona,it Serie A,4,109,1.2,1,3,15,0,0,0,0,0,0,0,FWMF,72f5b81f
+186,Juan Cuadrado,2023-2024,35,co COL,Inter,it Serie A,10,267,3.0,0,10,5,0,2,2,0,0,0,0,DF,0ab1f153
+187,Marvin Cuni,2023-2024,22,al ALB,Frosinone,it Serie A,22,534,5.9,6,16,9,1,0,1,1,0,0,0,FW,1d45fd81
+188,Francesco D'Alessio,2023-2024,19,it ITA,Roma,it Serie A,0,,,0,0,1,,,,,,,,MF,38bf8baa
+189,Danilo D'Ambrosio,2023-2024,34,it ITA,Monza,it Serie A,24,1536,17.1,16,8,5,0,0,0,0,0,0,0,DF,44eb9093
+190,Luigi D'Avino,2023-2024,17,it ITA,Napoli,it Serie A,0,,,0,0,14,,,,,,,,DF,4d02cf72
+191,Giovanni Daffara,2023-2024,18,it ITA,Juventus,it Serie A,0,,,0,0,3,,,,,,,,GK,be0ddfe4
+192,Christian Dalle Mura,2023-2024,21,it ITA,Fiorentina,it Serie A,0,,,0,0,1,,,,,,,,DF,f32df091
+193,Maat Daniel Caprini,2023-2024,17,it ITA,Fiorentina,it Serie A,0,,,0,0,2,,,,,,,,FW,183934cd
+194,Flavius Daniliuc,2023-2024,22,at AUT,Salernitana,it Serie A,14,744,8.3,8,6,3,0,0,0,0,0,0,0,DF,7ef972c3
+195,Danilo,2023-2024,32,br BRA,Juventus,it Serie A,29,2452,27.2,27,2,1,1,1,2,1,0,0,0,DF,94b2001f
+196,Matteo Darmian,2023-2024,33,it ITA,Inter,it Serie A,33,2404,26.7,27,6,5,2,1,3,2,0,0,0,DF,96e0490d
+197,Juan David Cabal,2023-2024,22,co COL,Hellas Verona,it Serie A,22,1497,16.6,17,5,8,0,0,0,0,0,0,0,DF,ef6eef89
+198,Keinan Davis,2023-2024,25,eng ENG,Udinese,it Serie A,8,186,2.1,0,8,6,1,0,1,1,0,0,0,FWMF,9deaf2c8
+199,Paweł Dawidowicz,2023-2024,28,pl POL,Hellas Verona,it Serie A,28,2143,23.8,25,3,2,0,0,0,0,0,0,0,DF,16bb656a
+200,Charles De Ketelaere,2023-2024,22,be BEL,Atalanta,it Serie A,35,2026,22.5,25,10,1,10,8,18,9,1,1,0,FWMF,2ef7c612
+201,Mattia De Sciglio,2023-2024,30,it ITA,Juventus,it Serie A,1,45,0.5,1,0,6,0,0,0,0,0,0,0,DF,ae4e2852
+202,Lorenzo De Silvestri,2023-2024,35,it ITA,Bologna,it Serie A,15,674,7.5,7,8,20,2,0,2,2,0,0,0,DF,e74f0e59
+203,Koni De Winter,2023-2024,21,be BEL,Genoa,it Serie A,29,2380,26.4,26,3,5,0,1,1,0,0,0,0,DF,f4797849
+204,Grégoire Defrel,2023-2024,32,mq MTQ,Sassuolo,it Serie A,20,757,8.4,7,13,6,1,2,3,1,0,0,0,FWMF,854ee61a
+205,Alessandro Deiola,2023-2024,27,it ITA,Cagliari,it Serie A,27,1608,17.9,19,8,10,1,0,1,1,0,0,0,MF,7f267d66
+206,Tommaso Del Lungo,2023-2024,19,it ITA,Atalanta,it Serie A,0,,,0,0,1,,,,,,,,DF,e0fbd23c
+207,Alessandro Dellavalle,2023-2024,19,it ITA,Torino,it Serie A,1,15,0.2,0,1,3,0,0,0,0,0,0,0,DF,227f25be
+208,Ali Dembélé,2023-2024,19,fr FRA,Torino,it Serie A,0,,,0,0,1,,,,,,,,DF,eb3df7d9
+209,Diego Demme,2023-2024,31,de GER,Napoli,it Serie A,2,73,0.8,1,1,13,0,0,0,0,0,0,0,MF,dc3fa3b5
+210,Leander Dendoncker,2023-2024,28,be BEL,Napoli,it Serie A,3,24,0.3,0,3,13,0,0,0,0,0,0,0,MF,5a7301ae
+211,Kastriot Dermaku,2023-2024,31,al ALB,Lecce,it Serie A,0,,,0,0,7,,,,,,,,DF,2990c466
+212,Jacopo Desogus,2023-2024,20,it ITA,Cagliari,it Serie A,0,,,0,0,7,,,,,,,,FW,28d2bc57
+213,Mattia Destro,2023-2024,32,it ITA,Empoli,it Serie A,15,366,4.1,3,12,15,0,0,0,0,0,0,0,FWMF,d7d32194
+214,Federico Di Francesco,2023-2024,29,it ITA,Lecce,it Serie A,2,15,0.2,0,2,0,1,0,1,1,0,0,0,FWMF,1fca9171
+215,Raffaele Di Gennaro,2023-2024,29,it ITA,Inter,it Serie A,1,23,0.3,0,1,36,0,0,0,0,0,0,0,GK,7a4050d5
+216,Michele Di Gregorio,2023-2024,26,it ITA,Monza,it Serie A,33,2872,31.9,33,0,1,0,0,0,0,0,0,0,GK,4e0c8d66
+217,Giovanni Di Lorenzo,2023-2024,29,it ITA,Napoli,it Serie A,36,3234,35.9,36,0,0,1,6,7,1,0,0,0,DF,230a2fac
+218,Alessandro Di Pardo,2023-2024,24,it ITA,Cagliari,it Serie A,15,359,4.0,2,13,18,0,0,0,0,0,0,0,DFMF,e0ce7038
+219,Rocco Di Vico,2023-2024,16,it ITA,Salernitana,it Serie A,0,,,0,0,2,,,,,,,,MF,12385ba9
+220,Boulaye Dia,2023-2024,26,sn SEN,Salernitana,it Serie A,17,1143,12.7,12,5,1,4,0,4,3,1,1,0,FWMF,244bc2c8
+221,Siren Diao,2023-2024,18,es ESP,2 Teams,it Serie A,0,,,0,0,3,,,,,,,,FW,94e74d8b
+222,Sekou Diawara,2023-2024,19,be BEL,Udinese,it Serie A,0,,,0,0,1,,,,,,,,FW,cf6106b4
+223,Federico Dimarco,2023-2024,25,it ITA,Inter,it Serie A,30,2077,23.1,29,1,6,5,6,11,5,0,0,0,DF,970b8574
+224,Tiago Djaló,2023-2024,23,pt POR,Juventus,it Serie A,1,17,0.2,0,1,15,0,0,0,0,0,0,0,DF,b2336681
+225,Koffi Djidji,2023-2024,30,ci CIV,Torino,it Serie A,13,759,8.4,8,5,4,0,0,0,0,0,0,0,DF,933d3b51
+226,Berat Djimsiti,2023-2024,30,al ALB,Atalanta,it Serie A,37,2832,31.5,32,5,1,0,1,1,0,0,0,0,DF,6eee05f1
+227,Dodô,2023-2024,24,br BRA,Fiorentina,it Serie A,9,523,5.8,7,2,8,0,0,0,0,0,0,0,DF,b5f7d10b
+228,Josh Doig,2023-2024,21,sct SCO,2 Teams,it Serie A,28,2173,24.1,26,2,5,0,2,2,0,0,0,0,DF,2f69d881
+229,Nicolás Domínguez,2023-2024,25,ar ARG,Bologna,it Serie A,2,102,1.1,1,1,0,0,0,0,0,0,0,0,MF,20b3a502
+230,Giulio Donati,2023-2024,33,it ITA,Monza,it Serie A,4,36,0.4,0,4,28,0,0,0,0,0,0,0,DF,22051fbe
+231,Patrick Dorgu,2023-2024,18,dk DEN,Lecce,it Serie A,32,1564,17.4,17,15,4,2,0,2,2,0,0,0,DFMF,e6536124
+232,Alberto Dossena,2023-2024,24,it ITA,Cagliari,it Serie A,35,2977,33.1,33,2,1,2,4,6,2,0,0,0,DF,61efb926
+233,Radu Drăgușin,2023-2024,21,ro ROU,Genoa,it Serie A,19,1710,19.0,19,0,0,2,1,3,2,0,0,0,DF,620922ed
+234,Ondrej Duda,2023-2024,28,sk SVK,Hellas Verona,it Serie A,32,2456,27.3,29,3,1,1,4,5,1,0,1,1,MF,79ca3e23
+235,Denzel Dumfries,2023-2024,27,nl NED,Inter,it Serie A,31,1639,18.2,19,12,3,4,4,8,4,0,0,0,DF,481c9ece
+236,Alfred Duncan,2023-2024,30,gh GHA,Fiorentina,it Serie A,30,1888,21.0,24,6,7,2,5,7,2,0,0,0,MF,528492ea
+237,Paulo Dybala,2023-2024,29,ar ARG,Roma,it Serie A,28,1959,21.8,25,3,1,13,9,22,6,7,7,0,FWMF,e0921a4f
+238,Milan Đurić,2023-2024,33,ba BIH,2 Teams,it Serie A,37,2461,27.3,26,11,0,9,2,11,8,1,3,2,FW,405f6586
+239,Festy Ebosele,2023-2024,20,ie IRL,Udinese,it Serie A,31,1700,18.9,20,11,6,0,0,0,0,0,0,0,DF,dbfa4f16
+240,Enzo Ebosse,2023-2024,24,cm CMR,Udinese,it Serie A,1,8,0.1,0,1,0,0,0,0,0,0,0,0,DF,9ba7b4fa
+241,Tyronne Ebuehi,2023-2024,27,ng NGA,Empoli,it Serie A,15,1099,12.2,11,4,7,0,1,1,0,0,0,0,DF,6af30900
+242,Éderson,2023-2024,24,br BRA,Atalanta,it Serie A,36,2869,31.9,32,4,1,6,1,7,6,0,0,0,MF,a9202def
+243,Kingsley Ehizibue,2023-2024,28,nl NED,Udinese,it Serie A,23,955,10.6,11,12,1,0,1,1,0,0,0,0,DF,76b2817e
+244,Victor Ehuwa Eletu,2023-2024,18,ng NGA,Milan,it Serie A,0,,,0,0,1,,,,,,,,MF,e18cf8f1
+245,Emmanuel Ekong,2023-2024,21,se SWE,Empoli,it Serie A,1,5,0.1,0,1,0,0,0,0,0,0,0,0,FW,c20892ee
+246,Caleb Ekuban,2023-2024,29,gh GHA,Genoa,it Serie A,29,1131,12.6,10,19,2,4,1,5,4,0,0,0,FW,7afbd2c3
+247,Emanuele Elia,2023-2024,18,it ITA,Salernitana,it Serie A,0,,,0,0,1,,,,,,,,DF,41e390ae
+248,Elif Elmas,2023-2024,23,mk MKD,Napoli,it Serie A,11,339,3.8,4,7,3,2,0,2,2,0,0,0,FWMF,cf007308
+249,Martin Erlic,2023-2024,25,hr CRO,Sassuolo,it Serie A,32,2618,29.1,31,1,3,1,0,1,1,0,0,0,DF,0fee6bda
+250,Sebastian Esposito,2023-2024,18,au AUS,Lecce,it Serie A,0,,,0,0,5,,,,,,,,DF,75118ebf
+251,Giovanni Fabbian,2023-2024,20,it ITA,Bologna,it Serie A,27,1057,11.7,11,16,11,5,2,7,5,0,0,0,MFFW,f97f9188
+252,Nicolò Fagioli,2023-2024,22,it ITA,Juventus,it Serie A,8,437,4.9,4,4,2,0,2,2,0,0,0,0,MF,366be751
+253,Matteo Falasca,2023-2024,19,it ITA,Sassuolo,it Serie A,0,,,0,0,1,,,,,,,,DF,3a33f528
+254,Wladimiro Falcone,2023-2024,28,it ITA,Lecce,it Serie A,38,3420,38.0,38,0,0,0,0,0,0,0,0,0,GK,9f5a610b
+255,Davide Faraoni,2023-2024,31,it ITA,2 Teams,it Serie A,19,994,11.0,11,8,14,0,2,2,0,0,0,0,DF,aae9d04a
+256,Giacomo Faticanti,2023-2024,19,it ITA,Lecce,it Serie A,0,,,0,0,12,,,,,,,,MF,4c1e579e
+257,Federico Fazio,2023-2024,36,ar ARG,Salernitana,it Serie A,17,1355,15.1,15,2,8,1,0,1,1,0,0,0,DF,4e358a2d
+258,Jacopo Fazzini,2023-2024,20,it ITA,Empoli,it Serie A,31,1232,13.7,14,17,1,1,1,2,1,0,0,0,MF,06b08c45
+259,Lewis Ferguson,2023-2024,23,sct SCO,Bologna,it Serie A,31,2712,30.1,31,0,0,6,3,9,6,0,0,0,MF,ee64a822
+260,Saná Fernandes,2023-2024,17,pt POR,Lazio,it Serie A,0,,,0,0,12,,,,,,,,MF,f1253f46
+261,Tommaso Ferrari,2023-2024,18,it ITA,Salernitana,it Serie A,0,,,0,0,5,,,,,,,,DF,6db5588e
+262,Andrea Ferraris,2023-2024,20,it ITA,Monza,it Serie A,1,10,0.1,0,1,10,0,0,0,0,0,0,0,MF,da69a0ef
+263,João Ferreira,2023-2024,22,pt POR,Udinese,it Serie A,35,1822,20.2,18,17,2,0,1,1,0,0,0,0,DF,fb37a645
+264,Seydou Fini,2023-2024,17,it ITA,Genoa,it Serie A,3,35,0.4,0,3,12,0,0,0,0,0,0,0,DFFW,6411925d
+265,Vincenzo Fiorillo,2023-2024,33,it ITA,Salernitana,it Serie A,4,360,4.0,4,0,22,0,0,0,0,0,0,0,GK,a2565f79
+266,Alessandro Florenzi,2023-2024,32,it ITA,Milan,it Serie A,31,1732,19.2,19,12,5,1,4,5,1,0,0,0,DF,e288d4b3
+267,Michael Folorunsho,2023-2024,25,it ITA,Hellas Verona,it Serie A,34,2781,30.9,33,1,0,5,1,6,5,0,0,0,MFFW,c391a179
+268,Niccolò Fortini,2023-2024,17,it ITA,Fiorentina,it Serie A,0,,,0,0,1,,,,,,,,MF,ed336580
+269,Pierluigi Frattali,2023-2024,37,it ITA,Frosinone,it Serie A,0,,0.0,0,0,34,0,0,0,0,0,0,0,GK,71dac2c2
+270,Davide Frattesi,2023-2024,23,it ITA,Inter,it Serie A,32,955,10.6,6,26,4,6,3,9,6,0,0,0,MF,2a7d27c1
+271,Morten Frendrup,2023-2024,22,dk DEN,Genoa,it Serie A,37,3145,34.9,36,1,0,2,5,7,2,0,0,0,MF,f4d60499
+272,Remo Freuler,2023-2024,31,ch SUI,Bologna,it Serie A,32,2624,29.2,30,2,2,1,1,2,1,0,0,0,MF,98d2c2c4
+273,Alessio Furlanetto,2023-2024,21,it ITA,Lazio,it Serie A,0,,,0,0,2,,,,,,,,GK,95d9f4dd
+274,Gerardo Fusco,2023-2024,18,it ITA,Salernitana,it Serie A,1,15,0.2,0,1,2,0,0,0,0,0,0,0,FW,f83f6de1
+275,Matteo Gabbia,2023-2024,23,it ITA,Milan,it Serie A,18,1275,14.2,14,4,1,2,1,3,2,0,0,0,DF,c235e803
+276,Gianluca Gaetano,2023-2024,23,it ITA,2 Teams,it Serie A,20,906,10.1,11,9,13,5,1,6,4,1,1,0,FWMF,3b387cc7
+277,Roberto Gagliardini,2023-2024,29,it ITA,Monza,it Serie A,33,2360,26.2,29,4,2,1,2,3,1,0,0,0,MFDF,ce30bfc8
+278,Pablo Galdames Millán,2023-2024,26,cl CHI,Genoa,it Serie A,2,11,0.1,0,2,13,0,0,0,0,0,0,0,MFDF,dd403465
+279,Antonino Gallo,2023-2024,23,it ITA,Lecce,it Serie A,35,2490,27.7,30,5,3,0,3,3,0,0,0,0,DF,c74d63ac
+280,Giovanni Garofani,2023-2024,20,it ITA,Juventus,it Serie A,0,,,0,0,1,,,,,,,,GK,ff2ad9bb
+281,Luca Garritano,2023-2024,29,it ITA,Frosinone,it Serie A,12,485,5.4,5,7,25,0,0,0,0,0,0,0,MFDF,1ceeae3e
+282,Tito Gasperini,2023-2024,17,it ITA,Bologna,it Serie A,0,,,0,0,7,,,,,,,,GK,50ddae52
+283,Federico Gatti,2023-2024,25,it ITA,Juventus,it Serie A,32,2637,29.3,30,2,5,4,0,4,4,0,0,0,DF,18dd3219
+284,Francesco Gelli,2023-2024,26,it ITA,Frosinone,it Serie A,27,1561,17.3,16,11,2,0,0,0,0,0,0,0,MFDF,986693ed
+285,Luca Gemello,2023-2024,23,it ITA,Torino,it Serie A,2,180,2.0,2,0,35,0,0,0,0,0,0,0,GK,53e494ec
+286,Valentin Gendrey,2023-2024,23,fr FRA,Lecce,it Serie A,37,3044,33.8,35,2,0,2,3,5,2,0,0,0,DF,822ed0ec
+287,Farés Ghedjemis,2023-2024,20,fr FRA,Frosinone,it Serie A,6,182,2.0,1,5,11,0,0,0,0,0,0,0,FWMF,14aac43e
+288,Lautaro Gianetti,2023-2024,29,ar ARG,Udinese,it Serie A,7,630,7.0,7,0,9,1,0,1,1,0,0,0,DF,e08ac719
+289,Mario Gila,2023-2024,22,es ESP,Lazio,it Serie A,21,1809,20.1,21,0,13,0,0,0,0,0,0,0,DF,9c435456
+290,Gvidas Gineitis,2023-2024,19,lt LTU,Torino,it Serie A,14,538,6.0,4,10,15,0,0,0,0,0,0,0,MF,548bd0de
+291,Francesco Gioielli,2023-2024,19,it ITA,Napoli,it Serie A,0,,,0,0,2,,,,,,,,MF,6ced606e
+292,Olivier Giroud,2023-2024,36,fr FRA,Milan,it Serie A,35,2363,26.3,28,7,1,15,8,23,11,4,5,1,FW,16ceb862
+293,Saba Goglichidze,2023-2024,19,ge GEO,Empoli,it Serie A,0,,,0,0,16,,,,,,,,DF,011d370e
+294,Edoardo Goldaniga,2023-2024,29,it ITA,Cagliari,it Serie A,13,1011,11.2,12,1,8,0,0,0,0,0,0,0,DF,4b029b31
+295,Lovro Golič,2023-2024,17,si SVN,Roma,it Serie A,0,,,0,0,2,,,,,,,,DF,d80b24a7
+296,Pierluigi Gollini,2023-2024,28,it ITA,Napoli,it Serie A,7,630,7.0,7,0,22,0,0,0,0,0,0,0,GK,f0f7f62f
+297,Papu Gómez,2023-2024,35,ar ARG,Monza,it Serie A,2,41,0.5,0,2,0,0,0,0,0,0,0,0,MFFW,6e4df551
+298,Iron Gomis,2023-2024,23,fr FRA,Salernitana,it Serie A,5,134,1.5,1,4,7,0,0,0,0,0,0,0,MF,1d50130f
+299,Diego González,2023-2024,20,py PAR,Lazio,it Serie A,0,,,0,0,6,,,,,,,,FW,98d51c94
+300,Joan Gonzàlez,2023-2024,21,es ESP,Lecce,it Serie A,29,1291,14.3,13,16,8,1,1,2,1,0,0,0,MF,f025eade
+301,Nicolás González,2023-2024,25,ar ARG,Fiorentina,it Serie A,29,1913,21.3,21,8,1,12,2,14,11,1,3,2,FW,2374aaca
+302,Stefano Gori,2023-2024,27,it ITA,Monza,it Serie A,0,,,0,0,37,,,,,,,,GK,d6daf00a
+303,Alberto Grassi,2023-2024,28,it ITA,Empoli,it Serie A,27,1807,20.1,22,5,5,0,1,1,0,0,0,0,MF,6cc97b6a
+304,Salvati Gregorio,2023-2024,18,it ITA,Salernitana,it Serie A,0,,,0,0,13,,,,,,,,GK,959762fc
+305,Gabriele Guarino,2023-2024,19,it ITA,Empoli,it Serie A,0,,,0,0,13,,,,,,,,DF,e49193cf
+306,Niccolò Guccione,2023-2024,17,it ITA,Salernitana,it Serie A,0,,,0,0,2,,,,,,,,DF,29c5932d
+307,Albert Guðmundsson,2023-2024,26,is ISL,Genoa,it Serie A,35,3016,33.5,34,1,0,14,4,18,10,4,5,1,FWMF,b79858d5
+308,Mattéo Guendouzi,2023-2024,24,fr FRA,Lazio,it Serie A,33,2367,26.3,27,6,0,2,3,5,2,0,0,0,MF,5ea8ef20
+309,Tomasso Guercio,2023-2024,18,pl POL,Inter,it Serie A,0,,,0,0,1,,,,,,,,DF,fa502d6d
+310,Axel Guessand,2023-2024,18,fr FRA,Udinese,it Serie A,1,45,0.5,0,1,12,0,0,0,0,0,0,0,DF,e04dca4a
+311,Emmanuel Gyasi,2023-2024,29,gh GHA,Empoli,it Serie A,33,1879,20.9,21,12,4,1,2,3,1,0,0,0,DFFW,f9758dae
+312,Norbert Gyömbér,2023-2024,31,sk SVK,Salernitana,it Serie A,22,1760,19.6,20,2,3,0,0,0,0,0,0,0,DF,0be276c6
+313,Nicolas Haas,2023-2024,27,ch SUI,Empoli,it Serie A,1,90,1.0,1,0,1,0,0,0,0,0,0,0,MF,fa449bba
+314,Hamza Haoudi,2023-2024,22,it ITA,Frosinone,it Serie A,0,,,0,0,1,,,,,,,,MF,7f70fab7
+315,Ridgeciano Haps,2023-2024,30,sr SUR,Genoa,it Serie A,16,773,8.6,7,9,13,0,1,1,0,0,0,0,DF,c8d7131c
+316,Abdou Harroui,2023-2024,25,nl NED,Frosinone,it Serie A,18,1019,11.3,13,5,2,3,3,6,2,1,1,0,MFFW,65fd099c
+317,Luis Hasa,2023-2024,19,it ITA,Juventus,it Serie A,0,,,0,0,1,,,,,,,,MF,ab4f1aa9
+318,Hans Hateboer,2023-2024,29,nl NED,Atalanta,it Serie A,23,1113,12.4,10,13,7,0,1,1,0,0,0,0,DF,3b333ac3
+319,Pantelis Hatzidiakos,2023-2024,26,gr GRE,Cagliari,it Serie A,13,856,9.5,13,0,17,0,0,0,0,0,0,0,DF,78a3c38e
+320,Silvan Hefti,2023-2024,25,ch SUI,Genoa,it Serie A,6,114,1.3,1,5,11,0,0,0,0,0,0,0,MFDF,f8342731
+321,Liam Henderson,2023-2024,27,sct SCO,Empoli,it Serie A,1,5,0.1,0,1,0,0,0,0,0,0,0,0,MF,d7918b13
+322,Matheus Henrique,2023-2024,25,br BRA,Sassuolo,it Serie A,31,2501,27.8,27,4,0,2,2,4,2,0,0,0,MF,a2d9f138
+323,Thomas Henry,2023-2024,28,fr FRA,Hellas Verona,it Serie A,18,334,3.7,2,16,8,3,0,3,3,0,1,1,FW,9ef42479
+324,Theo Hernández,2023-2024,25,fr FRA,Milan,it Serie A,32,2791,31.0,31,1,0,5,4,9,4,1,2,1,DF,d4c9725f
+325,Isak Hien,2023-2024,24,se SWE,2 Teams,it Serie A,26,1801,20.0,18,8,1,0,1,1,0,0,0,0,DF,12806697
+326,Emil Holm,2023-2024,23,se SWE,Atalanta,it Serie A,22,947,10.5,12,10,8,1,1,2,1,0,0,0,DF,c2357b65
+327,Martin Hongla,2023-2024,25,cm CMR,Hellas Verona,it Serie A,15,1084,12.0,12,3,4,0,0,0,0,0,0,0,MF,b85bf253
+328,Sydney van Hooijdonk,2023-2024,23,nl NED,Bologna,it Serie A,9,212,2.4,2,7,10,0,0,0,0,0,0,0,FW,5b418e15
+329,Dean Huijsen,2023-2024,18,es ESP,2 Teams,it Serie A,14,522,5.8,4,10,21,2,0,2,2,0,0,0,DF,87278bce
+330,Elseid Hysaj,2023-2024,29,al ALB,Lazio,it Serie A,22,1199,13.3,11,11,15,0,0,0,0,0,0,0,DF,2f3452eb
+331,Arijon Ibrahimović,2023-2024,17,de GER,Frosinone,it Serie A,16,474,5.3,5,11,15,1,1,2,1,0,0,0,FWDF,f5c4fd91
+332,Hubert Idasiak,2023-2024,21,pl POL,Napoli,it Serie A,0,,,0,0,17,,,,,,,,GK,1b70f53a
+333,Antonio Iervolino,2023-2024,20,it ITA,Salernitana,it Serie A,0,,,0,0,1,,,,,,,,MF,daa4c94c
+334,Jonathan Ikone,2023-2024,25,fr FRA,Fiorentina,it Serie A,28,1682,18.7,18,10,4,3,1,4,3,0,0,0,FW,42eaa028
+335,Chukwubuikem Ikwuemesi,2023-2024,21,ng NGA,Salernitana,it Serie A,25,1061,11.8,11,14,6,1,1,2,1,0,0,0,FW,c6db4f29
+336,Ivan Ilić,2023-2024,22,rs SRB,Torino,it Serie A,31,2098,23.3,25,6,1,3,2,5,3,0,0,0,MF,bb376bed
+337,Mihajlo Ilić,2023-2024,20,rs SRB,Bologna,it Serie A,0,,,0,0,18,,,,,,,,DF,a06526cf
+338,Samuel Iling-Junior,2023-2024,19,eng ENG,Juventus,it Serie A,24,810,9.0,4,20,14,1,2,3,1,0,0,0,DFMF,ba492306
+339,Emirhan İlkhan,2023-2024,19,tr TUR,Torino,it Serie A,0,,,0,0,2,,,,,,,,MF,a47c6309
+340,Ciro Immobile,2023-2024,33,it ITA,Lazio,it Serie A,31,1652,18.4,21,10,1,7,1,8,3,4,4,0,FW,4431aed2
+341,Gabriele Indragoli,2023-2024,19,it ITA,Empoli,it Serie A,0,,,0,0,6,,,,,,,,DF,0472ad0a
+342,Gino Infantino,2023-2024,20,ar ARG,Fiorentina,it Serie A,6,96,1.1,0,6,32,0,0,0,0,0,0,0,MF,546c7f68
+343,Gustav Isaksen,2023-2024,22,dk DEN,Lazio,it Serie A,28,1074,11.9,12,16,8,3,1,4,3,0,0,0,FW,5715bb71
+344,Ardian Ismajli,2023-2024,26,al ALB,Empoli,it Serie A,26,2045,22.7,23,3,3,0,0,0,0,0,0,0,DF,6b635f5c
+345,Armando Izzo,2023-2024,31,it ITA,Monza,it Serie A,23,1650,18.3,20,3,4,0,0,0,0,0,0,0,DF,89976232
+346,Filip Jagiełło,2023-2024,25,pl POL,Genoa,it Serie A,2,33,0.4,0,2,13,0,0,0,0,0,0,0,MF,4cdcbc14
+347,Jakub Jankto,2023-2024,27,cz CZE,Cagliari,it Serie A,18,872,9.7,13,5,11,1,2,3,1,0,0,0,MFFW,1ea5f91c
+348,Juan Jesus,2023-2024,32,br BRA,Napoli,it Serie A,24,2116,23.5,23,1,6,1,0,1,1,0,0,0,DF,79083382
+349,Alejandro Jiménez,2023-2024,18,es ESP,Milan,it Serie A,3,68,0.8,0,3,13,0,0,0,0,0,0,0,DF,faa13947
+350,Þórir Jóhann Helgason,2023-2024,22,is ISL,Lecce,it Serie A,0,,,0,0,2,,,,,,,,MF,dc765618
+351,Samuel John Nwachukwu,2023-2024,17,ng NGA,Udinese,it Serie A,0,,,0,0,3,,,,,,,,DF,d72b1152
+352,Kaio Jorge,2023-2024,21,br BRA,Frosinone,it Serie A,20,812,9.0,8,12,11,3,0,3,2,1,2,1,FW,0cf465f2
+353,Joselito,2023-2024,19,es ESP,Hellas Verona,it Serie A,0,,,0,0,7,,,,,,,,MF,fb25b7fe
+354,Luka Jović,2023-2024,25,rs SRB,2 Teams,it Serie A,23,877,9.7,8,15,8,6,1,7,6,0,0,0,FW,4d8cd038
+355,Hamed Junior Traorè,2023-2024,23,ci CIV,Napoli,it Serie A,9,382,4.2,5,4,8,0,0,0,0,0,0,0,MF,570bb4b9
+356,Mohamed Kaba,2023-2024,21,fr FRA,Lecce,it Serie A,23,1378,15.3,15,8,1,0,0,0,0,0,0,0,MF,517cfb19
+357,Christian Kabasele,2023-2024,32,be BEL,Udinese,it Serie A,13,861,9.6,10,3,22,1,1,2,1,0,0,0,DF,914ab9a1
+358,Uroš Kabić,2023-2024,19,rs SRB,Torino,it Serie A,0,,,0,0,14,,,,,,,,MF,008042f3
+359,Yayah Kallon,2023-2024,22,sl SLE,Hellas Verona,it Serie A,1,4,0.0,0,1,6,0,0,0,0,0,0,0,FW,f95f49d2
+360,Pierre Kalulu,2023-2024,23,fr FRA,Milan,it Serie A,9,374,4.2,4,5,4,0,0,0,0,0,0,0,DF,85f7d1be
+361,Daichi Kamada,2023-2024,26,jp JPN,Lazio,it Serie A,29,1544,17.2,17,12,9,2,2,4,2,0,0,0,MF,15b287da
+362,Hassane Kamara,2023-2024,29,ci CIV,Udinese,it Serie A,35,2225,24.7,27,8,2,1,1,2,1,0,0,0,DF,19a12bed
+363,Issiaka Kamate,2023-2024,18,fr FRA,Inter,it Serie A,0,,,0,0,2,,,,,,,,MF,9181fd45
+364,Dimitrije Kamenović,2023-2024,23,rs SRB,Lazio,it Serie A,0,,,0,0,2,,,,,,,,DF,d3e0c826
+365,Matjaž Kamenšek Pahič,2023-2024,19,si SVN,Frosinone,it Serie A,0,,,0,0,3,,,,,,,,MF,e136f209
+366,Yann Karamoh,2023-2024,25,fr FRA,Torino,it Serie A,10,162,1.8,1,9,8,0,0,0,0,0,0,0,MFFW,8b66d9cc
+367,Jesper Karlsson,2023-2024,25,se SWE,Bologna,it Serie A,7,344,3.8,4,3,19,0,0,0,0,0,0,0,FW,7952d0c2
+368,Rick Karsdorp,2023-2024,28,nl NED,Roma,it Serie A,18,1191,13.2,14,4,16,0,2,2,0,0,0,0,DF,9f84febe
+369,Grigoris Kastanos,2023-2024,25,cy CYP,Salernitana,it Serie A,26,1480,16.4,18,8,3,3,3,6,3,0,0,0,MFDF,2a82aa85
+370,Michael Kayode,2023-2024,19,it ITA,Fiorentina,it Serie A,26,2058,22.9,22,4,8,1,1,2,1,0,0,0,DF,e19660a8
+371,Moise Kean,2023-2024,23,it ITA,Juventus,it Serie A,19,654,7.3,8,11,4,0,0,0,0,0,0,0,FW,3d50bcdb
+372,Simon Kjær,2023-2024,34,dk DEN,Milan,it Serie A,20,1171,13.0,14,6,5,0,1,1,0,0,0,0,DF,8b8a56ce
+373,Davy Klaassen,2023-2024,30,nl NED,Inter,it Serie A,13,206,2.3,1,12,23,0,0,0,0,0,0,0,MF,15fd5593
+374,Aleksandr Kokorin,2023-2024,32,ru RUS,Fiorentina,it Serie A,0,,,0,0,3,,,,,,,,FWMF,fec5accc
+375,Sead Kolašinac,2023-2024,30,ba BIH,Atalanta,it Serie A,30,2178,24.2,25,5,2,1,0,1,1,0,0,0,DF,3935e52e
+376,Teun Koopmeiners,2023-2024,25,nl NED,Atalanta,it Serie A,34,2627,29.2,29,5,0,12,5,17,10,2,2,0,MF,a26fb8aa
+377,Filip Kostić,2023-2024,30,rs SRB,Juventus,it Serie A,29,1815,20.2,26,3,8,0,4,4,0,0,0,0,DF,b1cd37e6
+378,Christian Kouamé,2023-2024,25,ci CIV,Fiorentina,it Serie A,23,1089,12.1,11,12,4,2,1,3,2,0,0,0,FW,58e933d2
+379,Christos Kourfalidis,2023-2024,20,gr GRE,Cagliari,it Serie A,0,,,0,0,2,,,,,,,,MF,5c522c88
+380,Viktor Kovalenko,2023-2024,27,ua UKR,Empoli,it Serie A,17,613,6.8,4,13,14,1,1,2,1,0,0,0,MF,9d60028d
+381,Rasmus Kristensen,2023-2024,26,dk DEN,Roma,it Serie A,29,1744,19.4,19,10,6,1,1,2,1,0,0,0,DF,39769cff
+382,Thomas Kristensen,2023-2024,21,dk DEN,Udinese,it Serie A,26,2096,23.3,23,3,6,0,1,1,0,0,0,0,DF,fadf9a05
+383,Nikola Krstović,2023-2024,23,me MNE,Lecce,it Serie A,35,2373,26.4,30,5,1,7,1,8,6,1,3,2,FW,473803c9
+384,Rade Krunić,2023-2024,29,ba BIH,Milan,it Serie A,10,687,7.6,8,2,5,0,0,0,0,0,0,0,MF,817c6964
+385,Marash Kumbulla,2023-2024,23,al ALB,Sassuolo,it Serie A,7,362,4.0,3,4,9,0,0,0,0,0,0,0,DF,a40819d9
+386,Justin Kumi,2023-2024,19,it ITA,Sassuolo,it Serie A,1,4,0.0,0,1,0,0,0,0,0,0,0,0,FW,2d5f2ff0
+387,Berkan Kutlu,2023-2024,25,tr TUR,Genoa,it Serie A,6,199,2.2,0,6,10,0,0,0,0,0,0,0,MF,794364d7
+388,Khvicha Kvaratskhelia,2023-2024,22,ge GEO,Napoli,it Serie A,34,2737,30.4,32,2,0,11,6,17,11,0,0,0,FW,dea88efd
+389,Giorgi Kvernadze,2023-2024,20,ge GEO,Frosinone,it Serie A,5,63,0.7,0,5,30,0,0,0,0,0,0,0,FWDF,70006831
+390,Giorgos Kyriakopoulos,2023-2024,27,gr GRE,Monza,it Serie A,28,1712,19.0,20,8,10,0,3,3,0,0,0,0,DF,0a483542
+391,Eugenio Lamanna,2023-2024,33,it ITA,Monza,it Serie A,0,,,0,0,14,,,,,,,,GK,349601c3
+392,Gianluca Lapadula,2023-2024,33,pe PER,Cagliari,it Serie A,23,1205,13.4,14,9,5,3,1,4,2,1,1,0,FW,2ead2809
+393,Armand Lauriente,2023-2024,24,fr FRA,Sassuolo,it Serie A,37,2908,32.3,35,2,0,5,4,9,5,0,0,0,FW,2d22cea7
+394,Valentino Lazaro,2023-2024,27,at AUT,Torino,it Serie A,35,1994,22.2,21,14,2,0,4,4,0,0,0,0,DFMF,016ff750
+395,Darko Lazović,2023-2024,32,rs SRB,Hellas Verona,it Serie A,32,1928,21.4,22,10,0,3,2,5,2,1,1,0,FWMF,5128bde4
+396,Manuel Lazzari,2023-2024,29,it ITA,Lazio,it Serie A,24,1671,18.6,19,5,10,0,2,2,0,0,0,0,DF,02caf6e0
+397,Nicola Leali,2023-2024,30,it ITA,Genoa,it Serie A,3,176,2.0,2,1,34,0,0,0,0,0,0,0,GK,5f9970a0
+398,Rafael Leão,2023-2024,24,pt POR,Milan,it Serie A,34,2512,27.9,29,5,0,9,9,18,9,0,0,0,FW,20730eae
+399,Mats Lemmens,2023-2024,21,be BEL,Lecce,it Serie A,0,,,0,0,1,,,,,,,,DF,68b2281a
+400,Anderson Lima,2023-2024,23,br BRA,Lazio,it Serie A,0,,,0,0,7,,,,,,,,MF,59be3a74
+401,Jesper Lindstrøm,2023-2024,23,dk DEN,Napoli,it Serie A,22,430,4.8,2,20,11,0,0,0,0,0,0,0,FWMF,37dc1a48
+402,Karol Linetty,2023-2024,28,pl POL,Torino,it Serie A,28,1858,20.6,19,9,5,0,0,0,0,0,0,0,MF,d023d70f
+403,Luca Lipani,2023-2024,18,it ITA,Sassuolo,it Serie A,8,384,4.3,5,3,23,0,0,0,0,0,0,0,MF,1dc5a029
+404,Pol Lirola,2023-2024,25,es ESP,Frosinone,it Serie A,25,1536,17.1,18,7,2,2,1,3,2,0,0,0,DF,ff800ed8
+405,Marcin Listkowski,2023-2024,25,pl POL,Lecce,it Serie A,1,8,0.1,0,1,13,0,0,0,0,0,0,0,FW,a3695ac2
+406,Diego Llorente,2023-2024,29,es ESP,Roma,it Serie A,29,2170,24.1,27,2,5,1,1,2,1,0,0,0,DF,bba30585
+407,Stanislav Lobotka,2023-2024,28,sk SVK,Napoli,it Serie A,38,3282,36.5,38,0,0,0,1,1,0,0,0,0,MF,e1cbb531
+408,Manuel Locatelli,2023-2024,25,it ITA,Juventus,it Serie A,36,3008,33.4,34,2,1,1,4,5,1,0,0,0,MF,a8a874f1
+409,Seb Loeffen,2023-2024,19,nl NED,Sassuolo,it Serie A,0,,,0,0,1,,,,,,,,DF,2cf799cc
+410,Ruben Loftus-Cheek,2023-2024,27,eng ENG,Milan,it Serie A,29,2068,23.0,26,3,2,6,1,7,6,0,0,0,MF,e97fd090
+411,Ademola Lookman,2023-2024,25,ng NGA,Atalanta,it Serie A,31,1894,21.0,22,9,1,11,7,18,11,0,0,0,FWMF,7c104bb7
+412,Maxime Lopez,2023-2024,25,fr FRA,2 Teams,it Serie A,21,940,10.4,9,12,15,0,0,0,0,0,0,0,MF,20094685
+413,Matteo Lovato,2023-2024,23,it ITA,2 Teams,it Serie A,26,1491,16.6,17,9,11,0,0,0,0,0,0,0,DF,5fa57166
+414,Sandi Lovrić,2023-2024,25,si SVN,Udinese,it Serie A,29,1987,22.1,21,8,0,1,3,4,1,0,0,0,MF,966eea58
+415,Hirving Lozano,2023-2024,28,mx MEX,Napoli,it Serie A,0,,,0,0,2,,,,,,,,FWMF,a69e4806
+416,Lorenzo Lucca,2023-2024,22,it ITA,Udinese,it Serie A,37,2592,28.8,30,7,0,8,4,12,8,0,0,0,FW,83c06f3a
+417,Jhon Lucumí,2023-2024,25,co COL,Bologna,it Serie A,29,2217,24.6,23,6,4,0,0,0,0,0,0,0,DF,80490d7f
+418,José Luis Palomino,2023-2024,33,ar ARG,Atalanta,it Serie A,4,27,0.3,0,4,9,0,0,0,0,0,0,0,DF,921f6058
+419,Romelu Lukaku,2023-2024,30,be BEL,Roma,it Serie A,32,2641,29.3,30,2,0,13,3,16,13,0,1,1,FW,5eae500a
+420,Karlo Lulić,2023-2024,27,hr CRO,Frosinone,it Serie A,1,19,0.2,0,1,13,0,0,0,0,0,0,0,MF,5dde403b
+421,Sebastiano Luperto,2023-2024,26,it ITA,Empoli,it Serie A,38,3406,37.8,38,0,0,1,1,2,1,0,0,0,DF,997fff07
+422,Mateus Lusuardi,2023-2024,19,br BRA,Frosinone,it Serie A,4,219,2.4,3,1,20,0,0,0,0,0,0,0,DF,0704d719
+423,Zito Luvumbo,2023-2024,21,ao ANG,Cagliari,it Serie A,30,1946,21.6,19,11,1,4,5,9,4,0,0,0,FWMF,b09e0873
+424,Charalambos Lykogiannis,2023-2024,29,gr GRE,Bologna,it Serie A,22,904,10.0,10,12,15,2,1,3,2,0,0,0,DF,5efc5389
+425,Mateusz Łęgowski,2023-2024,20,pl POL,Salernitana,it Serie A,29,1145,12.7,10,19,9,0,0,0,0,0,0,0,MF,75c62731
+426,Daniel Macej,2023-2024,19,,Frosinone,it Serie A,0,,,0,0,2,,,,,,,,DF,d31b7a70
+427,Giulio Maggiore,2023-2024,25,it ITA,Salernitana,it Serie A,27,1800,20.0,20,7,3,4,2,6,4,0,0,0,MF,957e4c87
+428,Giangiacomo Magnani,2023-2024,27,it ITA,Hellas Verona,it Serie A,33,2444,27.2,27,6,2,0,0,0,0,0,0,0,DF,cce9f582
+429,Mike Maignan,2023-2024,28,fr FRA,Milan,it Serie A,29,2609,29.0,29,0,2,0,1,1,0,0,0,0,GK,fcb38f57
+430,Antoine Makoumbou,2023-2024,25,cg CGO,Cagliari,it Serie A,32,2702,30.0,32,0,1,1,0,1,1,0,0,0,MF,f37f3522
+431,Daniel Maldini,2023-2024,21,it ITA,2 Teams,it Serie A,18,596,6.6,5,13,8,4,1,5,4,0,0,0,MFFW,801831fe
+432,Youssef Maleh,2023-2024,24,ma MAR,2 Teams,it Serie A,34,2602,28.9,30,4,2,0,1,1,0,0,0,0,MF,4c8845f7
+433,Ruslan Malinovskyi,2023-2024,30,ua UKR,Genoa,it Serie A,28,1544,17.2,18,10,2,4,1,5,4,0,0,0,MF,48d5bd33
+434,Joel Malusà,2023-2024,16,it ITA,Udinese,it Serie A,0,,,0,0,6,,,,,,,,GK,b6c6b5e2
+435,Gianluca Mancini,2023-2024,27,it ITA,Roma,it Serie A,36,2869,31.9,34,2,1,4,1,5,4,0,0,0,DF,5aa53281
+436,Tommaso Mancini,2023-2024,19,it ITA,Juventus,it Serie A,0,,,0,0,1,,,,,,,,FW,8df7271c
+437,Marco Mancosu,2023-2024,34,it ITA,Cagliari,it Serie A,6,156,1.7,3,3,8,0,0,0,0,0,1,1,MFFW,2c3a6c21
+438,Christos Mandas,2023-2024,21,gr GRE,Lazio,it Serie A,9,721,8.0,8,1,26,0,0,0,0,0,0,0,GK,f794e9ab
+439,Rolando Mandragora,2023-2024,26,it ITA,Fiorentina,it Serie A,33,1588,17.6,16,17,3,3,3,6,3,0,0,0,MF,c7259b83
+440,Kostas Manolas,2023-2024,32,gr GRE,Salernitana,it Serie A,8,488,5.4,6,2,3,0,0,0,0,0,0,0,DF,c707411f
+441,Alberto Manzoni,2023-2024,18,it ITA,Atalanta,it Serie A,0,,,0,0,1,,,,,,,,MF,08cda374
+442,Riccardo Marchizza,2023-2024,25,it ITA,Frosinone,it Serie A,13,1148,12.8,13,0,7,0,4,4,0,0,0,0,DF,91d0fabf
+443,Gian Marco Ferrari,2023-2024,31,it ITA,Sassuolo,it Serie A,31,2272,25.2,25,6,6,1,0,1,1,0,0,0,DF,8650af85
+444,Pablo Marí,2023-2024,29,es ESP,Monza,it Serie A,34,2615,29.1,30,4,0,0,0,0,0,0,0,0,DF,aa54ec6f
+445,Luca Marianucci,2023-2024,19,it ITA,Empoli,it Serie A,0,,,0,0,1,,,,,,,,DF,64e6778a
+446,Mirko Marić,2023-2024,28,hr CRO,Monza,it Serie A,10,287,3.2,1,9,9,1,0,1,1,0,0,0,FW,78338347
+447,Răzvan Marin,2023-2024,27,ro ROU,Empoli,it Serie A,30,1818,20.2,20,10,5,0,3,3,0,0,0,0,MF,7fac99d4
+448,Renato Marin,2023-2024,17,it ITA,Roma,it Serie A,0,,,0,0,1,,,,,,,,GK,6db4e0b4
+449,Agustín Martegani,2023-2024,23,ar ARG,Salernitana,it Serie A,18,731,8.1,6,12,16,1,0,1,1,0,0,0,MF,591bf874
+450,Aarón Martín,2023-2024,26,es ESP,Genoa,it Serie A,22,1376,15.3,17,5,10,0,1,1,0,0,0,0,DF,2f3e911a
+451,Tommaso Martinelli,2023-2024,17,it ITA,Fiorentina,it Serie A,1,90,1.0,1,0,31,0,0,0,0,0,0,0,GK,968ddd14
+452,Josep Martinez,2023-2024,25,es ESP,Genoa,it Serie A,36,3239,36.0,36,0,1,0,0,0,0,0,0,0,GK,11d8aff0
+453,Lautaro Martínez,2023-2024,25,ar ARG,Inter,it Serie A,33,2656,29.5,31,2,2,24,3,27,22,2,3,1,FW,f7036e1c
+454,Lucas Martínez Quarta,2023-2024,27,ar ARG,Fiorentina,it Serie A,29,2291,25.5,26,3,5,5,1,6,5,0,0,0,DF,3ec3c1c9
+455,Adam Marušić,2023-2024,30,me MNE,Lazio,it Serie A,37,3100,34.4,37,0,0,1,0,1,1,0,0,0,DF,d4535821
+456,Adam Masina,2023-2024,29,ma MAR,2 Teams,it Serie A,20,1088,12.1,11,9,10,0,0,0,0,0,0,0,DF,de0f152c
+457,Alan Matturro,2023-2024,18,uy URU,Genoa,it Serie A,6,106,1.2,1,5,15,0,0,0,0,0,0,0,DF,547c0119
+458,Andrea Mazza,2023-2024,19,it ITA,Monza,it Serie A,0,,,0,0,4,,,,,,,,GK,f93a544c
+459,Luca Mazzitelli,2023-2024,27,it ITA,Frosinone,it Serie A,29,2210,24.6,26,3,3,5,0,5,5,0,0,0,MF,dc61b402
+460,Pasquale Mazzocchi,2023-2024,28,it ITA,2 Teams,it Serie A,28,1700,18.9,20,8,9,0,2,2,0,0,0,0,DF,eb0ec070
+461,Jordi Mboula,2023-2024,24,es ESP,Hellas Verona,it Serie A,11,307,3.4,5,6,9,0,1,1,0,0,0,0,FWMF,4887118d
+462,Weston McKennie,2023-2024,24,us USA,Juventus,it Serie A,34,2594,28.8,29,5,2,0,7,7,0,0,0,0,MFDF,01c3aff5
+463,Arthur Melo,2023-2024,26,br BRA,Fiorentina,it Serie A,33,1986,22.1,23,10,4,2,3,5,1,1,1,0,MF,48b3dd60
+464,Leonardo Mendicino,2023-2024,17,it ITA,Atalanta,it Serie A,1,1,0.0,0,1,7,0,0,0,0,0,0,0,MF,dac2bed8
+465,Alex Meret,2023-2024,26,it ITA,Napoli,it Serie A,31,2773,30.8,31,0,1,0,0,0,0,0,0,0,GK,9413b19f
+466,Junior Messias,2023-2024,32,br BRA,Genoa,it Serie A,18,1053,11.7,13,5,1,1,0,1,1,0,0,0,MFDF,f49c4ae9
+467,Nikola Milenković,2023-2024,25,rs SRB,Fiorentina,it Serie A,34,2510,27.9,27,7,4,0,0,0,0,0,0,0,DF,bee704fc
+468,Arkadiusz Milik,2023-2024,29,pl POL,Juventus,it Serie A,32,919,10.2,7,25,0,4,1,5,4,0,0,0,FW,85613cf0
+469,Vanja Milinković-Savić,2023-2024,26,rs SRB,Torino,it Serie A,36,3240,36.0,36,0,1,0,0,0,0,0,0,0,GK,9fa26bc2
+470,Yerry Mina,2023-2024,28,co COL,2 Teams,it Serie A,18,1259,14.0,14,4,11,2,0,2,1,1,1,0,DFMF,6d5701f2
+471,Aleksei Miranchuk,2023-2024,27,ru RUS,Atalanta,it Serie A,27,1176,13.1,12,15,8,3,5,8,3,0,0,0,MFFW,a9aa0d1d
+472,Kevin Miranda,2023-2024,20,it ITA,Sassuolo,it Serie A,1,14,0.2,0,1,1,0,0,0,0,0,0,0,DF,9bd97418
+473,Antonio Mirante,2023-2024,40,it ITA,Milan,it Serie A,2,177,2.0,2,0,27,0,0,0,0,0,0,0,GK,30223b33
+474,Fabio Miretti,2023-2024,19,it ITA,Juventus,it Serie A,25,1103,12.3,16,9,12,1,1,2,1,0,0,0,MF,34693494
+475,Filippo Missori,2023-2024,19,it ITA,Sassuolo,it Serie A,8,266,3.0,2,6,26,0,0,0,0,0,0,0,DF,2d3d7c0d
+476,Stefan Mitrović,2023-2024,20,rs SRB,Hellas Verona,it Serie A,10,391,4.3,4,6,5,0,0,0,0,0,0,0,FWMF,232b3da4
+477,Henrikh Mkhitaryan,2023-2024,34,am ARM,Inter,it Serie A,36,2785,30.9,35,1,2,2,8,10,2,0,0,0,MF,dd0daf32
+478,Ilario Monterisi,2023-2024,21,it ITA,Frosinone,it Serie A,24,1469,16.3,16,8,10,2,2,4,2,0,0,0,DF,31b252fc
+479,Lorenzo Montipò,2023-2024,27,it ITA,Hellas Verona,it Serie A,37,3330,37.0,37,0,0,0,1,1,0,0,0,0,GK,c1d95617
+480,Nikola Moro,2023-2024,25,hr CRO,Bologna,it Serie A,23,840,9.3,10,13,15,1,0,1,1,0,0,0,MF,ff579c7e
+481,Federico Mosca,2023-2024,17,it ITA,Udinese,it Serie A,0,,,0,0,6,,,,,,,,GK,23cb6019
+482,Dany Mota,2023-2024,25,pt POR,Monza,it Serie A,34,2049,22.8,24,10,1,4,3,7,4,0,0,0,FWMF,efc9e31f
+483,Andrei Motoc,2023-2024,21,md MDA,Salernitana,it Serie A,0,,,0,0,1,,,,,,,,DF,b64073a0
+484,Matteo Motta,2023-2024,18,it ITA,Inter,it Serie A,0,,,0,0,2,,,,,,,,DF,580b2e2d
+485,Samuele Mulattieri,2023-2024,22,it ITA,Sassuolo,it Serie A,27,462,5.1,1,26,10,0,0,0,0,0,0,0,FWMF,30297946
+486,Vimoj Muntu Wa Mungu,2023-2024,18,fr FRA,Torino,it Serie A,0,,,0,0,2,,,,,,,,DF,c464c40d
+487,Luis Muriel,2023-2024,32,co COL,Atalanta,it Serie A,18,409,4.5,2,16,4,2,1,3,2,0,0,0,FWMF,eb2fe5b6
+488,Yunus Musah,2023-2024,20,us USA,Milan,it Serie A,30,1478,16.4,13,17,3,0,2,2,0,0,0,0,MFFW,b51b1b9c
+489,Juan Musso,2023-2024,29,ar ARG,Atalanta,it Serie A,11,990,11.0,11,0,27,0,0,0,0,0,0,0,GK,a111cf41
+490,Kingstone Mutandwa,2023-2024,20,zm ZAM,Cagliari,it Serie A,5,39,0.4,0,5,9,1,0,1,1,0,0,0,FWMF,cbe32194
+491,Obite N'Dicka,2023-2024,23,ci CIV,Roma,it Serie A,25,2168,24.1,25,0,4,0,3,3,0,0,0,0,DF,441197b8
+492,Caumenan N'Guessan,2023-2024,19,fr FRA,Torino,it Serie A,0,,,0,0,12,,,,,,,,DF,0ba16279
+493,Nahitan Nández,2023-2024,27,uy URU,Cagliari,it Serie A,33,2341,26.0,29,4,0,2,3,5,1,1,1,0,MFDF,95facda1
+494,Luca Napolitano,2023-2024,19,it ITA,Lazio,it Serie A,0,,,0,0,2,,,,,,,,MF,74326da1
+495,Natan,2023-2024,22,br BRA,Napoli,it Serie A,14,952,10.6,11,3,19,0,0,0,0,0,0,0,DF,94bccc82
+496,Lapo Nava,2023-2024,19,it ITA,Milan,it Serie A,1,3,0.0,0,1,23,0,0,0,0,0,0,0,GK,c0f732e1
+497,Michel Ndary Adopo,2023-2024,23,fr FRA,Atalanta,it Serie A,10,109,1.2,0,10,26,0,1,1,0,0,0,0,MF,599d91d0
+498,Dan Ndoye,2023-2024,22,ch SUI,Bologna,it Serie A,32,1771,19.7,20,12,1,1,1,2,1,0,0,0,FWMF,8e697a8f
+499,Cyril Ngonge,2023-2024,23,be BEL,2 Teams,it Serie A,32,1746,19.4,18,14,1,7,2,9,7,0,0,0,FWMF,2b8360f1
+500,M'Baye Niang,2023-2024,28,sn SEN,Empoli,it Serie A,14,708,7.9,5,9,2,6,1,7,2,4,4,0,FW,2054d037
+501,Hans Nicolussi Caviglia,2023-2024,23,it ITA,Juventus,it Serie A,8,268,3.0,3,5,30,0,1,1,0,0,0,0,MF,b136c945
+502,Eybi Nije,2023-2024,18,se SWE,Torino,it Serie A,0,,,0,0,2,,,,,,,,FW,15918c9c
+503,Joseph Nonge,2023-2024,18,be BEL,Juventus,it Serie A,2,24,0.3,0,2,20,0,0,0,0,0,0,0,MF,23d73767
+504,Tijjani Noslin,2023-2024,24,nl NED,Hellas Verona,it Serie A,17,1339,14.9,17,0,0,5,4,9,5,0,0,0,FWMF,2f067cf2
+505,Clinton Nsiala,2023-2024,19,fr FRA,Milan,it Serie A,0,,,0,0,3,,,,,,,,DF,a778332e
+506,Simeon Nwankwo,2023-2024,31,ng NGA,Salernitana,it Serie A,15,686,7.6,6,9,10,3,0,3,3,0,0,0,FW,80dbbd10
+507,M'Bala Nzola,2023-2024,26,ao ANG,Fiorentina,it Serie A,33,1552,17.2,15,18,1,3,3,6,2,1,1,0,FW,a4948e67
+508,Adam Obert,2023-2024,20,sk SVK,Cagliari,it Serie A,17,941,10.5,10,7,21,0,0,0,0,0,0,0,DF,aa25ce92
+509,Pedro Obiang,2023-2024,31,gq EQG,Sassuolo,it Serie A,8,453,5.0,5,3,11,0,0,0,0,0,0,0,MF,ba1e04b3
+510,Guillermo Ochoa,2023-2024,38,mx MEX,Salernitana,it Serie A,21,1890,21.0,21,0,4,0,0,0,0,0,0,0,GK,1e9bde92
+511,Jens Odgaard,2023-2024,24,dk DEN,Bologna,it Serie A,10,431,4.8,5,5,3,2,0,2,2,0,0,0,FWMF,75374ee7
+512,Noah Okafor,2023-2024,23,ch SUI,Milan,it Serie A,28,887,9.9,6,22,4,6,2,8,6,0,0,0,FWMF,ca607d59
+513,David Okereke,2023-2024,25,ng NGA,Torino,it Serie A,9,252,2.8,3,6,8,0,0,0,0,0,0,0,FWMF,d125f22f
+514,Caleb Okoli,2023-2024,22,it ITA,2 Teams,it Serie A,34,2914,32.4,32,2,3,0,1,1,0,0,0,0,DF,8ec109e6
+515,Maduka Okoye,2023-2024,23,ng NGA,Udinese,it Serie A,21,1890,21.0,21,0,16,0,0,0,0,0,0,0,GK,ab5c36dd
+516,Mathías Olivera,2023-2024,25,uy URU,Napoli,it Serie A,23,1569,17.4,18,5,4,1,1,2,1,0,0,0,DF,41c12f75
+517,Jan Oliveras,2023-2024,19,es ESP,Roma,it Serie A,0,,,0,0,2,,,,,,,,DF,5417a3bf
+518,Gaetano Oristanio,2023-2024,20,it ITA,Cagliari,it Serie A,25,1104,12.3,11,14,6,2,1,3,2,0,0,0,FWMF,5cfc74fc
+519,Riccardo Orsolini,2023-2024,26,it ITA,Bologna,it Serie A,33,1792,19.9,19,14,1,10,2,12,8,2,3,1,FWMF,e14ec482
+520,Victor Osimhen,2023-2024,24,ng NGA,Napoli,it Serie A,25,1982,22.0,22,3,1,15,3,18,12,3,5,2,FW,8c90fd7a
+521,Remi Oudin,2023-2024,26,fr FRA,Lecce,it Serie A,31,1819,20.2,21,10,5,3,2,5,3,0,0,0,MFFW,ea02beaf
+522,Anthony Oyono,2023-2024,22,ga GAB,Frosinone,it Serie A,16,1198,13.3,14,2,0,0,1,1,0,0,0,0,DF,68b7e72e
+523,Daniele Padelli,2023-2024,37,it ITA,Udinese,it Serie A,0,,0.0,0,0,29,0,0,0,0,0,0,0,GK,cf1c23d8
+524,Simone Pafundi,2023-2024,17,it ITA,Udinese,it Serie A,1,8,0.1,0,1,12,0,0,0,0,0,0,0,MF,8daee720
+525,Riccardo Pagano,2023-2024,18,it ITA,Roma,it Serie A,4,51,0.6,0,4,19,0,0,0,0,0,0,0,MFDF,b5b9bde7
+526,Marco Palestra,2023-2024,18,it ITA,Atalanta,it Serie A,0,,,0,0,3,,,,,,,,DF,1f1828dd
+527,Matteo Palma,2023-2024,15,it ITA,Udinese,it Serie A,0,,,0,0,1,,,,,,,,DF,cb2e6751
+528,Lorenzo Palmisani,2023-2024,19,it ITA,Frosinone,it Serie A,0,,,0,0,7,,,,,,,,GK,7059209e
+529,Christos Papadopoulos,2023-2024,18,gr GRE,Genoa,it Serie A,1,4,0.0,0,1,7,0,0,0,0,0,0,0,FW,e19bc88c
+530,Leandro Paredes,2023-2024,29,ar ARG,Roma,it Serie A,34,2634,29.3,32,2,0,3,5,8,0,3,3,0,MF,dff153a4
+531,Fabiano Parisi,2023-2024,22,it ITA,Fiorentina,it Serie A,21,1454,16.2,16,5,16,0,1,1,0,0,0,0,DF,0967845b
+532,Mario Pašalić,2023-2024,28,hr CRO,Atalanta,it Serie A,34,2051,22.8,23,11,4,6,6,12,4,2,2,0,MF,e599253a
+533,Triantafyllos Pasaridīs,2023-2024,27,gr GRE,Salernitana,it Serie A,8,452,5.0,5,3,7,0,0,0,0,0,0,0,DF,6416adf0
+534,Pietro Passador,2023-2024,20,it ITA,Torino,it Serie A,0,,,0,0,3,,,,,,,,GK,4fb7ed7e
+535,Nicola Patanè,2023-2024,19,it ITA,Hellas Verona,it Serie A,0,,,0,0,5,,,,,,,,MF,a87da605
+536,Patric,2023-2024,30,es ESP,Lazio,it Serie A,20,1608,17.9,19,1,8,2,0,2,2,0,0,0,DF,f7223718
+537,Rui Patrício,2023-2024,35,pt POR,Roma,it Serie A,23,2070,23.0,23,0,15,0,0,0,0,0,0,0,GK,79b0d6a0
+538,Benjamin Pavard,2023-2024,27,fr FRA,Inter,it Serie A,23,1672,18.6,21,2,8,0,2,2,0,0,0,0,DF,45a03961
+539,Leonardo Pavoletti,2023-2024,34,it ITA,Cagliari,it Serie A,19,628,7.0,5,14,9,4,1,5,4,0,0,0,FW,d37b0350
+540,Martín Payero,2023-2024,24,ar ARG,Udinese,it Serie A,29,1796,20.0,21,8,4,2,2,4,2,0,0,0,MF,bdbff2b5
+541,Yeferson Paz,2023-2024,21,co COL,Sassuolo,it Serie A,0,,,0,0,2,,,,,,,,DF,b1d7dba8
+542,Marcus Pedersen,2023-2024,23,no NOR,Sassuolo,it Serie A,28,1613,17.9,16,12,5,0,2,2,0,0,0,0,DF,596cc50e
+543,Pedro,2023-2024,36,es ESP,Lazio,it Serie A,33,816,9.1,5,28,4,1,1,2,1,0,0,0,FWMF,3ca7254a
+544,Gianluca Pegolo,2023-2024,42,it ITA,Sassuolo,it Serie A,0,,,0,0,37,,,,,,,,GK,f058ed1f
+545,David Pejičić,2023-2024,16,si SVN,Udinese,it Serie A,0,,,0,0,6,,,,,,,,MF,c1a7671b
+546,Pietro Pellegri,2023-2024,22,it ITA,Torino,it Serie A,24,756,8.4,7,17,7,1,1,2,1,0,0,0,FW,a44d3a3c
+547,Lorenzo Pellegrini,2023-2024,27,it ITA,Roma,it Serie A,29,1859,20.7,20,9,2,8,3,11,7,1,1,0,MF,4a5a45c7
+548,Luca Pellegrini,2023-2024,24,it ITA,Lazio,it Serie A,19,786,8.7,8,11,16,1,0,1,1,0,0,0,DF,3b61c9ec
+549,Marco Pellegrino,2023-2024,,,2 Teams,it Serie A,11,613,6.8,5,6,15,0,0,0,0,0,0,0,DF,18950a80
+550,Pepín,2023-2024,26,gq EQG,Monza,it Serie A,10,241,2.7,2,8,16,0,0,0,0,0,0,0,MFFW,7afb1573
+551,Pedro Pereira,2023-2024,25,pt POR,Monza,it Serie A,23,841,9.3,9,14,15,0,2,2,0,0,0,0,DF,c77be0cf
+552,Gastón Pereiro,2023-2024,28,uy URU,Cagliari,it Serie A,0,,,0,0,13,,,,,,,,FWMF,7ec7738e
+553,Roberto Pereyra,2023-2024,32,ar ARG,Udinese,it Serie A,27,1858,20.6,22,5,4,4,3,7,3,1,1,0,FWMF,75f2c59f
+554,Nehuén Pérez,2023-2024,23,ar ARG,Udinese,it Serie A,36,3238,36.0,36,0,0,0,0,0,0,0,0,0,DF,f7c491f1
+555,Simone Perilli,2023-2024,28,it ITA,Hellas Verona,it Serie A,1,90,1.0,1,0,37,0,0,0,0,0,0,0,GK,b9e11c1d
+556,Mattia Perin,2023-2024,30,it ITA,Juventus,it Serie A,3,225,2.5,3,0,30,0,0,0,0,0,0,0,GK,4c62d0c8
+557,Samuele Perisan,2023-2024,25,it ITA,Empoli,it Serie A,1,90,1.0,1,0,37,0,0,0,0,0,0,0,GK,00a17eba
+558,Matteo Pessina,2023-2024,26,it ITA,Monza,it Serie A,37,3222,35.8,37,0,0,6,3,9,2,4,5,1,MF,780e3631
+559,Andrea Petagna,2023-2024,28,it ITA,2 Teams,it Serie A,18,995,11.1,13,5,12,1,1,2,1,0,0,0,FW,03f946ed
+560,Giuseppe Pezzella,2023-2024,25,it ITA,Empoli,it Serie A,19,1085,12.1,14,5,4,0,0,0,0,0,0,0,DF,149c5f5d
+561,Edoardo Piana,2023-2024,19,it ITA,Udinese,it Serie A,0,,,0,0,2,,,,,,,,GK,5585dc1e
+562,Roberto Piccoli,2023-2024,22,it ITA,2 Teams,it Serie A,37,1417,15.7,12,25,0,5,0,5,4,1,1,0,FW,1cadaf34
+563,Santiago Pierotti,2023-2024,22,ar ARG,Lecce,it Serie A,11,200,2.2,0,11,7,0,2,2,0,0,0,0,MFFW,ec315772
+564,Niccolò Pierozzi,2023-2024,21,it ITA,2 Teams,it Serie A,12,871,9.7,11,1,10,1,0,1,1,0,0,0,DF,3649ece2
+565,Andrea Pinamonti,2023-2024,24,it ITA,Sassuolo,it Serie A,38,3076,34.2,37,1,0,11,1,12,9,2,3,1,FW,08aa9cd1
+566,Carlo Pinsoglio,2023-2024,33,it ITA,Juventus,it Serie A,1,45,0.5,0,1,37,0,0,0,0,0,0,0,GK,f6a06749
+567,Lorenzo Pirola,2023-2024,21,it ITA,Salernitana,it Serie A,27,1987,22.1,24,3,1,1,0,1,1,0,0,0,DF,caec77da
+568,Niccolò Pisilli,2023-2024,18,it ITA,Roma,it Serie A,1,10,0.1,0,1,22,0,0,0,0,0,0,0,MF,c84dcc88
+569,Tommaso Pittino,2023-2024,18,it ITA,Genoa,it Serie A,0,,,0,0,7,,,,,,,,DF,b4e515e4
+570,Tommaso Pobega,2023-2024,24,it ITA,Milan,it Serie A,11,319,3.5,3,8,9,0,0,0,0,0,0,0,MF,55a1cac2
+571,Paul Pogba,2023-2024,30,fr FRA,Juventus,it Serie A,2,54,0.6,0,2,1,0,0,0,0,0,0,0,MF,867239d3
+572,Matteo Politano,2023-2024,29,it ITA,Napoli,it Serie A,37,2360,26.2,31,6,0,8,7,15,6,2,3,1,FW,5e861944
+573,Marin Pongračić,2023-2024,25,hr CRO,Lecce,it Serie A,36,3219,35.8,36,0,0,0,0,0,0,0,0,0,DF,2a6cd437
+574,Mihai Popa,2023-2024,22,ro ROU,Torino,it Serie A,0,,,0,0,33,,,,,,,,GK,1ba24a13
+575,Matija Popović,2023-2024,17,rs SRB,Monza,it Serie A,0,,,0,0,3,,,,,,,,MF,7ad189a6
+576,Stefan Posch,2023-2024,26,at AUT,Bologna,it Serie A,31,2409,26.8,29,2,1,1,2,3,1,0,0,0,DF,7f609bfc
+577,Matteo Prati,2023-2024,19,it ITA,Cagliari,it Serie A,26,1972,21.9,19,7,12,1,1,2,1,0,0,0,MF,d8363914
+578,Ivan Provedel,2023-2024,29,it ITA,Lazio,it Serie A,30,2699,30.0,30,0,2,0,0,0,0,0,0,0,GK,277da414
+579,Christian Pulisic,2023-2024,24,us USA,Milan,it Serie A,36,2602,28.9,32,4,0,12,8,20,12,0,0,0,FWMF,1bf33a9a
+580,George Pușcaș,2023-2024,27,ro ROU,Genoa,it Serie A,8,191,2.1,1,7,11,0,0,0,0,0,0,0,FW,c23c8e0d
+581,Domingos Quina,2023-2024,23,pt POR,Udinese,it Serie A,2,13,0.1,0,2,15,0,0,0,0,0,0,0,MF,41fb0f4e
+582,Adrien Rabiot,2023-2024,28,fr FRA,Juventus,it Serie A,31,2651,29.5,30,1,0,5,3,8,5,0,0,0,MF,8794e251
+583,Uroš Račić,2023-2024,25,rs SRB,Sassuolo,it Serie A,22,820,9.1,8,14,10,1,1,2,1,0,0,0,MF,faed84db
+584,Nemanja Radonjić,2023-2024,27,rs SRB,Torino,it Serie A,10,374,4.2,4,6,6,3,0,3,3,0,0,0,MFFW,0630eb63
+585,Boris Radunović,2023-2024,27,rs SRB,Cagliari,it Serie A,7,630,7.0,7,0,31,0,0,0,0,0,0,0,GK,0dfce079
+586,Hamza Rafia,2023-2024,24,tn TUN,Lecce,it Serie A,28,1204,13.4,17,11,7,1,0,1,1,0,0,0,MF,6b587d3d
+587,Ylber Ramadani,2023-2024,27,al ALB,Lecce,it Serie A,34,2970,33.0,34,0,0,1,0,1,1,0,0,0,MF,ef3c876b
+588,Luca Ranieri,2023-2024,24,it ITA,Fiorentina,it Serie A,26,2065,22.9,23,3,10,2,1,3,2,0,0,0,DF,8c63fae5
+589,Filippo Ranocchia,2023-2024,22,it ITA,Empoli,it Serie A,9,476,5.3,5,4,11,0,0,0,0,0,0,0,MFDF,d9ebed1c
+590,Giacomo Raspadori,2023-2024,23,it ITA,Napoli,it Serie A,37,1584,17.6,14,23,0,5,3,8,5,0,1,1,FWMF,6e058f06
+591,Federico Ravaglia,2023-2024,23,it ITA,Bologna,it Serie A,6,535,5.9,6,0,32,0,0,0,0,0,0,0,GK,6662d731
+592,Noah Raveyre,2023-2024,18,fr FRA,Milan,it Serie A,0,,,0,0,1,,,,,,,,GK,b98330f8
+593,Tijjani Reijnders,2023-2024,25,nl NED,Milan,it Serie A,36,2820,31.3,33,3,1,3,3,6,3,0,0,0,MF,afb61630
+594,Reinier,2023-2024,21,br BRA,Frosinone,it Serie A,22,1059,11.8,13,9,10,2,2,4,2,0,0,0,MFFW,6b21b7b5
+595,Davide Renzetti,2023-2024,17,it ITA,Lazio,it Serie A,0,,,0,0,10,,,,,,,,GK,c3d7b5f6
+596,Mateo Retegui,2023-2024,24,it ITA,Genoa,it Serie A,29,2216,24.6,26,3,1,7,2,9,6,1,1,0,FW,e7695e6c
+597,Samuele Ricci,2023-2024,21,it ITA,Torino,it Serie A,32,2395,26.6,28,4,2,1,2,3,1,0,0,0,MF,9823be92
+598,Ricardo Rodríguez,2023-2024,30,ch SUI,Torino,it Serie A,35,2772,30.8,34,1,2,1,2,3,1,0,0,0,DF,7f78ad23
+599,Alessio Romagnoli,2023-2024,28,it ITA,Lazio,it Serie A,29,2411,26.8,26,3,0,0,0,0,0,0,0,0,DF,3ead85f9
+600,Simone Romagnoli,2023-2024,33,it ITA,Frosinone,it Serie A,33,2715,30.2,30,3,3,1,1,2,1,0,0,0,DF,09899de8
+601,Luka Romero,2023-2024,18,ar ARG,Milan,it Serie A,4,88,1.0,0,4,17,0,0,0,0,0,0,0,FWMF,ca6edaa0
+602,Marten de Roon,2023-2024,32,nl NED,Atalanta,it Serie A,30,2599,28.9,29,1,3,0,5,5,0,0,0,0,MFDF,2a1beb34
+603,Francesco Rossi,2023-2024,32,it ITA,Atalanta,it Serie A,1,5,0.1,0,1,34,0,0,0,0,0,0,0,GK,7b5f516f
+604,Nicolò Rovella,2023-2024,21,it ITA,Lazio,it Serie A,23,1318,14.6,16,7,7,0,2,2,0,0,0,0,MF,e58cbfd5
+605,Amir Rrahmani,2023-2024,29,xk KVX,Napoli,it Serie A,30,2600,28.9,30,0,3,3,0,3,3,0,0,0,DF,4b3e1a38
+606,Ruan,2023-2024,24,br BRA,Sassuolo,it Serie A,26,1516,16.8,16,10,7,0,0,0,0,0,0,0,DF,a378a02a
+607,Daniele Rugani,2023-2024,29,it ITA,Juventus,it Serie A,17,1187,13.2,13,4,21,2,0,2,2,0,0,0,DF,14b8fcdf
+608,Fabio Ruggeri,2023-2024,18,it ITA,Lazio,it Serie A,0,,,0,0,10,,,,,,,,DF,16eb9aa3
+609,Matteo Ruggeri,2023-2024,21,it ITA,Atalanta,it Serie A,34,2449,27.2,28,6,3,0,4,4,0,0,0,0,DF,ae9898c5
+610,Mário Rui,2023-2024,32,pt POR,Napoli,it Serie A,21,1205,13.4,14,7,10,0,2,2,0,0,0,0,DF,0b5a292a
+611,Lorenzo Russo,2023-2024,18,it ITA,Napoli,it Serie A,0,,,0,0,3,,,,,,,,MF,9d6c3467
+612,Stefano Sabelli,2023-2024,30,it ITA,Genoa,it Serie A,32,2429,27.0,30,2,2,0,1,1,0,0,0,0,DF,0ccac09c
+613,Abdelhamid Sabiri,2023-2024,26,ma MAR,Fiorentina,it Serie A,0,,,0,0,1,,,,,,,,MF,4830e0af
+614,Alexis Saelemaekers,2023-2024,24,be BEL,Bologna,it Serie A,30,1887,21.0,21,9,1,4,2,6,4,0,0,0,FWMF,ee251371
+615,Lazar Samardzic,2023-2024,21,rs SRB,Udinese,it Serie A,34,2372,26.4,28,6,4,6,2,8,5,1,1,0,MF,217c93a1
+616,Junior Sambia,2023-2024,26,fr FRA,Salernitana,it Serie A,18,1032,11.5,10,8,20,1,2,3,1,0,0,0,DFMF,24eb7ed6
+617,Daniel Samek,2023-2024,19,cz CZE,Lecce,it Serie A,0,,,0,0,7,,,,,,,,DF,adda902f
+618,Jasper Samooja,2023-2024,20,fi FIN,Lecce,it Serie A,0,,,0,0,31,,,,,,,,GK,8f3f09e3
+619,Antonio Sanabria,2023-2024,27,py PAR,Torino,it Serie A,35,2133,23.7,23,12,2,5,0,5,3,2,2,0,FWMF,0a447501
+620,Renato Sanches,2023-2024,25,pt POR,Roma,it Serie A,7,146,1.6,1,6,12,1,0,1,1,0,0,0,MF,032f894e
+621,Alexis Sánchez,2023-2024,34,cl CHI,Inter,it Serie A,23,763,8.5,6,17,10,2,5,7,1,1,1,0,FWMF,2c0f8e9e
+622,Alex Sandro,2023-2024,32,br BRA,Juventus,it Serie A,16,721,8.0,8,8,9,1,0,1,1,0,0,0,DF,0d82903c
+623,Nicola Sansone,2023-2024,31,it ITA,Lecce,it Serie A,25,767,8.5,4,21,4,2,2,4,2,0,0,0,FWMF,7eb97a8e
+624,Riccardo Saponara,2023-2024,31,it ITA,Hellas Verona,it Serie A,12,342,3.8,3,9,6,0,0,0,0,0,0,0,FWMF,3bb7af3b
+625,Amadou Sarr,2023-2024,19,sn SEN,Inter,it Serie A,0,,,0,0,9,,,,,,,,FW,68b11ba1
+626,Zanos Savva,2023-2024,17,cy CYP,Torino,it Serie A,2,28,0.3,0,2,17,1,0,1,1,0,0,0,DFMF,82f8d2f4
+627,Saba Sazonov,2023-2024,21,ge GEO,Torino,it Serie A,12,356,4.0,2,10,20,0,0,0,0,0,0,0,DF,645dffbf
+628,Alessandro Scacchetti,2023-2024,18,it ITA,Sassuolo,it Serie A,0,,,0,0,2,,,,,,,,GK,24b0578d
+629,Simone Scaglia,2023-2024,19,it ITA,Juventus,it Serie A,0,,,0,0,3,,,,,,,,GK,6800563c
+630,Giorgio Scalvini,2023-2024,19,it ITA,Atalanta,it Serie A,33,2544,28.3,31,2,0,1,3,4,1,0,0,0,DF,1e9aa637
+631,Gianluca Scamacca,2023-2024,24,it ITA,Atalanta,it Serie A,29,1453,16.1,17,12,3,12,6,18,12,0,0,0,FW,8790f988
+632,Perr Schuurs,2023-2024,23,nl NED,Torino,it Serie A,9,770,8.6,9,0,0,1,0,1,1,0,0,0,DF,e613313c
+633,Simone Scuffet,2023-2024,27,it ITA,Cagliari,it Serie A,31,2789,31.0,31,0,7,0,0,0,0,0,0,0,GK,41bd99ea
+634,Demba Seck,2023-2024,22,sn SEN,2 Teams,it Serie A,20,723,8.0,8,12,13,0,0,0,0,0,0,0,MF,16463a79
+635,Jacopo Seghetti,2023-2024,18,it ITA,Empoli,it Serie A,0,,,0,0,10,,,,,,,,GK,70a10677
+636,Nikola Sekulov,2023-2024,21,it ITA,Juventus,it Serie A,1,11,0.1,0,1,0,0,0,0,0,0,0,0,FW,b2e08cb6
+637,Vivaldo Semedo,2023-2024,18,pt POR,Udinese,it Serie A,1,12,0.1,0,1,3,0,0,0,0,0,0,0,FW,b6baba31
+638,Fallou Sene,2023-2024,18,sn SEN,Fiorentina,it Serie A,0,,,0,0,1,,,,,,,,FW,75d2b3b9
+639,Stefano Sensi,2023-2024,27,it ITA,Inter,it Serie A,4,46,0.5,0,4,23,0,1,1,0,0,0,0,MF,b70bde8f
+640,Luigi Sepe,2023-2024,32,it ITA,Lazio,it Serie A,0,,,0,0,33,,,,,,,,GK,343f753a
+641,Suat Serdar,2023-2024,26,de GER,Hellas Verona,it Serie A,25,1659,18.4,19,6,9,0,2,2,0,0,0,0,MF,b3325a30
+642,Andres Sfait,2023-2024,18,ro ROU,Salernitana,it Serie A,2,23,0.3,0,2,16,0,0,0,0,0,0,0,DFMF,4fb7cc15
+643,Stephan El Shaarawy,2023-2024,30,it ITA,Roma,it Serie A,33,1738,19.3,19,14,5,3,4,7,3,0,0,0,FWDF,d3aaad90
+644,Eldor Shomurodov,2023-2024,28,uz UZB,Cagliari,it Serie A,22,936,10.4,10,12,5,3,3,6,3,0,0,0,FWMF,57469b2d
+645,Steven Shpendi,2023-2024,20,al ALB,Empoli,it Serie A,12,411,4.6,4,8,25,0,1,1,0,0,0,0,FWMF,fd987f24
+646,Diego Sia,2023-2024,17,it ITA,Milan,it Serie A,0,,,0,0,1,,,,,,,,FW,7cdb32f9
+647,Jonathan Silva,2023-2024,19,br BRA,Torino,it Serie A,0,,,0,0,6,,,,,,,,MF,da77eea4
+648,Marco Silvestri,2023-2024,32,it ITA,Udinese,it Serie A,17,1530,17.0,17,0,16,0,0,0,0,0,0,0,GK,0d422df7
+649,Giovanni Simeone,2023-2024,28,ar ARG,Napoli,it Serie A,28,800,8.9,8,20,9,1,0,1,1,0,0,0,FW,343c0d52
+650,Jan-Carlo Simic,2023-2024,18,rs SRB,Milan,it Serie A,4,146,1.6,0,4,13,1,0,1,1,0,0,0,DF,c9fc39ce
+651,Leo Skiri Østigård,2023-2024,23,no NOR,Napoli,it Serie A,25,1625,18.1,18,7,11,1,0,1,1,0,0,0,DF,b35a7399
+652,Łukasz Skorupski,2023-2024,32,pl POL,Bologna,it Serie A,32,2880,32.0,32,0,6,0,0,0,0,0,0,0,GK,ab4449d6
+653,Zinedin Smajlovic,2023-2024,19,se SWE,Lecce,it Serie A,0,,,0,0,14,,,,,,,,DF,2ae9ca08
+654,Chris Smalling,2023-2024,33,eng ENG,Roma,it Serie A,8,390,4.3,4,4,7,0,0,0,0,0,0,0,DF,b6964eb6
+655,Andrea Sodero,2023-2024,18,it ITA,Empoli,it Serie A,1,5,0.1,0,1,0,0,0,0,0,0,0,0,MF,364e2d13
+656,Ola Solbakken,2023-2024,24,no NOR,Roma,it Serie A,1,23,0.3,0,1,1,0,0,0,0,0,0,0,FW,78f13530
+657,Daniele Sommariva,2023-2024,26,it ITA,Genoa,it Serie A,1,5,0.1,0,1,36,0,0,0,0,0,0,0,GK,a8e7f7e9
+658,Yann Sommer,2023-2024,34,ch SUI,Inter,it Serie A,34,3060,34.0,34,0,3,0,0,0,0,0,0,0,GK,420c18a1
+659,Brandon Soppy,2023-2024,21,fr FRA,Torino,it Serie A,5,178,2.0,2,3,6,0,0,0,0,0,0,0,DF,28f66c2e
+660,Alessandro Sorrentino,2023-2024,21,it ITA,Monza,it Serie A,7,548,6.1,5,2,31,0,0,0,0,0,0,0,GK,8ef2452a
+661,Joaquin Sosa,2023-2024,21,uy URU,Bologna,it Serie A,0,,,0,0,2,,,,,,,,DF,50841bef
+662,Riccardo Sottil,2023-2024,24,it ITA,Fiorentina,it Serie A,22,1103,12.3,13,9,10,2,3,5,2,0,0,0,FW,94816803
+663,Matìas Soulé,2023-2024,20,ar ARG,2 Teams,it Serie A,36,3121,34.7,36,0,2,11,3,14,6,5,6,1,FWMF,c13ddd3e
+664,Adama Soumaoro,2023-2024,31,fr FRA,Bologna,it Serie A,0,,,0,0,2,,,,,,,,DF,7b075c75
+665,Djed Spence,2023-2024,22,eng ENG,Genoa,it Serie A,16,859,9.5,8,8,2,0,0,0,0,0,0,0,DF,9bc9a519
+666,Leonardo Spinazzola,2023-2024,30,it ITA,Roma,it Serie A,24,1312,14.6,15,9,6,1,2,3,1,0,0,0,DF,3626daea
+667,Marco Sportiello,2023-2024,31,it ITA,Milan,it Serie A,7,630,7.0,7,0,19,0,0,0,0,0,0,0,GK,ac4003af
+668,Giacomo Stabile,2023-2024,18,it ITA,Inter,it Serie A,0,,,0,0,8,,,,,,,,DF,c5ad783c
+669,Aleksandar Stanković,2023-2024,17,rs SRB,Inter,it Serie A,0,,,0,0,11,,,,,,,,FW,22cdb8a6
+670,Trivante Stewart,2023-2024,23,jm JAM,Salernitana,it Serie A,4,100,1.1,0,4,6,0,0,0,0,0,0,0,FWMF,75bd6f48
+671,Petar Stojanović,2023-2024,27,si SVN,Empoli,it Serie A,0,,,0,0,1,,,,,,,,DFMF,13b44b02
+672,Gabriel Strefezza,2023-2024,26,br BRA,Lecce,it Serie A,19,1112,12.4,13,6,2,1,0,1,0,1,1,0,FW,ac4a4508
+673,Kevin Strootman,2023-2024,33,nl NED,Genoa,it Serie A,27,1207,13.4,15,12,3,0,2,2,0,0,0,0,MF,ef2e5e1a
+674,Lovro Štubljar,2023-2024,18,si SVN,Empoli,it Serie A,0,,,0,0,7,,,,,,,,GK,4c909198
+675,Isaac Success,2023-2024,27,ng NGA,Udinese,it Serie A,27,880,9.8,9,18,9,1,1,2,1,0,1,1,FWMF,f573a8bf
+676,Ibrahim Sulemana,2023-2024,20,gh GHA,Cagliari,it Serie A,21,1339,14.9,16,5,12,2,0,2,2,0,0,0,MF,230c3f3a
+677,Tomáš Suslov,2023-2024,21,sk SVK,Hellas Verona,it Serie A,32,2092,23.2,23,9,2,3,5,8,2,1,1,0,MFFW,83fe71b8
+678,Velizar-Ilia Svetozarov Iliev,2023-2024,18,bg BUL,Cagliari,it Serie A,0,,,0,0,3,,,,,,,,GK,ffdd2e3d
+679,Mile Svilar,2023-2024,23,rs SRB,Roma,it Serie A,15,1350,15.0,15,0,23,0,0,0,0,0,0,0,GK,bcf5058a
+680,Karol Świderski,2023-2024,26,pl POL,Hellas Verona,it Serie A,15,504,5.6,3,12,0,2,0,2,2,0,0,0,FWMF,41723204
+681,Wojciech Szczęsny,2023-2024,33,pl POL,Juventus,it Serie A,35,3150,35.0,35,0,1,0,0,0,0,0,0,0,GK,01b8a2b2
+682,Przemysław Szymiński,2023-2024,29,pl POL,Frosinone,it Serie A,1,9,0.1,0,1,1,0,0,0,0,0,0,0,MF,9b3099d6
+683,Adrien Tameze,2023-2024,29,cm CMR,Torino,it Serie A,29,2146,23.8,25,4,3,0,2,2,0,0,0,0,DFMF,8da74c05
+684,Elayis Tavsan,2023-2024,22,nl NED,Hellas Verona,it Serie A,3,50,0.6,0,3,13,0,0,0,0,0,0,0,MFFW,928143e7
+685,Loum Tchaouna,2023-2024,19,fr FRA,Salernitana,it Serie A,33,2100,23.3,23,10,2,4,3,7,4,0,0,0,FWMF,a3c8b4d3
+686,Jackson Tchatchoua,2023-2024,21,cm CMR,Hellas Verona,it Serie A,26,1725,19.2,19,7,7,0,2,2,0,0,0,0,DF,aeca7743
+687,Filippo Terracciano,2023-2024,20,it ITA,2 Teams,it Serie A,21,1372,15.2,15,6,16,0,1,1,0,0,0,0,DF,5cbb5ad6
+688,Pietro Terracciano,2023-2024,33,it ITA,Fiorentina,it Serie A,33,2970,33.0,33,0,5,0,0,0,0,0,0,0,GK,e1b0a70d
+689,Florian Thauvin,2023-2024,30,fr FRA,Udinese,it Serie A,29,1710,19.0,19,10,3,5,3,8,4,1,1,0,FW,2b9fdeea
+690,Daniel Theiner,2023-2024,19,it ITA,Sassuolo,it Serie A,0,,,0,0,2,,,,,,,,GK,61b2a652
+691,Malick Thiaw,2023-2024,21,de GER,Milan,it Serie A,21,1619,18.0,19,2,3,0,1,1,0,0,0,0,DF,ff5ea0bf
+692,Morten Thorsby,2023-2024,27,no NOR,Genoa,it Serie A,24,1157,12.9,9,15,12,2,2,4,2,0,0,0,MF,d1b49282
+693,Kristian Thorstvedt,2023-2024,24,no NOR,Sassuolo,it Serie A,34,2397,26.6,30,4,3,6,1,7,6,0,0,0,MF,76ff8d0d
+694,Marcus Thuram,2023-2024,25,fr FRA,Inter,it Serie A,35,2687,29.9,34,1,1,13,7,20,13,0,0,0,FW,6f8cd6d0
+695,Antonio Tikvić,2023-2024,19,hr CRO,Udinese,it Serie A,1,1,0.0,0,1,33,0,0,0,0,0,0,0,DF,d1ac669b
+696,Jeremy Toljan,2023-2024,28,de GER,Sassuolo,it Serie A,25,2083,23.1,24,1,4,0,5,5,0,0,0,0,DF,a96e5dc0
+697,Rafael Tolói,2023-2024,32,it ITA,Atalanta,it Serie A,18,965,10.7,10,8,8,0,0,0,0,0,0,0,DF,c56dc39e
+698,Fikayo Tomori,2023-2024,25,eng ENG,Milan,it Serie A,26,2121,23.6,24,2,1,4,0,4,4,0,0,0,DF,7edfbb8a
+699,Giacomo Toniolo,2023-2024,19,it ITA,Hellas Verona,it Serie A,0,,,0,0,1,,,,,,,,GK,32ad2eb8
+700,Lorenzo Torriani,2023-2024,18,it ITA,Milan,it Serie A,0,,,0,0,2,,,,,,,,GK,6dd75985
+701,Ahmed Touba,2023-2024,25,dz ALG,Lecce,it Serie A,6,277,3.1,3,3,25,0,0,0,0,0,0,0,DF,f25de136
+702,Chaka Traorè,2023-2024,18,ci CIV,Milan,it Serie A,2,20,0.2,0,2,7,1,0,1,1,0,0,0,FW,ee6e2b92
+703,Stefano Turati,2023-2024,21,it ITA,Frosinone,it Serie A,31,2745,30.5,31,0,2,0,0,0,0,0,0,0,GK,bf168004
+704,Kacper Urbanski,2023-2024,18,pl POL,Bologna,it Serie A,22,926,10.3,9,13,16,0,1,1,0,0,0,0,MFFW,2d9d9e42
+705,Emanuele Valeri,2023-2024,24,it ITA,Frosinone,it Serie A,16,1178,13.1,14,2,0,0,1,1,0,0,0,0,DF,ec52b661
+706,Tommaso Vannucchi,2023-2024,16,it ITA,Fiorentina,it Serie A,0,,,0,0,17,,,,,,,,GK,4a3a546f
+707,Johan Vásquez,2023-2024,24,mx MEX,Genoa,it Serie A,37,2850,31.7,32,5,0,1,1,2,1,0,0,0,DF,5eaed77a
+708,Matías Vecino,2023-2024,31,uy URU,Lazio,it Serie A,31,1153,12.8,8,23,5,6,1,7,6,0,0,0,MF,44ac04e9
+709,Lorenzo Venuti,2023-2024,28,it ITA,Lecce,it Serie A,14,364,4.0,3,11,23,0,0,0,0,0,0,0,DF,983ff2c7
+710,Simone Verdi,2023-2024,31,it ITA,Torino,it Serie A,1,4,0.0,0,1,0,0,0,0,0,0,0,0,FW,0375723e
+711,Filippo Vertua,2023-2024,17,it ITA,Empoli,it Serie A,0,,,0,0,2,,,,,,,,GK,053696c5
+712,Emanuel Vignato,2023-2024,22,it ITA,Salernitana,it Serie A,9,311,3.5,3,6,7,0,1,1,0,0,0,0,MFFW,ec5dae45
+713,Samuele Vignato,2023-2024,19,it ITA,Monza,it Serie A,10,343,3.8,3,7,12,1,0,1,1,0,0,0,MFFW,a14d0ab0
+714,Matías Viña,2023-2024,25,uy URU,Sassuolo,it Serie A,15,1014,11.3,13,2,0,0,3,3,0,0,0,0,DF,08eb3b58
+715,Rúben Vinagre,2023-2024,24,pt POR,Hellas Verona,it Serie A,12,282,3.1,2,10,5,0,0,0,0,0,0,0,DFFW,b937e490
+716,Alessandro Vinciguerra,2023-2024,17,it ITA,Cagliari,it Serie A,0,,,0,0,2,,,,,,,,FW,a88c7385
+717,Nicolas Viola,2023-2024,33,it ITA,Cagliari,it Serie A,26,1207,13.4,11,15,10,5,2,7,5,0,1,1,MFFW,45392b06
+718,Paolo Vismara,2023-2024,20,it ITA,Atalanta,it Serie A,0,,,0,0,3,,,,,,,,GK,d3ce5e99
+719,Mattia Viti,2023-2024,21,it ITA,Sassuolo,it Serie A,15,979,10.9,12,3,13,1,0,1,1,0,0,0,DF,75438a9a
+720,Vitinha,2023-2024,23,pt POR,Genoa,it Serie A,9,285,3.2,2,7,1,2,0,2,2,0,0,0,FWMF,74d4cec6
+721,Dušan Vlahović,2023-2024,23,rs SRB,Juventus,it Serie A,33,2307,25.6,27,6,0,16,4,20,14,2,4,2,FW,79443529
+722,Nikola Vlašić,2023-2024,25,hr CRO,Torino,it Serie A,33,2608,29.0,30,3,0,3,2,5,3,0,0,0,MFFW,aa8e289e
+723,Joel Voelkerling Persson,2023-2024,20,se SWE,Lecce,it Serie A,0,,,0,0,1,,,,,,,,FW,b3ef6517
+724,Alessandro Vogliacco,2023-2024,24,it ITA,Genoa,it Serie A,20,1169,13.0,14,6,12,0,1,1,0,0,0,0,DF,6841f107
+725,Mërgim Vojvoda,2023-2024,28,xk KVX,Torino,it Serie A,28,1379,15.3,15,13,4,0,3,3,0,0,0,0,DF,be2706c0
+726,Cristian Volpato,2023-2024,19,it ITA,Sassuolo,it Serie A,22,645,7.2,5,17,15,1,0,1,1,0,0,0,MFFW,72f87f25
+727,Stefan de Vrij,2023-2024,31,nl NED,Inter,it Serie A,25,1586,17.6,17,8,9,1,0,1,1,0,0,0,DF,d0d8dd44
+728,İsak Vural,2023-2024,17,tr TUR,Frosinone,it Serie A,0,,,0,0,1,,,,,,,,MF,c7d1b2ff
+729,Walace,2023-2024,28,br BRA,Udinese,it Serie A,37,3238,36.0,37,0,0,2,0,2,2,0,0,0,MF,26db8853
+730,Sebastian Walukiewicz,2023-2024,23,pl POL,Empoli,it Serie A,27,2055,22.8,23,4,6,0,0,0,0,0,0,0,DF,217875a4
+731,Timothy Weah,2023-2024,23,us USA,Juventus,it Serie A,30,1258,14.0,12,18,2,0,1,1,0,0,0,0,DFFW,8eec784d
+732,Shon Weissman,2023-2024,27,il ISR,Salernitana,it Serie A,11,494,5.5,5,6,4,1,0,1,1,0,0,0,FWDF,379dc075
+733,Mateusz Wieteska,2023-2024,26,pl POL,Cagliari,it Serie A,19,965,10.7,10,9,16,0,1,1,0,0,0,0,DF,3ecc8c5f
+734,Kenan Yıldız,2023-2024,18,tr TUR,Juventus,it Serie A,27,952,10.6,9,18,9,2,0,2,2,0,0,0,FWMF,d8cda243
+735,Mattia Zaccagni,2023-2024,28,it ITA,Lazio,it Serie A,28,1956,21.7,24,4,0,6,1,7,6,0,0,0,FWMF,d85c238b
+736,Nicola Zalewski,2023-2024,21,pl POL,Roma,it Serie A,22,968,10.8,10,12,15,0,1,1,0,0,0,0,DFFW,45191c29
+737,Andre-Frank Zambo Anguissa,2023-2024,27,cm CMR,Napoli,it Serie A,34,2786,31.0,32,2,0,0,2,2,0,0,0,0,MF,6bb2c084
+738,Alessandro Zanoli,2023-2024,22,it ITA,2 Teams,it Serie A,21,973,10.8,10,11,16,0,2,2,0,0,0,0,DF,3b12b11f
+739,Duván Zapata,2023-2024,32,co COL,2 Teams,it Serie A,37,2992,33.2,36,1,0,13,4,17,13,0,0,0,FW,d3de9af0
+740,Gabriele Zappa,2023-2024,23,it ITA,Cagliari,it Serie A,38,2561,28.5,25,13,0,1,3,4,1,0,0,0,DF,ca3db240
+741,Davide Zappacosta,2023-2024,31,it ITA,Atalanta,it Serie A,31,1867,20.7,23,8,5,2,1,3,2,0,0,0,DF,7fe90ccd
+742,Oier Zarraga,2023-2024,24,es ESP,Udinese,it Serie A,15,404,4.5,4,11,23,2,0,2,2,0,0,0,MF,968a1c2f
+743,Karim Zedadka,2023-2024,23,fr FRA,Napoli,it Serie A,0,,,0,0,1,,,,,,,,DF,2f45300d
+744,Jordan Zemura,2023-2024,23,zw ZIM,Udinese,it Serie A,27,1038,11.5,10,17,7,1,0,1,1,0,0,0,DF,e8271ad9
+745,Alessio Zerbin,2023-2024,24,it ITA,2 Teams,it Serie A,20,834,9.3,8,12,17,0,1,1,0,0,0,0,DFFW,d19ef4ef
+746,Kevin Zeroli,2023-2024,18,it ITA,Milan,it Serie A,3,28,0.3,0,3,11,0,0,0,0,0,0,0,MF,7d6d4395
+747,Piotr Zieliński,2023-2024,29,pl POL,Napoli,it Serie A,28,1924,21.4,23,5,2,3,2,5,2,1,1,0,MF,a5296e55
+748,David Zima,2023-2024,22,cz CZE,Torino,it Serie A,5,91,1.0,0,5,12,0,0,0,0,0,0,0,DF,acf7e795
+749,Joshua Zirkzee,2023-2024,22,nl NED,Bologna,it Serie A,34,2759,30.7,32,2,0,11,4,15,9,2,2,0,FW,028e70b9
+750,Nadir Zortea,2023-2024,24,it ITA,2 Teams,it Serie A,19,1407,15.6,14,5,14,2,5,7,2,0,0,0,DF,82598b71
+751,Bor Žunec,2023-2024,18,si SVN,Udinese,it Serie A,0,,,0,0,1,,,,,,,,MF,89cba2fc
+752,Szymon Żurkowski,2023-2024,25,pl POL,Empoli,it Serie A,13,868,9.6,10,3,5,4,0,4,4,0,0,0,MF,4e1d5e59
