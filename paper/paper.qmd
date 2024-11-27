@@ -1,258 +1,265 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Determinants of Soccer Players' Market Values in Major European Leagues"
+subtitle: "A Comparative Linear Regression Analysis Across Five Leagues"
 author: 
   - John Zhang
-thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
+thanks: "Code and data are available at: https://github.com/Clearsky21z/Player_Market_Value_Analysis"
 date: today
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: ""
 format: pdf
+toc: true
 number-sections: true
 bibliography: references.bib
 ---
 
 ```{r}
-#| include: false
-#| warning: false
+#| echo: false
 #| message: false
-
+#| warning: false
+library(arrow)
+library(ggplot2)
+library(dplyr)
+library(modelsummary)
 library(tidyverse)
-library(palmerpenguins)
+library(knitr)
 ```
 
 
-# Introduction
+# Introduction{#sec-intro}
+The global soccer transfer market is a dynamic and high-stakes environment where players’ market values are central to team-building strategies, investments, and negotiations. Understanding what drives these values is a critical question for analysts, clubs, and stakeholders. While common factors such as goals scored or club reputation are widely acknowledged to affect valuations, their relative importance likely varies across leagues with differing levels of competition, financial resources, and playing styles.
 
-Overview paragraph
+This paper focuses on five major European soccer leagues—Premier League(England), La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues are not only among the most competitive but also vary in terms of audience size, financial backing, and player scouting pipelines, making them ideal for a comparative study of market value determinants.
 
-Estimand paragraph
+Using player data from the 2023/24 season, this study develops league-specific linear regression models with market value as the dependent variable. Key predictors include age, goals, assists, club ranking, national team ranking, minutes played, and position. The analysis reveals both shared and league-specific patterns in the factors influencing market value. For instance, goals and assists consistently emerge as significant predictors, but their impact differs by league. Similarly, younger players tend to command higher valuations universally, with age effects most pronounced in Serie A.
 
-Results paragraph
-
-Why it matters paragraph
-
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
-
-
-
-
-
+These findings contribute to our understanding of how soccer markets function across different leagues and provide actionable insights for clubs and agents. The structure of this paper is as follows: Section 2 describes the dataset and variables, Section 3 outlines the modeling approach, Section 4 presents the results, and Section 5 discusses the implications and limitations of the findings.
 
 # Data {#sec-data}
 
-## Overview
+## Dataset Overview
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
+The data includes information on players from the top five European leagues during the 2023/24 season. Variables of interest are:
 
-Overview text
+- **Market Value**: Player’s estimated value in Euros.
+- **Age**: Player age at the start of the season.
+- **Goals and Assists**: Indicators of offensive contributions.
+- **Club Ranking**: Rank of the player's club based on league and international performance.
+- **National Team Ranking**: Ranking of the player's national team (1 to 210).
+- **Minutes Played**: Total minutes played during the season.
+- **Position**: Categorized as Defender (DF), Midfielder (MF), Forward (FW), and hybrids like FWDF.
 
-## Measurement
-	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+## Summary Statistics
 
-## Outcome variables
-
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
-
-
-
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+Table 1 summarizes the descriptive statistics for the Premier League dataset.
 
 ```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
 #| echo: false
-
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
-
-Talk more about it.
-
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
-
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
 #| message: false
-
-analysis_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
-
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
-```
-
-Talk way more about it. 
-
-## Predictor variables
-
-Add graphs, tables and text.
-
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
-
-
-
-
-
-
-
-
-# Model
-
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
-
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
-
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
 #| warning: false
 
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
+# Load data
+england_data <- read_csv("../data/02-analysis_data/cleaned_england_data.csv")
+
+# Generate summary statistics as a tidy tibble
+summary_stats <- england_data %>%
+  select(market_value, age, goals, assists, club_ranking, national_team_ranking, minutes_played) %>%
+  summarise_all(list(mean = mean, sd = sd, min = min, max = max), na.rm = TRUE) %>%
+  pivot_longer(cols = everything(),
+               names_to = c("Variable", ".value"),
+               names_sep = "_")
+
+# Simplify and display the table using kable
+kable(
+  summary_stats,
+  caption = "Summary Statistics for the Premier League Dataset",
+  digits = 2
 )
 ```
 
+Key patterns across leagues:
+
+- Average market value varies significantly, with the Premier League showing higher valuations.
+- Goals and assists are more concentrated among forwards.
+- Age distribution is consistent, skewed towards younger players.
+
+# Model {#sec-model}
+
+A linear regression model was developed for each league:
+
+$$
+\begin{aligned}
+\text{Market Value}_i &= \beta_0 + \beta_1 (\text{Age}_i) + \beta_2 (\text{Goals}_i) \\
+&\quad + \beta_3 (\text{Assists}_i) + \beta_4 (\text{Club Ranking}_i) \\
+&\quad + \beta_5 (\text{National Team Ranking}_i) + \beta_6 (\text{Minutes Played}_i) \\
+&\quad + \beta_7 (\text{Position}_i) + \epsilon_i
+\end{aligned}
+$$
 
 
+# Results {#sec-res}
 
-# Discussion
+## Regression Coefficients by League
 
-## First discussion point {#sec-first-point}
+The table below presents the key regression results for each league.
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 
-## Second discussion point
+# Load the regression results file
+file_path <- "../models/player_market_value_models.csv"
+final_results <- read_csv(file_path)
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
+```
 
-## Third discussion point
 
-## Weaknesses and next steps
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Regression Results for Premier League (England)"
 
-Weaknesses and next steps should also be included.
+# Filter results for the Premier League
+england_results <- final_results %>%
+  filter(League == "England")
+
+# Simplify the results table
+england_table <- england_results %>%
+  select(term, estimate, std.error, p.value) %>%
+  rename(
+    Variable = term,
+    Estimate = estimate,
+    `Standard Error` = std.error,
+    `P-Value` = p.value
+  )
+
+# Display the table with kable
+kable(england_table, digits = 3, caption = "Regression Results for Premier League (England)")
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Regression Results for Ligue 1 (France)"
+
+# Filter results for Ligue 1
+france_results <- final_results %>%
+  filter(League == "France")
+
+# Simplify the results table
+france_table <- france_results %>%
+  select(term, estimate, std.error, p.value) %>%
+  rename(
+    Variable = term,
+    Estimate = estimate,
+    `Standard Error` = std.error,
+    `P-Value` = p.value
+  )
+
+# Display the table with kable
+kable(france_table, digits = 3, caption = "Regression Results for Ligue 1 (France)")
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Regression Results for Bundesliga (Germany)"
+
+# Filter results for the Bundesliga
+germany_results <- final_results %>%
+  filter(League == "Germany")
+
+# Simplify the results table
+germany_table <- germany_results %>%
+  select(term, estimate, std.error, p.value) %>%
+  rename(
+    Variable = term,
+    Estimate = estimate,
+    `Standard Error` = std.error,
+    `P-Value` = p.value
+  )
+
+# Display the table with kable
+kable(germany_table, digits = 3, caption = "Regression Results for Bundesliga (Germany)")
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Regression Results for Serie A (Italy)"
+
+# Filter results for Serie A
+italy_results <- final_results %>%
+  filter(League == "Italy")
+
+# Simplify the results table
+italy_table <- italy_results %>%
+  select(term, estimate, std.error, p.value) %>%
+  rename(
+    Variable = term,
+    Estimate = estimate,
+    `Standard Error` = std.error,
+    `P-Value` = p.value
+  )
+
+# Display the table with kable
+kable(italy_table, digits = 3, caption = "Regression Results for Serie A (Italy)")
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: "Regression Results for La Liga (Spain)"
+
+# Filter results for La Liga
+spain_results <- final_results %>%
+  filter(League == "Spain")
+
+# Simplify the results table
+spain_table <- spain_results %>%
+  select(term, estimate, std.error, p.value) %>%
+  rename(
+    Variable = term,
+    Estimate = estimate,
+    `Standard Error` = std.error,
+    `P-Value` = p.value
+  )
+
+# Display the table with kable
+kable(spain_table, digits = 3, caption = "Regression Results for La Liga (Spain)")
+
+```
+
+
+## Key Findings
+
+1. **Age**: Age negatively impacts market value across all leagues, with the effect strongest in Serie A and La Liga.
+2. **Goals and Assists**: These variables are the most consistent predictors of market value. Their influence is largest in the Premier League, suggesting a higher emphasis on offensive contributions.
+3. **Club Ranking**: Significant in all leagues, with stronger effects observed in Ligue 1 and Serie A.
+4. **Position**: Forwards generally have lower valuations compared to midfielders and defenders in Ligue 1 and La Liga.
+
+# Discussion {#sec-disc}
+
+## What Was Done
+This study developed league-specific linear regression models to analyze the determinants of soccer players’ market values.
+
+## Insights Gained
+1. Offensive contributions (goals, assists) are crucial drivers of market value, but their relative importance varies by league.
+2. Club ranking is consistently significant, reflecting the role of team reputation in player valuation.
+3. Age is negatively associated with market value, underscoring the premium placed on youth in professional soccer.
+
+## Limitations and Future Directions
+The study is limited to one season and excludes external factors like injuries, media influence, or tactical role. Future work could explore time-series data and non-linear modeling approaches.
+
 
 \newpage
 
 \appendix
 
-# Appendix {-}
-
-
-# Additional data details
-
-# Model details {#sec-model-details}
-
-## Posterior predictive check
-
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
-
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
-
-```{r}
-#| eval: true
-#| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
-
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
-
-posterior_vs_prior(first_model) +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
-```
-
-## Diagnostics
-
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
-
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
-
-```{r}
-#| echo: false
-#| eval: true
-#| message: false
-#| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
-
-plot(first_model, "trace")
-
-plot(first_model, "rhat")
-```
-
-
-
-\newpage
-
-
 # References
-
-
