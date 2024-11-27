@@ -49,39 +49,365 @@ The data includes information on players from the top five European leagues duri
 - **Minutes Played**: Total minutes played during the season.
 - **Position**: Categorized as Defender (DF), Midfielder (MF), Forward (FW), and hybrids like FWDF.
 
-## Summary Statistics
-
-Table 1 summarizes the descriptive statistics for the Premier League dataset.
+## England
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 
-# Load data
-england_data <- read_csv("../data/02-analysis_data/cleaned_england_data.csv")
+# Load the dataset
+england_data <- read_parquet("../data/02-analysis_data/cleaned_england_data.parquet")
 
-# Generate summary statistics as a tidy tibble
-summary_stats <- england_data %>%
-  select(market_value, age, goals, assists, club_ranking, national_team_ranking, minutes_played) %>%
-  summarise_all(list(mean = mean, sd = sd, min = min, max = max), na.rm = TRUE) %>%
-  pivot_longer(cols = everything(),
-               names_to = c("Variable", ".value"),
-               names_sep = "_")
+# Scale down market value to millions
+england_data <- england_data %>%
+  mutate(market_value_million = market_value / 1e6)
 
-# Simplify and display the table using kable
-kable(
-  summary_stats,
-  caption = "Summary Statistics for the Premier League Dataset",
-  digits = 2
-)
+# Individual plot for market value
+england_market_value_plot <- ggplot(england_data, aes(x = market_value_million)) +
+  geom_histogram(fill = "#D62728", color = "black", bins = 30) +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Market Value (in Million Euros)",
+    x = "Market Value (Million Euros)",
+    y = "Frequency"
+  ) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+
+england_market_value_plot
 ```
 
-Key patterns across leagues:
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 
-- Average market value varies significantly, with the Premier League showing higher valuations.
-- Goals and assists are more concentrated among forwards.
-- Age distribution is consistent, skewed towards younger players.
+# Reshape data for faceting (excluding market_value)
+data_long <- england_data %>%
+  select(
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
+    minutes_played
+  ) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Variable",
+    values_to = "Value"
+  )
+
+# Facet plot for the other variables
+england_facet_plot <- ggplot(data_long, aes(x = Value)) +
+  geom_histogram(fill = "#D62728", color = "black", bins = 30) +
+  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Other Variables",
+    x = "Value",
+    y = "Frequency"
+  ) +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+england_facet_plot
+```
+
+## France
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load the dataset
+france_data <- read_parquet("../data/02-analysis_data/cleaned_france_data.parquet")
+
+# Scale down market value to millions
+france_data <- france_data %>%
+  mutate(market_value_million = market_value / 1e6)
+
+# Individual plot for market value
+france_market_value_plot <- ggplot(france_data, aes(x = market_value_million)) +
+  geom_histogram(fill = "#1F77B4", color = "black", bins = 30) +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Market Value (in Million Euros)",
+    x = "Market Value (Million Euros)",
+    y = "Frequency"
+  ) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+
+france_market_value_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Reshape data for faceting (excluding market_value)
+data_long <- france_data %>%
+  select(
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
+    minutes_played
+  ) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Variable",
+    values_to = "Value"
+  )
+
+# Facet plot for the other variables
+france_facet_plot <- ggplot(data_long, aes(x = Value)) +
+  geom_histogram(fill = "#1F77B4", color = "black", bins = 30) +
+  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Other Variables",
+    x = "Value",
+    y = "Frequency"
+  ) +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+france_facet_plot
+```
+
+## Germany
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load the dataset
+germany_data <- read_parquet("../data/02-analysis_data/cleaned_germany_data.parquet")
+
+# Scale down market value to millions
+germany_data <- germany_data %>%
+  mutate(market_value_million = market_value / 1e6)
+
+# Individual plot for market value
+germany_market_value_plot <- ggplot(germany_data, aes(x = market_value_million)) +
+  geom_histogram(fill = "#000000", color = "white", bins = 30) +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Market Value (in Million Euros)",
+    x = "Market Value (Million Euros)",
+    y = "Frequency"
+  ) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+
+germany_market_value_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Reshape data for faceting (excluding market_value)
+data_long <- germany_data %>%
+  select(
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
+    minutes_played
+  ) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Variable",
+    values_to = "Value"
+  )
+
+# Facet plot for the other variables
+germany_facet_plot <- ggplot(data_long, aes(x = Value)) +
+  geom_histogram(fill = "#000000", color = "white", bins = 30) +
+  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Other Variables",
+    x = "Value",
+    y = "Frequency"
+  ) +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+germany_facet_plot
+```
+
+## Italy
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load the dataset
+italy_data <- read_parquet("../data/02-analysis_data/cleaned_italy_data.parquet")
+
+# Scale down market value to millions
+italy_data <- italy_data %>%
+  mutate(market_value_million = market_value / 1e6)
+
+# Individual plot for market value
+italy_market_value_plot <- ggplot(italy_data, aes(x = market_value_million)) +
+  geom_histogram(fill = "#2CA02C", color = "black", bins = 30) +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Market Value (in Million Euros)",
+    x = "Market Value (Million Euros)",
+    y = "Frequency"
+  ) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+
+italy_market_value_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Reshape data for faceting (excluding market_value)
+data_long <- italy_data %>%
+  select(
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
+    minutes_played
+  ) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Variable",
+    values_to = "Value"
+  )
+
+# Facet plot for the other variables
+italy_facet_plot <- ggplot(data_long, aes(x = Value)) +
+  geom_histogram(fill = "#2CA02C", color = "black", bins = 30) +
+  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Other Variables",
+    x = "Value",
+    y = "Frequency"
+  ) +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+italy_facet_plot
+```
+
+## Spain
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load the dataset
+spain_data <- read_parquet("../data/02-analysis_data/cleaned_spain_data.parquet")
+
+# Scale down market value to millions
+spain_data <- spain_data %>%
+  mutate(market_value_million = market_value / 1e6)
+
+# Individual plot for market value
+spain_market_value_plot <- ggplot(spain_data, aes(x = market_value_million)) +
+  geom_histogram(fill = "#FFB000", color = "black", bins = 30) +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Market Value (in Million Euros)",
+    x = "Market Value (Million Euros)",
+    y = "Frequency"
+  ) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+
+spain_market_value_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Reshape data for faceting (excluding market_value)
+data_long <- spain_data %>%
+  select(
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
+    minutes_played
+  ) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Variable",
+    values_to = "Value"
+  )
+
+# Facet plot for the other variables
+spain_facet_plot <- ggplot(data_long, aes(x = Value)) +
+  geom_histogram(fill = "#FFB000", color = "black", bins = 30) +
+  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  theme_minimal() +
+  labs(
+    title = "Distribution of Other Variables",
+    x = "Value",
+    y = "Frequency"
+  ) +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+spain_facet_plot
+```
 
 # Model {#sec-model}
 
@@ -102,6 +428,136 @@ $$
 ## Regression Coefficients by League
 
 The table below presents the key regression results for each league.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load the regression results file
+file_path <- "../models/player_market_value_models.csv"
+final_results <- read_csv(file_path)
+
+# Pivot data to create comparison tables
+comparison_table <- final_results %>%
+  select(term, estimate, League) %>%
+  pivot_wider(names_from = League, values_from = estimate)
+
+# Intercept comparison table
+intercept_table <- comparison_table %>%
+  filter(term == "(Intercept)") %>%
+  select(-term)
+
+# Display Intercept Table
+kable(
+  intercept_table,
+  digits = 3,
+  caption = "Intercept Estimates Across Leagues"
+)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Age comparison table
+age_table <- comparison_table %>%
+  filter(term == "age") %>%
+  select(-term)
+
+# Display Age Table
+kable(
+  age_table,
+  digits = 3,
+  caption = "Age Coefficient Estimates Across Leagues"
+)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Goals comparison table
+goals_table <- comparison_table %>%
+  filter(term == "goals") %>%
+  select(-term)
+
+# Display Goals Table
+kable(
+  goals_table,
+  digits = 3,
+  caption = "Goals Coefficient Estimates Across Leagues"
+)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Assists comparison table
+assists_table <- comparison_table %>%
+  filter(term == "assists") %>%
+  select(-term)
+
+# Display Assists Table
+kable(
+  assists_table,
+  digits = 3,
+  caption = "Assists Coefficient Estimates Across Leagues"
+)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Club Ranking comparison table
+club_ranking_table <- comparison_table %>%
+  filter(term == "club_ranking") %>%
+  select(-term)
+
+# Display Club Ranking Table
+kable(
+  club_ranking_table,
+  digits = 3,
+  caption = "Club Ranking Coefficient Estimates Across Leagues"
+)
+```
+
+## Key Findings
+
+1. **Age**: Age negatively impacts market value across all leagues, with the effect strongest in Serie A and La Liga.
+2. **Goals and Assists**: These variables are the most consistent predictors of market value. Their influence is largest in the Premier League, suggesting a higher emphasis on offensive contributions.
+3. **Club Ranking**: Significant in all leagues, with stronger effects observed in Ligue 1 and Serie A.
+4. **Position**: Forwards generally have lower valuations compared to midfielders and defenders in Ligue 1 and La Liga.
+
+# Discussion {#sec-disc}
+
+## What Was Done
+This study developed league-specific linear regression models to analyze the determinants of soccer players’ market values.
+
+## Insights Gained
+1. Offensive contributions (goals, assists) are crucial drivers of market value, but their relative importance varies by league.
+2. Club ranking is consistently significant, reflecting the role of team reputation in player valuation.
+3. Age is negatively associated with market value, underscoring the premium placed on youth in professional soccer.
+
+## Limitations and Future Directions
+The study is limited to one season and excludes external factors like injuries, media influence, or tactical role. Future work could explore time-series data and non-linear modeling approaches.
+
+
+\newpage
+
+\appendix
+
+# Appendix {#sec-appendix}
+
+## Dataset and Graph Sketches
+
+## Model Results
 
 ```{r}
 #| echo: false
@@ -236,30 +692,5 @@ kable(spain_table, digits = 3, caption = "Regression Results for La Liga (Spain)
 
 ```
 
-
-## Key Findings
-
-1. **Age**: Age negatively impacts market value across all leagues, with the effect strongest in Serie A and La Liga.
-2. **Goals and Assists**: These variables are the most consistent predictors of market value. Their influence is largest in the Premier League, suggesting a higher emphasis on offensive contributions.
-3. **Club Ranking**: Significant in all leagues, with stronger effects observed in Ligue 1 and Serie A.
-4. **Position**: Forwards generally have lower valuations compared to midfielders and defenders in Ligue 1 and La Liga.
-
-# Discussion {#sec-disc}
-
-## What Was Done
-This study developed league-specific linear regression models to analyze the determinants of soccer players’ market values.
-
-## Insights Gained
-1. Offensive contributions (goals, assists) are crucial drivers of market value, but their relative importance varies by league.
-2. Club ranking is consistently significant, reflecting the role of team reputation in player valuation.
-3. Age is negatively associated with market value, underscoring the premium placed on youth in professional soccer.
-
-## Limitations and Future Directions
-The study is limited to one season and excludes external factors like injuries, media influence, or tactical role. Future work could explore time-series data and non-linear modeling approaches.
-
-
-\newpage
-
-\appendix
 
 # References
