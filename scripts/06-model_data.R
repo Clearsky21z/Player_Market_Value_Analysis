@@ -29,9 +29,13 @@ load_data <- function(file) {
 #### Modeling function ####
 # Function to build and summarize linear regression models
 build_model <- function(data, league_name) {
+  # Scale market value to millions
+  data <- data %>%
+    mutate(market_value_million = market_value / 1e6)
+  
   # Build the linear regression model
   model <- lm(
-    market_value ~ age + goals + assists + club_ranking + 
+    market_value_million ~ age + goals + assists + club_ranking + 
       national_team_ranking + minutes_played + position,
     data = data
   )
@@ -72,5 +76,3 @@ write_csv(combined_summary, "models/player_market_value_models.csv")
 #### Analysis ####
 # View the combined summary
 print(combined_summary)
-
-# Optional: Analyze key findings, such as comparing coefficients across leagues

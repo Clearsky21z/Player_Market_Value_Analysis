@@ -23,8 +23,9 @@ library(dplyr)
 library(modelsummary)
 library(tidyverse)
 library(knitr)
+library(validate)
+library(testthat)
 ```
-
 
 # Introduction{#sec-intro}
 The global soccer transfer market is a dynamic and high-stakes environment where players’ market values are central to team-building strategies, investments, and negotiations. Understanding what drives these values is a critical question for analysts, clubs, and stakeholders. While common factors such as goals scored or club reputation are widely acknowledged to affect valuations, their relative importance likely varies across leagues with differing levels of competition, financial resources, and playing styles.
@@ -55,6 +56,9 @@ The data includes information on players from the top five European leagues duri
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-emp
+#| fig-cap: Distribution of Market Value (in Million Euros)
+
 
 # Load the dataset
 england_data <- read_parquet("../data/02-analysis_data/cleaned_england_data.parquet")
@@ -68,7 +72,6 @@ england_market_value_plot <- ggplot(england_data, aes(x = market_value_million))
   geom_histogram(fill = "#D62728", color = "black", bins = 30) +
   theme_minimal() +
   labs(
-    title = "Distribution of Market Value (in Million Euros)",
     x = "Market Value (Million Euros)",
     y = "Frequency"
   ) +
@@ -85,6 +88,8 @@ england_market_value_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-efp
+#| fig-cap: Distribution of other Variables
 
 # Reshape data for faceting (excluding market_value)
 data_long <- england_data %>%
@@ -127,6 +132,8 @@ england_facet_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-fmp
+#| fig-cap: Distribution of Market Value (in Million Euros)
 
 # Load the dataset
 france_data <- read_parquet("../data/02-analysis_data/cleaned_france_data.parquet")
@@ -157,6 +164,8 @@ france_market_value_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-ffp
+#| fig-cap: Distribution of other Variables
 
 # Reshape data for faceting (excluding market_value)
 data_long <- france_data %>%
@@ -199,6 +208,8 @@ france_facet_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-gmp
+#| fig-cap: Distribution of Market Value (in Million Euros)
 
 # Load the dataset
 germany_data <- read_parquet("../data/02-analysis_data/cleaned_germany_data.parquet")
@@ -229,6 +240,8 @@ germany_market_value_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-gfp
+#| fig-cap: Distribution of other Variables
 
 # Reshape data for faceting (excluding market_value)
 data_long <- germany_data %>%
@@ -271,6 +284,8 @@ germany_facet_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-imp
+#| fig-cap: Distribution of Market Value (in Million Euros)
 
 # Load the dataset
 italy_data <- read_parquet("../data/02-analysis_data/cleaned_italy_data.parquet")
@@ -301,6 +316,8 @@ italy_market_value_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-ifp
+#| fig-cap: Distribution of other Variables
 
 # Reshape data for faceting (excluding market_value)
 data_long <- italy_data %>%
@@ -343,6 +360,8 @@ italy_facet_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-smp
+#| fig-cap: Distribution of Market Value (in Million Euros)
 
 # Load the dataset
 spain_data <- read_parquet("../data/02-analysis_data/cleaned_spain_data.parquet")
@@ -373,6 +392,8 @@ spain_market_value_plot
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-sfp
+#| fig-cap: Distribution of other Variables
 
 # Reshape data for faceting (excluding market_value)
 data_long <- spain_data %>%
@@ -422,17 +443,18 @@ $$
 \end{aligned}
 $$
 
-
 # Results {#sec-res}
 
-## Regression Coefficients by League
+This section summarizes the key findings from the league-specific regression analyses, emphasizing only significant predictors of market value. Insignificant estimates, such as national team rankings and most position-specific coefficients, are excluded from this section but are included in the appendix.
 
-The table below presents the key regression results for each league.
+The intercepts, which represent the baseline market value for a player with average characteristics, vary significantly across leagues. The Premier League (England) exhibits the highest intercept (41.057 million Euros), as shown in @fig-ie, highlighting the league's financial dominance. Conversely, Ligue 1 (France) has the lowest intercept (22.946 million Euros), reflecting its relatively limited financial capacity.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-ie
+#| fig-cap: Intercept Estimates Across Leagues
 
 # Load the regression results file
 file_path <- "../models/player_market_value_models.csv"
@@ -443,111 +465,253 @@ comparison_table <- final_results %>%
   select(term, estimate, League) %>%
   pivot_wider(names_from = League, values_from = estimate)
 
-# Intercept comparison table
-intercept_table <- comparison_table %>%
+# Intercept barchart
+intercept_data <- comparison_table %>%
   filter(term == "(Intercept)") %>%
-  select(-term)
+  pivot_longer(cols = -term, names_to = "League", values_to = "Estimate")
 
-# Display Intercept Table
-kable(
-  intercept_table,
-  digits = 3,
-  caption = "Intercept Estimates Across Leagues"
-)
+ggplot(intercept_data, aes(x = League, y = Estimate, fill = League)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(Estimate, 3)), vjust = -0.25, size = 3) +
+  scale_fill_manual(values = c(
+    "England" = "#D62728",
+    "France" = "#1F77B4",
+    "Germany" = "#000000",
+    "Italy" = "#2CA02C",
+    "Spain" = "#FFB000"
+  )) +
+  theme_minimal() +
+  labs(
+    x = "League",
+    y = "Intercept (in Million Euros)"
+  )
+
 ```
+
+Age negatively affects market value across all leagues, reflecting the premium placed on youth. @fig-ae reveals that La Liga (Spain) places the strongest emphasis on younger players, with a coefficient of -1.179 million Euros, followed by the Premier League (-1.137 million Euros). Ligue 1 (-0.593 million Euros) places the least emphasis on age.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-ae
+#| fig-cap: Age Coefficient Estimates Across Leagues
 
-# Age comparison table
-age_table <- comparison_table %>%
+
+# Age barchart
+age_data <- comparison_table %>%
   filter(term == "age") %>%
-  select(-term)
+  pivot_longer(cols = -term, names_to = "League", values_to = "Estimate")
 
-# Display Age Table
-kable(
-  age_table,
-  digits = 3,
-  caption = "Age Coefficient Estimates Across Leagues"
-)
+ggplot(age_data, aes(x = League, y = Estimate, fill = League)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(Estimate, 3)), vjust = 1.25, size = 3) +
+  scale_fill_manual(values = c(
+    "England" = "#D62728",
+    "France" = "#1F77B4",
+    "Germany" = "#000000",
+    "Italy" = "#2CA02C",
+    "Spain" = "#FFB000"
+  )) +
+  theme_minimal() +
+  labs(
+    x = "League",
+    y = "Age Coefficient (in Million Euros)"
+  )
+
 ```
+
+Goals and assists are consistent predictors of market value across leagues. As shown in @fig-ge, the impact of goals is highest in the Premier League (2.993 million Euros per goal) and Serie A (Italy) (2.489 million Euros). @fig-ase shows that assists have the strongest effect in the Bundesliga (Germany) (1.828 million Euros), while Serie A demonstrates the smallest effect (0.820 million Euros). These findings emphasize the financial rewards for offensive contributions, particularly in leagues like England and Germany.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-ge
+#| fig-cap: Goal Coefficient Estimates Across Leagues
 
-# Goals comparison table
-goals_table <- comparison_table %>%
+# Goals barchart
+goals_data <- comparison_table %>%
   filter(term == "goals") %>%
-  select(-term)
+  pivot_longer(cols = -term, names_to = "League", values_to = "Estimate")
 
-# Display Goals Table
-kable(
-  goals_table,
-  digits = 3,
-  caption = "Goals Coefficient Estimates Across Leagues"
-)
+ggplot(goals_data, aes(x = League, y = Estimate, fill = League)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(Estimate, 3)), vjust = -0.25, size = 3) +
+  scale_fill_manual(values = c(
+    "England" = "#D62728",
+    "France" = "#1F77B4",
+    "Germany" = "#000000",
+    "Italy" = "#2CA02C",
+    "Spain" = "#FFB000"
+  )) +
+  theme_minimal() +
+  labs(
+    x = "League",
+    y = "Goals Coefficient (in Million Euros)"
+  )
+
 ```
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-ase
+#| fig-cap: Assists Coefficient Estimates Across Leagues
 
-# Assists comparison table
-assists_table <- comparison_table %>%
+# Assists barchart
+assists_data <- comparison_table %>%
   filter(term == "assists") %>%
-  select(-term)
+  pivot_longer(cols = -term, names_to = "League", values_to = "Estimate")
 
-# Display Assists Table
-kable(
-  assists_table,
-  digits = 3,
-  caption = "Assists Coefficient Estimates Across Leagues"
-)
+ggplot(assists_data, aes(x = League, y = Estimate, fill = League)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(Estimate, 3)), vjust = -0.25, size = 3) +
+  scale_fill_manual(values = c(
+    "England" = "#D62728",
+    "France" = "#1F77B4",
+    "Germany" = "#000000",
+    "Italy" = "#2CA02C",
+    "Spain" = "#FFB000"
+  )) +
+  theme_minimal() +
+  labs(
+    x = "League",
+    y = "Assists Coefficient (in Million Euros)"
+  )
+
 ```
+
+Club ranking negatively influences market value in all leagues, as better club performance (lower numerical ranking) increases valuations. @fig-cre illustrates that the strongest effect is observed in La Liga (-0.034 million Euros per rank), followed by the Premier League (-0.027 million Euros). This highlights the importance of team performance in player valuation, particularly in Spain.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#| label: fig-cre
+#| fig-cap: Club Ranking Coefficient Estimates Across Leagues
 
-# Club Ranking comparison table
-club_ranking_table <- comparison_table %>%
+# Club Ranking barchart
+club_ranking_data <- comparison_table %>%
   filter(term == "club_ranking") %>%
-  select(-term)
+  pivot_longer(cols = -term, names_to = "League", values_to = "Estimate")
 
-# Display Club Ranking Table
+ggplot(club_ranking_data, aes(x = League, y = Estimate, fill = League)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(Estimate, 3)), vjust = 1.25, size = 3) +
+  scale_fill_manual(values = c(
+    "England" = "#D62728",
+    "France" = "#1F77B4",
+    "Germany" = "#000000",
+    "Italy" = "#2CA02C",
+    "Spain" = "#FFB000"
+  )) +
+  theme_minimal() +
+  labs(
+    x = "League",
+    y = "Club Ranking Coefficient (in Million Euros)"
+  )
+
+```
+
+Minutes played is a significant, though modest, predictor of market value in England, Italy, and Spain. As shown in @fig-mpe, the coefficients range from 0.004 million Euros in England and Spain to 0.002 million Euros in Italy. These results suggest that playing time moderately impacts market value in these leagues.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-mpe
+#| fig-cap: Minutes Played Coefficient Estimates Across Selected Leagues
+
+# Minutes Played barchart for England, Italy, and Spain
+minutes_played_data <- comparison_table %>%
+  filter(term == "minutes_played") %>%
+  pivot_longer(cols = c("England", "Italy", "Spain"), names_to = "League", values_to = "Estimate")
+
+ggplot(minutes_played_data, aes(x = League, y = Estimate, fill = League)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(Estimate, 3)), vjust = -0.5, size = 3) +
+  scale_fill_manual(values = c(
+    "England" = "#D62728",
+    "Italy" = "#2CA02C",
+    "Spain" = "#FFB000"
+  )) +
+  theme_minimal() +
+  labs(
+    x = "League",
+    y = "Minutes Played Coefficient (in Million Euros)"
+  )
+
+```
+
+Most position-specific coefficients are insignificant across leagues. However, @tbl-pe highlights some notable findings. In England, forwards (FW) have a significant negative effect on market value (-9.608 million Euros). Similarly, hybrid forward-midfielders (FWMF) have significant negative coefficients in France (-5.011 million Euros), Germany (-5.238 million Euros), and Italy (-4.877 million Euros). In Spain, none of the position-specific estimates are significant, indicating minimal variation in market valuation by position.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-pe
+#| tbl-cap: Position Specific Estimates in Selected Leagues
+
+# Filter the data for specific positions and leagues
+custom_position_table <- comparison_table %>%
+  filter(
+    (term == "positionFW" & !is.na(England)) |
+    (term %in% c("positionFW", "positionFWMF") & !is.na(France)) |
+    (term %in% c("positionFWDF", "positionFWMF") & !is.na(Germany)) |
+    (term == "positionFWMF" & !is.na(Italy))
+  ) %>%
+  pivot_longer(cols = -term, names_to = "League", values_to = "Estimate") %>%
+  drop_na() %>%
+  filter(
+    (term == "positionFW" & League == "England") |
+    (term %in% c("positionFW", "positionFWMF") & League == "France") |
+    (term %in% c("positionFWDF", "positionFWMF") & League == "Germany") |
+    (term == "positionFWMF" & League == "Italy")
+  ) %>%
+  arrange(League)  # Sort by League
+
+# Simplify table columns
+custom_position_table <- custom_position_table %>%
+  select(Position = term, League, Estimate)
+
+# Display the table
 kable(
-  club_ranking_table,
+  custom_position_table,
   digits = 3,
-  caption = "Club Ranking Coefficient Estimates Across Leagues"
 )
 ```
 
-## Key Findings
+# Discussion{#sec-disc}
 
-1. **Age**: Age negatively impacts market value across all leagues, with the effect strongest in Serie A and La Liga.
-2. **Goals and Assists**: These variables are the most consistent predictors of market value. Their influence is largest in the Premier League, suggesting a higher emphasis on offensive contributions.
-3. **Club Ranking**: Significant in all leagues, with stronger effects observed in Ligue 1 and Serie A.
-4. **Position**: Forwards generally have lower valuations compared to midfielders and defenders in Ligue 1 and La Liga.
+This paper sought to identify the determinants of soccer players' market values in five major European leagues: the Premier League (England), Ligue 1 (France), Bundesliga (Germany), Serie A (Italy), and La Liga (Spain). By using league-specific linear regression models, we examined how various predictors such as age, goals, assists, club ranking, minutes played, and player position influenced market value. The findings reveal both universal and league-specific patterns in the determinants of market value, providing valuable insights into how soccer markets operate across different contexts.
 
-# Discussion {#sec-disc}
+## Cross-League Differences in Market Value Baselines
+One of the most striking findings is the variation in the intercept values across leagues, which reflect the baseline market value for players with average characteristics (or zero predictors). The Premier League (England) has the highest baseline market value (41.057 million Euros), followed by La Liga (Spain) and the Bundesliga (Germany). In contrast, Ligue 1 (France) exhibits the lowest intercept (22.946 million Euros). These results align with existing research, which highlights the financial strength and global appeal of the Premier League compared to other leagues. The disparity in intercepts underscores the role of financial resources, international exposure, and league-specific brand value in shaping player valuations.
 
-## What Was Done
-This study developed league-specific linear regression models to analyze the determinants of soccer players’ market values.
+## Universal Importance of Goals and Assists
+Goals and assists emerged as the most consistent predictors of market value across leagues. The Premier League shows the strongest relationship between goals and market value, followed by Serie A. This finding reflects the premium placed on offensive contributions, particularly in leagues that emphasize high-scoring games or where attacking players are highly valued in the transfer market. Similarly, assists play a crucial role in Germany’s Bundesliga, likely reflecting the league's focus on team-oriented and high-tempo playing styles. These results confirm prior research, which identifies offensive output as a key driver of player valuations in soccer.
 
-## Insights Gained
-1. Offensive contributions (goals, assists) are crucial drivers of market value, but their relative importance varies by league.
-2. Club ranking is consistently significant, reflecting the role of team reputation in player valuation.
-3. Age is negatively associated with market value, underscoring the premium placed on youth in professional soccer.
+## Age and the Youth Premium
+Age negatively impacts market value across all leagues, with the largest effect observed in La Liga (-1.179 million Euros per year) and the smallest in Ligue 1 (-0.593 million Euros per year). This pattern demonstrates the universal preference for younger players, who are perceived to have greater potential for development and resale value. However, the magnitude of this effect varies by league, possibly due to differences in scouting practices and player development pipelines. For example, Spain’s emphasis on nurturing young talent aligns with its stronger age effect, while Ligue 1, known for exporting young players, may rely on other metrics for valuation.
 
-## Limitations and Future Directions
-The study is limited to one season and excludes external factors like injuries, media influence, or tactical role. Future work could explore time-series data and non-linear modeling approaches.
+## Club Ranking and Market Value
+Club ranking, a proxy for team reputation and performance, shows a significant but modest negative relationship with market value. This finding indicates that players from higher-performing clubs (lower-ranked) tend to have higher valuations. Spain exhibits the strongest club ranking effect (-0.034 million Euros per rank improvement), which may reflect the emphasis placed on club prestige in La Liga’s valuation processes. However, the relatively small magnitude across leagues suggests that individual performance metrics, such as goals and assists, are weighted more heavily than team success.
 
+## Position-Based Valuations
+
+The role of player position in determining market value varied significantly across leagues, with most position-specific coefficients being statistically insignificant. However, some notable exceptions were observed. Forwards (FW) in England and France exhibited significant negative effects on market value, with the Premier League showing the strongest effect (-9.608 million Euros). Hybrid positions, such as forward-midfielders (FWMF), were significant in France, Germany, and Italy, indicating that players with versatile roles are valued differently depending on the league. Interestingly, none of the position-specific coefficients in Spain were significant, suggesting that La Liga places less emphasis on positional roles in player valuation and more on overall talent and individual performance. These findings highlight the complexity of valuing players based on position, as tactical demands and league-specific preferences play a significant role.
+
+## Weaknesses of the Study
+
+While the findings provide valuable results, the study has several limitations. First, it does not account for external factors such as player injuries, media influence, and agent negotiations, all of which are known to influence market value. Second, the analysis focuses on a single season (2023/24), limiting its ability to capture temporal trends and variations caused by external events such as the COVID-19 pandemic or changes in league regulations. Third, the use of linear regression assumes a straightforward relationship between predictors and market value, which may oversimplify complex interactions or nonlinear effects (e.g., diminishing returns on goals). Finally, the study’s focus on Europe’s top five leagues excludes emerging leagues, such as Major League Soccer (MLS) or the Saudi Pro League, where market dynamics may differ significantly.
+
+## Future Directions
+
+The findings of this study have important implications for clubs, agents, and analysts in the soccer industry. Clubs can use these insights to refine their scouting and recruitment strategies by focusing on metrics that are most valued in their specific league, such as goals in the Premier League or assists in the Bundesliga. Agents can leverage the results to highlight the most marketable aspects of their clients during contract negotiations, emphasizing factors like offensive contributions or club prestige. Additionally, analysts and researchers can build on these findings to explore broader trends in player valuations and market dynamics.
+
+Future research could address the limitations of this study by incorporating external variables such as media coverage, player injuries, and sponsorship deals. Expanding the analysis to include data from multiple seasons would provide a more comprehensive understanding of long-term trends and the impact of external shocks, such as economic crises or regulatory changes. Furthermore, the use of advanced machine learning models could capture more complex relationships between predictors and market value, offering a deeper understanding of the factors that drive player valuations. Including emerging leagues and non-European markets would also provide a more global perspective on the determinants of market value, shedding light on how valuations differ between established and developing soccer ecosystems.
 
 \newpage
 
