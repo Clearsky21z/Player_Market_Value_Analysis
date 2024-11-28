@@ -432,7 +432,9 @@ spain_facet_plot
 
 # Model {#sec-model}
 
-A linear regression model was developed for each league:
+In this study, we constructed a linear regression model for each of the five major European football leagues to analyze the determinants of player market value. The dependent variable, market value $(\text{Market Value}_i)$, was scaled to millions of Euros for easier interpretability. The model incorporates a comprehensive set of predictors, including player performance metrics, contextual factors, and positional variables, to capture the multi-dimensional aspects influencing market valuation.
+
+The general form of the model is as follows:
 
 $$
 \begin{aligned}
@@ -442,6 +444,51 @@ $$
 &\quad + \beta_7 (\text{Position}_i) + \epsilon_i
 \end{aligned}
 $$
+
+
+where:
+- $\beta_0$: The intercept, representing the baseline market value when all predictors are zero.
+- $\beta_1$: The coefficient for age, showing how market value changes with each additional year of age.
+- $\beta_2$: The coefficient for goals, representing the increase in market value per additional goal scored.
+- $\beta_3$: The coefficient for assists, reflecting the market value impact of providing assists.
+- $\beta_4$: The coefficient for club ranking, with better (lower) rankings associated with higher market values.
+- $\beta_5$: The coefficient for national team ranking, highlighting the effect of international representation.
+- $\beta_6$: The coefficient for minutes played, indicating the impact of game time on market value.
+- $\beta_7$: The set of coefficients for positional categories, capturing positional differences in market valuation relative to a baseline.
+- $\epsilon_i$: The residual error, accounting for unobserved factors affecting market value.
+
+## Variable Justification
+
+The predictors included in the model were carefully selected based on their relevance to market valuation processes in professional football:
+
+1. **Age**: Younger players typically have higher market values due to their potential for future development.
+2. **Goals and Assists**: These are key indicators of a player’s offensive contribution, which are highly valued across all leagues.
+3. **Club Ranking**: Players at higher-performing clubs (lower rankings) tend to have greater exposure and higher valuations.
+4. **National Team Ranking**: Representing a higher-ranked national team enhances player marketability and perceived skill.
+5. **Minutes Played**: A proxy for fitness and importance to the team, minutes played captures game-time contributions.
+6. **Position**: Positional variables were included to account for role-specific valuation differences, such as the higher premium on forwards compared to defenders.
+
+## Modeling Process
+
+The models were implemented using the R programming language, specifically leveraging the `lm()` function for linear regression. For each league, data were split into training and testing sets to validate model performance. A stratified train-test split (80% training, 20% testing) was performed using the `caret` package to ensure balanced representation of market value distributions across the sets. 
+
+## Model Validation
+
+To evaluate model performance, predictions were generated on the test set, and Mean Squared Error (MSE) was computed for each league. MSE provides an average measure of prediction error, quantifying the extent to which observed market values deviate from predicted values. The MSE values across the five leagues are as follows:
+- England: 265.27
+- France: 100.49
+- Germany: 215.51
+- Italy: 109.95
+- Spain: 122.17
+
+The variation in MSE reflects differences in data variability and the complexity of valuation processes in each league. For instance, the relatively high MSE in England suggests greater variability in market values, likely influenced by the financial power and diversity of clubs in the Premier League.
+
+## Alternative Models and Future Directions
+
+While linear regression provides a transparent and interpretable framework, alternative approaches could enhance predictive accuracy:
+- **Ridge Regression**: To address multicollinearity, ridge regression could be employed to shrink coefficient estimates, reducing variance.
+- **Random Forests or Gradient Boosting**: Nonlinear methods could capture complex interactions between predictors, potentially improving fit for leagues with high variability.
+- **Bayesian Regression**: A Bayesian approach would allow for the incorporation of prior knowledge and explicit uncertainty quantification for coefficients.
 
 # Results {#sec-res}
 
