@@ -1,12 +1,12 @@
 ---
 title: "Determinants of Soccer Players' Market Values in Major European League(s)"
-subtitle: "A Comparative Linear Regression Analysis Across Five Leagues"
+subtitle: "Goals, Assists, and Age Dominate, While League-Specific Patterns Add Complexity"
 author: 
   - John Zhang
 thanks: "Code and data are available at: https://github.com/Clearsky21z/Player_Market_Value_Analysis"
 date: today
 date-format: long
-abstract: ""
+abstract: "The global soccer transfer market is shaped by diverse factors influencing player valuations across leagues. This study analyzes determinants of market value in five major European leagues using data from the 2023/24 season. Goals and assists consistently emerge as the strongest predictors, with the Premier League valuing goals highest and the Bundesliga emphasizing assists, while age negatively affects value across all leagues, particularly in La Liga. These insights highlight universal trends and league-specific valuation dynamics, offering actionable guidance for clubs, agents, and analysts."
 format: pdf
 toc: true
 number-sections: true
@@ -32,11 +32,12 @@ library(kableExtra)
 ```
 
 # Introduction{#sec-intro}
-Certainly! Here's an updated introduction that explicitly mentions all the packages from the references you provided and integrates their relevance to the study:
 
 The global soccer transfer market is a high-stakes, multi-billion-Euro industry where decisions on player valuations can significantly influence team-building strategies, investment decisions, and negotiations. Player market values are determined by a mix of tangible performance metrics, such as goals scored or assists provided, and intangible factors like potential, reputation, and team context. While certain predictors are universally recognized, such as offensive contributions and age, the relative importance of these factors varies widely across leagues with differing financial capabilities, tactical preferences, and competitive levels. Understanding the dynamics behind these variations is crucial for clubs, agents, and analysts aiming to optimize their strategies in this complex market.
 
 This study examines the determinants of soccer players’ market values across five major European leagues: the English Premier League, La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues not only dominate the global football landscape but also present unique economic and competitive ecosystems, making them ideal for a comparative analysis. Using player data from the 2023/24 season, sourced from platforms such as **Transfermarkt**, **Stathead**, **FIFA.com**, and **Footballdatabase.com**, this research addresses a critical gap: how do the drivers of player market value differ across these leagues?
+
+The estimand in this study is the expected market value of a soccer player as a function of performance metrics (e.g., goals, assists), contextual variables (e.g., club and national team rankings), and demographic factors (e.g., age, position), while accounting for league-specific differences. This estimand represents a linear relationship between player attributes and market value, enabling a comparison of the impact of various predictors across leagues.
 
 To conduct this analysis, the study employs league-specific linear regression models with player market value as the dependent variable. Key predictors include performance metrics (e.g., goals, assists, and minutes played), contextual factors (e.g., club and national team rankings), and demographic variables (e.g., age and position). The study relies heavily on the statistical computing environment **R** and the programming language **Python**, employing a suite of packages to ensure methodological rigor and transparency:
 
@@ -1341,6 +1342,7 @@ To retrieve the data:
 These rankings were manually extracted for each club and merged into the dataset by matching player club affiliations. This method provided an accurate and up-to-date measure of club performance, offering crucial context for analyzing player market values.
 
 ![Example to Get Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking}
+
 ## Data Cleaning
 
 ## Model Results
