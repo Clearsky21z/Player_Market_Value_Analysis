@@ -1,5 +1,5 @@
 ---
-title: "Determinants of Soccer Players' Market Values in Major European Leagues"
+title: "Determinants of Soccer Players' Market Values in Major European League(s)"
 subtitle: "A Comparative Linear Regression Analysis Across Five Leagues"
 author: 
   - John Zhang
@@ -18,6 +18,7 @@ bibliography: references.bib
 #| message: false
 #| warning: false
 library(arrow)
+library(broom)
 library(ggplot2)
 library(dplyr)
 library(modelsummary)
@@ -25,40 +26,77 @@ library(tidyverse)
 library(knitr)
 library(validate)
 library(testthat)
+library(styler)
+library(caret)
+library(kableExtra)
 ```
 
 # Introduction{#sec-intro}
-The global soccer transfer market is a dynamic and high-stakes environment where players’ market values are central to team-building strategies, investments, and negotiations. Understanding what drives these values is a critical question for analysts, clubs, and stakeholders. While common factors such as goals scored or club reputation are widely acknowledged to affect valuations, their relative importance likely varies across leagues with differing levels of competition, financial resources, and playing styles.
+Certainly! Here's an updated introduction that explicitly mentions all the packages from the references you provided and integrates their relevance to the study:
 
-This paper focuses on five major European soccer leagues—Premier League(England), La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues are not only among the most competitive but also vary in terms of audience size, financial backing, and player scouting pipelines, making them ideal for a comparative study of market value determinants.
+The global soccer transfer market is a high-stakes, multi-billion-Euro industry where decisions on player valuations can significantly influence team-building strategies, investment decisions, and negotiations. Player market values are determined by a mix of tangible performance metrics, such as goals scored or assists provided, and intangible factors like potential, reputation, and team context. While certain predictors are universally recognized, such as offensive contributions and age, the relative importance of these factors varies widely across leagues with differing financial capabilities, tactical preferences, and competitive levels. Understanding the dynamics behind these variations is crucial for clubs, agents, and analysts aiming to optimize their strategies in this complex market.
 
-Using player data from the 2023/24 season, this study develops league-specific linear regression models with market value as the dependent variable. Key predictors include age, goals, assists, club ranking, national team ranking, minutes played, and position. The analysis reveals both shared and league-specific patterns in the factors influencing market value. For instance, goals and assists consistently emerge as significant predictors, but their impact differs by league. Similarly, younger players tend to command higher valuations universally, with age effects most pronounced in Serie A.
+This study examines the determinants of soccer players’ market values across five major European leagues: the English Premier League, La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues not only dominate the global football landscape but also present unique economic and competitive ecosystems, making them ideal for a comparative analysis. Using player data from the 2023/24 season, sourced from platforms such as **Transfermarkt**, **Stathead**, **FIFA.com**, and **Footballdatabase.com**, this research addresses a critical gap: how do the drivers of player market value differ across these leagues?
 
-These findings contribute to our understanding of how soccer markets function across different leagues and provide actionable insights for clubs and agents. The structure of this paper is as follows: Section 2 describes the dataset and variables, Section 3 outlines the modeling approach, Section 4 presents the results, and Section 5 discusses the implications and limitations of the findings.
+To conduct this analysis, the study employs league-specific linear regression models with player market value as the dependent variable. Key predictors include performance metrics (e.g., goals, assists, and minutes played), contextual factors (e.g., club and national team rankings), and demographic variables (e.g., age and position). The study relies heavily on the statistical computing environment **R** and the programming language **Python**, employing a suite of packages to ensure methodological rigor and transparency:
+
+- **Data Retrieval and Cleaning**: The Python library `BeautifulSoup` was used to scrape market value and player performance data from Transfermarkt and other sources. In R, the `arrow` package facilitated seamless data reading and processing, while `validate` and `testthat` ensured the integrity and accuracy of the dataset.
+- **Data Manipulation and Summarization**: The `tidyverse` collection, including `dplyr` for data manipulation and `ggplot2` for data visualization, formed the backbone of the analysis. Additional tools like `styler` enhanced code readability and reproducibility.
+- **Modeling and Summaries**: Regression models were built using the `caret` package for efficient training and testing, while `modelsummary` provided clear, publication-ready tables summarizing model outputs.
+- **Dynamic Report Generation**: The `knitr` and `kableExtra` packages were integral to generating dynamic, visually appealing reports that integrated results, tables, and figures.
+- **Visualization**: Advanced graphics, including histograms and bar charts, were created with `ggplot2`, showcasing the distribution of market values and key predictors.
+- **Statistical Validation**: The robustness of the analysis was supported by packages like `arrow` for handling large datasets and `validate` for data validation.
+
+The results reveal both universal and league-specific patterns in player valuation. Offensive contributions, such as goals and assists, consistently emerged as significant predictors, with goals having the strongest influence in the Premier League and assists being most impactful in the Bundesliga. Age also played a critical role, with younger players commanding higher valuations, particularly in La Liga. Contextual variables like club and national team rankings demonstrated notable variation, reflecting the differing emphasis on team prestige across leagues.
+
+This study contributes to the literature on soccer economics by uncovering how market dynamics vary across Europe’s top leagues. For clubs, the findings provide actionable insights for tailoring recruitment and investment strategies. For agents, the results highlight the most marketable player attributes for negotiations. Methodologically, the integration of advanced statistical and programming tools offers a replicable framework for analyzing market dynamics in soccer and other sports.
+
+The paper is structured as follows: Section 2 describes the dataset and variable construction processes, emphasizing the integration of data from multiple sources. Section 3 details the modeling approach and validation techniques. Section 4 presents the empirical results, identifying key differences across leagues. Section 5 discusses the implications of these findings, highlights the limitations of the study, and outlines future research directions. By bridging methodological rigor with actionable insights, this study advances our understanding of the determinants of soccer players’ market values.
 
 # Data {#sec-data}
 
-## Dataset Overview
+The data used for this study is gathered four primary sources: **Transfermarkt.com**, **Stathead.com**, and **FIFA.com** and **Footballdatabase.com**, which captures player performance, demographic, market valuation and club ranking/national team ranking data. This section details the dataset, the process of constructing the final variables, and the broader context of the data used in the analysis.
 
-The data includes information on players from the top five European leagues during the 2023/24 season. Variables of interest are:
+## Data Sources and Construction
 
-- **Market Value**: Player’s estimated value in Euros.
-- **Age**: Player age at the start of the season.
-- **Goals and Assists**: Indicators of offensive contributions.
-- **Club Ranking**: Rank of the player's club based on league and international performance.
-- **National Team Ranking**: Ranking of the player's national team (1 to 210).
-- **Minutes Played**: Total minutes played during the season.
-- **Position**: Categorized as Defender (DF), Midfielder (MF), Forward (FW), and hybrids like FWDF.
+The dataset was created by merging multiple data sources using player names as unique identifiers. **Transfermarkt.com** provided player market values in Euros, which serve as the dependent variable in this study. Performance metrics such as goals and assists were sourced from **Stathead.com**, a platform that aggregates comprehensive statistics on football players. To ensure consistency and comparability, rankings were applied to national teams and clubs. National team rankings (1 to 210) were extracted from **FIFA.com**, while club rankings were sourced from **Footballdatabase.com**, reflecting both domestic and international performances.
 
-## England
+After merging these sources, high-level cleaning was conducted to address missing data and standardize variable formats, and the players who are classified as goalkeepers are dropped. The final cleaned datasets for each league include seven variables, as outlined below:
+
+- **Market Value**: The player’s estimated market value, measured in Euros, as provided by Transfermarkt. This serves as the target variable for the analysis.
+- **Age**: The player’s age at the start of the season, reflecting their stage in the career lifecycle.
+- **Goals and Assists**: Performance metrics capturing offensive contributions, key determinants of player valuation.
+- **Club Ranking**: The global ranking of the player’s club, reflecting both domestic and international performance.
+- **National Team Ranking**: The ranking of the player’s national team, highlighting their exposure and representation at the international level.
+- **Minutes Played**: The total minutes played by the player during the season, used as a proxy for fitness and importance to the team.
+- **Position**: Players are categorized into one of six roles: Defender (DF), Forward (FW), Midfielder (MF), and hybrids such as FWDF, FWMF, and MFDF.
+
+## Data Summary 
+
+### England Dataset
+
+The England dataset provides a comprehensive view of player characteristics in the English Premier League. As illustrated in @fig-emp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower market value brackets (below €50 million). This skewness reflects a superstar effect, where a small subset of players, often international stars or highly sought-after talent, command disproportionately higher valuations.
+
+@fig-efp explores the distributions of key predictor variables, including age, goals, assists, national team ranking, club ranking, and minutes played. These distributions reveal important patterns in the dataset:
+
+- **Age**: The age distribution peaks around 24-25 years, indicating that the league predominantly features players in their athletic prime. The range extends from 16 years (likely youth players) to 38 years for veteran professionals.
+- **Goals and Assists**: Both offensive contributions exhibit a heavily right-skewed pattern, with most players scoring fewer than 5 goals or assists in a season. This suggests that only a minority of players serve as primary offensive contributors.
+- **Club Ranking**: Club ranking is inversely related to club performance, with lower values indicating higher-performing teams. The wide range (from 1 to 838) reflects the diversity of clubs in the dataset, from global giants to smaller teams.
+- **National Team Ranking**: Similarly, the national team ranking varies significantly, from top-tier nations to lower-ranked teams. Players from lower-ranked national teams may reflect either emerging talent or under-scouted regions.
+- **Minutes Played**: Minutes played are distributed across a broad spectrum, with many players logging significant game time (over 1,000 minutes), indicative of their importance to team dynamics.
+
+@fig-epp focuses on the percentage distribution of player positions. Defenders (DF) account for the largest share (32.6%), followed by midfielders (MF) and midfield-forward hybrids (FWMF). Pure forwards (FW) make up 16.4% of the players, with hybrid positions like FWDF forming a smaller subset. This distribution aligns with the league's tactical emphasis on strong defensive and midfield structures, with forwards occupying more specialized roles.
+
+@tbl-se provides a detailed statistical summary of the numeric variables in the dataset. The mean market value of players is €20.99 million, but the median is much lower at €14.00 million, reaffirming the skewness of the market value distribution. Other variables, such as assists and goals, also display low averages relative to their maximum values, highlighting the rarity of elite-level contributions.
+
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| label: fig-emp
-#| fig-cap: Distribution of Market Value (in Million Euros)
-
+#| fig-cap: Distribution of Market Value of the England Dataset (in Million Euros)
+#| fig-pos: "H"
 
 # Load the dataset
 england_data <- read_parquet("../data/02-analysis_data/cleaned_england_data.parquet")
@@ -89,7 +127,8 @@ england_market_value_plot
 #| message: false
 #| warning: false
 #| label: fig-efp
-#| fig-cap: Distribution of other Variables
+#| fig-cap: Distribution of Predictor Variables of the England Dataset
+#| fig-pos: "H"
 
 # Reshape data for faceting (excluding market_value)
 data_long <- england_data %>%
@@ -105,6 +144,16 @@ data_long <- england_data %>%
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
+  ) %>%
+  mutate(
+    Variable = factor(Variable, levels = c(
+      "age",
+      "goals",
+      "assists",
+      "national_team_ranking",
+      "club_ranking",
+      "minutes_played"
+    ))
   )
 
 # Facet plot for the other variables
@@ -113,27 +162,127 @@ england_facet_plot <- ggplot(data_long, aes(x = Value)) +
   facet_wrap(~ Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
-    title = "Distribution of Other Variables",
     x = "Value",
     y = "Frequency"
   ) +
   theme(
-    strip.text = element_text(size = 10, face = "bold"),
+    strip.text = element_text(size = 8, face = "bold"),
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
     axis.title = element_text(size = 12),
     axis.text = element_text(size = 10)
   )
+
 england_facet_plot
+
 ```
 
-## France
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-epp
+#| fig-cap: Percentage Distribution of Player Positions of the England Dataset
+#| fig-pos: "H"
+
+# Calculate percentages for positions
+england_position_percentage <- england_data %>%
+  count(position) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Define a custom color palette for positions
+position_colors <- c(
+  "DF" = "#1E90FF",   # Dark Blue
+  "FW" = "#FF4500",   # Bright Red
+  "FWDF" = "#FFD700", # Gold
+  "FWMF" = "#20B2AA", # Teal
+  "MF" = "#32CD32",   # Bright Green
+  "MFDF" = "#9370DB"  # Purple
+)
+
+# Plot percentage bar chart
+england_position_plot <- ggplot(england_position_percentage, aes(x = position, y = percentage, fill = position)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = position_colors) +
+  theme_minimal() +
+  labs(
+    x = "Position",
+    y = "Percentage (%)"
+  ) +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), vjust = -0.5, size = 3) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10)
+  )
+
+england_position_plot
+
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-se
+#| tbl-cap: Summary Statistics of the England Dataset
+#| tbl-pos: "H"
+
+# Function to summarize numeric variables
+summarize_numeric <- function(data) {
+  data %>%
+    summarise(
+      Mean = sprintf("%.2f", mean(Value, na.rm = TRUE)),
+      Median = sprintf("%.2f", median(Value, na.rm = TRUE)),
+      SD = sprintf("%.2f", sd(Value, na.rm = TRUE)),
+      Min = sprintf("%.2f", min(Value, na.rm = TRUE)),
+      Max = sprintf("%.2f", max(Value, na.rm = TRUE))
+    )
+}
+
+# Summarize numeric variables
+numeric_summary <- england_data %>%
+  select(
+    market_value_million, 
+    age, 
+    goals, 
+    assists, 
+    club_ranking, 
+    national_team_ranking, 
+    minutes_played
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  group_by(Variable) %>%
+  summarize_numeric()
+
+# Print numeric summary
+kable(numeric_summary, align = "c") %>%
+  kable_styling(full_width = FALSE)
+
+```
+
+### France Dataset
+
+The France dataset offers insights into player profiles from Ligue 1, one of Europe’s top football leagues. Similar to other leagues, the distribution of market values in the French dataset, as depicted in @fig-fmp, is heavily right-skewed. Most players have market values below €50 million, with only a few elite players commanding significantly higher valuations. This reflects the trend where top-tier talents, often representing national teams or excelling in international competitions, are valued much higher than their peers.
+
+@fig-ffp illustrates the distributions of predictor variables in the dataset:
+
+- **Age**: The age distribution in Ligue 1 peaks around 24 years, with a majority of players between 20 and 30 years old. This highlights the league's balance between developing young talent and retaining experienced professionals. The maximum age in the dataset is 39 years, underscoring the presence of veteran players in the league.
+- **Goals and Assists**: The distributions for goals and assists are highly right-skewed, with most players contributing fewer than 5 goals or assists in a season. This indicates that offensive production is concentrated among a small group of players, typically forwards or attacking midfielders.
+- **Club Ranking**: Club rankings span a wide range, from 11 to 568, reflecting the diversity in club performance levels within the league.
+- **National Team Ranking**: National team rankings also show significant variation, with players representing countries ranked in the top 10 as well as those from lower-ranked national teams. This diversity emphasizes Ligue 1's role as a platform for both elite and emerging talent.
+- **Minutes Played**: The distribution of minutes played indicates that a significant proportion of players log substantial game time (over 1,000 minutes), with some exceeding 3,000 minutes, indicating their critical role in team strategies.
+
+@fig-fpp examines the percentage distribution of player positions in Ligue 1. The largest proportion of players are defenders (DF) at 29.1%, followed by midfielders (MF) at 22.3% and midfield-forward hybrids (FWMF) at 24.3%. Forwards (FW) constitute a smaller proportion (13.1%), while hybrid positions such as FWDF and MFDF account for the remaining distribution. This positional breakdown reflects a balanced tactical structure, with a strong emphasis on defensive and midfield roles.
+
+@tbl-sf provides a comprehensive statistical summary of the numeric variables in the dataset. The mean market value stands at €7.98 million, significantly lower than the Premier League, indicating the varying financial dynamics across leagues. The average age is 23.91 years, reinforcing the league's focus on younger talent. Other variables such as goals and assists demonstrate low means relative to their maximum values, reflecting the rarity of exceptional performances.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| label: fig-fmp
-#| fig-cap: Distribution of Market Value (in Million Euros)
+#| fig-cap: Distribution of Market Value of the France Dataset (in Million Euros)
+#| fig-pos: "H"
 
 # Load the dataset
 france_data <- read_parquet("../data/02-analysis_data/cleaned_france_data.parquet")
@@ -147,7 +296,6 @@ france_market_value_plot <- ggplot(france_data, aes(x = market_value_million)) +
   geom_histogram(fill = "#1F77B4", color = "black", bins = 30) +
   theme_minimal() +
   labs(
-    title = "Distribution of Market Value (in Million Euros)",
     x = "Market Value (Million Euros)",
     y = "Frequency"
   ) +
@@ -165,51 +313,139 @@ france_market_value_plot
 #| message: false
 #| warning: false
 #| label: fig-ffp
-#| fig-cap: Distribution of other Variables
+#| fig-cap: Distribution of Predictor Variables of the France Dataset
 
-# Reshape data for faceting (excluding market_value)
+# Reshape data for faceting and specify the order of variables
 data_long <- france_data %>%
   select(
     age,
     goals,
     assists,
-    club_ranking,
     national_team_ranking,
+    club_ranking,
     minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
-  )
+  ) %>%
+  mutate(Variable = factor(Variable, levels = c(
+    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
+  )))
 
-# Facet plot for the other variables
+# Facet plot for the variables
 france_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#1F77B4", color = "black", bins = 30) +
   facet_wrap(~ Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
-    title = "Distribution of Other Variables",
     x = "Value",
     y = "Frequency"
   ) +
   theme(
-    strip.text = element_text(size = 10, face = "bold"),
+    strip.text = element_text(size = 8, face = "bold"),
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
     axis.title = element_text(size = 12),
     axis.text = element_text(size = 10)
   )
+
 france_facet_plot
 ```
 
-## Germany
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-fpp
+#| fig-cap: Percentage Distribution of Player Positions of the France Dataset
+#| fig-pos: "H"
+
+# Calculate percentages for positions
+france_position_percentage <- france_data %>%
+  count(position) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Define a custom color palette for positions
+position_colors <- c(
+  "DF" = "#1E90FF",   # Dark Blue
+  "FW" = "#FF4500",   # Bright Red
+  "FWDF" = "#FFD700", # Gold
+  "FWMF" = "#20B2AA", # Teal
+  "MF" = "#32CD32",   # Bright Green
+  "MFDF" = "#9370DB"  # Purple
+)
+
+# Plot percentage bar chart
+france_position_plot <- ggplot(france_position_percentage, aes(x = position, y = percentage, fill = position)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = position_colors) +
+  theme_minimal() +
+  labs(
+    x = "Position",
+    y = "Percentage (%)"
+  ) +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), vjust = -0.5, size = 3) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+  )
+
+france_position_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-sf
+#| tbl-cap: Summary Statistics of the France Dataset
+#| fig-pos: "H"
+
+# Summarize numeric variables for France
+numeric_summary_france <- france_data %>%
+  select(
+    market_value_million, 
+    age, 
+    goals, 
+    assists, 
+    club_ranking, 
+    national_team_ranking, 
+    minutes_played
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  group_by(Variable) %>%
+  summarize_numeric()
+
+# Print numeric summary for France
+kable(numeric_summary_france, align = "c") %>%
+  kable_styling(full_width = FALSE)
+```
+
+### Germany Dataset
+
+The Germany dataset captures player characteristics across teams in the Bundesliga. As illustrated in @fig-gmp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower market value brackets (below €50 million). This skewness reflects a superstar effect, with a small subset of players driving disproportionately higher market valuations.
+
+@fig-gfp explores the distributions of predictor variables, shedding light on key patterns:
+
+- **Age**: The age distribution peaks around 25 years, indicating that the league features a significant concentration of players in their athletic prime. The range extends from 17 years (likely youth players) to 39 years for veteran professionals.
+- **Goals and Assists**: Both offensive contributions display a heavily right-skewed pattern, with most players contributing fewer than 5 goals or assists. This highlights the rarity of elite offensive contributors in the league.
+- **Club Ranking**: Club ranking values range from 5 to 750, reflecting the diverse composition of the league, from globally dominant clubs to lower-performing teams.
+- **National Team Ranking**: National team rankings show significant variation, with players representing both top-ranked and lower-ranked nations, capturing the Bundesliga's international player diversity.
+- **Minutes Played**: The distribution of minutes played indicates substantial variability, with many players exceeding 1,000 minutes. This suggests that a majority of players are regular starters or receive substantial playing time.
+
+The position distribution, depicted in @fig-gpp, reveals that defenders (DF) comprise the largest share of players (31.7%), followed by midfielders (MF) and forward-midfield hybrids (FWMF). Pure forwards (FW) form 9.6% of the players, while hybrid positions like FWDF make smaller contributions. This composition underscores the league's focus on tactical balance, with strong emphasis on midfield and defensive strategies.
+
+@tbl-sg provides a detailed statistical summary of the numeric variables in the dataset. The mean market value is €10.20 million, while the median is much lower at €4.00 million, highlighting the skewed distribution. Similar trends are observed for assists and goals, where the mean is low compared to the maximum values, further emphasizing the role of standout performers in shaping league outcomes.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| label: fig-gmp
-#| fig-cap: Distribution of Market Value (in Million Euros)
+#| fig-cap: Distribution of Market Value of the Germany Dataset (in Million Euros)
+#| fig-pos: "H"
 
 # Load the dataset
 germany_data <- read_parquet("../data/02-analysis_data/cleaned_germany_data.parquet")
@@ -223,7 +459,6 @@ germany_market_value_plot <- ggplot(germany_data, aes(x = market_value_million))
   geom_histogram(fill = "#000000", color = "white", bins = 30) +
   theme_minimal() +
   labs(
-    title = "Distribution of Market Value (in Million Euros)",
     x = "Market Value (Million Euros)",
     y = "Frequency"
   ) +
@@ -241,7 +476,8 @@ germany_market_value_plot
 #| message: false
 #| warning: false
 #| label: fig-gfp
-#| fig-cap: Distribution of other Variables
+#| fig-cap: Distribution of Predictor Variables of the Germany Dataset
+#| fig-pos: "H"
 
 # Reshape data for faceting (excluding market_value)
 data_long <- germany_data %>%
@@ -249,15 +485,18 @@ data_long <- germany_data %>%
     age,
     goals,
     assists,
-    club_ranking,
     national_team_ranking,
+    club_ranking,
     minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
-  )
+  ) %>%
+  mutate(Variable = factor(Variable, levels = c(
+    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
+  )))
 
 # Facet plot for the other variables
 germany_facet_plot <- ggplot(data_long, aes(x = Value)) +
@@ -265,12 +504,11 @@ germany_facet_plot <- ggplot(data_long, aes(x = Value)) +
   facet_wrap(~ Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
-    title = "Distribution of Other Variables",
     x = "Value",
     y = "Frequency"
   ) +
   theme(
-    strip.text = element_text(size = 10, face = "bold"),
+    strip.text = element_text(size = 8, face = "bold"),
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
     axis.title = element_text(size = 12),
     axis.text = element_text(size = 10)
@@ -278,14 +516,101 @@ germany_facet_plot <- ggplot(data_long, aes(x = Value)) +
 germany_facet_plot
 ```
 
-## Italy
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-gpp
+#| fig-cap: Percentage Distribution of Player Positions of the Germany Dataset
+#| fig-pos: "H"
+
+# Calculate percentages for positions
+germany_position_percentage <- germany_data %>%
+  count(position) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Define a custom color palette for positions
+position_colors <- c(
+  "DF" = "#1E90FF",   # Dark Blue
+  "FW" = "#FF4500",   # Bright Red
+  "FWDF" = "#FFD700", # Gold
+  "FWMF" = "#20B2AA", # Teal
+  "MF" = "#32CD32",   # Bright Green
+  "MFDF" = "#9370DB"  # Purple
+)
+
+# Plot percentage bar chart
+germany_position_plot <- ggplot(germany_position_percentage, aes(x = position, y = percentage, fill = position)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = position_colors) +
+  theme_minimal() +
+  labs(
+    x = "Position",
+    y = "Percentage (%)"
+  ) +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), vjust = -0.5, size = 3) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+  )
+
+germany_position_plot
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-sg
+#| tbl-cap: Summary Statistics of the Germany Dataset
+#| fig-pos: "H"
+
+# Summarize numeric variables for Germany
+numeric_summary_germany <- germany_data %>%
+  select(
+    market_value_million, 
+    age, 
+    goals, 
+    assists, 
+    club_ranking, 
+    national_team_ranking, 
+    minutes_played
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  group_by(Variable) %>%
+  summarize_numeric()
+
+# Print numeric summary for Germany
+kable(numeric_summary_germany, align = "c") %>%
+  kable_styling(full_width = FALSE)
+```
+
+### Italy Dataset
+
+The Italy dataset provides an insightful analysis of player characteristics within the Serie A league. As shown in Figure @fig-imp, the market value distribution is right-skewed, with a majority of players concentrated in lower valuation brackets (below €30 million). This distribution is characteristic of the league, where the presence of a few superstar players significantly elevates the upper tail.
+
+Figure @fig-ifp highlights the distributions of key predictor variables:
+
+- **Age**: The age distribution centers around 25 years, reflecting a mix of players in their early careers and those in their prime. The range extends from 15 to 36 years.
+- **Goals and Assists**: These variables exhibit heavy skewness, with most players scoring fewer than 5 goals or assists in a season, underscoring the prominence of specialized attacking roles.
+- **Club Ranking**: With values ranging from 3 to 681, the club ranking illustrates the diverse spectrum of team performance within Serie A.
+- **National Team Ranking**: The national team ranking shows a range from 1 to 141, capturing the representation of players from both elite and emerging national teams.
+- **Minutes Played**: The distribution of minutes played indicates significant variability, with several players logging substantial game time (over 1,000 minutes) and a few recording minimal participation.
+
+Figure @fig-ipp depicts the percentage distribution of player positions. Defenders (DF) form the largest proportion (35.4%), followed by midfielders (MF) at 24%. Forward-midfield hybrids (FWMF) and forwards (FW) are well-represented, emphasizing the league's balanced approach to attacking and defensive strategies. Hybrid positions such as FWDF and MFDF form smaller shares of the dataset.
+
+Table @tbl-si presents summary statistics for the numeric variables in the Italy dataset. The mean market value is €9.37 million, with a median of €4.00 million, demonstrating a significant skew. Goals and assists have low averages relative to their maximum values, aligning with the skewed distributions observed in their histograms.
+
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| label: fig-imp
-#| fig-cap: Distribution of Market Value (in Million Euros)
+#| fig-cap: Distribution of Market Value of the Italy Dataset (in Million Euros)
+#| fig-pos: "H"
 
 # Load the dataset
 italy_data <- read_parquet("../data/02-analysis_data/cleaned_italy_data.parquet")
@@ -299,7 +624,6 @@ italy_market_value_plot <- ggplot(italy_data, aes(x = market_value_million)) +
   geom_histogram(fill = "#2CA02C", color = "black", bins = 30) +
   theme_minimal() +
   labs(
-    title = "Distribution of Market Value (in Million Euros)",
     x = "Market Value (Million Euros)",
     y = "Frequency"
   ) +
@@ -317,51 +641,142 @@ italy_market_value_plot
 #| message: false
 #| warning: false
 #| label: fig-ifp
-#| fig-cap: Distribution of other Variables
+#| fig-cap: Distribution of Predictor Variables of the Italy Dataset
+#| fig-pos: "H"
 
-# Reshape data for faceting (excluding market_value)
+# Reshape data for faceting and specify the order of variables
 data_long <- italy_data %>%
   select(
     age,
     goals,
     assists,
-    club_ranking,
     national_team_ranking,
+    club_ranking,
     minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
-  )
+  ) %>%
+  mutate(Variable = factor(Variable, levels = c(
+    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
+  )))
 
-# Facet plot for the other variables
+# Facet plot for the variables
 italy_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#2CA02C", color = "black", bins = 30) +
   facet_wrap(~ Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
-    title = "Distribution of Other Variables",
     x = "Value",
     y = "Frequency"
   ) +
   theme(
-    strip.text = element_text(size = 10, face = "bold"),
+    strip.text = element_text(size = 8, face = "bold"),
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
     axis.title = element_text(size = 12),
     axis.text = element_text(size = 10)
   )
+
 italy_facet_plot
+
 ```
 
-## Spain
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-ipp
+#| fig-cap: Percentage Distribution of Player Positions of the Italy Dataset
+#| fig-pos: "H"
+
+# Calculate percentages for positions
+italy_position_percentage <- italy_data %>%
+  count(position) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Define a custom color palette for positions
+position_colors <- c(
+  "DF" = "#1E90FF",   # Dark Blue
+  "FW" = "#FF4500",   # Bright Red
+  "FWDF" = "#FFD700", # Gold
+  "FWMF" = "#20B2AA", # Teal
+  "MF" = "#32CD32",   # Bright Green
+  "MFDF" = "#9370DB"  # Purple
+)
+
+# Plot percentage bar chart
+italy_position_plot <- ggplot(italy_position_percentage, aes(x = position, y = percentage, fill = position)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = position_colors) +
+  theme_minimal() +
+  labs(
+    x = "Position",
+    y = "Percentage (%)"
+  ) +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), vjust = -0.5, size = 3) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+  )
+
+italy_position_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-si
+#| tbl-cap: Summary Statistics of the Italy Dataset
+#| fig-pos: "H"
+
+# Summarize numeric variables for Italy
+numeric_summary_italy <- italy_data %>%
+  select(
+    market_value_million, 
+    age, 
+    goals, 
+    assists, 
+    club_ranking, 
+    national_team_ranking, 
+    minutes_played
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  group_by(Variable) %>%
+  summarize_numeric()
+
+# Print numeric summary for Italy
+kable(numeric_summary_italy, align = "c") %>%
+  kable_styling(full_width = FALSE)
+
+```
+
+### Spain Dataset
+
+The Spain dataset offers a comprehensive analysis of player characteristics in La Liga. As illustrated in @fig-smp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower valuation brackets (below €30 million). This trend reflects the league's structure, where a few superstar players dominate the upper tail of the distribution, commanding significantly higher valuations.
+
+@fig-sfp reveals the distributions of key predictor variables:
+
+- **Age**: The age distribution peaks at 26 years, showcasing a blend of players in their prime years alongside younger emerging talents and experienced veterans. The range spans from 16 to 37 years.
+- **Goals and Assists**: These offensive metrics display a pronounced skewness, with most players contributing fewer than 5 goals or assists in a season. This underscores the rarity of elite-level offensive production within the league.
+- **Club Ranking**: The club ranking ranges from 2 to 464, highlighting the diversity in team performance levels across La Liga, from top-tier teams to mid-table and lower-ranked sides.
+- **National Team Ranking**: National team rankings range from 1 to 150, reflecting the presence of players from elite international teams as well as those from emerging footballing nations.
+- **Minutes Played**: The minutes played distribution demonstrates significant variability, with a substantial number of players logging over 1,000 minutes, emphasizing their pivotal roles in team dynamics.
+
+@fig-spp illustrates the percentage distribution of player positions. Defenders (DF) comprise the largest group (32.3%), followed by midfielders (MF) at 24.4%. Hybrid roles such as forward-midfield (FWMF) and forward (FW) are well-represented, reflecting La Liga’s tactical diversity and emphasis on attacking football. Smaller proportions of hybrid defensive positions (FWDF, MFDF) further highlight the league's strategic nuances.
+
+@tbl-ss summarizes the numeric variables in the Spain dataset. The mean market value stands at €9.91 million, with a median of €3.50 million, indicating a substantial skew. Goals and assists exhibit low means relative to their maximums, consistent with their heavily skewed distributions. Similarly, club rankings demonstrate a wide range, reflecting the competitive disparity across the league. Minutes played show a significant average of 1,316 minutes, emphasizing the league's reliance on core players for sustained performance.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| label: fig-smp
-#| fig-cap: Distribution of Market Value (in Million Euros)
+#| fig-cap: Distribution of Market Value of the Spain Dataset (in Million Euros)
+#| fig-pos: "H"
 
 # Load the dataset
 spain_data <- read_parquet("../data/02-analysis_data/cleaned_spain_data.parquet")
@@ -375,7 +790,6 @@ spain_market_value_plot <- ggplot(spain_data, aes(x = market_value_million)) +
   geom_histogram(fill = "#FFB000", color = "black", bins = 30) +
   theme_minimal() +
   labs(
-    title = "Distribution of Market Value (in Million Euros)",
     x = "Market Value (Million Euros)",
     y = "Frequency"
   ) +
@@ -393,42 +807,130 @@ spain_market_value_plot
 #| message: false
 #| warning: false
 #| label: fig-sfp
-#| fig-cap: Distribution of other Variables
+#| fig-cap: Distribution of Predictor Variables of the Spain Dataset
+#| fig-pos: "H"
 
-# Reshape data for faceting (excluding market_value)
+# Reshape data for faceting and specify the order of variables
 data_long <- spain_data %>%
   select(
     age,
     goals,
     assists,
-    club_ranking,
     national_team_ranking,
+    club_ranking,
     minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
-  )
+  ) %>%
+  mutate(Variable = factor(Variable, levels = c(
+    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
+  )))
 
-# Facet plot for the other variables
+# Facet plot for the variables
 spain_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#FFB000", color = "black", bins = 30) +
   facet_wrap(~ Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
-    title = "Distribution of Other Variables",
     x = "Value",
     y = "Frequency"
   ) +
   theme(
-    strip.text = element_text(size = 10, face = "bold"),
+    strip.text = element_text(size = 8, face = "bold"),
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
     axis.title = element_text(size = 12),
     axis.text = element_text(size = 10)
   )
+
 spain_facet_plot
+
 ```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-spp
+#| fig-cap: Percentage Distribution of Player Positions of the Spain Dataset
+#| fig-pos: "H"
+
+# Calculate percentages for positions
+spain_position_percentage <- spain_data %>%
+  count(position) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Define a custom color palette for positions
+position_colors <- c(
+  "DF" = "#1E90FF",   # Dark Blue
+  "FW" = "#FF4500",   # Bright Red
+  "FWDF" = "#FFD700", # Gold
+  "FWMF" = "#20B2AA", # Teal
+  "MF" = "#32CD32",   # Bright Green
+  "MFDF" = "#9370DB"  # Purple
+)
+
+# Plot percentage bar chart
+spain_position_plot <- ggplot(spain_position_percentage, aes(x = position, y = percentage, fill = position)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_manual(values = position_colors) +
+  theme_minimal() +
+  labs(
+    x = "Position",
+    y = "Percentage (%)"
+  ) +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")), vjust = -0.5, size = 3) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+  )
+spain_position_plot
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-ss
+#| tbl-cap: Summary Statistics of the Spain Dataset
+#| fig-pos: "H"
+
+# Summarize numeric variables for Spain
+numeric_summary_spain <- spain_data %>%
+  select(
+    market_value_million, 
+    age, 
+    goals, 
+    assists, 
+    club_ranking, 
+    national_team_ranking, 
+    minutes_played
+  ) %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  group_by(Variable) %>%
+  summarize_numeric()
+
+# Print numeric summary for Spain
+kable(numeric_summary_spain, align = "c") %>%
+  kable_styling(full_width = FALSE)
+```
+
+## Measurement
+
+The construction of variables in this study ensures their relevance and accuracy. Player market values were obtained from Transfermarkt, a widely regarded source for estimating market valuations. These values are based on a combination of player performance, market demand, and subjective expert evaluation, making them a holistic representation of player worth. Performance metrics, such as goals and assists, were sourced from Stathead, a trusted repository of sports data.
+
+National team and club rankings were quantified to enable comparison across leagues. National team rankings were sourced from FIFA’s official ranking system, which reflects international match results, strength of opposition, and match importance. Club rankings were sourced from Footballdatabase, which evaluates team performance using a consistent point-based methodology.
+
+High-level cleaning included reconciling discrepancies in player names across sources, imputing missing data where appropriate, and ensuring categorical variables like position were consistently coded. While these steps enhance data usability, it is worth noting potential limitations in data accuracy, such as subjective biases in market valuations or inconsistencies in performance data collection.
+
+## Broader Context and Alternative Datasets
+
+The selected dataset is uniquely suited for this analysis due to its comprehensive scope and integration of market, performance, and contextual data. While alternative sources such as Opta or WyScout provide more granular match-level data, their focus on in-game metrics (e.g., pass accuracy, xG) lacks the broader valuation context provided by Transfermarkt. Moreover, FIFA rankings and Footballdatabase rankings are well-established benchmarks for quantifying national and club performance, making them preferable over less transparent systems.
+
+In summary, the dataset offers a holistic view of player characteristics and market values, enabling robust analyses of league-specific dynamics. The careful construction and validation of variables ensure their reliability and relevance, providing a solid foundation for the subsequent analyses presented in this paper.
 
 # Model {#sec-model}
 
@@ -447,26 +949,24 @@ $$
 
 
 where:
+
 - $\beta_0$: The intercept, representing the baseline market value when all predictors are zero.
+
 - $\beta_1$: The coefficient for age, showing how market value changes with each additional year of age.
+
 - $\beta_2$: The coefficient for goals, representing the increase in market value per additional goal scored.
+
 - $\beta_3$: The coefficient for assists, reflecting the market value impact of providing assists.
+
 - $\beta_4$: The coefficient for club ranking, with better (lower) rankings associated with higher market values.
+
 - $\beta_5$: The coefficient for national team ranking, highlighting the effect of international representation.
+
 - $\beta_6$: The coefficient for minutes played, indicating the impact of game time on market value.
+
 - $\beta_7$: The set of coefficients for positional categories, capturing positional differences in market valuation relative to a baseline.
+
 - $\epsilon_i$: The residual error, accounting for unobserved factors affecting market value.
-
-## Variable Justification
-
-The predictors included in the model were carefully selected based on their relevance to market valuation processes in professional football:
-
-1. **Age**: Younger players typically have higher market values due to their potential for future development.
-2. **Goals and Assists**: These are key indicators of a player’s offensive contribution, which are highly valued across all leagues.
-3. **Club Ranking**: Players at higher-performing clubs (lower rankings) tend to have greater exposure and higher valuations.
-4. **National Team Ranking**: Representing a higher-ranked national team enhances player marketability and perceived skill.
-5. **Minutes Played**: A proxy for fitness and importance to the team, minutes played captures game-time contributions.
-6. **Position**: Positional variables were included to account for role-specific valuation differences, such as the higher premium on forwards compared to defenders.
 
 ## Modeling Process
 
@@ -475,6 +975,7 @@ The models were implemented using the R programming language, specifically lever
 ## Model Validation
 
 To evaluate model performance, predictions were generated on the test set, and Mean Squared Error (MSE) was computed for each league. MSE provides an average measure of prediction error, quantifying the extent to which observed market values deviate from predicted values. The MSE values across the five leagues are as follows:
+
 - England: 265.27
 - France: 100.49
 - Germany: 215.51
@@ -486,6 +987,7 @@ The variation in MSE reflects differences in data variability and the complexity
 ## Alternative Models and Future Directions
 
 While linear regression provides a transparent and interpretable framework, alternative approaches could enhance predictive accuracy:
+
 - **Ridge Regression**: To address multicollinearity, ridge regression could be employed to shrink coefficient estimates, reducing variance.
 - **Random Forests or Gradient Boosting**: Nonlinear methods could capture complex interactions between predictors, potentially improving fit for leagues with high variability.
 - **Bayesian Regression**: A Bayesian approach would allow for the incorporation of prior knowledge and explicit uncertainty quantification for coefficients.
@@ -732,8 +1234,6 @@ kable(
 
 # Discussion{#sec-disc}
 
-This paper sought to identify the determinants of soccer players' market values in five major European leagues: the Premier League (England), Ligue 1 (France), Bundesliga (Germany), Serie A (Italy), and La Liga (Spain). By using league-specific linear regression models, we examined how various predictors such as age, goals, assists, club ranking, minutes played, and player position influenced market value. The findings reveal both universal and league-specific patterns in the determinants of market value, providing valuable insights into how soccer markets operate across different contexts.
-
 ## Cross-League Differences in Market Value Baselines
 One of the most striking findings is the variation in the intercept values across leagues, which reflect the baseline market value for players with average characteristics (or zero predictors). The Premier League (England) has the highest baseline market value (41.057 million Euros), followed by La Liga (Spain) and the Bundesliga (Germany). In contrast, Ligue 1 (France) exhibits the lowest intercept (22.946 million Euros). These results align with existing research, which highlights the financial strength and global appeal of the Premier League compared to other leagues. The disparity in intercepts underscores the role of financial resources, international exposure, and league-specific brand value in shaping player valuations.
 
@@ -767,6 +1267,81 @@ Future research could address the limitations of this study by incorporating ext
 # Appendix {#sec-appendix}
 
 ## Dataset and Graph Sketches
+
+## Data Retrieval
+
+This section provides a detailed explanation of how the data for this analysis was collected and processed. The data spans several categories, including market values, performance metrics, national team rankings, and club rankings. All data was meticulously gathered from reliable sources, as described below.
+
+### Market Value Data
+
+The market value data for players in the five major European leagues was retrieved from [Transfermarkt.com](https://www.transfermarkt.com), a widely recognized platform for football statistics and player valuations. The Python script, located at `scripts/02-scrape_data.py`, was used to scrape data from Transfermarkt. The script leverages the `requests` library for fetching webpage content and `BeautifulSoup` for parsing HTML. 
+
+The following steps were followed:
+
+1. **Target URLs**: Separate lists of URLs for the club pages of each league (England, Germany, Italy, Spain, and France) were prepared. Each URL corresponds to the squad page of a club for the 2023 season.
+2. **Scraping Logic**: 
+   - Player names were extracted from table cells with the class `hauptlink`.
+   - Market values were parsed from cells with the class `rechts hauptlink`.
+   - Rows corresponding to players were identified using row classes `odd` and `even`.
+3. **Data Storage**: The scraped data for each league was saved as a CSV file in the directory `data/01-raw_data/raw_market_value_data/`.
+4. **Script Features**: 
+   - It includes headers to mimic browser requests and avoid potential blocking.
+   - A function, `scrape_transfermarkt`, was developed to extract player information from a single URL, while `scrape_and_save` automates the process for multiple URLs.
+
+The output consists of player names and their estimated market values, providing a foundational dataset for this study.
+
+### Performance Data
+Performance data, such as goals, assists, and minutes played, was sourced from **Stathead.com**, a service linked to the FBref database. 
+
+To retrieve the data:
+
+1. Navigate to the "Season Finder" tool under the football section.
+2. Set the filters, including season (2023–2024), league, and performance metrics such as goals and assists and click on "Get Results" to generate the dataset.
+3. Export the results as a CSV file using the "Export Data" > "Get Table as CSV" option.
+4. Copy and paste the produced dataset.
+
+The downloaded data contains essential player performance statistics, formatted in a tabular structure, which was later cleaned and merged with other datasets.
+
+
+![Step 1](../other/photos/Season_Finder.png){#fig-season_finder fig-pos="H"}
+
+![Step 2](../other/photos/Criteria_Setting.png){#fig-criteria_setting fig-pos="H"}
+
+![Step 3](../other/photos/Result_Table.png){#fig-result_table fig-pos="H"}
+
+![Step 4](../other/photos/CSV_Format.png){#fig-csv_format fig-pos="H"}
+
+### National Team Ranking Data
+
+National team rankings were sourced from **[FIFA World Ranking](https://www.fifa.com/fifa-world-ranking/men)**, a globally recognized metric for evaluating the performance of national football teams based on international match results. These rankings provide valuable context for assessing the market values of players, particularly those participating in international competitions or representing highly ranked national teams.
+
+To retrieve the data:
+
+1. Visit **[FIFA World Ranking: Men](https://www.fifa.com/fifa-world-ranking/men)**.
+2. Set the **year** to **2024** in the available filters.
+3. Choose the **date** as **June 20, 2024**, which aligns with the end of the 2023/2024 football season.
+4. Manually extract the rankings for all national teams listed. Each team is assigned a rank between 1 and 210, with 1 being the highest-performing team.
+
+These rankings were then matched to players in the dataset based on their national team affiliations. The June 2024 rankings ensure that the data captures the latest team standings before the next season begins, offering a reliable indicator of the competitive strength of each player's national team. The rankings were stored and merged as a numeric variable in the dataset to analyze their influence on player market values.
+
+![Example to Get National Team Ranking Data](../other/photos/National_Team_Ranking.png){#fig-national_team_ranking}
+
+### Club Ranking Data
+
+Club rankings were collected from **Footballdatabase.com**, a comprehensive platform for club-level football statistics and rankings. The rankings reflect club performances based on both domestic league and international competition results. These rankings are essential for understanding the relative strength of the clubs in which players are involved, providing a significant explanatory variable for player market values.
+
+To retrieve the data:
+
+1. Visit **[Footballdatabase.com](https://footballdatabase.com/)**.
+2. Navigate to the page of the club of interest by using the search bar or browsing the league standings.
+3. On the club's profile page, locate the **line chart** displaying the club's ranking history over time.
+4. Click on the point corresponding to **June 2024**, marking the end of the 2023/2024 season. This ensures the ranking reflects the club's performance for the entire season.
+5. Record the club's ranking from the chart and compile the rankings for all clubs in the dataset.
+
+These rankings were manually extracted for each club and merged into the dataset by matching player club affiliations. This method provided an accurate and up-to-date measure of club performance, offering crucial context for analyzing player market values.
+
+![Example to Get Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking}
+## Data Cleaning
 
 ## Model Results
 
