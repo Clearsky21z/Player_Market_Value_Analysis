@@ -1,6 +1,6 @@
 ---
 title: "Determinants of Soccer Players' Market Values in Major European League(s)"
-subtitle: "Goals, Assists, and Age Dominate, While League-Specific Patterns Add Complexity"
+subtitle: "Goals, Assists, and Age Dominate while League-Specific Patterns Add Complexity"
 author: 
   - John Zhang
 thanks: "Code and data are available at: https://github.com/Clearsky21z/Player_Market_Value_Analysis"
@@ -264,7 +264,7 @@ numeric_summary <- england_data %>%
     Assists = assists,
     `Club Ranking` = club_ranking,
     `National Team Ranking` = national_team_ranking,
-    Minutes = minutes_played
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
@@ -451,7 +451,7 @@ numeric_summary_france <- france_data %>%
     Assists = assists,
     `Club Ranking` = club_ranking,
     `National Team Ranking` = national_team_ranking,
-    Minutes = minutes_played
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
@@ -639,7 +639,7 @@ numeric_summary_germany <- germany_data %>%
     Assists = assists,
     `Club Ranking` = club_ranking,
     `National Team Ranking` = national_team_ranking,
-    Minutes = minutes_played
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
@@ -828,7 +828,7 @@ numeric_summary_italy <- italy_data %>%
     Assists = assists,
     `Club Ranking` = club_ranking,
     `National Team Ranking` = national_team_ranking,
-    Minutes = minutes_played
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
@@ -1015,7 +1015,7 @@ numeric_summary_spain <- spain_data %>%
     Assists = assists,
     `Club Ranking` = club_ranking,
     `National Team Ranking` = national_team_ranking,
-    Minutes = minutes_played
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
@@ -1090,7 +1090,7 @@ To evaluate model performance, predictions were generated on the test set, and M
 
 The variation in MSE reflects differences in data variability and the complexity of valuation processes in each league. For instance, the relatively high MSE in England suggests greater variability in market values, likely influenced by the financial power and diversity of clubs in the Premier League.
 
-## Alternative Models and Future Directions
+## Alternative Models
 
 While linear regression provides a transparent and interpretable framework, alternative approaches could enhance predictive accuracy:
 
@@ -1219,7 +1219,8 @@ assists_data <- comparison_table %>%
 
 ggplot(assists_data, aes(x = League, y = Estimate, fill = League)) +
   geom_bar(stat = "identity") +
-  geom_text(aes(label = round(Estimate, 3)), vjust = -0.25, size = 3) +
+  geom_text(aes(label = scales::label_number(accuracy = 0.001)(Estimate)), 
+            vjust = -0.25, size = 3) +
   scale_fill_manual(values = c(
     "England" = "#D62728",
     "France" = "#1F77B4",
@@ -1422,7 +1423,7 @@ To retrieve the data:
 
 These rankings were then matched to players in the dataset based on their national team affiliations. The June 2024 rankings ensure that the data captures the latest team standings before the next season begins, offering a reliable indicator of the competitive strength of each player's national team. The rankings were stored and merged as a numeric variable in the dataset to analyze their influence on player market values.
 
-![Example to Get National Team Ranking Data](../other/photos/National_Team_Ranking.png){#fig-national_team_ranking fig-pos="H"}
+![Example to Retrieve National Team Ranking Data](../other/photos/National_Team_Ranking.png){#fig-national_team_ranking fig-pos="H"}
 
 ### Club Ranking Data
 
@@ -1438,7 +1439,7 @@ To retrieve the data:
 
 These rankings were manually extracted for each club and merged into the dataset by matching player club affiliations. This method provided an accurate and up-to-date measure of club performance, offering pivotal context for analyzing player market values.
 
-![Example to Get Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking fig-pos="H"}
+![Example to Retrieve Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking fig-pos="H"}
 
 ## Methodology and Observational Data Collection Processes{#sec-meth}
 
