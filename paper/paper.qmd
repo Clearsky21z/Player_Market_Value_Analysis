@@ -6,7 +6,7 @@ author:
 thanks: "Code and data are available at: https://github.com/Clearsky21z/Player_Market_Value_Analysis"
 date: today
 date-format: long
-abstract: "The global soccer transfer market is shaped by diverse factors influencing player valuations across leagues. This study analyzes determinants of market value in five major European leagues using data from the 2023/24 season. Goals and assists consistently emerge as the strongest predictors, with the Premier League valuing goals highest and the Bundesliga emphasizing assists, while age negatively affects value across all leagues, particularly in La Liga. These insights highlight universal trends and league-specific valuation dynamics, offering actionable guidance for clubs, agents, and analysts."
+abstract: "The global soccer transfer market is shaped by diverse factors influencing player valuations across leagues. This study analyzes determinants of market value in five major European leagues using data from the 2023/24 season. Goals and assists consistently emerge as the strongest predictors, with the Premier League valuing goals highest and the Bundesliga emphasizing assists, while age negatively affects value across all leagues, particularly in La Liga. These observations highlight universal trends and league-specific valuation dynamics, offering actionable guidance for clubs, agents, and analysts."
 format: pdf
 toc: true
 number-sections: true
@@ -36,9 +36,9 @@ library(kableExtra)
 
 # Introduction{#sec-intro}
 
-The global soccer transfer market is a high-stakes, multi-billion-Euro industry where decisions on player valuations can significantly influence team-building strategies, investment decisions, and negotiations. Player market values are determined by a mix of tangible performance metrics, such as goals scored or assists provided, and intangible factors like potential, reputation, and team context. While certain predictors are universally recognized, such as offensive contributions and age, the relative importance of these factors varies widely across leagues with differing financial capabilities, tactical preferences, and competitive levels. Understanding the dynamics behind these variations is crucial for clubs, agents, and analysts aiming to optimize their strategies in this complex market.
+The global soccer transfer market is a high-stakes, multi-billion-Euro industry where decisions on player valuations can significantly influence team-building strategies, investment decisions, and negotiations. Player market values are determined by a mix of tangible performance metrics, such as goals scored or assists provided, and intangible factors like potential, reputation, and team context. While certain predictors are universally recognized, such as offensive contributions and age, the relative importance of these factors varies widely across leagues with differing financial capabilities, tactical preferences, and competitive levels. Understanding the dynamics behind these variations is important for clubs, agents, and analysts aiming to optimize their strategies in this complex market.
 
-This study examines the determinants of soccer players’ market values across five major European leagues: Premier League(England), La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues not only dominate the global football landscape but also present unique economic and competitive ecosystems, making them ideal for a comparative analysis. Using player data from the 2023/24 season, sourced from platforms such as @citeTransfermarkt, @citeStathead, @citeFIFA, and @citeFootballDatabase, this research addresses a critical gap: how do the drivers of player market value differ across these leagues?
+This study examines the determinants of soccer players’ market values across five major European leagues: Premier League (England), La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues not only dominate the global football landscape but also present unique economic and competitive ecosystems, making them ideal for a comparative analysis. Using player data from the 2023/24 season, sourced from platforms such as @citeTransfermarkt, @citeStathead, @citeFIFA, and @citeFootballDatabase, this research addresses a vital gap: how do the drivers of player market value differ across these leagues?
 
 The estimand in this study is the expected market value of a soccer player as a function of performance metrics (e.g., goals, assists), contextual variables (e.g., club and national team rankings), and demographic factors (e.g., age, position), while accounting for league-specific differences. This estimand represents a linear relationship between player attributes and market value, enabling a comparison of the impact of various predictors across leagues.
 
@@ -50,19 +50,19 @@ To conduct this analysis, the study employs league-specific linear regression mo
 
 - **Dynamic Report Generation**: The `knitr` package by @citeknitr and `kableExtra` package by @citekableExtra were integral to generating dynamic, visually appealing reports that integrated results, tables, and figures.
 
-The results reveal both universal and league-specific patterns in player valuation. Offensive contributions, such as goals and assists, consistently emerged as significant predictors, with goals having the strongest influence in the Premier League and assists being most impactful in the Bundesliga. Age also played a critical role, with younger players commanding higher valuations, particularly in La Liga. Contextual variables like club and national team rankings demonstrated notable variation, reflecting the differing emphasis on team prestige across leagues.
+The results show both universal and league-specific patterns in player valuation. Offensive contributions, such as goals and assists, consistently emerged as significant predictors, with goals having the strongest influence in the Premier League and assists being most impactful in the Bundesliga. Age also played an important role, with younger players commanding higher valuations, particularly in La Liga. Contextual variables like club and national team rankings demonstrated notable variation, reflecting the differing emphasis on team prestige across leagues.
 
-This study contributes to the literature on soccer economics by uncovering how market dynamics vary across Europe’s top leagues. For clubs, the findings provide actionable insights for tailoring recruitment and investment strategies. For agents, the results highlight the most marketable player attributes for negotiations. Methodologically, the integration of advanced statistical and programming tools offers a replicable framework for analyzing market dynamics in soccer and other sports.
+This study contributes to the literature on soccer economics by uncovering how market dynamics vary across Europe’s top leagues. For clubs, the findings provide actionable insights for tailoring recruitment and investment strategies. For agents, the results highlight the most marketable player attributes for negotiations. Methodologically, the integration of elevated statistical and programming tools offers a replicable framework for analyzing market dynamics in soccer and other sports.
 
-The paper is structured as follows: @sec-data describes the dataset and variable construction processes, emphasizing the integration of data from multiple sources. @sec-model details the modeling approach and validation techniques. @sec-res presents the empirical results, identifying key differences across leagues. @sec-disc discusses the implications of these findings, highlights the limitations of the study, and outlines future research directions. @sec-appendix provides an in-depth exploration of data cleaning methodologies, comprehensive documentation of observational data collection processes, datasheets for each dataset, and full model results. By bridging methodological rigor with actionable insights, this study advances our understanding of the determinants of soccer players’ market values.
+The paper is structured as follows: @sec-data describes the dataset and variable construction processes, emphasizing the integration of data from multiple sources. @sec-model details the modeling approach and validation techniques. @sec-res presents the empirical results, identifying key differences across leagues. @sec-disc discusses the implications of these findings, highlights the limitations of the study, and outlines future research directions. @sec-appendix provides an in-depth examination of data cleaning methodologies, in-depth documentation of observational data collection processes, datasheets for each dataset, and full model results. By bridging methodological rigor with actionable insights, this study advances our understanding of the determinants of soccer players’ market values.
 
 # Data {#sec-data}
 
 ## Data Sources and Construction
 
-The dataset was created by merging multiple data sources using player names as unique identifiers. **Transfermarkt.com** provided player market values in Euros, which serve as the dependent variable in this study. Performance metrics such as goals and assists were sourced from **Stathead.com**, a platform that aggregates comprehensive statistics on football players. To ensure consistency and comparability, rankings were applied to national teams and clubs. National team rankings (1 to 210) were extracted from **FIFA.com**, while club rankings were sourced from **Footballdatabase.com**, reflecting both domestic and international performances.
+The dataset was created by merging multiple data sources using player names as unique identifiers. **Transfermarkt** provided player market values in Euros, which serve as the dependent variable in this study. Performance metrics such as goals and assists were sourced from **Stathead**, a platform that aggregates detailed statistics on football players. To ensure consistency and comparability, rankings were applied to national teams and clubs. National team rankings (1 to 210) were extracted from **FIFA**, while club rankings were sourced from **Footballdatabase**, reflecting both domestic and international performances (See @sec-ret for a detailed walkthrough of retrieving data).
 
-After merging these sources, high-level cleaning was conducted to address missing data and standardize variable formats, and the players who are classified as goalkeepers are dropped. The final cleaned datasets for each league include seven variables, as outlined below:
+After merging these sources, high-level cleaning was conducted to address missing data and standardize variable formats, and the players who are classified as goalkeepers are dropped (See @sec-clean). The final cleaned datasets for each league include seven variables, as outlined below:
 
 - **Market Value**: The player’s estimated market value, measured in Euros, as provided by Transfermarkt. This serves as the target variable for the analysis.
 - **Age**: The player’s age at the start of the season, reflecting their stage in the career lifecycle.
@@ -76,9 +76,9 @@ After merging these sources, high-level cleaning was conducted to address missin
 
 ### England Dataset
 
-The England dataset provides a comprehensive view of player characteristics in the English Premier League. As illustrated in @fig-emp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower market value brackets (below €50 million). This skewness reflects a superstar effect, where a small subset of players, often international stars or highly sought-after talent, command disproportionately higher valuations.
+The England dataset provides a thorough view of player characteristics in the English Premier League. As illustrated in @fig-emp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower market value brackets (below €50 million). This skewness reflects a superstar effect, where a small subset of players, often international stars or highly sought-after talent, command disproportionately higher valuations.
 
-@fig-efp explores the distributions of key predictor variables, including age, goals, assists, national team ranking, club ranking, and minutes played. These distributions reveal important patterns in the dataset:
+@fig-efp explores the distributions of key predictor variables, including age, goals, assists, national team ranking, club ranking, and minutes played. These distributions show important patterns in the dataset:
 
 - **Age**: The age distribution peaks around 24-25 years, indicating that the league predominantly features players in their athletic prime. The range extends from 16 years (likely youth players) to 38 years for veteran professionals.
 - **Goals and Assists**: Both offensive contributions exhibit a heavily right-skewed pattern, with most players scoring fewer than 5 goals or assists in a season. This suggests that only a minority of players serve as primary offensive contributors.
@@ -141,6 +141,14 @@ data_long <- england_data %>%
     national_team_ranking,
     minutes_played
   ) %>%
+  rename(
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `National Team Ranking` = national_team_ranking,
+    `Club Ranking` = club_ranking,
+    `Minutes Played` = minutes_played
+  ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
@@ -148,12 +156,12 @@ data_long <- england_data %>%
   ) %>%
   mutate(
     Variable = factor(Variable, levels = c(
-      "age",
-      "goals",
-      "assists",
-      "national_team_ranking",
-      "club_ranking",
-      "minutes_played"
+      "Age",
+      "Goals",
+      "Assists",
+      "National Team Ranking",
+      "Club Ranking",
+      "Minutes Played"
     ))
   )
 
@@ -249,6 +257,15 @@ numeric_summary <- england_data %>%
     national_team_ranking,
     minutes_played
   ) %>%
+  rename(
+    `Market Value (in Million Euros)` = market_value_million,
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `Club Ranking` = club_ranking,
+    `National Team Ranking` = national_team_ranking,
+    Minutes = minutes_played
+  ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
   summarize_numeric()
@@ -260,7 +277,7 @@ kable(numeric_summary, align = "c") %>%
 
 ### France Dataset
 
-The France dataset offers insights into player profiles from Ligue 1, one of Europe’s top football leagues. Similar to other leagues, the distribution of market values in the French dataset, as depicted in @fig-fmp, is heavily right-skewed. Most players have market values below €50 million, with only a few elite players commanding significantly higher valuations. This reflects the trend where top-tier talents, often representing national teams or excelling in international competitions, are valued much higher than their peers.
+The France dataset offers interpretation into player profiles from Ligue 1, one of Europe’s top football leagues. Similar to other leagues, the distribution of market values in the French dataset, as depicted in @fig-fmp, is heavily right-skewed. Most players have market values below €50 million, with only a few elite players commanding significantly higher valuations. This reflects the trend where top-tier talents, often representing national teams or excelling in international competitions, are valued much higher than their peers.
 
 @fig-ffp illustrates the distributions of predictor variables in the dataset:
 
@@ -268,11 +285,11 @@ The France dataset offers insights into player profiles from Ligue 1, one of Eur
 - **Goals and Assists**: The distributions for goals and assists are highly right-skewed, with most players contributing fewer than 5 goals or assists in a season. This indicates that offensive production is concentrated among a small group of players, typically forwards or attacking midfielders.
 - **Club Ranking**: Club rankings span a wide range, from 11 to 568, reflecting the diversity in club performance levels within the league.
 - **National Team Ranking**: National team rankings also show significant variation, with players representing countries ranked in the top 10 as well as those from lower-ranked national teams. This diversity emphasizes Ligue 1's role as a platform for both elite and emerging talent.
-- **Minutes Played**: The distribution of minutes played indicates that a significant proportion of players log substantial game time (over 1,000 minutes), with some exceeding 3,000 minutes, indicating their critical role in team strategies.
+- **Minutes Played**: The distribution of minutes played indicates that a significant proportion of players log substantial game time (over 1,000 minutes), with some exceeding 3,000 minutes, indicating their vital role in team strategies.
 
 @fig-fpp examines the percentage distribution of player positions in Ligue 1. The largest proportion of players are defenders (DF) at 29.1%, followed by midfielders (MF) at 22.3% and midfield-forward hybrids (FWMF) at 24.3%. Forwards (FW) constitute a smaller proportion (13.1%), while hybrid positions such as FWDF and MFDF account for the remaining distribution. This positional breakdown reflects a balanced tactical structure, with a strong emphasis on defensive and midfield roles.
 
-@tbl-sf provides a comprehensive statistical summary of the numeric variables in the dataset. The mean market value stands at €7.98 million, significantly lower than the Premier League, indicating the varying financial dynamics across leagues. The average age is 23.91 years, reinforcing the league's focus on younger talent. Other variables such as goals and assists demonstrate low means relative to their maximum values, reflecting the rarity of exceptional performances.
+@tbl-sf provides a detailed statistical summary of the numeric variables in the dataset. The mean market value stands at €7.98 million, significantly lower than the Premier League, indicating the varying financial dynamics across leagues. The average age is 23.91 years, reinforcing the league's focus on younger talent. Other variables such as goals and assists demonstrate low means relative to their maximum values, reflecting the rarity of exceptional performances.
 
 ```{r}
 #| echo: false
@@ -319,18 +336,33 @@ data_long <- france_data %>%
     age,
     goals,
     assists,
-    national_team_ranking,
     club_ranking,
+    national_team_ranking,
     minutes_played
+  ) %>%
+  rename(
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `National Team Ranking` = national_team_ranking,
+    `Club Ranking` = club_ranking,
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
   ) %>%
-  mutate(Variable = factor(Variable, levels = c(
-    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
-  )))
+  mutate(
+    Variable = factor(Variable, levels = c(
+      "Age",
+      "Goals",
+      "Assists",
+      "National Team Ranking",
+      "Club Ranking",
+      "Minutes Played"
+    ))
+  )
 
 # Facet plot for the variables
 france_facet_plot <- ggplot(data_long, aes(x = Value)) +
@@ -412,6 +444,15 @@ numeric_summary_france <- france_data %>%
     national_team_ranking,
     minutes_played
   ) %>%
+  rename(
+    `Market Value (in Million Euros)` = market_value_million,
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `Club Ranking` = club_ranking,
+    `National Team Ranking` = national_team_ranking,
+    Minutes = minutes_played
+  ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
   summarize_numeric()
@@ -425,7 +466,7 @@ kable(numeric_summary_france, align = "c") %>%
 
 The Germany dataset captures player characteristics across teams in the Bundesliga. As illustrated in @fig-gmp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower market value brackets (below €50 million). This skewness reflects a superstar effect, with a small subset of players driving disproportionately higher market valuations.
 
-@fig-gfp explores the distributions of predictor variables, shedding light on key patterns:
+@fig-gfp explores the distributions of predictor variables, highlighting key patterns:
 
 - **Age**: The age distribution peaks around 25 years, indicating that the league features a significant concentration of players in their athletic prime. The range extends from 17 years (likely youth players) to 39 years for veteran professionals.
 - **Goals and Assists**: Both offensive contributions display a heavily right-skewed pattern, with most players contributing fewer than 5 goals or assists. This highlights the rarity of elite offensive contributors in the league.
@@ -433,7 +474,7 @@ The Germany dataset captures player characteristics across teams in the Bundesli
 - **National Team Ranking**: National team rankings show significant variation, with players representing both top-ranked and lower-ranked nations, capturing the Bundesliga's international player diversity.
 - **Minutes Played**: The distribution of minutes played indicates substantial variability, with many players exceeding 1,000 minutes. This suggests that a majority of players are regular starters or receive substantial playing time.
 
-The position distribution, depicted in @fig-gpp, reveals that defenders (DF) comprise the largest share of players (31.7%), followed by midfielders (MF) and forward-midfield hybrids (FWMF). Pure forwards (FW) form 9.6% of the players, while hybrid positions like FWDF make smaller contributions. This composition underscores the league's focus on tactical balance, with strong emphasis on midfield and defensive strategies.
+The position distribution, depicted in @fig-gpp, demonstrates that defenders (DF) comprise the largest share of players (31.7%), followed by midfielders (MF) and forward-midfield hybrids (FWMF). Pure forwards (FW) form 9.6% of the players, while hybrid positions like FWDF make smaller contributions. This composition underscores the league's focus on tactical balance, with strong emphasis on midfield and defensive strategies.
 
 @tbl-sg provides a detailed statistical summary of the numeric variables in the dataset. The mean market value is €10.20 million, while the median is much lower at €4.00 million, highlighting the skewed distribution. Similar trends are observed for assists and goals, where the mean is low compared to the maximum values, further emphasizing the role of standout performers in shaping league outcomes.
 
@@ -483,18 +524,33 @@ data_long <- germany_data %>%
     age,
     goals,
     assists,
-    national_team_ranking,
     club_ranking,
+    national_team_ranking,
     minutes_played
+  ) %>%
+  rename(
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `National Team Ranking` = national_team_ranking,
+    `Club Ranking` = club_ranking,
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
   ) %>%
-  mutate(Variable = factor(Variable, levels = c(
-    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
-  )))
+  mutate(
+    Variable = factor(Variable, levels = c(
+      "Age",
+      "Goals",
+      "Assists",
+      "National Team Ranking",
+      "Club Ranking",
+      "Minutes Played"
+    ))
+  )
 
 # Facet plot for the other variables
 germany_facet_plot <- ggplot(data_long, aes(x = Value)) +
@@ -576,6 +632,15 @@ numeric_summary_germany <- germany_data %>%
     national_team_ranking,
     minutes_played
   ) %>%
+  rename(
+    `Market Value (in Million Euros)` = market_value_million,
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `Club Ranking` = club_ranking,
+    `National Team Ranking` = national_team_ranking,
+    Minutes = minutes_played
+  ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
   summarize_numeric()
@@ -587,7 +652,7 @@ kable(numeric_summary_germany, align = "c") %>%
 
 ### Italy Dataset
 
-The Italy dataset provides an insightful analysis of player characteristics within the Serie A league. As shown in Figure @fig-imp, the market value distribution is right-skewed, with a majority of players concentrated in lower valuation brackets (below €30 million). This distribution is characteristic of the league, where the presence of a few superstar players significantly elevates the upper tail.
+The Italy dataset provides an detailed analysis of player characteristics within the Serie A league. As shown in Figure @fig-imp, the market value distribution is right-skewed, with a majority of players concentrated in lower valuation brackets (below €30 million). This distribution is characteristic of the league, where the presence of a few superstar players significantly elevates the upper tail.
 
 Figure @fig-ifp highlights the distributions of key predictor variables:
 
@@ -648,18 +713,33 @@ data_long <- italy_data %>%
     age,
     goals,
     assists,
-    national_team_ranking,
     club_ranking,
+    national_team_ranking,
     minutes_played
+  ) %>%
+  rename(
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `National Team Ranking` = national_team_ranking,
+    `Club Ranking` = club_ranking,
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
   ) %>%
-  mutate(Variable = factor(Variable, levels = c(
-    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
-  )))
+  mutate(
+    Variable = factor(Variable, levels = c(
+      "Age",
+      "Goals",
+      "Assists",
+      "National Team Ranking",
+      "Club Ranking",
+      "Minutes Played"
+    ))
+  )
 
 # Facet plot for the variables
 italy_facet_plot <- ggplot(data_long, aes(x = Value)) +
@@ -741,6 +821,15 @@ numeric_summary_italy <- italy_data %>%
     national_team_ranking,
     minutes_played
   ) %>%
+  rename(
+    `Market Value (in Million Euros)` = market_value_million,
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `Club Ranking` = club_ranking,
+    `National Team Ranking` = national_team_ranking,
+    Minutes = minutes_played
+  ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
   summarize_numeric()
@@ -752,9 +841,9 @@ kable(numeric_summary_italy, align = "c") %>%
 
 ### Spain Dataset
 
-The Spain dataset offers a comprehensive analysis of player characteristics in La Liga. As illustrated in @fig-smp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower valuation brackets (below €30 million). This trend reflects the league's structure, where a few superstar players dominate the upper tail of the distribution, commanding significantly higher valuations.
+The Spain dataset offers a detailed analysis of player characteristics in La Liga. As illustrated in @fig-smp, the market value distribution is heavily right-skewed, with the majority of players concentrated in the lower valuation brackets (below €30 million). This trend reflects the league's structure, where a few superstar players dominate the upper tail of the distribution, commanding significantly higher valuations.
 
-@fig-sfp reveals the distributions of key predictor variables:
+@fig-sfp shows the distributions of key predictor variables:
 
 - **Age**: The age distribution peaks at 26 years, showcasing a blend of players in their prime years alongside younger emerging talents and experienced veterans. The range spans from 16 to 37 years.
 - **Goals and Assists**: These offensive metrics display a pronounced skewness, with most players contributing fewer than 5 goals or assists in a season. This underscores the rarity of elite-level offensive production within the league.
@@ -762,7 +851,7 @@ The Spain dataset offers a comprehensive analysis of player characteristics in L
 - **National Team Ranking**: National team rankings range from 1 to 150, reflecting the presence of players from elite international teams as well as those from emerging footballing nations.
 - **Minutes Played**: The minutes played distribution demonstrates significant variability, with a substantial number of players logging over 1,000 minutes, emphasizing their pivotal roles in team dynamics.
 
-@fig-spp illustrates the percentage distribution of player positions. Defenders (DF) comprise the largest group (32.3%), followed by midfielders (MF) at 24.4%. Hybrid roles such as forward-midfield (FWMF) and forward (FW) are well-represented, reflecting La Liga’s tactical diversity and emphasis on attacking football. Smaller proportions of hybrid defensive positions (FWDF, MFDF) further highlight the league's strategic nuances.
+@fig-spp illustrates the percentage distribution of player positions. Defenders (DF) comprise the largest group (32.3%), followed by midfielders (MF) at 24.4%. Hybrid roles such as forward-midfield (FWMF) and forward (FW) are well-represented, reflecting La Liga’s tactical diversity and emphasis on attacking football. Smaller proportions of hybrid defensive positions (FWDF, MFDF) further highlight the league's strategic aspect.
 
 @tbl-ss summarizes the numeric variables in the Spain dataset. The mean market value stands at €9.91 million, with a median of €3.50 million, indicating a substantial skew. Goals and assists exhibit low means relative to their maximums, consistent with their heavily skewed distributions. Similarly, club rankings demonstrate a wide range, reflecting the competitive disparity across the league. Minutes played show a significant average of 1,316 minutes, emphasizing the league's reliance on core players for sustained performance.
 
@@ -812,18 +901,33 @@ data_long <- spain_data %>%
     age,
     goals,
     assists,
-    national_team_ranking,
     club_ranking,
+    national_team_ranking,
     minutes_played
+  ) %>%
+  rename(
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `National Team Ranking` = national_team_ranking,
+    `Club Ranking` = club_ranking,
+    `Minutes Played` = minutes_played
   ) %>%
   pivot_longer(
     cols = everything(),
     names_to = "Variable",
     values_to = "Value"
   ) %>%
-  mutate(Variable = factor(Variable, levels = c(
-    "age", "goals", "assists", "national_team_ranking", "club_ranking", "minutes_played"
-  )))
+  mutate(
+    Variable = factor(Variable, levels = c(
+      "Age",
+      "Goals",
+      "Assists",
+      "National Team Ranking",
+      "Club Ranking",
+      "Minutes Played"
+    ))
+  )
 
 # Facet plot for the variables
 spain_facet_plot <- ggplot(data_long, aes(x = Value)) +
@@ -904,6 +1008,15 @@ numeric_summary_spain <- spain_data %>%
     national_team_ranking,
     minutes_played
   ) %>%
+  rename(
+    `Market Value (in Million Euros)` = market_value_million,
+    Age = age,
+    Goals = goals,
+    Assists = assists,
+    `Club Ranking` = club_ranking,
+    `National Team Ranking` = national_team_ranking,
+    Minutes = minutes_played
+  ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
   summarize_numeric()
@@ -915,21 +1028,19 @@ kable(numeric_summary_spain, align = "c") %>%
 
 ## Measurement
 
-The construction of variables in this study ensures their relevance and accuracy. Player market values were obtained from Transfermarkt, a widely regarded source for estimating market valuations. These values are based on a combination of player performance, market demand, and subjective expert evaluation, making them a holistic representation of player worth. Performance metrics, such as goals and assists, were sourced from Stathead, a trusted repository of sports data.
-
-National team and club rankings were quantified to enable comparison across leagues. National team rankings were sourced from FIFA’s official ranking system, which reflects international match results, strength of opposition, and match importance. Club rankings were sourced from Footballdatabase, which evaluates team performance using a consistent point-based methodology.
+The construction of variables in this study ensures their relevance and accuracy. Player market values were obtained from Transfermarkt, a widely regarded source for estimating market valuations. These values are based on a combination of player performance, market demand, and subjective expert evaluation, making them a holistic representation of player worth. Performance metrics, such as goals and assists, were sourced from Stathead, a trusted repository of sports data. National team and club rankings were quantified to enable comparison across leagues. National team rankings were sourced from FIFA’s official ranking system, which reflects international match results, strength of opposition, and match importance. Club rankings were sourced from Footballdatabase, which evaluates team performance using a consistent point-based methodology (See @sec-meth for a thorough description of data collection processes)
 
 High-level cleaning included reconciling discrepancies in player names across sources, imputing missing data where appropriate, and ensuring categorical variables like position were consistently coded. While these steps enhance data usability, it is worth noting potential limitations in data accuracy, such as subjective biases in market valuations or inconsistencies in performance data collection.
 
 ## Broader Context and Alternative Datasets
 
-The selected dataset is uniquely suited for this analysis due to its comprehensive scope and integration of market, performance, and contextual data. While alternative sources such as Opta or WyScout provide more granular match-level data, their focus on in-game metrics (e.g., pass accuracy, xG) lacks the broader valuation context provided by Transfermarkt. Moreover, FIFA rankings and Footballdatabase rankings are well-established benchmarks for quantifying national and club performance, making them preferable over less transparent systems.
+The selected dataset is uniquely suited for this analysis due to its extensive scope and integration of market, performance, and contextual data. While alternative sources such as Opta or WyScout provide more granular match-level data, their focus on in-game metrics (e.g., pass accuracy, expected goals) lacks the broader valuation context provided by Transfermarkt. Moreover, FIFA rankings and Footballdatabase rankings are well-established benchmarks for quantifying national and club performance, making them preferable over less transparent systems.
 
 In summary, the dataset offers a holistic view of player characteristics and market values, enabling robust analyses of league-specific dynamics. The careful construction and validation of variables ensure their reliability and relevance, providing a solid foundation for the subsequent analyses presented in this paper.
 
 # Model {#sec-model}
 
-In this study, we constructed a linear regression model for each of the five major European football leagues to analyze the determinants of player market value. The dependent variable, market value $(\text{Market Value}_i)$, was scaled to millions of Euros for easier interpretability. The model incorporates a comprehensive set of predictors, including player performance metrics, contextual factors, and positional variables, to capture the multi-dimensional aspects influencing market valuation.
+In this study, we constructed a linear regression model for each of the five major European football leagues to analyze the determinants of player market value. The dependent variable, market value $(\text{Market Value}_i)$, was scaled to millions of Euros for easier interpretability. The model incorporates a wide-ranging set of predictors, including player performance metrics, contextual factors, and positional variables, to capture the multi-dimensional aspects influencing market valuation.
 
 The general form of the model is as follows:
 
@@ -965,7 +1076,7 @@ where:
 
 ## Modeling Process
 
-The models were implemented using the R programming language, specifically leveraging the `lm()` function for linear regression. For each league, data were split into training and testing sets to validate model performance. A stratified train-test split (80% training, 20% testing) was performed using the `caret` package to ensure balanced representation of market value distributions across the sets. 
+The models were implemented using the R programming language, specifically utilizing the `lm()` function for linear regression. For each league, data were split into training and testing sets to validate model performance. A stratified train-test split (80% training, 20% testing) was performed using the `caret` package to ensure balanced representation of market value distributions across the sets. 
 
 ## Model Validation
 
@@ -1031,7 +1142,7 @@ ggplot(intercept_data, aes(x = League, y = Estimate, fill = League)) +
   )
 ```
 
-Age negatively affects market value across all leagues, reflecting the premium placed on youth. @fig-ae reveals that La Liga (Spain) places the strongest emphasis on younger players, with a coefficient of -1.179 million Euros, followed by the Premier League (-1.137 million Euros). Ligue 1 (-0.593 million Euros) places the least emphasis on age.
+Age negatively affects market value across all leagues, reflecting the premium placed on youth. @fig-ae demonstrates that La Liga (Spain) places the strongest emphasis on younger players, with a coefficient of -1.179 million Euros, followed by the Premier League (-1.137 million Euros). Ligue 1 (-0.593 million Euros) places the least emphasis on age.
 
 ```{r}
 #| echo: false
@@ -1227,7 +1338,7 @@ kable(
 One of the most striking findings is the variation in the intercept values across leagues, which reflect the baseline market value for players with average characteristics (or zero predictors). The Premier League (England) has the highest baseline market value (41.057 million Euros), followed by La Liga (Spain) and the Bundesliga (Germany). In contrast, Ligue 1 (France) exhibits the lowest intercept (22.946 million Euros). These results align with existing research, which highlights the financial strength and global appeal of the Premier League compared to other leagues. The disparity in intercepts underscores the role of financial resources, international exposure, and league-specific brand value in shaping player valuations.
 
 ## Universal Importance of Goals and Assists
-Goals and assists emerged as the most consistent predictors of market value across leagues. The Premier League shows the strongest relationship between goals and market value, followed by Serie A. This finding reflects the premium placed on offensive contributions, particularly in leagues that emphasize high-scoring games or where attacking players are highly valued in the transfer market. Similarly, assists play a crucial role in Germany’s Bundesliga, likely reflecting the league's focus on team-oriented and high-tempo playing styles. These results confirm prior research, which identifies offensive output as a key driver of player valuations in soccer.
+Goals and assists emerged as the most consistent predictors of market value across leagues. The Premier League shows the strongest relationship between goals and market value, followed by Serie A. This finding reflects the premium placed on offensive contributions, particularly in leagues that emphasize high-scoring games or where attacking players are highly valued in the transfer market. Similarly, assists play a significant role in Germany’s Bundesliga, likely reflecting the league's focus on team-oriented and high-tempo playing styles. These results confirm prior research, which identifies offensive output as a key driver of player valuations in soccer.
 
 ## Age and the Youth Premium
 Age negatively impacts market value across all leagues, with the largest effect observed in La Liga (-1.179 million Euros per year) and the smallest in Ligue 1 (-0.593 million Euros per year). This pattern demonstrates the universal preference for younger players, who are perceived to have greater potential for development and resale value. However, the magnitude of this effect varies by league, possibly due to differences in scouting practices and player development pipelines. For example, Spain’s emphasis on nurturing young talent aligns with its stronger age effect, while Ligue 1, known for exporting young players, may rely on other metrics for valuation.
@@ -1241,13 +1352,13 @@ The role of player position in determining market value varied significantly acr
 
 ## Weaknesses of the Study
 
-While the findings provide valuable results, the study has several limitations. First, it does not account for external factors such as player injuries, media influence, and agent negotiations, all of which are known to influence market value. Second, the analysis focuses on a single season (2023/24), limiting its ability to capture temporal trends and variations caused by external events such as the COVID-19 pandemic or changes in league regulations. Third, the use of linear regression assumes a straightforward relationship between predictors and market value, which may oversimplify complex interactions or nonlinear effects (e.g., diminishing returns on goals). Finally, the study’s focus on Europe’s top five leagues excludes emerging leagues, such as Major League Soccer (MLS) or the Saudi Pro League, where market dynamics may differ significantly.
+While the findings provide useful results, the study has several limitations. First, it does not account for external factors such as player injuries, media influence, and agent negotiations, all of which are known to influence market value. Second, the analysis focuses on a single season (2023/24), limiting its ability to capture temporal trends and variations caused by external events such as the COVID-19 pandemic or changes in league regulations. Third, the use of linear regression assumes a straightforward relationship between predictors and market value, which may oversimplify complex interactions or nonlinear effects (e.g., diminishing returns on goals). Finally, the study’s focus on Europe’s top five leagues excludes emerging leagues, such as Major League Soccer (MLS) or the Saudi Pro League, where market dynamics may differ significantly.
 
 ## Future Directions
 
-The findings of this study have important implications for clubs, agents, and analysts in the soccer industry. Clubs can use these insights to refine their scouting and recruitment strategies by focusing on metrics that are most valued in their specific league, such as goals in the Premier League or assists in the Bundesliga. Agents can leverage the results to highlight the most marketable aspects of their clients during contract negotiations, emphasizing factors like offensive contributions or club prestige. Additionally, analysts and researchers can build on these findings to explore broader trends in player valuations and market dynamics.
+The findings of this study have important implications for clubs, agents, and analysts in the soccer industry. Clubs can use these observations to refine their scouting and recruitment strategies by focusing on metrics that are most valued in their specific league, such as goals in the Premier League or assists in the Bundesliga. Agents can utilize the results to highlight the most marketable aspects of their clients during contract negotiations, emphasizing factors like offensive contributions or club prestige. Additionally, analysts and researchers can build on these findings to explore broader trends in player valuations and market dynamics.
 
-Future research could address the limitations of this study by incorporating external variables such as media coverage, player injuries, and sponsorship deals. Expanding the analysis to include data from multiple seasons would provide a more comprehensive understanding of long-term trends and the impact of external shocks, such as economic crises or regulatory changes. Furthermore, the use of advanced machine learning models could capture more complex relationships between predictors and market value, offering a deeper understanding of the factors that drive player valuations. Including emerging leagues and non-European markets would also provide a more global perspective on the determinants of market value, shedding light on how valuations differ between established and developing soccer ecosystems.
+Future research could address the limitations of this study by incorporating external variables such as media coverage, player injuries, and sponsorship deals. Expanding the analysis to include data from multiple seasons would provide a more in-depth understanding of long-term trends and the impact of external shocks, such as economic crises or regulatory changes. Furthermore, the use of cutting edge machine learning models could capture more complex relationships between predictors and market value, offering a deeper understanding of the factors that drive player valuations. Including emerging leagues and non-European markets would also provide a more global perspective on the determinants of market value, highlighting how valuations differ between established and developing soccer ecosystems.
 
 \newpage
 
@@ -1255,13 +1366,13 @@ Future research could address the limitations of this study by incorporating ext
 
 # Appendix {#sec-appendix}
 
-## Data Retrieval
+## Data Retrieval{#sec-ret}
 
-This section provides a detailed explanation of how the data for this analysis was collected and processed. The data spans several categories, including market values, performance metrics, national team rankings, and club rankings. All data was meticulously gathered from reliable sources, as described below.
+This section provides a detailed explanation of how the data for this analysis was collected and processed. The data spans several categories, including market values, performance metrics, national team rankings, and club rankings. All data was gathered from reliable sources, as described below.
 
 ### Market Value Data
 
-The market value data for players in the five major European leagues was retrieved from [Transfermarkt.com](https://www.transfermarkt.com), a widely recognized platform for football statistics and player valuations. The Python script, located at `scripts/02-scrape_data.py`, was used to scrape data from Transfermarkt. The script leverages the `requests` library for fetching webpage content and `BeautifulSoup` for parsing HTML. 
+The market value data for players in the five major European leagues was retrieved from [Transfermarkt.com](https://www.transfermarkt.com), a widely recognized platform for football statistics and player valuations. The Python script, located at `scripts/02-scrape_data.py`, was used to scrape data from Transfermarkt. The script utilizes the `requests` library for fetching webpage content and `BeautifulSoup` for parsing HTML. 
 
 The following steps were followed:
 
@@ -1300,7 +1411,7 @@ The downloaded data contains essential player performance statistics, formatted 
 
 ### National Team Ranking Data
 
-National team rankings were sourced from **[FIFA World Ranking](https://www.fifa.com/fifa-world-ranking/men)**, a globally recognized metric for evaluating the performance of national football teams based on international match results. These rankings provide valuable context for assessing the market values of players, particularly those participating in international competitions or representing highly ranked national teams.
+National team rankings were sourced from **[FIFA World Ranking](https://www.fifa.com/fifa-world-ranking/men)**, a globally recognized metric for evaluating the performance of national football teams based on international match results. These rankings provide useful context for assessing the market values of players, particularly those participating in international competitions or representing highly ranked national teams.
 
 To retrieve the data:
 
@@ -1315,7 +1426,7 @@ These rankings were then matched to players in the dataset based on their nation
 
 ### Club Ranking Data
 
-Club rankings were collected from **Footballdatabase.com**, a comprehensive platform for club-level football statistics and rankings. The rankings reflect club performances based on both domestic league and international competition results. These rankings are essential for understanding the relative strength of the clubs in which players are involved, providing a significant explanatory variable for player market values.
+Club rankings were collected from **Footballdatabase.com**, a platform for club-level football statistics and rankings. The rankings reflect club performances based on both domestic league and international competition results. These rankings are essential for understanding the relative strength of the clubs in which players are involved, providing a significant explanatory variable for player market values.
 
 To retrieve the data:
 
@@ -1325,13 +1436,13 @@ To retrieve the data:
 4. Click on the point corresponding to **June 2024**, marking the end of the 2023/2024 season. This ensures the ranking reflects the club's performance for the entire season.
 5. Record the club's ranking from the chart and compile the rankings for all clubs in the dataset.
 
-These rankings were manually extracted for each club and merged into the dataset by matching player club affiliations. This method provided an accurate and up-to-date measure of club performance, offering crucial context for analyzing player market values.
+These rankings were manually extracted for each club and merged into the dataset by matching player club affiliations. This method provided an accurate and up-to-date measure of club performance, offering pivotal context for analyzing player market values.
 
 ![Example to Get Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking fig-pos="H"}
 
-## Methodology and Observational Data Collection Processes
+## Methodology and Observational Data Collection Processes{#sec-meth}
 
-This appendix provides an in-depth exploration of the methodologies employed by prominent soccer-related data platforms—Transfermarkt, Stathead FBref, FIFA, and Footballdatabase—in collecting, curating, and analyzing observational data. These platforms are integral to understanding player valuations, performance metrics, national team rankings, and club performance, offering valuable insights into the global soccer ecosystem.
+This appendix provides an in-depth examination of the methodologies employed by prominent soccer-related data platforms—Transfermarkt, Stathead FBref, FIFA, and Footballdatabase—in collecting, curating, and analyzing observational data. These platforms are integral to understanding player valuations, performance metrics, national team rankings, and club performance, offering detailed information into the global soccer ecosystem.
 
 ### Transfermarkt: A Community-Driven Approach to Market Valuation
 
@@ -1343,13 +1454,13 @@ Transfermarkt’s emphasis on transparency extends to its valuation methodology.
 
 Additionally, Transfermarkt actively updates its database to account for real-time changes, such as transfers, injuries, or tactical shifts in a player’s role. This ensures that the platform remains relevant and up-to-date, making it a preferred choice for analysts and clubs alike [@citeTransfermarkt].
 
-### Stathead FBref: Advanced Analytics and Historical Depth
+### Stathead FBref: Detailed Analytics and Historical Depth
 
-Stathead FBref, managed by Sports Reference LLC, is a comprehensive platform that specializes in providing both traditional and advanced soccer statistics. The platform’s data collection process is rigorous, relying on official league partnerships, historical archives, and real-time match feeds supplied by industry leaders such as StatsBomb and Opta. These partnerships allow FBref to maintain a dataset that spans over 300 leagues worldwide, encompassing both historical and contemporary records [@citeStathead].
+Stathead FBref, managed by Sports Reference LLC, is a platform that specializes in providing both traditional and modern soccer statistics. The platform’s data collection process is rigorous, relying on official league partnerships, historical archives, and real-time match feeds supplied by industry leaders such as StatsBomb and Opta. These partnerships allow FBref to maintain a dataset that spans over 300 leagues worldwide, encompassing both historical and contemporary records [@citeStathead].
 
-Stathead FBref offers an extensive range of statistics that can be divided into traditional and advanced metrics. Traditional metrics include goals, assists, appearances, fouls, and shots, while advanced analytics delve into measures such as Expected Goals (xG), Expected Assists (xA), Shot-Creating Actions (SCAs), and progressive passes. These advanced metrics are designed to provide deeper insights into a player’s contribution beyond surface-level statistics, offering a nuanced understanding of performance. For instance, xG and xA quantify the quality of scoring opportunities created and converted, accounting for factors such as shot angle, distance, and defensive pressure [@citeStathead].
+Stathead FBref offers an extensive range of statistics that can be divided into traditional and modern metrics. Traditional metrics include goals, assists, appearances, fouls, and shots, while modern analytics examine measures such as Expected Goals (xG), Expected Assists (xA), Shot-Creating Actions (SCAs), and progressive passes. These modern metrics are designed to provide deeper awareness into a player’s contribution beyond surface-level statistics, offering a detailed understanding of performance. For instance, xG and xA quantify the quality of scoring opportunities created and converted, accounting for factors such as shot angle, distance, and defensive pressure [@citeStathead].
 
-The platform is particularly strong in contextualizing player performance within tactical frameworks. Positional data, for example, helps users understand a player’s role in various formations, while heatmaps and passing networks reveal spatial tendencies and team dynamics. This level of detail is invaluable for analysts seeking to evaluate players in specific systems or roles [@citeStathead].
+The platform is particularly strong in contextualizing player performance within tactical frameworks. Positional data, for example, helps users understand a player’s role in various formations, while heatmaps and passing networks demonstrate spatial tendencies and team dynamics. This level of detail is invaluable for analysts seeking to evaluate players in specific systems or roles [@citeStathead].
 
 To ensure the reliability of its data, Stathead FBref employs a robust validation process. Match data is cross-referenced with multiple sources, and discrepancies are resolved through manual audits and automated algorithms. Proprietary tools are used to process raw match feeds into user-friendly formats, ensuring that the data presented is both accurate and accessible. Despite this rigor, Stathead FBref acknowledges the challenges of maintaining consistency across leagues with varying levels of data availability, which can introduce gaps in the dataset [@citeStathead].
 
@@ -1379,11 +1490,11 @@ FootballDatabase employs a similar Elo-based approach to assess the performance 
 
 The rating system used by FootballDatabase assigns numerical scores to clubs and players based on match outcomes, with higher scores awarded for victories against stronger opponents. Factors considered in the Elo formula include the type of match (e.g., domestic league, continental competition, or friendly), the relative strength of the opponent, and the context of the match (e.g., finals vs. qualifiers) [@citeFootballDatabase].
 
-FootballDatabase also incorporates historical data to provide a longitudinal perspective on performance trends. This allows users to analyze changes in team and player ratings over time, offering insights into development trajectories and competitive dynamics [@citeFootballDatabase].
+FootballDatabase also incorporates historical data to provide a longitudinal perspective on performance trends. This allows users to analyze changes in team and player ratings over time, offering revelation into development trajectories and competitive dynamics [@citeFootballDatabase].
 
-One of the platform’s strengths is its commitment to transparency. FootballDatabase provides detailed documentation of its methodology, ensuring that users can interpret ratings within the appropriate competitive context. The platform’s regular updates ensure that its ratings remain reflective of current performance, while its historical depth makes it a valuable resource for longitudinal analyses.
+One of the platform’s strengths is its commitment to transparency. FootballDatabase provides detailed documentation of its methodology, ensuring that users can interpret ratings within the appropriate competitive context. The platform’s regular updates ensure that its ratings remain reflective of current performance, while its historical depth makes it a useful resource for longitudinal analyses.
 
-## Detailed Process of Data Cleaning
+## Detailed Process of Data Cleaning{#sec-clean}
 
 The data cleaning process is essential to prepare the raw datasets for accurate and meaningful analysis. This involves reading raw data files, merging datasets, handling missing or inconsistent values, transforming and standardizing data, and saving the cleaned data for future use. Below is a detailed description of each step involved in cleaning the player data from two sources: market value data and performance data.
 
@@ -1424,7 +1535,7 @@ The "Nation" column may contain additional information along with the country co
 
 **5. Transforming ISO Codes to Full Country Names**
 
-The extracted ISO codes are mapped to full country names to standardize the data. This is achieved using the `recode()` function, which replaces each ISO code with its corresponding country name. This step is crucial for:
+The extracted ISO codes are mapped to full country names to standardize the data. This is achieved using the `recode()` function, which replaces each ISO code with its corresponding country name. This step is important for:
 
 - **Data Consistency**: Ensures all country references are uniform across the dataset.
 - **Facilitating Merging with External Data**: Full country names are necessary to merge with datasets like national rankings.
@@ -1515,9 +1626,9 @@ The cleaning process is encapsulated in a function `clean_data()` to ensure cons
   - Similar file naming conventions are used for each country.
   - The function is called with the respective file paths for each country's datasets.
 
-By using a function, we ensure that the same cleaning steps are consistently applied to all datasets, which is critical for comparative analysis across countries.
+By using a function, we ensure that the same cleaning steps are consistently applied to all datasets, which is important for comparative analysis across countries.
 
-This meticulous data cleaning process ensures that the datasets are accurate, consistent, and enriched with valuable contextual information like national team and club rankings. By standardizing country and club names, transforming and formatting variables, and handling missing data and duplicates, we prepare the datasets for robust and reliable analysis. The cleaned data sets the foundation for meaningful insights into player valuations and performance across different leagues.
+This careful data cleaning process ensures that the datasets are accurate, consistent, and enriched with useful contextual information like national team and club rankings. By standardizing country and club names, transforming and formatting variables, and handling missing data and duplicates, we prepare the datasets for robust and reliable analysis. The cleaned data sets the foundation for meaningful observations into player valuations and performance across different leagues.
 
 ### Reflection on Challenges in Dataset Integration
 
@@ -1527,7 +1638,7 @@ During the integration of soccer datasets, a major challenge encountered was the
 - **Country Names:** Differences like "N. Ireland" versus "Northern Ireland" and "Turkey" versus "Turkiye" created difficulties in ensuring accurate joins.
 - **Standardization Gaps:** The lack of universal naming conventions in soccer data necessitated the creation of custom dictionaries and mappings, increasing the complexity and time required for data cleaning.
 
-The effort to merge and clean inconsistent datasets underscores the need for standardized naming conventions in soccer data. If universally accepted standards for player, team, and country names are adopted across platforms, it would significantly ease data analysis and enhance cross-platform comparability for soccer enthusiasts and researchers. Establishing a global soccer data protocol could streamline workflows and foster more accessible insights into the sport.
+The effort to merge and clean inconsistent datasets underscores the need for standardized naming conventions in soccer data. If universally accepted standards for player, team, and country names are adopted across platforms, it would significantly ease data analysis and enhance cross-platform comparability for soccer enthusiasts and researchers. Establishing a global soccer data protocol could streamline workflows and foster more accessible observations into the sport.
 
 ## Datasheets
 
