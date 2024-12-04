@@ -1100,7 +1100,7 @@ While linear regression provides a transparent and interpretable framework, alte
 
 # Results {#sec-res}
 
-This section summarizes the key findings from the league-specific regression analyses, emphasizing only significant predictors of market value. Insignificant estimates, such as national team rankings and most position-specific coefficients, are excluded from this section but are included in the appendix.
+This section summarizes the key findings from the league-specific regression analyses, emphasizing only significant predictors of market value. Insignificant estimates, such as national team rankings and most position-specific coefficients, are excluded from this section but are included in @sec-full.
 
 The intercepts, which represent the baseline market value for a player with average characteristics, vary significantly across leagues. The Premier League (England) exhibits the highest intercept (41.057 million Euros), as shown in @fig-ie, highlighting the league's financial dominance. Conversely, Ligue 1 (France) has the lowest intercept (22.946 million Euros), reflecting its relatively limited financial capacity.
 
@@ -1656,7 +1656,7 @@ Each datasheet provides detailed documentation for the respective dataset (e.g.,
 
 For full details, refer to the individual datasheets, accessible in PDF format in the `other/datasheet` directory. Each datasheet ensures that the datasets are well-documented, promoting transparency and encouraging ethical usage.
 
-## Model Results
+## Detailed Model Results{#sec-full}
 
 ```{r}
 #| echo: false
