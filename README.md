@@ -1,30 +1,57 @@
-# Starter folder
+# Player Market Value Analysis
 
 ## Overview
 
-This repo provides students with a foundation for their own projects associated with *Telling Stories with Data*. You do not need every aspect for every paper and you should delete aspects that you do not need.
+This repository contains the data, scripts, and outputs for the analysis of soccer players' market values in the major European leagues. The analysis investigates the relationship between player attributes, performance metrics, and contextual factors with their estimated market values. It spans five major European leagues—Premier League (England), La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France).
 
+The project forms part of the broader effort to uncover the determinants of market value and provide actionable insights for soccer clubs, agents, and analysts.
 
 ## File Structure
 
-The repo is structured as:
+The repository is organized as follows:
 
--   `data/raw_data` contains the raw data as obtained from X.
--   `data/analysis_data` contains the cleaned dataset that was constructed.
--   `model` contains fitted models. 
--   `other` contains relevant literature, details about LLM chat interactions, and sketches.
--   `paper` contains the files used to generate the paper, including the Quarto document and reference bibliography file, as well as the PDF of the paper. 
--   `scripts` contains the R scripts used to simulate, download and clean data.
+- **data/**
+  - `00-simulated_data/`: Contains simulated datasets for England, France, Germany, Italy, and Spain in CSV format.
+  - `01-raw_data/`: Raw data, including:
+    - `raw_market_value_data/`: Market value data scraped from Transfermarkt.
+    - `raw_performance_data/`: Player performance statistics.
+  - `02-analysis_data/`: Cleaned and processed datasets stored in Parquet format for analysis.
 
+- **models/**
+  - `player_market_value_models.csv`: Regression model outputs summarizing the relationships between player attributes and market values.
+  - `mse_results.csv`: Results of the model validation using Mean Squared Error (MSE).
 
-## Statement on LLM usage
+- **other/**
+  - `datasheet/`: Datasheets providing metadata and context for each dataset.
+  - `llm_usage/`: Documentation of interactions and assistance provided by language models (LLMs).
+  - `sketches/`: Drafts, notes, and exploratory visualizations related to the project.
 
-Aspects of the code were written with the help of the auto-complete tool, Codriver. The abstract and introduction were written with the help of ChatHorse and the entire chat history is available in inputs/llms/usage.txt.
+- **paper/**
+  - `paper.qmd`: Source file for the research paper written in Quarto.
+  - `references.bib`: Bibliography for the paper.
+  - `paper.pdf`: Final version of the research paper.
 
-## Some checks
+- **scripts/**
+  - `00-simulate_data.R`: Script to generate simulated data for testing.
+  - `01-test_simulated_data.R`: Tests on the simulated datasets.
+  - `02-scrape_data.py`: Python script to scrape raw market value and performance data.
+  - `03-clean_data.R`: Cleans and prepares raw datasets for analysis.
+  - `04-test_analysis_data.R`: Validates cleaned datasets.
+  - `05-model_data.R`: Builds regression models to analyze market value determinants.
+  - `06-model_validation.R`: Validates the models and evaluates their performance.
 
-- [ ] Change the rproj file name so that it's not starter_folder.Rproj
-- [ ] Change the README title so that it's not Starter folder
-- [ ] Remove files that you're not using
-- [ ] Update comments in R scripts
-- [ ] Remove this checklist
+## Statement on LLM Usage
+
+This project utilized ChatGPT for assistance with various tasks, including:
+
+- Writing and refining code used in data cleaning, analysis, and modeling.
+- Generating ideas and brainstorming approaches for the project's methodology.
+- Drafting and summarizing sections of the research paper, including the abstract, introduction, and discussions.
+
+All interactions with ChatGPT were focused on improving the clarity, structure, and efficiency of the project while maintaining human oversight and final approval of all outputs.
+
+The full chat history of interactions is documented in `other/llm_usage/`.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
