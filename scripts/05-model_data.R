@@ -42,18 +42,18 @@ build_model <- function(data, league_name) {
   # Scale market value to millions
   data <- data %>%
     mutate(market_value_million = market_value / 1e6)
-  
+
   # Build the linear regression model
   model <- lm(
-    market_value_million ~ age + goals + assists + club_ranking + 
+    market_value_million ~ age + goals + assists + club_ranking +
       national_team_ranking + minutes_played + position,
     data = data
   )
-  
+
   # Tidy the model summary
   model_summary <- tidy(model) %>%
-    mutate(League = league_name)  # Add league information for later comparison
-  
+    mutate(League = league_name) # Add league information for later comparison
+
   # Return the summary
   return(model_summary)
 }
@@ -65,13 +65,13 @@ model_summaries <- list()
 for (league in names(parquet_files)) {
   # Load the data
   data <- load_data(parquet_files[[league]])
-  
+
   # Ensure categorical variables are correctly formatted
   data <- data %>%
     mutate(
-      position = as.factor(position)  # Ensure position is treated as categorical
+      position = as.factor(position) # Ensure position is treated as categorical
     )
-  
+
   # Build the model and store the summary
   model_summaries[[league]] <- build_model(data, league)
 }

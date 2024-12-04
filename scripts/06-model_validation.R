@@ -39,30 +39,30 @@ mse_results <- list()
 for (league in names(parquet_files)) {
   # Load the data
   data <- load_data(parquet_files[[league]])
-  
+
   # Ensure categorical variables are correctly formatted
   data <- data %>%
-    mutate(position = as.factor(position))  # Ensure position is treated as categorical
-  
+    mutate(position = as.factor(position)) # Ensure position is treated as categorical
+
   # Split the data into training and testing sets (80-20 split)
   set.seed(123)
   train_indices <- createDataPartition(data$market_value, p = 0.8, list = FALSE)
   train_data <- data[train_indices, ]
   test_data <- data[-train_indices, ]
-  
+
   # Train the linear regression model on the training set
   model <- lm(
     market_value / 1e6 ~ age + goals + assists + club_ranking +
       national_team_ranking + minutes_played + position,
     data = train_data
   )
-  
+
   # Generate predictions on the test set
   predictions <- predict(model, newdata = test_data)
-  
+
   # Compute Mean Squared Error (MSE)
   mse <- mean((test_data$market_value / 1e6 - predictions)^2)
-  
+
   # Store the MSE result
   mse_results[[league]] <- mse
 }

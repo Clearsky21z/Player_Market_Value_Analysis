@@ -13,6 +13,7 @@ number-sections: true
 bibliography: references.bib
 ---
 
+
 ```{r}
 #| echo: false
 #| message: false
@@ -31,32 +32,31 @@ library(caret)
 library(kableExtra)
 ```
 
+\newpage
+
 # Introduction{#sec-intro}
 
 The global soccer transfer market is a high-stakes, multi-billion-Euro industry where decisions on player valuations can significantly influence team-building strategies, investment decisions, and negotiations. Player market values are determined by a mix of tangible performance metrics, such as goals scored or assists provided, and intangible factors like potential, reputation, and team context. While certain predictors are universally recognized, such as offensive contributions and age, the relative importance of these factors varies widely across leagues with differing financial capabilities, tactical preferences, and competitive levels. Understanding the dynamics behind these variations is crucial for clubs, agents, and analysts aiming to optimize their strategies in this complex market.
 
-This study examines the determinants of soccer players’ market values across five major European leagues: the English Premier League, La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues not only dominate the global football landscape but also present unique economic and competitive ecosystems, making them ideal for a comparative analysis. Using player data from the 2023/24 season, sourced from platforms such as **Transfermarkt**, **Stathead**, **FIFA.com**, and **Footballdatabase.com**, this research addresses a critical gap: how do the drivers of player market value differ across these leagues?
+This study examines the determinants of soccer players’ market values across five major European leagues: Premier League(England), La Liga (Spain), Serie A (Italy), Bundesliga (Germany), and Ligue 1 (France). These leagues not only dominate the global football landscape but also present unique economic and competitive ecosystems, making them ideal for a comparative analysis. Using player data from the 2023/24 season, sourced from platforms such as @citeTransfermarkt, @citeStathead, @citeFIFA, and @citeFootballDatabase, this research addresses a critical gap: how do the drivers of player market value differ across these leagues?
 
 The estimand in this study is the expected market value of a soccer player as a function of performance metrics (e.g., goals, assists), contextual variables (e.g., club and national team rankings), and demographic factors (e.g., age, position), while accounting for league-specific differences. This estimand represents a linear relationship between player attributes and market value, enabling a comparison of the impact of various predictors across leagues.
 
-To conduct this analysis, the study employs league-specific linear regression models with player market value as the dependent variable. Key predictors include performance metrics (e.g., goals, assists, and minutes played), contextual factors (e.g., club and national team rankings), and demographic variables (e.g., age and position). The study relies heavily on the statistical computing environment **R** and the programming language **Python**, employing a suite of packages to ensure methodological rigor and transparency:
+To conduct this analysis, the study employs league-specific linear regression models with player market value as the dependent variable. Key predictors include performance metrics (e.g., goals, assists, and minutes played), contextual factors (e.g., club and national team rankings), and demographic variables (e.g., age and position). The study relies heavily on the statistical computing environment @citeR and the programming language @citePython, employing a suite of packages to ensure methodological rigor and transparency:
 
-- **Data Retrieval and Cleaning**: The Python library `BeautifulSoup` was used to scrape market value and player performance data from Transfermarkt and other sources. In R, the `arrow` package facilitated seamless data reading and processing, while `validate` and `testthat` ensured the integrity and accuracy of the dataset.
-- **Data Manipulation and Summarization**: The `tidyverse` collection, including `dplyr` for data manipulation and `ggplot2` for data visualization, formed the backbone of the analysis. Additional tools like `styler` enhanced code readability and reproducibility.
-- **Modeling and Summaries**: Regression models were built using the `caret` package for efficient training and testing, while `modelsummary` provided clear, publication-ready tables summarizing model outputs.
-- **Dynamic Report Generation**: The `knitr` and `kableExtra` packages were integral to generating dynamic, visually appealing reports that integrated results, tables, and figures.
-- **Visualization**: Advanced graphics, including histograms and bar charts, were created with `ggplot2`, showcasing the distribution of market values and key predictors.
-- **Statistical Validation**: The robustness of the analysis was supported by packages like `arrow` for handling large datasets and `validate` for data validation.
+- **Data Retrieval, Cleaning and Validation**: The Python library `BeautifulSoup` was used to scrape market value and player performance data from Transfermarkt and other sources. In R, the `arrow` package by @citearrow facilitated seamless data reading and processing, the `tidyverse` collection by @citetidyverse, including `dplyr` package by @citedplyr for data manipulation and `ggplot2` package by @citeggplot2 for data visualization, formed the backbone of the analysis, while `validate` package by @citevalidate and `testthat` package by @citetestthat ensured the integrity and accuracy of the dataset. Additional tools like `styler` package by @citestyler enhanced code readability and reproducibility.
+
+- **Modeling and Summaries**: Regression models were built using the `caret` package by @citecaret for efficient training and testing, while the `broom` package by @citebroom was employed to tidy model outputs, extract coefficients, and augment datasets with residuals and predictions, enabling detailed validation and diagnostic analysis. The `modelsummary` package by @citemodelsummary provided clear, publication-ready tables summarizing model outputs.
+
+- **Dynamic Report Generation**: The `knitr` package by @citeknitr and `kableExtra` package by @citekableExtra were integral to generating dynamic, visually appealing reports that integrated results, tables, and figures.
 
 The results reveal both universal and league-specific patterns in player valuation. Offensive contributions, such as goals and assists, consistently emerged as significant predictors, with goals having the strongest influence in the Premier League and assists being most impactful in the Bundesliga. Age also played a critical role, with younger players commanding higher valuations, particularly in La Liga. Contextual variables like club and national team rankings demonstrated notable variation, reflecting the differing emphasis on team prestige across leagues.
 
 This study contributes to the literature on soccer economics by uncovering how market dynamics vary across Europe’s top leagues. For clubs, the findings provide actionable insights for tailoring recruitment and investment strategies. For agents, the results highlight the most marketable player attributes for negotiations. Methodologically, the integration of advanced statistical and programming tools offers a replicable framework for analyzing market dynamics in soccer and other sports.
 
-The paper is structured as follows: Section 2 describes the dataset and variable construction processes, emphasizing the integration of data from multiple sources. Section 3 details the modeling approach and validation techniques. Section 4 presents the empirical results, identifying key differences across leagues. Section 5 discusses the implications of these findings, highlights the limitations of the study, and outlines future research directions. By bridging methodological rigor with actionable insights, this study advances our understanding of the determinants of soccer players’ market values.
+The paper is structured as follows: @sec-data describes the dataset and variable construction processes, emphasizing the integration of data from multiple sources. @sec-model details the modeling approach and validation techniques. @sec-res presents the empirical results, identifying key differences across leagues. @sec-disc discusses the implications of these findings, highlights the limitations of the study, and outlines future research directions. @sec-appendix provides an in-depth exploration of data cleaning methodologies, comprehensive documentation of observational data collection processes, datasheets for each dataset, and full model results. By bridging methodological rigor with actionable insights, this study advances our understanding of the determinants of soccer players’ market values.
 
 # Data {#sec-data}
-
-The data used for this study is gathered four primary sources: **Transfermarkt.com**, **Stathead.com**, and **FIFA.com** and **Footballdatabase.com**, which captures player performance, demographic, market valuation and club ranking/national team ranking data. This section details the dataset, the process of constructing the final variables, and the broader context of the data used in the analysis.
 
 ## Data Sources and Construction
 
@@ -160,7 +160,7 @@ data_long <- england_data %>%
 # Facet plot for the other variables
 england_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#D62728", color = "black", bins = 30) +
-  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  facet_wrap(~Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
     x = "Value",
@@ -174,7 +174,6 @@ england_facet_plot <- ggplot(data_long, aes(x = Value)) +
   )
 
 england_facet_plot
-
 ```
 
 ```{r}
@@ -192,12 +191,12 @@ england_position_percentage <- england_data %>%
 
 # Define a custom color palette for positions
 position_colors <- c(
-  "DF" = "#1E90FF",   # Dark Blue
-  "FW" = "#FF4500",   # Bright Red
+  "DF" = "#1E90FF", # Dark Blue
+  "FW" = "#FF4500", # Bright Red
   "FWDF" = "#FFD700", # Gold
   "FWMF" = "#20B2AA", # Teal
-  "MF" = "#32CD32",   # Bright Green
-  "MFDF" = "#9370DB"  # Purple
+  "MF" = "#32CD32", # Bright Green
+  "MFDF" = "#9370DB" # Purple
 )
 
 # Plot percentage bar chart
@@ -217,7 +216,6 @@ england_position_plot <- ggplot(england_position_percentage, aes(x = position, y
   )
 
 england_position_plot
-
 ```
 
 ```{r}
@@ -243,12 +241,12 @@ summarize_numeric <- function(data) {
 # Summarize numeric variables
 numeric_summary <- england_data %>%
   select(
-    market_value_million, 
-    age, 
-    goals, 
-    assists, 
-    club_ranking, 
-    national_team_ranking, 
+    market_value_million,
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
     minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
@@ -258,7 +256,6 @@ numeric_summary <- england_data %>%
 # Print numeric summary
 kable(numeric_summary, align = "c") %>%
   kable_styling(full_width = FALSE)
-
 ```
 
 ### France Dataset
@@ -338,7 +335,7 @@ data_long <- france_data %>%
 # Facet plot for the variables
 france_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#1F77B4", color = "black", bins = 30) +
-  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  facet_wrap(~Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
     x = "Value",
@@ -369,12 +366,12 @@ france_position_percentage <- france_data %>%
 
 # Define a custom color palette for positions
 position_colors <- c(
-  "DF" = "#1E90FF",   # Dark Blue
-  "FW" = "#FF4500",   # Bright Red
+  "DF" = "#1E90FF", # Dark Blue
+  "FW" = "#FF4500", # Bright Red
   "FWDF" = "#FFD700", # Gold
   "FWMF" = "#20B2AA", # Teal
-  "MF" = "#32CD32",   # Bright Green
-  "MFDF" = "#9370DB"  # Purple
+  "MF" = "#32CD32", # Bright Green
+  "MFDF" = "#9370DB" # Purple
 )
 
 # Plot percentage bar chart
@@ -407,12 +404,12 @@ france_position_plot
 # Summarize numeric variables for France
 numeric_summary_france <- france_data %>%
   select(
-    market_value_million, 
-    age, 
-    goals, 
-    assists, 
-    club_ranking, 
-    national_team_ranking, 
+    market_value_million,
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
     minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
@@ -502,7 +499,7 @@ data_long <- germany_data %>%
 # Facet plot for the other variables
 germany_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#000000", color = "white", bins = 30) +
-  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  facet_wrap(~Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
     x = "Value",
@@ -532,12 +529,12 @@ germany_position_percentage <- germany_data %>%
 
 # Define a custom color palette for positions
 position_colors <- c(
-  "DF" = "#1E90FF",   # Dark Blue
-  "FW" = "#FF4500",   # Bright Red
+  "DF" = "#1E90FF", # Dark Blue
+  "FW" = "#FF4500", # Bright Red
   "FWDF" = "#FFD700", # Gold
   "FWMF" = "#20B2AA", # Teal
-  "MF" = "#32CD32",   # Bright Green
-  "MFDF" = "#9370DB"  # Purple
+  "MF" = "#32CD32", # Bright Green
+  "MFDF" = "#9370DB" # Purple
 )
 
 # Plot percentage bar chart
@@ -571,12 +568,12 @@ germany_position_plot
 # Summarize numeric variables for Germany
 numeric_summary_germany <- germany_data %>%
   select(
-    market_value_million, 
-    age, 
-    goals, 
-    assists, 
-    club_ranking, 
-    national_team_ranking, 
+    market_value_million,
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
     minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
@@ -667,7 +664,7 @@ data_long <- italy_data %>%
 # Facet plot for the variables
 italy_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#2CA02C", color = "black", bins = 30) +
-  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  facet_wrap(~Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
     x = "Value",
@@ -681,7 +678,6 @@ italy_facet_plot <- ggplot(data_long, aes(x = Value)) +
   )
 
 italy_facet_plot
-
 ```
 
 ```{r}
@@ -699,12 +695,12 @@ italy_position_percentage <- italy_data %>%
 
 # Define a custom color palette for positions
 position_colors <- c(
-  "DF" = "#1E90FF",   # Dark Blue
-  "FW" = "#FF4500",   # Bright Red
+  "DF" = "#1E90FF", # Dark Blue
+  "FW" = "#FF4500", # Bright Red
   "FWDF" = "#FFD700", # Gold
   "FWMF" = "#20B2AA", # Teal
-  "MF" = "#32CD32",   # Bright Green
-  "MFDF" = "#9370DB"  # Purple
+  "MF" = "#32CD32", # Bright Green
+  "MFDF" = "#9370DB" # Purple
 )
 
 # Plot percentage bar chart
@@ -737,12 +733,12 @@ italy_position_plot
 # Summarize numeric variables for Italy
 numeric_summary_italy <- italy_data %>%
   select(
-    market_value_million, 
-    age, 
-    goals, 
-    assists, 
-    club_ranking, 
-    national_team_ranking, 
+    market_value_million,
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
     minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
@@ -752,7 +748,6 @@ numeric_summary_italy <- italy_data %>%
 # Print numeric summary for Italy
 kable(numeric_summary_italy, align = "c") %>%
   kable_styling(full_width = FALSE)
-
 ```
 
 ### Spain Dataset
@@ -833,7 +828,7 @@ data_long <- spain_data %>%
 # Facet plot for the variables
 spain_facet_plot <- ggplot(data_long, aes(x = Value)) +
   geom_histogram(fill = "#FFB000", color = "black", bins = 30) +
-  facet_wrap(~ Variable, nrow = 2, scales = "free") +
+  facet_wrap(~Variable, nrow = 2, scales = "free") +
   theme_minimal() +
   labs(
     x = "Value",
@@ -847,7 +842,6 @@ spain_facet_plot <- ggplot(data_long, aes(x = Value)) +
   )
 
 spain_facet_plot
-
 ```
 
 ```{r}
@@ -865,12 +859,12 @@ spain_position_percentage <- spain_data %>%
 
 # Define a custom color palette for positions
 position_colors <- c(
-  "DF" = "#1E90FF",   # Dark Blue
-  "FW" = "#FF4500",   # Bright Red
+  "DF" = "#1E90FF", # Dark Blue
+  "FW" = "#FF4500", # Bright Red
   "FWDF" = "#FFD700", # Gold
   "FWMF" = "#20B2AA", # Teal
-  "MF" = "#32CD32",   # Bright Green
-  "MFDF" = "#9370DB"  # Purple
+  "MF" = "#32CD32", # Bright Green
+  "MFDF" = "#9370DB" # Purple
 )
 
 # Plot percentage bar chart
@@ -902,12 +896,12 @@ spain_position_plot
 # Summarize numeric variables for Spain
 numeric_summary_spain <- spain_data %>%
   select(
-    market_value_million, 
-    age, 
-    goals, 
-    assists, 
-    club_ranking, 
-    national_team_ranking, 
+    market_value_million,
+    age,
+    goals,
+    assists,
+    club_ranking,
+    national_team_ranking,
     minutes_played
   ) %>%
   pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
@@ -1035,7 +1029,6 @@ ggplot(intercept_data, aes(x = League, y = Estimate, fill = League)) +
     x = "League",
     y = "Intercept (in Million Euros)"
   )
-
 ```
 
 Age negatively affects market value across all leagues, reflecting the premium placed on youth. @fig-ae reveals that La Liga (Spain) places the strongest emphasis on younger players, with a coefficient of -1.179 million Euros, followed by the Premier League (-1.137 million Euros). Ligue 1 (-0.593 million Euros) places the least emphasis on age.
@@ -1068,7 +1061,6 @@ ggplot(age_data, aes(x = League, y = Estimate, fill = League)) +
     x = "League",
     y = "Age Coefficient (in Million Euros)"
   )
-
 ```
 
 Goals and assists are consistent predictors of market value across leagues. As shown in @fig-ge, the impact of goals is highest in the Premier League (2.993 million Euros per goal) and Serie A (Italy) (2.489 million Euros). @fig-ase shows that assists have the strongest effect in the Bundesliga (Germany) (1.828 million Euros), while Serie A demonstrates the smallest effect (0.820 million Euros). These findings emphasize the financial rewards for offensive contributions, particularly in leagues like England and Germany.
@@ -1100,7 +1092,6 @@ ggplot(goals_data, aes(x = League, y = Estimate, fill = League)) +
     x = "League",
     y = "Goals Coefficient (in Million Euros)"
   )
-
 ```
 
 ```{r}
@@ -1130,7 +1121,6 @@ ggplot(assists_data, aes(x = League, y = Estimate, fill = League)) +
     x = "League",
     y = "Assists Coefficient (in Million Euros)"
   )
-
 ```
 
 Club ranking negatively influences market value in all leagues, as better club performance (lower numerical ranking) increases valuations. @fig-cre illustrates that the strongest effect is observed in La Liga (-0.034 million Euros per rank), followed by the Premier League (-0.027 million Euros). This highlights the importance of team performance in player valuation, particularly in Spain.
@@ -1162,7 +1152,6 @@ ggplot(club_ranking_data, aes(x = League, y = Estimate, fill = League)) +
     x = "League",
     y = "Club Ranking Coefficient (in Million Euros)"
   )
-
 ```
 
 Minutes played is a significant, though modest, predictor of market value in England, Italy, and Spain. As shown in @fig-mpe, the coefficients range from 0.004 million Euros in England and Spain to 0.002 million Euros in Italy. These results suggest that playing time moderately impacts market value in these leagues.
@@ -1192,7 +1181,6 @@ ggplot(minutes_played_data, aes(x = League, y = Estimate, fill = League)) +
     x = "League",
     y = "Minutes Played Coefficient (in Million Euros)"
   )
-
 ```
 
 Most position-specific coefficients are insignificant across leagues. However, @tbl-pe highlights some notable findings. In England, forwards (FW) have a significant negative effect on market value (-9.608 million Euros). Similarly, hybrid forward-midfielders (FWMF) have significant negative coefficients in France (-5.011 million Euros), Germany (-5.238 million Euros), and Italy (-4.877 million Euros). In Spain, none of the position-specific estimates are significant, indicating minimal variation in market valuation by position.
@@ -1208,19 +1196,19 @@ Most position-specific coefficients are insignificant across leagues. However, @
 custom_position_table <- comparison_table %>%
   filter(
     (term == "positionFW" & !is.na(England)) |
-    (term %in% c("positionFW", "positionFWMF") & !is.na(France)) |
-    (term %in% c("positionFWDF", "positionFWMF") & !is.na(Germany)) |
-    (term == "positionFWMF" & !is.na(Italy))
+      (term %in% c("positionFW", "positionFWMF") & !is.na(France)) |
+      (term %in% c("positionFWDF", "positionFWMF") & !is.na(Germany)) |
+      (term == "positionFWMF" & !is.na(Italy))
   ) %>%
   pivot_longer(cols = -term, names_to = "League", values_to = "Estimate") %>%
   drop_na() %>%
   filter(
     (term == "positionFW" & League == "England") |
-    (term %in% c("positionFW", "positionFWMF") & League == "France") |
-    (term %in% c("positionFWDF", "positionFWMF") & League == "Germany") |
-    (term == "positionFWMF" & League == "Italy")
+      (term %in% c("positionFW", "positionFWMF") & League == "France") |
+      (term %in% c("positionFWDF", "positionFWMF") & League == "Germany") |
+      (term == "positionFWMF" & League == "Italy")
   ) %>%
-  arrange(League)  # Sort by League
+  arrange(League) # Sort by League
 
 # Simplify table columns
 custom_position_table <- custom_position_table %>%
@@ -1266,8 +1254,6 @@ Future research could address the limitations of this study by incorporating ext
 \appendix
 
 # Appendix {#sec-appendix}
-
-## Dataset and Graph Sketches
 
 ## Data Retrieval
 
@@ -1325,7 +1311,7 @@ To retrieve the data:
 
 These rankings were then matched to players in the dataset based on their national team affiliations. The June 2024 rankings ensure that the data captures the latest team standings before the next season begins, offering a reliable indicator of the competitive strength of each player's national team. The rankings were stored and merged as a numeric variable in the dataset to analyze their influence on player market values.
 
-![Example to Get National Team Ranking Data](../other/photos/National_Team_Ranking.png){#fig-national_team_ranking}
+![Example to Get National Team Ranking Data](../other/photos/National_Team_Ranking.png){#fig-national_team_ranking fig-pos="H"}
 
 ### Club Ranking Data
 
@@ -1341,9 +1327,222 @@ To retrieve the data:
 
 These rankings were manually extracted for each club and merged into the dataset by matching player club affiliations. This method provided an accurate and up-to-date measure of club performance, offering crucial context for analyzing player market values.
 
-![Example to Get Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking}
+![Example to Get Club Ranking Data](../other/photos/Club_Ranking.png){#fig-club_ranking fig-pos="H"}
 
-## Data Cleaning
+## Methodology and Observational Data Collection Processes
+
+This appendix provides an in-depth exploration of the methodologies employed by prominent soccer-related data platforms—Transfermarkt, Stathead FBref, FIFA, and Footballdatabase—in collecting, curating, and analyzing observational data. These platforms are integral to understanding player valuations, performance metrics, national team rankings, and club performance, offering valuable insights into the global soccer ecosystem.
+
+### Transfermarkt: A Community-Driven Approach to Market Valuation
+
+Transfermarkt operates as a unique amalgamation of crowd-sourced information and expert validation, establishing itself as a leading authority on player market valuations. The platform collects observational data from official league statistics, contractual details, and biographical data provided by club announcements and news outlets. This raw data is refined and augmented through a global network of registered users who actively contribute to player profiles, transfer histories, and performance metrics [@citeTransfermarkt].
+
+The market valuation process on Transfermarkt is particularly notable for its participatory approach. Registered users submit valuation estimates for players, which are then debated in community forums. These discussions include consideration of a player’s recent performance, age, injury history, positional role, and market trends, such as positional scarcity or demand from specific clubs. While the initial valuation is user-driven, Transfermarkt employs a team of moderators and experts who finalize these values by synthesizing community input with objective performance indicators. This collaborative approach ensures valuations remain dynamic and responsive to real-world developments [@citeTransfermarkt].
+
+Transfermarkt’s emphasis on transparency extends to its valuation methodology. Key determinants of market value include performance metrics like goals, assists, and appearances, as well as contextual factors such as a player’s league, club reputation, and international exposure. However, despite its robust framework, Transfermarkt acknowledges that market valuations are inherently subjective, particularly for players in underrepresented leagues or emerging football markets. This highlights a potential limitation in its community-driven model, as expert consensus in these areas may be less reliable [@citeTransfermarkt].
+
+Additionally, Transfermarkt actively updates its database to account for real-time changes, such as transfers, injuries, or tactical shifts in a player’s role. This ensures that the platform remains relevant and up-to-date, making it a preferred choice for analysts and clubs alike [@citeTransfermarkt].
+
+### Stathead FBref: Advanced Analytics and Historical Depth
+
+Stathead FBref, managed by Sports Reference LLC, is a comprehensive platform that specializes in providing both traditional and advanced soccer statistics. The platform’s data collection process is rigorous, relying on official league partnerships, historical archives, and real-time match feeds supplied by industry leaders such as StatsBomb and Opta. These partnerships allow FBref to maintain a dataset that spans over 300 leagues worldwide, encompassing both historical and contemporary records [@citeStathead].
+
+Stathead FBref offers an extensive range of statistics that can be divided into traditional and advanced metrics. Traditional metrics include goals, assists, appearances, fouls, and shots, while advanced analytics delve into measures such as Expected Goals (xG), Expected Assists (xA), Shot-Creating Actions (SCAs), and progressive passes. These advanced metrics are designed to provide deeper insights into a player’s contribution beyond surface-level statistics, offering a nuanced understanding of performance. For instance, xG and xA quantify the quality of scoring opportunities created and converted, accounting for factors such as shot angle, distance, and defensive pressure [@citeStathead].
+
+The platform is particularly strong in contextualizing player performance within tactical frameworks. Positional data, for example, helps users understand a player’s role in various formations, while heatmaps and passing networks reveal spatial tendencies and team dynamics. This level of detail is invaluable for analysts seeking to evaluate players in specific systems or roles [@citeStathead].
+
+To ensure the reliability of its data, Stathead FBref employs a robust validation process. Match data is cross-referenced with multiple sources, and discrepancies are resolved through manual audits and automated algorithms. Proprietary tools are used to process raw match feeds into user-friendly formats, ensuring that the data presented is both accurate and accessible. Despite this rigor, Stathead FBref acknowledges the challenges of maintaining consistency across leagues with varying levels of data availability, which can introduce gaps in the dataset [@citeStathead].
+
+### FIFA: Elo-Based Rankings for National Teams
+
+FIFA’s ranking system for men’s national teams represents a methodologically robust application of the Elo model, originally developed for chess. The rankings are designed to provide a quantitative measure of team strength based on match outcomes, with adjustments for factors such as opponent strength, match importance, and confederation weightings. This approach allows FIFA to rank teams in a way that reflects both current form and historical performance [@citeFIFA].
+
+The ranking process begins with the collection of match results, which are submitted by FIFA’s member associations through standardized reports. These reports include detailed information on match outcomes, player statistics, and disciplinary records, ensuring consistency across competitions. FIFA’s database is updated regularly, incorporating results from international friendlies, qualifiers, and tournament matches [@citeFIFA].
+
+The Elo-based formula used by FIFA calculates the points gained or lost by a team after each match [@citeFIFA]. This formula accounts for:
+
+1. **Match Result (M)**: Teams earn more points for a win and lose fewer points for a draw or defeat.
+2. **Match Importance (I)**: Matches in the FIFA World Cup carry higher weight compared to friendlies or regional qualifiers.
+3. **Opponent Strength (T)**: The strength of the opposing team is derived from its current FIFA ranking.
+4. **Regional Strength (C)**: Confederations are assigned weightings to account for the relative competitiveness of different regions.
+
+The formula is expressed as:
+$$
+P = M \times I \times T \times C \times 100
+$$
+
+While FIFA’s methodology is widely regarded as transparent and systematic, it has faced criticism for favoring teams that play more matches or those in competitive confederations. FIFA has addressed these concerns by periodically refining the algorithm and ensuring that its assumptions remain aligned with the evolving dynamics of international football.
+
+### FootballDatabase: Club and Player Ratings and Rankings
+
+FootballDatabase employs a similar Elo-based approach to assess the performance of clubs and players worldwide. The platform aggregates data from official league sources, media reports, and proprietary tracking systems, enabling it to maintain a database that spans thousands of matches and hundreds of leagues [@citeFootballDatabase].
+
+The rating system used by FootballDatabase assigns numerical scores to clubs and players based on match outcomes, with higher scores awarded for victories against stronger opponents. Factors considered in the Elo formula include the type of match (e.g., domestic league, continental competition, or friendly), the relative strength of the opponent, and the context of the match (e.g., finals vs. qualifiers) [@citeFootballDatabase].
+
+FootballDatabase also incorporates historical data to provide a longitudinal perspective on performance trends. This allows users to analyze changes in team and player ratings over time, offering insights into development trajectories and competitive dynamics [@citeFootballDatabase].
+
+One of the platform’s strengths is its commitment to transparency. FootballDatabase provides detailed documentation of its methodology, ensuring that users can interpret ratings within the appropriate competitive context. The platform’s regular updates ensure that its ratings remain reflective of current performance, while its historical depth makes it a valuable resource for longitudinal analyses.
+
+## Detailed Process of Data Cleaning
+
+The data cleaning process is essential to prepare the raw datasets for accurate and meaningful analysis. This involves reading raw data files, merging datasets, handling missing or inconsistent values, transforming and standardizing data, and saving the cleaned data for future use. Below is a detailed description of each step involved in cleaning the player data from two sources: market value data and performance data.
+
+**1. Workspace Setup**
+
+The first step is setting up the environment by loading the necessary libraries:
+
+- **`tidyverse`**: A collection of R packages for data science that provides tools for data manipulation and visualization.
+- **`dplyr`**: Part of the tidyverse, it offers a grammar for data manipulation.
+- **`arrow`**: Provides support for reading and writing Parquet files, which are efficient for storage and analysis.
+
+The data files are organized in a structured directory, with raw data located in `data/01-raw_data/` and cleaned data to be saved in `data/02-analysis_data/`.
+
+**2. Reading and Merging Datasets**
+
+The cleaning function begins by reading the raw market value data and performance data from their respective CSV files using `read.csv()`. To ensure consistency:
+
+- In the performance data, the "Player" column is renamed to "Name" to match the market value data.
+- Unnecessary columns such as "Season" and "Comp" are removed from the performance data.
+
+An inner join is performed on the "Name" column using `inner_join()`, which merges the datasets and retains only the players present in both datasets. This ensures the analysis focuses on players with complete information.
+
+**3. Filtering and Excluding Irrelevant Data**
+
+To enhance data quality, several filters are applied:
+
+- **Removing Empty Strings**: Rows where any column has an empty string are removed using `filter_all(all_vars(. != ""))`.
+- **Excluding Missing Market Values**: Rows where "Market.Value" is "-" are removed, as these entries lack valid market value data.
+- **Excluding Goalkeepers**: Rows where the "Pos" (position) is "GK" are filtered out using `filter(Pos != "GK")`, since goalkeepers may require separate analysis due to their unique role.
+- **Removing Ambiguous Team Entries**: Rows where "Team" is "2 Team" or "2 Teams" are excluded to avoid ambiguity in team identification.
+
+**4. Extracting ISO Country Codes**
+
+The "Nation" column may contain additional information along with the country code. To standardize this:
+
+- A regular expression is used to extract the three-letter ISO country code from the "Nation" column: `str_extract(Nation, "\\b[A-Z]{3}\\b")`.
+- Rows with missing ISO codes are dropped using `drop_na(Nation)` to ensure subsequent transformations have valid data.
+
+**5. Transforming ISO Codes to Full Country Names**
+
+The extracted ISO codes are mapped to full country names to standardize the data. This is achieved using the `recode()` function, which replaces each ISO code with its corresponding country name. This step is crucial for:
+
+- **Data Consistency**: Ensures all country references are uniform across the dataset.
+- **Facilitating Merging with External Data**: Full country names are necessary to merge with datasets like national rankings.
+
+**6. Mapping Country Names to National Team Rankings**
+
+After standardizing country names, each country is mapped to its national team ranking:
+
+- A predefined mapping of country names to their FIFA national team rankings is created.
+- The `recode()` function is used to replace country names in the "Nation" column with their corresponding rankings.
+- This converts the "Nation" column into a numeric variable "national_team_ranking", representing each player's national team's standing.
+
+**7. Standardizing Club Names and Mapping to Club Rankings**
+
+Similarly, club names in the "Team" column are standardized and mapped to their club rankings:
+
+- A mapping of club names to their global rankings is established.
+- The `recode()` function replaces club names with their rankings, transforming the "Team" column into a numeric "club_ranking" variable.
+- This step ensures that each player's club performance level is quantitatively represented.
+
+**8. Removing Unnecessary Columns**
+
+Columns that are not required for the analysis are removed to streamline the dataset:
+
+- Columns such as "MP", "X90s", "Starts", "Subs", "unSub", "G.A", "G.PK", "PK", "PKatt", "PKm", and "X.9999" are dropped using `select(-c(...))`.
+- This focuses the dataset on variables relevant to player valuation and performance.
+
+**9. Converting Market Values to Numeric Format**
+
+The "Market.Value" column contains values with currency symbols and units (e.g., "€50m", "€500k"). To make this data usable:
+
+- The "€" symbol is removed using `gsub("€", "", Market.Value)`.
+- A conditional transformation is applied:
+  - Values ending with "m" (millions) are converted by removing the "m" and multiplying by 1,000,000.
+  - Values ending with "k" (thousands) are converted by removing the "k" and multiplying by 1,000.
+  - Values without "m" or "k" are treated as numeric.
+- This ensures all market values are numeric and represent the actual amounts in Euros.
+
+**10. Renaming and Formatting Columns**
+
+To enhance clarity and consistency:
+
+- Columns are renamed using `rename()`:
+  - "Market.Value" to "market_value"
+  - "Age" to "age"
+  - "Nation" (now containing rankings) to "national_team_ranking"
+  - "Team" (now containing rankings) to "club_ranking"
+  - "Min" to "minutes_played"
+  - "Gls" to "goals"
+  - "Ast" to "assists"
+  - "Pos" to "position"
+- Data types are adjusted using `mutate()` to ensure all numeric columns are correctly typed:
+  - "national_team_ranking", "age", "club_ranking", "minutes_played", "goals", and "assists" are converted to numeric.
+- Position labels are standardized:
+  - Dual positions like "DFMF" are recoded to "MFDF" for consistency.
+
+**11. Handling Missing Values and Duplicates**
+
+- Rows with any missing values are removed using `drop_na()` to ensure data completeness.
+- Duplicate entries are handled by grouping by "Name" and filtering:
+  - `group_by(Name)` groups the data by player name.
+  - `filter(n() == 1)` keeps only those players who appear exactly once, removing duplicates.
+
+**12. Finalizing the Dataset**
+
+At this stage, the dataset is clean, standardized, and ready for analysis:
+
+- All variables are correctly formatted and named.
+- Only relevant data is retained.
+- Players are uniquely represented, with no duplicates or missing values.
+
+**13. Saving the Cleaned Data**
+
+The cleaned dataset is saved in Parquet format using `write_parquet()`:
+
+- Parquet is chosen for its efficient storage and quick read/write capabilities, which is beneficial for large datasets.
+- The cleaned data is saved to the `data/02-analysis_data/` directory with a filename that includes the country name (e.g., "cleaned_england_data.parquet").
+
+**14. Applying the Cleaning Function to Each Country**
+
+The cleaning process is encapsulated in a function `clean_data()` to ensure consistency across different datasets. This function is applied to each country's data:
+
+- **England**:
+  - Market value data: "raw_england_market_value_data.csv"
+  - Performance data: "raw_england_performance_data.csv"
+  - Output: "cleaned_england_data.parquet"
+- **Germany**, **Italy**, **Spain**, and **France**:
+  - Similar file naming conventions are used for each country.
+  - The function is called with the respective file paths for each country's datasets.
+
+By using a function, we ensure that the same cleaning steps are consistently applied to all datasets, which is critical for comparative analysis across countries.
+
+This meticulous data cleaning process ensures that the datasets are accurate, consistent, and enriched with valuable contextual information like national team and club rankings. By standardizing country and club names, transforming and formatting variables, and handling missing data and duplicates, we prepare the datasets for robust and reliable analysis. The cleaned data sets the foundation for meaningful insights into player valuations and performance across different leagues.
+
+### Reflection on Challenges in Dataset Integration
+
+During the integration of soccer datasets, a major challenge encountered was the inconsistency in naming conventions across different datasets. Examples include:
+
+- **Team Names:** Variants such as "Tottenham Hotspurs" and "Tottenham," or "Manchester United" and "Man Utd," require thorough mapping and standardization.
+- **Country Names:** Differences like "N. Ireland" versus "Northern Ireland" and "Turkey" versus "Turkiye" created difficulties in ensuring accurate joins.
+- **Standardization Gaps:** The lack of universal naming conventions in soccer data necessitated the creation of custom dictionaries and mappings, increasing the complexity and time required for data cleaning.
+
+The effort to merge and clean inconsistent datasets underscores the need for standardized naming conventions in soccer data. If universally accepted standards for player, team, and country names are adopted across platforms, it would significantly ease data analysis and enhance cross-platform comparability for soccer enthusiasts and researchers. Establishing a global soccer data protocol could streamline workflows and foster more accessible insights into the sport.
+
+## Datasheets
+
+Datasheets for the cleaned datasets used in this study are available in the directory `other/datasheet`. These datasheets are modeled on the questions and structure proposed by @gebru2021datasheets in their seminal work on datasheets for datasets, ensuring transparency and accountability in data use.
+
+Each datasheet provides detailed documentation for the respective dataset (e.g., England, France, Germany, Italy, and Spain), covering the motivation, composition, collection process, preprocessing/cleaning, uses, distribution, and maintenance. The following is an overview of the key aspects included in the datasheets:
+
+- **Motivation**: Discusses the purpose of dataset creation, including its intended tasks such as analyzing soccer players' market value and identifying key determinants.
+- **Composition**: Describes the data's structure, including player records, variables such as performance metrics, demographic features, and target attributes like market value.
+- **Collection Process**: Details the methods and sources used to compile the dataset, including web scraping and manual curation from Transfermarkt, Stathead, FIFA, and Football-database.
+- **Preprocessing/Cleaning**: Outlines the steps undertaken to clean and preprocess the data for analysis, such as unifying ISO country codes, mapping country names to rankings, and normalizing team names.
+- **Uses and Limitations**: Identifies current and potential use cases for the dataset, as well as tasks for which the dataset might not be suitable.
+- **Distribution and Maintenance**: Provides information on how the dataset is distributed (e.g., open-access via GitHub), licensing details, and mechanisms for updates or contributions.
+
+For full details, refer to the individual datasheets, accessible in PDF format in the `other/datasheet` directory. Each datasheet ensures that the datasets are well-documented, promoting transparency and encouraging ethical usage.
 
 ## Model Results
 
@@ -1355,7 +1554,6 @@ These rankings were manually extracted for each club and merged into the dataset
 # Load the regression results file
 file_path <- "../models/player_market_value_models.csv"
 final_results <- read_csv(file_path)
-
 ```
 
 
@@ -1477,8 +1675,8 @@ spain_table <- spain_results %>%
 
 # Display the table with kable
 kable(spain_table, digits = 3, caption = "Regression Results for La Liga (Spain)")
-
 ```
 
+\newpage
 
 # References
