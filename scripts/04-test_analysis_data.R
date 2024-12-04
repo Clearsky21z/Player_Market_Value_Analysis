@@ -1,11 +1,21 @@
 #### Preamble ####
-# Purpose: Tests... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 26 September 2024 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Purpose:
+#   - This script performs comprehensive testing of cleaned datasets for soccer player data across five European leagues (England, France, Germany, Italy, and Spain).
+#   - Validates dataset structure, completeness, and adherence to predefined rules to ensure high data quality for subsequent analysis.
+# Author: John Zhang
+# Date: 25 November 2024
+# Contact: junhan.zhang@mail.utoronto.ca
+# License: MIT License
+# Pre-requisites:
+#   - Cleaned datasets in Parquet format must be available under `data/02-analysis_data/`.
+#   - Necessary libraries installed: `tidyverse`, `arrow`, `testthat`, `validate`.
+#     Install them using: install.packages(c("tidyverse", "arrow", "testthat", "validate")).
+# Output:
+#   - Logs of test results verifying dataset integrity.
+# Notes:
+#   - Tests cover basic checks (e.g., completeness, column presence) and advanced validations (e.g., logical constraints and edge-case scenarios).
+#   - Country-specific constraints are incorporated into the validation process.
+#   - Successful completion ensures datasets are ready for modeling and analysis.
 
 #### Workspace setup ####
 library(tidyverse)

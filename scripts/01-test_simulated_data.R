@@ -1,15 +1,22 @@
 #### Preamble ####
-# Purpose: Tests the structure and validity of the simulated Australian 
-  #electoral divisions dataset.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
-# License: MIT
-# Pre-requisites: 
-  # - The `tidyverse` package must be installed and loaded
-  # - 00-simulate_data.R must have been run
-# Any other information needed? Make sure you are in the `starter_folder` rproj
-
+# Purpose:
+#   - This script tests the structure and validity of simulated soccer player datasets for five countries (England, France, Germany, Italy, Spain).
+#   - Ensures that the datasets adhere to predefined rules and meet the structural and content requirements for subsequent analysis.
+# Author: John Zhang
+# Date: 25 November 2024
+# Contact: junhan.zhang@mail.utoronto.ca
+# License: MIT License
+# Pre-requisites:
+#   - The `tidyverse`, `testthat`, and `validate` packages must be installed and loaded.
+#     Install them using: install.packages(c("tidyverse", "testthat", "validate")).
+#   - The script `00-simulate_data.R` must have been successfully run to generate simulated datasets.
+# Output:
+#   - Validates simulated datasets located in `data/00-simulated_data/`.
+#   - Logs test results, highlighting any structural or content issues in the datasets.
+# Notes:
+#   - Each dataset is subjected to basic, advanced, and country-specific validation tests.
+#   - Validates logical constraints such as goals and assists being within reasonable ranges relative to minutes played.
+#   - Country-specific club ranking validations are included to ensure consistency with predefined team rankings for each country.
 
 #### Workspace setup ####
 library(tidyverse)

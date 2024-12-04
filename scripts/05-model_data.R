@@ -1,11 +1,21 @@
 #### Preamble ####
-# Purpose: Models... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Purpose:
+#   - This script builds and evaluates linear regression models to analyze the determinants of soccer players' market values.
+#   - The analysis includes modeling player data from five major European leagues (England, France, Germany, Italy, Spain).
+# Author: John Zhang
+# Date: 25 November 2024
+# Contact: junhan.zhang@mail.utoronto.ca
+# License: MIT License
+# Pre-requisites:
+#   - Cleaned datasets for each league must be available in Parquet format in the directory `data/02-analysis_data/`.
+#   - Necessary libraries installed: `tidyverse`, `arrow`, and `broom`.
+#     Install them using: install.packages(c("tidyverse", "arrow", "broom")).
+# Output:
+#   - Linear regression model summaries for each league are saved in `models/player_market_value_models.csv`.
+# Notes:
+#   - Models account for key predictors such as age, goals, assists, club ranking, national team ranking, minutes played, and position.
+#   - The script ensures consistent formatting of variables across datasets for comparability.
+#   - Results are aggregated into a single file for streamlined analysis and cross-league comparisons.
 
 #### Workspace setup ####
 library(tidyverse)

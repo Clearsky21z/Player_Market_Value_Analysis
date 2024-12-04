@@ -1,16 +1,22 @@
 #### Preamble ####
-# Purpose: [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Purpose:
+#   - Evaluate model performance using Mean Squared Error (MSE) for each league.
+#   - Quantify prediction accuracy and analyze differences in MSE across leagues.
+# Author: John Zhang
+# Date: 25 November 2024
+# Contact: junhan.zhang@mail.utoronto.ca
+# License: MIT License
+# Pre-requisites:
+#   - Cleaned datasets in Parquet format must be available under `data/02-analysis_data/`.
+#   - Necessary libraries installed: `tidyverse`, `arrow`, `broom`, `caret`.
+# Output:
+#   - MSE values for each league printed and saved to a CSV file.
+#   - Diagnostics for model evaluation saved in a structured format.
 
 #### Workspace setup ####
 library(tidyverse)
 library(arrow)
-library(broom)
+library(caret)
 
 # Paths to the cleaned Parquet files
 parquet_files <- list(
@@ -26,69 +32,50 @@ load_data <- function(file) {
   read_parquet(file)
 }
 
-#### Model Diagnostics ####
+#### Model Validation ####
+# Initialize an empty list to store MSE results
+mse_results <- list()
+
 for (league in names(parquet_files)) {
   # Load the data
   data <- load_data(parquet_files[[league]])
   
   # Ensure categorical variables are correctly formatted
   data <- data %>%
-    mutate(
-      position = as.factor(position)  # Ensure position is treated as categorical
-    )
+    mutate(position = as.factor(position))  # Ensure position is treated as categorical
   
-  # Train the model for the league
+  # Split the data into training and testing sets (80-20 split)
+  set.seed(123)
+  train_indices <- createDataPartition(data$market_value, p = 0.8, list = FALSE)
+  train_data <- data[train_indices, ]
+  test_data <- data[-train_indices, ]
+  
+  # Train the linear regression model on the training set
   model <- lm(
     market_value / 1e6 ~ age + goals + assists + club_ranking +
       national_team_ranking + minutes_played + position,
-    data = data
+    data = train_data
   )
   
-  # Generate residuals
-  residuals <- augment(model, data = data)
+  # Generate predictions on the test set
+  predictions <- predict(model, newdata = test_data)
   
-  # Save Residuals vs Fitted Plot
-  ggplot(residuals, aes(.fitted, .resid)) +
-    geom_point(alpha = 0.5) +
-    geom_hline(yintercept = 0, color = "red", linetype = "dashed") +
-    labs(
-      title = paste("Residuals vs Fitted for", league),
-      x = "Fitted Values",
-      y = "Residuals"
-    ) +
-    theme_minimal() +
-    ggsave(
-      filename = paste0("models/residuals_vs_fitted_", league, ".png"),
-      width = 8, height = 6
-    )
+  # Compute Mean Squared Error (MSE)
+  mse <- mean((test_data$market_value / 1e6 - predictions)^2)
   
-  # Save QQ Plot
-  ggplot(residuals, aes(sample = .resid)) +
-    stat_qq() +
-    stat_qq_line() +
-    labs(
-      title = paste("QQ Plot for Residuals in", league),
-      x = "Theoretical Quantiles",
-      y = "Sample Quantiles"
-    ) +
-    theme_minimal() +
-    ggsave(
-      filename = paste0("models/qq_plot_", league, ".png"),
-      width = 8, height = 6
-    )
-  
-  # Save Scale-Location Plot
-  ggplot(residuals, aes(.fitted, sqrt(abs(.resid)))) +
-    geom_point(alpha = 0.5) +
-    geom_smooth(method = "loess", color = "red") +
-    labs(
-      title = paste("Scale-Location Plot for", league),
-      x = "Fitted Values",
-      y = "Square Root of Standardized Residuals"
-    ) +
-    theme_minimal() +
-    ggsave(
-      filename = paste0("models/scale_location_", league, ".png"),
-      width = 8, height = 6
-    )
+  # Store the MSE result
+  mse_results[[league]] <- mse
 }
+
+#### Save Results ####
+# Convert MSE results to a data frame
+mse_df <- tibble(
+  League = names(mse_results),
+  MSE = unlist(mse_results)
+)
+
+# Print MSE results
+print(mse_df)
+
+# Save the MSE results to a CSV file
+write_csv(mse_df, "models/mse_results.csv")

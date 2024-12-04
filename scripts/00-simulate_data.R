@@ -1,12 +1,23 @@
 #### Preamble ####
-# Purpose: Simulates datasets for player data from different countries (England, France, Germany, Italy, Spain) 
-#          to test the data cleaning and processing pipeline.
-# Author: Your Name
+# Purpose:
+#   - This script simulates synthetic player data for five countries (England, France, Germany, Italy, and Spain),
+#     mimicking real-world datasets to test the data cleaning, processing, and analysis pipeline.
+#   - Ensures that simulated datasets replicate the structure and characteristics of actual player datasets, enabling robust testing of analysis workflows.
+# Author: John Zhang
 # Date: 25 November 2024
-# Contact: your.email@example.com
-# License: MIT
-# Pre-requisites: The `tidyverse` package must be installed
-#                 Ensure simulated datasets match the characteristics of real datasets.
+# Contact: junhan.zhang@mail.utoronto.ca
+# License: MIT License
+# Pre-requisites:
+#   - Necessary library installed: tidyverse.
+#     Install it using: install.packages("tidyverse").
+#   - Ensure that the output directory `data/00-simulated_data/` exists before running the script.
+# Output:
+#   - Simulated datasets are saved in CSV format in:
+#       data/00-simulated_data/simulated_<country>_data.csv
+# Notes:
+#   - Simulated data replicates key features such as market value, national rankings, club rankings, player statistics, and positions.
+#   - Synthetic data ensures controlled experiments without relying on sensitive or proprietary real-world data.
+#   - Randomized but logical constraints are applied to maintain realism, such as aligning goals and assists with minutes played.
 
 #### Workspace setup ####
 library(tidyverse)
